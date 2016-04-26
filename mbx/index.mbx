@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mathbook xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<docinfo>
+<macros>
+</macros>
+
+</docinfo>
+
+
+<book>
+    <title>Introduction to Game Theory\\
+ a Discovery Approach    </title>
+<frontmatter>
+<titlepage>
+<author>
+<personname>Jennifer Firkins Nordstrom</personname>
+</author>
+</titlepage>
+</frontmatter>
+
+
+<xi:include href="./chapter2.mbx" />
+
+<xi:include href="./chapter3.mbx" />
+
+<xi:include href="./chapter4.mbx" />
+<backmatter>
+
+</backmatter>
+</book>
+</mathbook>

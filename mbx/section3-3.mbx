@@ -1,0 +1,82 @@
+
+<section>
+<title>Repeated Two-person Zero-Sum Games: Expected Value</title>
+<p>
+
+In this section, we will use the ideas of expected value to find the equilibrium mixed strategies for repeated two-person zero-sum games.
+</p>
+  
+<p>
+Consider the game called <em>matching pennies:</em> each player can choose HEADS (H) or TAILS (T); if the two players match, Player 1 wins; if the two players differ, Player 2 wins.
+</p>
+  <ol><li>Determine the payoff matrix for this game. 
+</li>
+<li>Explain why this game has no pure strategy equilibrium point.
+</li>
+<li>Since we know that there is no pure strategy equilibrium point, we need to look for a mixed strategy equilibrium point. Just by looking at the payoff matrix, what do you think an ideal strategy for each player would be? Explain your choice. 
+</li>
+<li>Suppose both players play your ideal strategy, what should the expected value of the game be?</li>
+ </ol>   
+<p>
+We could use our previous graphical method to determine the expected value of the game (you might quickly try this just to verify your prediction). However, you might have picked up on a major drawback of the graphical solution: if our players have 3 (or more) options, then we would need to graph an equation in 3 (or more!) variables; which (I hope you agree) we don't want to do. Although initially we will continue to focus on <m>2 \times 2</m> games, we will develop a new method which can more easily extend to larger games.
+</p>
+  
+<p>
+We will need a little notation. Let
+</p>
+  
+<md><mrow>P_1(H) \amp  = \mbox{ the probability that Player 1 plays H; }  \notag</mrow>
+ <mrow>P_1(T) \amp  = \mbox{ the probability that Player 1 plays T;}  \notag</mrow>
+ <mrow>P_2(H) \amp  = \mbox{ the probability that Player 2 plays H; }  \notag</mrow>
+ <mrow>P_2(T) \amp  = \mbox{ the probability that Player 2 plays T.}  \notag</mrow>
+ 
+</md>
+  <ol><li>Suppose Player 2 plays H 60<percent /> of the time and T 40<percent /> of the time. 
+<ol><li>What are <m>P_2(H)</m> and <m>P_2(T)</m>?</li>
+<li>What do you think Player 1 should do? Does this differ from your ``ideal" mixed strategy? Explain.</li>
+<li>We can use expected value to compute what Player 1 should do in response to Player 2's 60/40 strategy. First, consider a pure strategy for Player 1. Compute the expected value for Player 1 if she only plays H (call it <m>E_1(H)</m>) while Player 2 plays H with probability .6  and T with probability .4.</li>
+<li>Similarly, compute the expected value for Player 1 if she plays only T (call it <m>E_1(T)</m>).</li>
+<li>Which pure strategy has a higher expected value for Player 1? If Player 1 plays this pure strategy, will she do better that your predicted value of the game?</li>
+ </ol>  
+</li>
+<li>Hopefully, you concluded that in (5) a pure strategy is good for Player 1. Explain why this means the 60/40 strategy is bad for Player 2.
+</li>
+<li>For any particular mixed (or pure) strategy of Player 2, we could find <m>E_1(T)</m> and <m>E_1(H)</m>. Explain why if <m>E_1(H) > E_1(T)</m>, Player 1 should always play H. 
+</li>
+<li>Similarly, explain why if <m>E_1(H) \lt  E_1(T)</m>, Player 1 should always play T. 
+</li>
+<li>Explain why the situations in (7) and (8) are bad for Player 2.
+</li>
+<li>Use your answers from above to explain why the situation in which <m>E_1(H)=E_1(T)</m> is the best for Player 2.
+</li>
+ </ol>   
+<p>
+Since we now know that Player 2 wants <m>E_1(H)=E_1(T)</m>, we can use a little algebra to compute the best defensive strategy for Player 2. Remember, we want to assume that Player 1 will always be able to chose the strategy that will be best for her, and thus Player 2 wants to protect himself. Let's find the probabilities with which Player 2 should play H and T.
+</p>
+  <ol><li>Let <m>P_2(H)</m> and <m>P_2(T)</m> be the probabilities that player 2 plays H and T respectively. Find equations for <m>E_1(H)</m> and <m>E_1(T)</m> in terms of <m>P_2(H)</m> and <m>P_2(T)</m> for the game of matching pennies. Since we want <m>E_1(H)=E_1(T)</m>,m set your two equations equal to each other. This gives you one equation in terms of <m>P_2(H)</m> and <m>P_2(T)</m>.
+</li>
+<li>Explain why we must also have <m>P_2(H)+P_2(T)=1</m>.
+</li>
+<li>Using the equations from (11) and (12), solve for <m>P_2(H)</m> and <m>P_2(T)</m>. You now have the equilibrium mixed strategy for Player 2. Does this match the mixed strategy you determined in (3)?
+</li>
+<li>Set up and solve the analogous equations from (11) and (12) for Player 1. (Hint: we should have an equation for <m>E_2(H)</m> and one for <m>E_2(T)</m>. Since we are looking for the probabilities of each of Player 1's options, the equations should involve <m>P_1(H)</m> and <m>P_2(T)</m>.) Again, does this match the mixed strategy from (3)? 
+</li>
+ </ol>   
+<p>
+We now have a new method for finding the best mixed strategies for Players 1 and 2, assuming that each player is playing defensively against an ideal player. But how can we find the value of the game? For Player 2, we assumed <m>E_1(H)=E_1(T)</m>. In other words, we found the situation in which Player 1's expected value is the same no matter which pure strategy she plays. Thus, Player 1 is <em>indifferent</em> to which pure strategy she plays. If she were not indifferent, then she would play the strategy with a higher expected value. But, as we saw, this would be bad for Player 2. So Player 1 can assume that Player 2 will play the equilibrium mixed strategy. Thus, as long as Player 1 plays a mixed strategy, it doesn't matter whether at any given time, she plays H or T (this is the idea that she is indifferent to them). Hence, the expected value of the game for Player 1 is the same as <m>E_1(H)</m>, which is the same as <m>E_1(T)</m>. Similarly, we find that the expected value of the game for Player 2 is <m>E_2(H)</m> (or <m>E_2(T)</m>). This is a pretty complicated idea. You may need to think about it for a while.
+</p>
+  <ol><li>Use the probabilities you calculated  in (13) to find <m>E_1(H)</m>, and hence the expected value of the game for Player 1. How does this compare to your prediction for the value of the game?
+</li>
+<li>Use the probabilities you calculated  in (14) to find <m>E_2(H)</m>, and hence the expected value of the game for Player 2. How does this compare to your prediction for the value of the game?
+</li>
+<li>Apply this method of using expected value to the example from the previous section to find the equilibrium mixed strategies  for each player and the value of the game for each player:
+
+<me>
+\left[\begin{matrix}1\amp 0\\
+-1\amp 2
+\end{matrix} \right].
+
+</me>
+</li>
+<li>As we noted in this section, this method can be used to solve bigger games. We just have more equations. Use this method to find the equilibrium mixed strategy for Rock-Paper-Scissors for Player 2. (Hint: You will need to set <m>E_1(R)=E_1(P)</m> and <m>E_1(P)=E_1(S)</m>; solve for <m>P_2(R), P_2(P), P_2(S)</m>; etc. It should be very similar to what you did for Matching Pennies, but there will be three equations and three unknowns.)</li>
+ </ol>  </section>

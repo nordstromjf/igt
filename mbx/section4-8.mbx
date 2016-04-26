@@ -1,0 +1,56 @@
+
+<section>
+<title>Repeated Prisoner's Dilemma</title>
+<p>
+
+In this section we look at two players playing Prisoner's Dilemma repeatedly. We call this game an <em>iterated</em> Prisoner's Dilemma.
+Recall the general Prisoner's Dilemma matrix:
+</p>
+  
+<p>
+Player 2
+</p>
+  <table id="e53160d40d445729649f39ed1b0bc7619e540040" ><tr><td class='lv'>\amp \amp <b>Cooperate</b>\amp <b>Defect</b></td></tr>
+<tr><td class='lv'>Player 1\amp <b>Cooperate</b> \amp (3, 3)\amp (0, 5)</td></tr>
+<tr><td class='lv'>\amp <b>Defect</b> \amp (5, 0)\amp (1, 1)</td></tr>
+<tr><td class='lv'></td></tr></table>   <ol><li>Suppose this represented the situation of purchasing an item (say, a collectable Star Wars action figure) on the internet where both parties are untraceable. You agree to send the money at the same time that the seller agrees to send the toy. Then we can think of Cooperating as each of you sending money/ toy, and Defecting as not sending money/ toy. What should you do and why?</li>
+<li>Now suppose you wish to continue to do business with the other party. For example, instead of buying a Star Wars action figure, maybe you are buying music downloads. What should you do and why?</li>
+<li>Suggest a strategy for playing the above Prisoner's Dilemma repeatedly. DON'T SHARE YOUR STRATEGY WITH ANYONE YET!</li>
+<li>Play 10 rounds of Prisoner's Dilemma with someone in class. Use your suggested strategy. Keep track of the payoffs. Did your strategy seem effective? What should it mean to have an ``effective" strategy?</li>
+ </ol>   
+<p>
+We are now going to play a Prisoner's Dilemma Tournament! Choose one of the strategies below. You are to play your strategy against everyone else in the class. Keep a running total of your score.
+</p>
+  
+<p>
+Some possible strategies:
+</p>
+  <ul><li>Strategy: <b>Defection.</b> Your strategy is to <em>always</em> choose DEFECT (D).</li>
+<li>Strategy: <b>Cooperation.</b> Your strategy is to <em>always</em> choose COOPERATE (C).</li>
+<li>Strategy: <b>Tit for Tat.</b> Your strategy is to play whatever your opponent just played. Your first move is to COOPERATE (C), but then you need to repeat your opponent's last move. 
+</li>
+<li>Strategy: <b>Tit for Two Tats.</b> Your strategy is to COOPERATE (C) unless your opponent DEFECTS twice in a row. After two D's you respond with D. 
+</li>
+<li>Strategy: <b>Random (1/2, 1/2).</b> Your strategy is to COOPERATE (C) randomly 50<percent /> of the time and DEFECT (D) 50<percent /> of the time. [Note: it will be hard to be truly random, but try to play each option approximately the same amount.]
+</li>
+<li>Strategy: <b>Random (3/4, 1/4).</b> Your strategy is to COOPERATE (C) randomly 75<percent /> of the time and DEFECT (D) 25<percent /> of the time. [Note: it will be hard to be truly random, but try to play C more often than D.]
+</li>
+<li>Strategy: <b>Random (1/4, 3/4).</b> Your strategy is to COOPERATE (C) randomly 25<percent /> of the time and DEFECT (D) 75<percent /> of the time. [Note: it will be hard to be truly random, but try to play D more often than C.]
+</li>
+<li>Strategy: <b>Tit for Tat with Occasional Surprise D.</b> Your strategy is to play whatever your opponent just played. Your first move is to COOPERATE (C), but then you need to repeat your opponent's last move. Occasionally, you will deviate from this strategy by playing D.
+
+
+<ol><li>WITHOUT SHARING YOUR STRATEGY, play Prisoner's Dilemma 10 times with each of the other members of the class. Keep track of the payoffs for each game and your total score.</li>
+<li>After playing Repeated Prisoner's Dilemma as a class, can you determine who had which strategy? At this point you may share your strategy with others. Was your strategy more effective with some strategies than with others? Describe which opponents' strategies seemed to give you more points, which seemed to give you fewer?</li>
+<li>Describe the strategy or strategies that had the highest scores in the tournament. Does this seem surprising? Why or why not? How do the winning strategies compare to the strategy you suggested in 3?</li>
+<li>How does Repeated Prisoner's Dilemma differ from the ``one-time" Prisoner's Dilemma? Try to think in terms of ``rational" strategies.</li>
+<li>Describe a situation from real life that resembles a Repeated Prisoner's Dilemma.</li>
+ </ol>  
+
+Repeated or Iterated Prisoner's Dilemma has applications to biology and sociology. If you think of higher point totals as ``success as a species" in biology or ``success of a society" in sociology, we can try to determine which strategies seem the most effective or successful.
+
+<ol><li>How do a few defectors fare in a society of mostly cooperators? How do the cooperators fare?  (In other words, who will be more successful?) Keep in mind that everyone is playing with lots of cooperators and only a few defectors. Who will have the most points, cooperators or defectors?</li>
+<li>How do a few cooperators fare in a society of mostly defectors? How do the defectors fare? (In other words, who will be more successful?) Keep in mind that everyone is playing with lots of defectors and only a few cooperators. Who will have the most points, cooperators or defectors?</li>
+<li>Now consider a society of mostly TIT-FOR-TATers. How do a few defectors fare in a society of mostly TIT-FOR-TATers? How do the TIT-FOR-TATers fare? How would a few cooperators fare with the TIT-FOR-TATers? Would the evolution of such a society favor cooperation or defection?</li>
+ </ol> </li>
+ </ul>  </section>

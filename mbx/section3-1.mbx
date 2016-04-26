@@ -1,0 +1,125 @@
+
+<section>
+<title>Introduction</title><introduction>
+<p>
+Now that we are experts at finding equilibrium pairs, what happens when a game doesn't have any equilibrium pairs? What should our players do?
+</p>
+  
+<p>
+<b>Example.</b> Consider the following zero-sum game.
+</p>
+  
+<me>
+\left[\begin{matrix}1\amp 0\\
+-1\amp 2
+\end{matrix} \right].
+</me>
+  
+<p>
+Is there an equilibrium pair? Play this game with an opponent 10 times. Tally your wins and losses. Describe how you chose which strategy to play. Describe how your opponent chose which strategy to play.
+</p>
+  
+<p>
+When playing the game several times, does it make sense for either player to play the same strategy all the time? Why or why not?
+</p>
+  
+<p>
+Although we use the term ``strategy" to mean which row (or column) a player chooses to play, we will also refer to how a player plays a repeated game as the player's strategy. In order to avoid confusion, in repeated games we will define some specific strategies.
+</p>
+  
+<p>
+<b>Definition.</b> In a repeated game, if a player always plays the same row (or column), we say that she is playing a <em>pure strategy.</em> For example, if Player 1 always plays Row A, we say she is playing <em>pure strategy A</em>.
+</p>
+  
+<p>
+If a player varies which row (or column) he plays, then we say he is playing a <em>mixed strategy</em>. For example, if a player plays Row A 50<percent /> of the time and Row B 50<percent /> of the time, we will say he is playing a (.5, .5) strategy, as we generally use the probability rather that the percent.
+</p>
+  
+<p>
+It is not enough just to determine how often to play a strategy. Suppose Player 1 just alternates rows in the above example. Can player 2 ``out-guess" Player 1? What might be a better way for Player 1 to play?
+</p>
+  
+<p>
+We'd really like to find a way to determine the best mixed strategy for each player in repeated games. Let's start with what we already know: games with equilibrium points. If a game has an equilibrium pair, would a player want to play a mixed strategy? Recall that a strategy pair is an equilibrium pair if neither player gains by switching strategy.
+</p>
+  
+<p>
+<b>Example.</b> Consider the following zero-sum game.
+</p>
+  
+<me>
+\left[\begin{matrix}-1\amp 1\\
+0\amp 2
+\end{matrix} \right].
+</me>
+ 
+<p>
+This game has an equilibrium pair. Convince yourself that if this game is played repeatedly, each player should choose to play a pure strategy.
+</p>
+  
+<p>
+Thus, if the game has an equilibrium we know that players will play the pure strategies determined by the equilibrium pairs. So let's get back to thinking about games without equilibrium pairs. If we play such a game once can we predict the outcome? What about if we repeat the game several times&#x2013; can we predict the outcome? Think about tossing a coin. If you toss it once, can you predict the outcome? What if you toss it 100 times&#x2013; can you predict the outcome? Not exactly, but we can say what we <em>expect</em>: if we toss a coin 100 times we expect to have half of the coins turn up heads and half turn up tails. This may not be the <em>actual</em> outcome, but it is a reasonable prediction. Now is a good time to remind yourself about finding the <em>expected value</em>!!
+</p>
+ </introduction> 
+<subsection>
+<title>Rock-Paper-Scissors</title>  
+<p>
+Recall the familiar game <b>Rock-Paper-Scissors</b>: ROCK beats SCISSORS, SCISSORS beat PAPER, and PAPER beats ROCK.
+</p>
+  <ol><li>Construct a game matrix for Rock-Paper-Scissors (RPS).
+</li>
+<li>Is RPS a zero-sum game? Does it have an equilibrium point? Explain.
+</li>
+<li>We want to look at what happens if we repeat this game. Play the game ten times with an opponent. Record the results (list strategy pairs and payoffs for each player).</li>
+<li>Describe any strategy you used.
+</li>
+<li>Reflect on your chosen strategy. Does it guarantee you a ``win"? What should it mean to ``win" in a repeated game? What are the strengths and weaknesses of you strategy? 
+</li>
+<li>Discuss your strategy with someone else in the class (it can be your opponent). After sharing your ideas for strategy, can you improve your previous strategy?
+</li>
+ </ol>   
+<p>
+Although you may have come up with a good strategy, let's see if we can't decide what the ``best" strategy should be for RPS. Let's assume we are playing RPS against the smartest player to ever live. We will call such an opponent the ``perfect" player.
+
+</p>
+  <ol><li>Explain why it is not a good idea to play a pure strategy; i.e. to play only ROCK, only PAPER, or only SCISSORS.
+</li>
+<li>Does it make sense to play one option more often than another (for example, ROCK more often than PAPER)? Explain.
+</li>
+<li>How often should you play each option?
+</li>
+<li>Do you want to play in a predictable pattern or randomly?  What are some advantages and disadvantages of a pattern? What are some advantages and disadvantages of a random strategy?
+</li>
+ </ol>   
+<p>
+Hopefully, you concluded that the best strategy against our perfect player would be to play ROCK, PAPER, SCISSORS 1/3 of the time each, and to play randomly. We can say that our strategy is to play each option randomly with a probability of 1/3, and call this the Random(1/3, 1/3, 1/3) strategy.
+</p>
+  <ol><li>Using this ``best" strategy, what do you predict the long term payoff will be for Player 1? For Player 2?
+</li>
+<li>Let's check our prediction. Using a die, let 1 and 2 represent ROCK, 3 and 4 represent PAPER, and 5 and 6 represent SCISSORS. Play the game 20 times with someone in class where each player rolls to determine the choice of R, P, or S. Keep track of the strategy pairs and payoffs. What was the total payoff for each player? [At this point, if you still feel that you have a better strategy, try your strategy against the random one&#x2013; see what happens!]</li>
+<li>How did the actual outcome compare to your predicted outcome? What do you expect would happen if you play the game 100 times? (Or more?) 
+
+
+</li>
+ </ol>   
+<p>
+Using ideas about probability and expected value we can more precisely answer (13).
+</p>
+  <ol><li>Assume both players are using the Random(1/3, 1/3, 1/3) strategy. List all the possible outcomes for a single game (recall the outcome is the strategy pair and the payoff, for example \{R, P\}, <m>(-1, 1)</m>). What is the probability that any particular pair of strategies will be played? Are the strategy pairs equally likely? 
+
+</li>
+<li>Using the probabilities and payoffs from (14) calculate the expected value of the game for each player.
+
+</li>
+<li>Now consider the example from the discussion above, 
+
+<me>
+\left[\begin{matrix}1\amp 0\\
+-1\amp 2
+\end{matrix} \right].
+
+</me>
+ 
+See if you can determine how often Player 1 should play each row, and how often Player 2 should play each column. Try testing your proposed strategy (you may be able to use a variation on the dice as we saw above). Write up any conjectured strategies and the results from playing the game with your strategy. Do you think you have come up with the best strategy? Explain.
+</li>
+ </ol>  </subsection> </section>

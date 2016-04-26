@@ -1,0 +1,34 @@
+
+<section>
+<title>Volunteer's Dilemma</title>
+<p>
+
+In the previous section we played a game called Volunteer's Dilemma. One example was everyone choses ``1 point" or ``5 points." If at least one person writes down 1 point, then everyone gets the number of points they wrote down. If no one chooses 1 point, then everyone gets 0 points. Choosing ``1 point" is considered volunteering or cooperating. Choosing to not volunteer and take ``5 points" is defecting.
+</p>
+  
+<p>
+You should note that it is difficult to put this game into a matrix form since payoffs depend on wether there is at least one volunteer or cooperator.
+</p>
+  
+<p>
+In this activity you will compare Class-wide Prisoner's Dilemma with Volunteer's Dilemma. We will use the following matrix for Prisoner's Dilemma:
+</p>
+  
+<p>
+Player 2
+</p>
+  <table id="e53160d40d445729649f39ed1b0bc7619e540040" ><tr><td class='lv'>\amp \amp <b>Cooperate</b>\amp <b>Defect</b></td></tr>
+<tr><td class='lv'>Player 1\amp <b>Cooperate</b> \amp (3, 3)\amp (0, 5)</td></tr>
+<tr><td class='lv'>\amp <b>Defect</b> \amp (5, 0)\amp (1, 1)</td></tr>
+<tr><td class='lv'></td></tr></table>   <ol><li>In class-wide <b>Prisoner's Dilemma</b> (the game in Section 4) what effect does one defector have on the group? In other words, if a single player defects, how many points does he cost each of the other players?</li>
+<li>In class-wide <b>Prisoner's Dilemma</b> what effect does everyone's defection have on the group? In other words, what is the most points lost by the group if everyone defects?</li>
+<li>In class-wide <b>Prisoner's Dilemma</b> what effect could your own defection have on the group? In other words, how many points does the group lose if you defect instead of cooperate? You may need to consider different cases depending on how many cooperators there are. For example what if there are no cooperators? What if there are no defectors? What if there are some of each?</li>
+<li>In <b>Volunteer's Dilemma</b>, with the payoffs given above, what effect does one defector have on the group. In other words, if there is a single defector, how many points do each of the other players lose?</li>
+<li>In <b>Volunteer's Dilemma</b> what effect does everyone's defection have on the group? In other words, if everyone defects, how many points does the group lose?</li>
+<li>In <b>Volunteer's Dilemma</b> what effect could your own defection have on the group? In other words, how many points does the group lose if you defect instead of cooperate? You may need to consider different cases depending on how many cooperators there are. For example what if there are no cooperators? What if there are no defectors? What if there are some of each?</li>
+<li>Considering your answers above and to previous work with Prisoner's Dilemma, in class-wide <b>Prisoner's Dilemma</b>, which is more <em>rational</em> to be a cooperator or a defector? Why?</li>
+<li>Whichever you chose in (7), explain what would happen if everyone was the most rational. Is it now more rational to do the opposite?</li>
+<li>Considering your answers above, in <b>Volunteer's Dilemma</b>, which is more <em>rational</em> to be a cooperator (volunteer) or a defector? Why?</li>
+<li>Whichever you chose in (9), explain what would happen if everyone was the most rational. Is it now more rational to do the opposite?</li>
+<li>Volunteer's Dilemma can also be called ``Class-wide Chicken." Try to describe this class-wide game in terms of ``swerving" and ``going straight." How do the payoffs for Volunteer's Dilemma relate to the payoffs for Chicken?</li>
+ </ol>  </section>

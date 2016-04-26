@@ -1,0 +1,83 @@
+
+<section>
+<title>Class-wide Prisoner's Dilemma</title>
+<p>
+
+In this section we give mathematical description of Prisoner's Dilemma and compare it to some similar games.
+</p>
+  
+<p>
+The Class-wide Prisoner's Dilemma game we played has the following payoff matrix for each pair of players:
+</p>
+  
+<p>
+Player 2
+</p>
+  <table id="e53160d40d445729649f39ed1b0bc7619e540040" ><tr><td class='lv'>\amp \amp <b>Cooperate</b>\amp <b>Defect</b></td></tr>
+<tr><td class='lv'>Player 1\amp <b>Cooperate</b> \amp (3, 3)\amp (0, 5)</td></tr>
+<tr><td class='lv'>\amp <b>Defect</b> \amp (5, 0)\amp (1, 1)</td></tr>
+<tr><td class='lv'></td></tr></table>   
+<p>
+We can classify each of these values for the payoffs as follows:
+</p>
+  <ul><li>Reward for Mutual Cooperation: <m>R=3.</m></li>
+<li>Punishment for Defecting: <m>P=1.</m></li>
+<li>Temptation to Defect: <m>T=5.</m></li>
+<li>Sucker's Payoff: <m>S=0.</m></li>
+ </ul>   
+<p>
+In order for a game to be a variation of Prisoner's Dilemma it must satisfy two conditions:
+</p>
+  <ol><li class="custom-list-style-type" label="(A)" ><m>T>R>P>S</m></li>
+<li class="custom-list-style-type" label="(B)" ><m>(T+S)/2 \lt  R</m></li>
+ </ol>   
+<p>
+Let's apply this description of Prisoner's Dilemma to a few games we've seen.
+</p>
+  <ol><li>Describe each of the conditions (A) and (B) in words. Hint: <m>(T+S)/2</m> is the average of <m>T</m> and <m>S</m>.</li>
+<li>Show that the two conditions hold for the Class-wide Prisoner's Dilemma.</li>
+<li>Recall the matrix for Prisoner's Dilemma from the last activity:
+
+ Prisoner 2
+
+<table id="35feeae093f6497f50e8d94cef77303386d783cf" ><tr><td class='lv'>\amp \amp <b>Confess</b>\amp <b>Don't confess</b></td></tr>
+<tr><td class='lv'>Prisoner 1\amp <b>Confess</b> \amp (8, 8)\amp (0.25, 10)</td></tr>
+<tr><td class='lv'>\amp <b>Don't confess</b> \amp (10, 0.25)\amp (1, 1)</td></tr>
+<tr><td class='lv'></td></tr></table> 
+Determine <m>R, P, T,</m> and <m>S</m> for this game. Be careful: think about what cooperating versus defecting should mean. Show the conditions for Prisoner's Dilemma are satisfied. (Hint: time in jail is bad, so the bigger the number, the worse you do; thus, it might be helpful to think of the payoffs as negatives.)</li>
+<li>Recall the matrix for Chicken from the last activity:
+
+Driver 2
+
+<table id="5160402ae9023f9884a5a3647e1ff7ab27db7b98" ><tr><td class='lv'>\amp \amp <b>Swerve</b>\amp <b>Straight</b></td></tr>
+<tr><td class='lv'>Driver 1\amp <b>Swerve</b> \amp (0, 0)\amp (-1, 10)</td></tr>
+<tr><td class='lv'>\amp <b>Straight</b> \amp (10, -1)\amp (-100, -100)</td></tr>
+<tr><td class='lv'></td></tr></table> 
+Determine <m>R, P, T,</m> and <m>S</m> for this game. Again, think about what cooperating and defecting mean in this game. Determine if the conditions for Prisoner's Dilemma are satisfied. If not, which condition(s) fail?</li>
+<li>Consider the game:
+
+<me>
+\begin{matrix}\amp  C\amp  D\\
+C\amp  (3, 3) \amp  (0, 50)\\
+D \amp (50, 0) \amp  (.01, .01)
+\end{matrix} 
+</me>
+ 
+Determine <m>R, P, T,</m> and <m>S</m> for this game. Determine if the conditions for Prisoner's Dilemma are satisfied. If not, which condition(s) fail?</li>
+<li>Consider the game:
+
+<me>
+\begin{matrix}\amp  C\amp  D\\
+C\amp  (1000, 1000) \amp  (0, 100)\\
+D \amp (100, 0) \amp  (100, 100)
+\end{matrix} 
+</me>
+ 
+Determine <m>R, P, T,</m> and <m>S</m> for this game. Determine if the conditions for Prisoner's Dilemma are satisfied. If not, which condition(s) fail?</li>
+<li>The games in (4), (5) and (6) are not true Prisoner's Dilemmas. For each game, how do the changes in payoffs affect how you play? In particular, in Prisoner's Dilemma, a player will generally choose to defect. This results in a non-optimal payoff for each player. Is this still true in (4), (5) and (6)? If possible, use the changes in the conditions (A) and (B) to help explain any differences in how one should play.</li>
+ </ol>   
+<p>
+We can define ``Defection" as the idea that if everyone did it, things would be worse for everyone. Yet, if only one (or a small) number did it, life would be sweeter for that individual. We can define ``Cooperation" as the act of resisting temptation.
+</p>
+  <ol><li>Give an example of defection and cooperation from real life.</li>
+ </ol>  </section>

@@ -1,0 +1,48 @@
+
+<section>
+<title>Repeated Two-person Zero-Sum Games: Liar's Poker</title>
+<p>
+
+In this section, we will continue to explore the ideas of a mixed strategy equilibrium. We have seen several examples of finding an equilibrium. We began with games which had a pure strategy equilibrium and then moved to games with mixed strategy equilibrium. We saw two different methods for finding an equilibrium. The first employed graphs in order to understand and find the maximin and minimax strategies, and hence the equilibrium mixed strategy. The second method employed the ideas of expected value to find the equilibrium strategy. We will continue to solidify these ideas with another game, a simplified variation of poker.
+</p>
+  
+<p>
+<b>Liar's Poker:</b>
+We begin with a deck of cards which has 50<percent /> aces (A) and 50<percent /> kings (K). Aces rank higher than kings. Player 1 is dealt one card, face down. Player 1 can look at the card, but does not show the card to Player 2. Player 1 then says ``ace" or ``king" depending on what his card is. Player 1 can either tell the truth and say what the card is (T), or he can bluff and say that he has a higher ranking card (B). Note that if Player 1 has an ace, he must tell the truth since there are no higher ranking cards. However, if he is dealt a king, he can bluff, by saying he has an ace. If Player 1 says ``king" the game ends and both players break even. If Player 1 says ``ace" then Player 2 can either call (C) or fold (F). If Player 2 folds, then Player 1 wins <dollar />0.50. If Player 2 calls and Player 1 does not have an ace, then Player 2 wins <dollar />1. If Player 2 calls and Player 1 does have an ace, then Player 1 wins <dollar />1.
+</p>
+  <ol><li>Choose an opponent and play the game several times. Be sure to play the game as Player 1 and as Player 2. This is important for understanding the game. Keep track of the outcomes.</li>
+<li>Just from playing the game several times, can you suggest a strategy for Player 1? What about for Player 2? Does this game seem fair, or does one of the players seem to have an advantage? Explain your answers.</li>
+<li>In order to formally analyze this game, we should find the payoff matrix. Do your best to find the payoff matrix. In a single hand of Liars Poker, what are the possible strategies for Player 1? What are the possible strategies for Player 2? Determine any payoffs that you can.</li>
+ </ol>  
+<p>
+The last question is probably more challenging than it appears. Eventually we want to employ the same method for finding the payoff matrix that we used in One-Card Stud Poker, but first we need to understand each player's strategies, and the resulting payoffs. We begin with the fact that Player 1 can be dealt an ace or a king.
+</p>
+  <ol><li>Assume Player 1 is dealt an ace. What can Player 1 do? What can Player 2 do? What is the payoff for each situation?
+</li>
+<li>Assume Player 1 is dealt a king. What can Player 1 do? What can Player 2 do? What is the payoff for each situation?
+</li>
+ </ol>   
+<p>
+Since Player 1 must say ``ace" when dealt an ace, he only has a choice of strategy when dealt a king. So we can define his strategy independent of the deal. One strategy is to say ``ace" when dealt an ace and say ``ace" when dealt a king; call this the bluffing strategy (B). The other strategy is to say ``ace" when dealt an ace and say ``king" when dealt a king; call this the truth strategy (T). Recall that the only time Player 2 has a choice is when Player 1 says ``ace." In this case Player 2 can call (C) or fold (F). Since we need to determine the payoff matrix, we first need to determine the payoffs for <em>pure strategies</em>. This is similar to what we did for the One-Card Stud game.
+</p>
+  <ol><li>Consider Player 1's pure strategy of always bluffing when dealt a king (B) and Player 2's pure strategy of always calling (C). Determine the expected value for Player 1. (Hint: you need to consider each possible deal.) What is Player 2's expected value? 
+</li>
+<li>Similarly, determine the expected value for Player 1 for the pure strategy pair \{B, F\}. What is Player 2's expected value? 
+</li>
+<li>Determine the expected value for Player 1 for the pure strategy pair \{T, C\}. What is Player 2's expected value? 
+</li>
+<li>Determine the expected value for Player 1 for the pure strategy pair \{T, F\}. What is Player 2's expected value? 
+</li>
+<li>Using the expected values you calculated above, set up the <m>2 \times 2</m> payoff matrix for Liar's poker.
+</li>
+<li>Using the payoff matrix, does Liar's Poker have a pure strategy equilibrium? Explain.
+</li>
+<li>Use any method you have learned to find a mixed strategy equilibrium for this game. Give the mixed strategy for Player 1 and the mixed strategy for Player 2.
+</li>
+<li>Compare your solution from (12) to your conjectured strategy from (2). 
+</li>
+<li>What is the expected value of the game for each player?  How much would Player 1 expect to win if he played 15 games using the equilibrium mixed strategy? 
+
+</li>
+<li>Is this game fair? Explain. Again, compare your answer to your conjecture in (2).</li>
+ </ol>  </section>

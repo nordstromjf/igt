@@ -1,0 +1,129 @@
+
+%\subsection*{Repeated Two-person Zero-Sum Games: Linear Solution}
+
+%\markright{Repeated Games: Linear Solution}
+
+%\vspace{.2in}
+
+%Do all of your work on your own paper. Give complete answers (complete sentences!).
+
+\vspace{.1in}
+We will use the graphical method to find the maximin and minimax mixed strategies for repeated  two-person zero-sum games. 
+
+Using the same game matrix as above: \[\left[\begin{matrix}
+1&0\\
+-1&2
+
+\end{matrix}\right],
+\]
+we will label Player 1's strategies by $A$ and $B$, and Player 2's strategies by $C$ and $D$. We now want to determine the minimax strategy for Player 2. Keep in mind the payoffs are still the payoffs to Player 1, so Player 2 wants the payoff to be as small as possible.
+
+\begin{enumerate}
+\item Sketch the graph for Player 1 that we drew above. Be sure to label the endpoints  of each line. Also label each line according to which strategy they represent. 
+\vspace{.1in}
+
+\item Describe the minimax strategy and show it on the graph. (You do not need to find the actual mixed strategy for Player 2.) 
+\vspace{.1 in}
+
+\item Are the payoff vectors for the maximin and minimax strategies the same?\vspace{.1 in}
+\end{enumerate}
+
+For non-repeated games we have seen that if the maximin value is the same as the minimax value, then the game has a pure strategy equilibrium. The same idea applies to mixed strategy games. If the value of the maximin  strategy is the same as the value of the minimax strategy, then the corresponding mixed strategies will be an equilibrium point. Thus, your answer to (3) should tell you this game has a mixed strategy equilibrium point consisting of the maximin/ minimax strategy.
+
+We now know that Player 2 wants to play the minimax strategy in response to Player 1's maximin strategy, so we need to find the actual mixed strategy for Player 2 to employ. Since we are minimizing Player 1's maximum expected payoff, we will continue to use the matrix representing Player 1's payoff. We will repeat the process we used for Player 1, except the $x$-axis now represents the probability that Player 2 will play $D$, and the lines will represent Player 1's strategies $A$ and $B$. The $y$-axis continues to represent Player 1's payoff. 
+
+\begin{enumerate}
+\setcounter{enumi}{3}
+\item First sketch the axes. (Recall, the $x$-axis only goes from 0 to 1.)
+\vspace{.1 in}
+
+\item Assume Player 1 only plays $A$. 
+\begin{enumerate}
+\item If Player 2 only plays $C$, what is the payoff to Player 1? Recall we called this $m$. What is the probability that Player 2 plays $D$? Recall we called this $p$. On your graph, plot the point ($p$, $m$).
+
+\item If Player 2 plays only $D$, find $m$ and $p$. Plot $(p, m)$ on the graph.
+
+\item Now sketch the line through your two points. This line represents Player 1's pure strategy $A$ and the expected payoff (to Player 1) for Player 2's mixed strategies. Label it $A$.
+\end{enumerate}
+
+\item Now assume Player 1 plays only $B$. Repeat the steps above to find the line representing Player 1's pure strategy $B$. (Label it!)
+\vspace{.1in}
+
+\item It is important to keep in  mind that although the $x$-axis refers to how often Player 2 will play $C$ and $D$, the $y$-axis represents the payoff to {\it Player 1}. 
+\begin{enumerate}
+\item Explain why we are looking for the {\it minimax} strategy for Player 2. 
+\item Show on the graph the {\it maximum} payoff that Player 1 can expect for each of Player 2's possible mixed strategies.
+\item Show the point on the graph that represents the minimax strategy.
+\end{enumerate}
+
+\item Find the equations of the two lines.
+\vspace{.1in}
+\item Find the point of intersection of the two lines.
+\vspace{.1in}
+\item How often should Player 2 play $C$? How often should he play $D$? What is Player 1's expected payoff? And hence, what is Player 2's expected payoff? 
+\vspace{.1in}
+
+\item Explain why each player should play the maximin/ minimax mixed strategy. In other words, explain why neither player benefits by changing his or her strategy. (Hint: think about playing defensively and assuming the other player is the ``perfect" player.)
+\vspace{.1in}
+
+
+
+\end{enumerate}
+
+Now it may have occurred to you that since this is a zero-sum game, we could have just converted our matrix to the payoff matrix for Player 2, and found Player 2's maximin strategy. But it is important to understand the relationship between the maximin and the minimax strategies. So for the sake of practice and a little more insight \ldots
+
+\begin{enumerate}
+\setcounter{enumi}{11}
+
+\item Convert the payoff matrix above into the payoff matrix for Player 2. Find the maximin strategy for Player 2 using the graphical method. Be sure to include a sketch of the graph (labeled!!), the equations for the lines, the probability that Player 2 will play $C$ and $D$, and the expected payoff for Player 2.
+\vspace{.1 in}
+
+\item Compare your answer to (10). 
+\vspace{.1 in}
+
+\item Is this game fair? Explain.
+\vspace{.1in}
+
+\item We saw in class that the expected payoff for Player 1 was 1/2. Explain what this means for a repeated game. (Hint: is it actually possible for a player to win 1/2 in a given game?)
+\vspace{.1 in}
+
+\end{enumerate}
+\noindent
+Now you are ready to try to analyze some more games!
+
+\begin{enumerate}
+\setcounter{enumi}{15}
+\item Consider the zero-sum game $\left[\begin{matrix}
+-4&4\\
+2&-2
+
+\end{matrix}\right].
+$
+\begin{enumerate}
+\item Does this game have a pure strategy equilibrium?
+\item Just by looking at the matrix, do you think this game will be fair? (Would you rather be Player 1 or Player 2?)
+\item Sketch (and label!) the appropriate graph for this game.
+\item Use you graph to determine if there is a mixed strategy equilibrium point. If there is, how often should Player 1 play each strategy? What is the expected payoff to each player? 
+\item Is this game fair? Explain. Compare your answer to (b).
+\end{enumerate}
+
+\item  Consider the zero-sum game $\left[\begin{matrix}
+0&1\\
+1&-10
+
+\end{matrix}\right].
+$
+\begin{enumerate}
+\item Does this game have a pure strategy equilibrium?
+\item Just by looking at the matrix, do you think this game will be fair? (Would you rather be Player 1 or Player 2?)
+
+\item Sketch (and label!) the appropriate graph for this game.
+\item Use you graph to determine if there is a mixed strategy equilibrium point. If there is, how often should Player 1 play each strategy? What is the expected payoff to each player? 
+\item Is this game fair? Explain. Compare your answer to (b).
+\end{enumerate}
+
+\end{enumerate}
+
+
+
+ 

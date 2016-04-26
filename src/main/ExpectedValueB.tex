@@ -1,0 +1,126 @@
+
+\section{Probability and Expected Value}
+
+%\markright{Probability and Expected Value}
+
+%\vspace{.2in}
+%Do all of your work on your own paper. Give complete answers (complete sentences!).
+
+%\vspace{.2in}
+\noindent
+{\bf Some Basic Probability}
+\vspace{.1in}
+
+You are probably a little bit familiar with the idea of probability. People often talk about the chance of some event happening. For example, a weather forecast might say there is a 20\% chance of rain. Now determining the chance of rain can be difficult, so we will stick with some easier examples. 
+
+Consider a standard deck of 52 playing cards. What is the chance of drawing a red card? What is the {\it probability} of drawing a red card? Is there a difference between chance and probability? Yes! The probability of an event has a very specific meaning in mathematics. 
+
+The {\it probability} of an event $E$ is the number of different outcomes resulting in $E$ divided by the total number of equally likely outcomes. In mathematical symbols, 
+$$P(E)={\mbox{number of different outcomes resulting in $E$}\over \mbox{total number of equally likely outcomes}}.$$
+Notice that the probability of $E$ will always be a number between 0 and 1. An impossible event will have probability 0;   an event that always occurs will have probability 1.
+\vspace{.1in}
+
+Thus, the probability of drawing a red card is $\frac{1}{2}$, not 50\%. Although we can convert between probability and percent (since $0.5$ converted to percents is $50\%$), it is important to answer a question about probability with a probability, not a percent. 
+
+\vspace{.1in}
+{\bf Example.} Given a standard deck of playing cards, what is the probability of drawing a heart? 
+
+\vspace{.1in}
+Answer: You might say since there are four suits,and one of the suits is hearts, you have a probability of $\frac{1}{4}$. You'd be correct, but be careful with this reasoning. This works because each suit has the same number of cards, so each suit is {\it equally likely}. Another way the calculate the probability is to count the number of hearts (13) divided by the number of cards (52). Thus we get a probability of $\frac{13}{52}=\frac{1}{4}=0.25$. 
+
+\vspace{.1in}
+
+{\bf Example.} Now suppose the ace of spades is missing from the deck. What is the probability of drawing a heart? 
+
+\vspace{.1in}
+
+Answer: As before, there are still four suits in the deck, so it might be tempting to say the probability is still $\frac{1}{4}$. But we'd be wrong! Each suit is no longer equally likely since, it is slightly {\it less} likely that we draw a spade. Each individual card is still equally likely, though. So now
+
+$$ P(\mbox{drawing a heart})= \frac{\mbox{number of hearts}}{\mbox{number of cards}}=\frac{13}{51}= 0.255.$$
+
+As you can see, it is now slightly more likely that we draw a heart if the ace of spades is removed from the deck.
+
+Now try to compute some probabilities on your own.
+
+\begin{enumerate}
+
+\item Consider rolling a single die. List the possible outcomes. Assuming that it is a fair die, are all the outcomes equally likely? What is the probability of rolling a 2? What is the probability of rolling an even number? 
+\vspace{.1in}
+
+
+
+
+\item Now consider rolling two fair dice, say a red die and a green die.
+\begin{enumerate}
+\item  How many equally likely outcomes are there? List them. 
+\item What is the probability that you get a two on the red die and a four on the green die? 
+\item What is the probability that you roll a three on the red die? 
+\item What is the probability that you roll a two and a four? 
+\item What is the probability  that you roll a three? 
+\item Compare your answers in (b) and (c) with your answers in (d) and (e). Are they the same or different? Explain.
+\end{enumerate}
+
+\vspace{.1in}
+
+\item Again consider rolling two fair dice, but now we don't care what color they are. 
+\begin{enumerate}
+\item Does this change the number of equally likely outcomes from (2)? Why or why not? It may be helpful to list the possible outcomes.
+\item What is the probability that you get snake eyes (two ones)?
+\item What is the probability that you roll a two and a four? 
+\item What is the probability  that you roll a three? 
+\item What is the probability that you roll a two OR a four?
+\end{enumerate}
+
+\vspace{.1in}
+\item Suppose we roll two dice and add them.
+\begin{enumerate} 
+\item List the possible sums.
+\item What is the probability that you get a total of seven on the two dice?
+\item  What is the probability that you get a total of four when you roll two dice?
+\item Are the events of getting a total of seven and getting a total of four equally likely? Explain.
+
+\end{enumerate}
+
+\end{enumerate} 
+
+It is important to note that just because you can list all of the possible outcomes, they may not be equally likely. As we see from (4), although there are 11 possible sums, the probability of getting any particular sum (such as seven) is not 1/11. 
+
+\vspace{.2in}
+\noindent
+{\bf Expected Value}
+\vspace{.1in}
+
+The {\it expected value} of a game of chance is the average net gain or loss that we would expect per game if we played the game many times. We compute the expected value by multiplying the value of each outcome by its probability of occurring and then add up all of the products.
+
+For example, suppose you toss a fair coin: Heads, you win 25 cents, Tails, you lose 25 cents. The probability of getting Heads is 1/2, as is the probability of getting Tails. The expected value of the game is
+\[({1\over 2}\times .25)+({1\over 2}\times(- .25))=0.\]
+Thus, you would expect an average payoff of \$0, if you were to play the game several times. Note, the expected value is not necessarily the actual value of playing the game.
+
+\vspace{.1in}
+
+\begin{enumerate}
+\item[5.] Consider a game where you toss two coins. If you get two Heads, you win \$2. If you get a Head and a Tail, you win \$1, if you get two Tails, you lose \$4. Find the expected value of the game. (Caution: first you need to find the probability of each event-- think about ``equally likely" events.)
+\vspace{.1in}
+
+\item[6.] Now play the game with two coins the indicated number of times. Give your actual payoff and compare it to the expected value.
+\begin{enumerate}
+\item One time.
+\item Ten times.
+\item Twenty-five times.
+\item Is there a single possible outcome where you would actually win or lose the exact amount computed for the expected value? If not, why do we call it the expected value?
+\end{enumerate}
+\vspace{.1in}
+
+\item[7.] A standard roulette wheel has 38 numbered slots for a small ball to land in: 36 are marked from 1 to 36, with half of those black and half red; two green slots are numbered 0 and 00. An allowable bet is to bet on either red of black. This bet is an even money bet, which means if you win you receive twice what you bet. Many people think that betting black or red is a fair game. What is the expected value of betting \$1000 on red? Is this a fair game? Explain.
+\vspace{.1in}
+
+\item[8.] Considering again the roulette wheel, if you bet \$100 on a particular number and the ball lands on that number, you win \$3600. What is the expected value of betting \$100 on red 4?
+\vspace{.1in}
+
+\item[9.] Use the idea of expected value to explain ``fairness" in a game of chance.
+\vspace{.1in}
+
+\item[10.] You place a bet and roll two fair dice. If you roll a 7 or an 11, you receive your bet back (you break even). If you roll a 2, a 3, or a 12, then you lose your bet.  If you roll anything else, you receive half of the sum you rolled in dollars. How much should you bet to make this a fair game? Hint: it might be helpful to begin with a table showing the possible sums, their probability, and the payoff for each. 
+
+\end{enumerate}
+

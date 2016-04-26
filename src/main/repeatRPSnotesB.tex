@@ -1,0 +1,36 @@
+\section{Introduction}
+
+Now that we are experts at finding equilibrium pairs, what happens when a game doesn't have any equilibrium pairs? What should our players do?
+
+{\bf Example.} Consider the following zero-sum game.
+
+\[\left[\begin{matrix}
+1&0\\
+-1&2
+
+\end{matrix}\right].\]
+
+Is there an equilibrium pair? Play this game with an opponent 10 times. Tally your wins and losses. Describe how you chose which strategy to play. Describe how your opponent chose which strategy to play.
+
+When playing the game several times, does it make sense for either player to play the same strategy all the time? Why or why not?
+
+Although we use the term ``strategy" to mean which row (or column) a player chooses to play, we will also refer to how a player plays a repeated game as the player's strategy. In order to avoid confusion, in repeated games we will define some specific strategies.
+
+{\bf Definition.} In a repeated game, if a player always plays the same row (or column), we say that she is playing a {\it pure strategy.} For example, if Player 1 always plays Row A, we say she is playing {\it pure strategy A}. 
+
+If a player varies which row (or column) he plays, then we say he is playing a {\it mixed strategy}. For example, if a player plays Row A 50\% of the time and Row B 50\% of the time, we will say he is playing a (.5, .5) strategy, as we generally use the probability rather that the percent.  
+
+It is not enough just to determine how often to play a strategy. Suppose Player 1 just alternates rows in the above example. Can player 2 ``out-guess" Player 1? What might be a better way for Player 1 to play?
+
+We'd really like to find a way to determine the best mixed strategy for each player in repeated games. Let's start with what we already know: games with equilibrium points. If a game has an equilibrium pair, would a player want to play a mixed strategy?  Recall that a strategy pair is an equilibrium pair if neither player gains by switching strategy. 
+
+{\bf Example.} Consider the following zero-sum game.
+
+\[\left[\begin{matrix}
+-1&1\\
+0&2
+
+\end{matrix}\right].\]
+This game has an equilibrium pair. Convince yourself that if this game is played repeatedly, each player should  choose to play a pure strategy.
+
+Thus, if the game has an equilibrium we know that players will play the pure strategies determined by the equilibrium pairs. So let's get back to thinking about games without equilibrium pairs. If we play such a game once can we predict the outcome? What about if we repeat the game several times-- can we predict the outcome? Think about tossing a coin. If you toss it once, can you predict the outcome? What if you toss it 100 times-- can you predict the outcome? Not exactly, but we can say what we {\it expect}: if we toss a coin 100 times we expect to have half of the coins turn up heads and half turn up tails. This may not be the {\it actual} outcome, but it is a reasonable prediction. Now is a good time to remind yourself about finding the {\it expected value}!!

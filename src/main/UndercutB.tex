@@ -1,0 +1,88 @@
+
+\section{Undercut}
+
+%\markright{Undercut}
+
+\vspace{.2in}
+This section requires you to be able to solve ``large" systems of equations. Before doing this activity you should review how to solve systems of equations using matrices and row reduction. You are encouraged to use a calculator!
+
+%Do all of your work on your own paper. Give complete answers (complete sentences!).
+
+\vspace{.1in}
+As we saw in the previous section, an important part of game theory is the process of translating a game to a form that we can analyze. 
+
+{\bf Undercut:}
+
+Each player chooses a number 1-5. If the two numbers don't differ by 1, then each player adds their own number to their score. If this two numbers differ by 1, then the player with the {\it lower} number adds {\it both} numbers to his or her score; the player with the higher number gets nothing.
+
+For example, Player 1 chooses 4; Player 2 chooses 4. Each player keeps their own number. The score is now 4-4. Next, Player 1 chooses 2, Player 2 chooses 5. The score would now be 6-9. Then Player 1 chooses 4, Player 2 chooses 5. Now Player 1 gets both numbers, making the score 15-9.
+
+\begin{enumerate}
+\item Choose an opponent and play the game several times. Keep track of the outcomes.
+%\vspace{.1in}
+
+\item Just from playing the game several times, can you suggest a strategy for Player 1? What about for Player 2? For example, what number(s) should you play most often/ least often, or does it matter? Are there numbers you should never play? Does this game seem fair, or does one of the players seem to have an advantage? Explain your answers.
+%\vspace{.1 in}
+
+\item Create a payoff matrix for this game. Note that your payoffs should have a score for each player. 
+%\vspace{.1 in}
+
+\item Is this a zero-sum game? Explain.
+%\vspace{.1in}
+
+\item Does there appear to be a pure strategy equilibrium for this game? Explain.
+%\vspace{.1 in}
+
+\item How might we determine a ``winner" for this game after playing several times? 
+%\vspace{.1 in}
+
+\end{enumerate}
+Most likely, you said that someone will win the game if they have the most points. In fact, we probably don't care if the final score is 10-12 or 110-112. In either case, Player 2 wins. Since we will play this game several times, we do care about the point difference. For example, a score of 5-1 would be better for Player 1 than 5-3. So let's think about the game in terms of the point difference between the players in a given game. This is called the {\it net gain}. For example, with score of 5-1, Player 1 would have a net gain of 4.
+
+\begin{enumerate}
+\setcounter{enumi}{6} 
+\item Calculate the net gain for Player 1 for each of the examples in the beginning of this section.
+%\vspace{.1 in}
+
+\item Create a new payoff matrix which uses the players' net gain for the payoff vectors.
+%\vspace{.1 in}
+
+\item Is this now a zero-sum game? Explain.
+%\vspace{.1 in}
+
+\item Is there a pure strategy equilibrium for this game? Explain. (Hint: rather than looking at each option, you could compare the values for the pure maximin/ minimax strategies.)
+%\vspace{.1 in}
+
+\item This game is {\it symmetric}, meaning the game looks the same to Players 1 and 2. Give an example of another game which is symmetric. Give an example of a game which is {\it not} symmetric.
+%\vspace{.1 in}
+
+\item What is the expected payoff for a symmetric game? Explain your answer. (Hint: you might think about whether it is possible for a player to have an advantage in a symmetric game.)
+%\vspace{.1 in}
+
+\end{enumerate}
+
+Hopefully, you determined that there is not a pure strategy equilibrium for this game. Thus we would like to find a mixed strategy equilibrium. Since this is a $5 \times 5$ game, we cannot use our graphical solution. We will need to rely on our expected value solution. We want to decide with what probability we should play each number. Let $a, b, c, d, e$ be the probabilities with which Player 2 plays 1-5, respectively. For example, if Player 1 plays a pure strategy of 2, then the expected value for Player 1, $E_1(2)$, is $-3a+0b+5c-2d-3e$. 
+
+
+\begin{enumerate}
+\setcounter{enumi}{12}
+
+\item Write down the five equations for Player 1's expected value for each of Player 1's pure strategies.
+\vspace{.1 in}
+
+\item In (12), you should have determined that since this was a symmetric game, the expected value for each Player should be 0. Modify your equations to include this piece of information. It is important to recognize that this step greatly simplifies our work for the expected value method since we don't need to set the expected values equal to each other. HOWEVER, you can ONLY do this since we know the game is symmetric!
+
+\vspace{.1 in}
+
+\item We now have five equations and five unknowns. There is a sixth equation: we know that the probabilities must add up to 1. Use matrices to solve the resulting system of equations. Give the mixed strategy equilibrium for Player 2. What is the mixed strategy for Player 1? (Hint: should it be different than the strategy for Player 2?) 
+
+\vspace{.1 in}
+
+\item Based on your answer to (15), which number(s) should you play the most often? Which should you play the least? Are there any numbers that you should never play? Compare the mathematical solution to your conjectured solution for (2). Is there an advantage to knowing the mathematical solution? 
+
+\end{enumerate} 
+
+
+
+
+ 

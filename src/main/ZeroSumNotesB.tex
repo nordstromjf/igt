@@ -1,0 +1,69 @@
+
+\section{Introduction to Two-Person Zero-Sum Games}
+
+%\markright{Two Player Zero-Sum Games}
+
+\vspace{.2in}
+
+
+Note that in the examples from the last section, whatever one player won, the other player lost. 
+
+{\bf Definition.} A two player game is called a {\it zero-sum} game if the sum of the payoffs to each player is constant for all possible outcomes of the game. Such games are sometimes called {\it constant-sum} games instead.
+
+We can always think of zero-sum games as being games in which one player's win is the other player's loss.
+
+{\bf Example.} Consider a poker game in which each player comes to the game with \$100. If there are five players, then the sum of money for all five players is always \$500. At any give time during the game, a particular player may have more than \$100, but then another player must have less than \$100. One player's win is another player's loss.
+
+{\bf Example.} Consider the cake division game. Determine the payoff matrix for this game. It is important to determine what each players options are first: how can the ``cutter" cut the cake? How can the ``chooser"  pick her piece?
+
+\hspace{1.2in}Chooser
+
+\begin{tabular}{l|r|c|c|}\cline{2-4}
+&&\textbf{Large Piece}&\textbf{Small Piece}\\ \cline{2-4}
+Cutter&\textbf{Cut Evenly} &(half, half)&(half, half)\\ \cline{2-4}
+&\textbf{Cut Unevenly} &(small, large)&(large, small)\\ \cline{2-4}
+
+\end{tabular}
+\medskip
+
+In order to better see that this game is zero-sum (or constant-sum), we could give values for the amount of cake each player gets. For example, half the cake would be 50\%, a small piece might be 40\%. Then we can rewrite the matrix with these values:
+
+\hspace{1.2in}Chooser
+
+\begin{tabular}{l|r|c|c|}\cline{2-4}
+&&\textbf{Large Piece}&\textbf{Small Piece}\\ \cline{2-4}
+Cutter&\textbf{Cut Evenly} &(50, 50)&(50, 50)\\ \cline{2-4}
+&\textbf{Cut Unevenly} &(40, 60)&(60, 40)\\ \cline{2-4}
+
+\end{tabular}
+\medskip
+In each outcome the payoffs to each player add up the 100 (or 100\%). Thus the sum is constant (the same) for each outcome. 
+
+It is probably simple to see from the matrix that Player 2 will always choose the large piece, thus Player 1 does best to cut the cake evenly. The outcome of the game is the {\it strategy pair} denoted \{cut evenly, choose large piece\}, with resulting payoff vector (50, 50).
+
+
+But why are we going to call these games called ``zero-sum" rather than ``constant-sum"?  We can convert any zero-sum game to a game where the payoffs actually sum to zero.
+
+{\bf Example.} Consider the above poker game where each player behind the game with \$100. Suppose at some point in the game  the five players had the following amounts of money: \$50, \$200, \$140, \$100. \$10. Then we could think of their gain as -\$50, \$100, \$40, \$0, -\$90. What do these five numbers add up to?
+
+{\bf Example.} Convert the cake division payoffs so that they sum to zero (rather than 100). 
+
+Solution:
+
+\hspace{1.2in}Chooser
+
+\begin{tabular}{l|r|c|c|}\cline{2-4}
+&&\textbf{Large Piece}&\textbf{Small Piece}\\ \cline{2-4}
+Cutter&\textbf{Cut Evenly} &(0, 0)&(0, 0)\\ \cline{2-4}
+&\textbf{Cut Unevenly} &(-10, 10)&(10, -10)\\ \cline{2-4}
+
+\end{tabular}
+
+\medskip
+This means each player gets half the cake (50\%) plus the payoff.
+
+\bigskip
+
+In this form it is easy to recognize a zero-sum game since each payoff vector has the form $(a, -a)$ (or $(-a, a)$).
+
+ 

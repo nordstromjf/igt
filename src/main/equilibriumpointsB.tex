@@ -1,0 +1,109 @@
+
+\section{Equilibrium Points}
+
+%\markright{Equilibrium Points}
+
+%\vspace{.2in}
+%Do all of your work on your own paper. Give complete answers (complete sentences!).
+
+\vspace{.1in}
+In this section, we will try to gain a greater understanding of equilibrium points. In general, we call the pair of strategies played an {\it equilibrium pair}, while we call the specific payoff vector associated with an equilibrium pair an {\it equilibrium point}.
+
+\begin{enumerate}
+\item Determine the equilibrium point(s) for the following games.
+\begin{enumerate}
+\item 
+$\left[\begin{matrix}
+(2, -2)&(-1, 1)\\
+(2, -2)&(-1, 1)
+
+\end{matrix}\right]$
+%\vspace{.1in}
+
+\item 
+$\left[\begin{matrix}
+(0, 0)&(-1, 1)&(0, 0)\\
+(-1, 1)&(0, 0)&(-1, 1)\\
+(0, 0)&(1, -1)&(0, 0)
+
+\end{matrix}\right]$
+\vspace{.1in}
+\end{enumerate}
+%\vspace{.1in}
+
+\item What do you notice about the values of the equilibrium points of these games?
+\vspace{.1in}
+
+\end{enumerate}
+
+The big question we want to answer is ``Can two equilibrium points for a two-player zero-sum game have different values?" Try to create an example for yourself by experimenting with some examples. Try to create an example of a game with two equilibrium points where those points have different values for a player. If you can successfully create such an example, you will have answered the question. But just because you can't find an example, that doesn't mean one doesn't exist! 
+
+If you are beginning to believe that the answer to the above question is ``no," then you are ready to try to prove the following theorem:
+\vspace{.1in}
+
+{\it{ \bf Solution Theorem for Zero-Sum Games} Every equilibrium point of a two-person zero-sum game  has the same value. }
+
+\vspace{.1in}
+Let's start with the $2 \times 2$ case. We will use a {\it proof by contradiction:} we will assume the theorem is false and show that we get a logical contradiction. Thus, we can conclude we were wrong to assume the theorem was false; hence, the statement must be true. Make sure you are comfortable with the logic of this before moving on.
+
+Assume we have a two-player zero-sum game with two different equilibrium values. Represent the general game 
+\[\left[\begin{matrix}
+(a, -a)&(c, -c)\\
+(d, -d)&(b, -b)
+
+\end{matrix}\right].\]
+
+Note that if $a$ is negative, then $-a$ is positive; thus, every possible set of values is represented by this matrix.
+
+\begin{enumerate}
+\setcounter{enumi}{2}
+
+\item Explain what goes wrong if $(a, -a)$ and $(d, -d)$ are equilibria with $a \neq d$? Hint: think about the different cases, such as $a<d$, $a>d$. 
+%\vspace{.1in}
+
+\item Generalize you answer to (3) to explain what goes wrong if the two equilibria are in the same column. Similarly, explain what happens if the two equilibria are in the  same row.
+%\vspace{.1in}
+
+\item Does the same explanation hold if the two equilibria are diagonal from each other? (Explain your answer!)
+\vspace{.1in}
+
+\end{enumerate}
+
+From your last answer, you should see that we need to do more work to figure out what happens if the equilibria are diagonal. So let's assume that the two equilibria are $(a, -a)$ and $(b, -b)$ with $a \neq b$. It might be helpful to draw the payoff matrix and circle the equilibria.
+
+\begin{enumerate}
+\setcounter{enumi}{5}
+
+\item Construct a system of inequalities using the fact that a player prefers an equilibrium point to another choice. For example, Player 1 prefers $a$ to $d$. Thus, $a > d$. List all four inequalities you can get using this fact. You should get two for each player-- remember that Player 1 can only compare values in the same column  since he has no ability to switch columns. If necessary, convert all inequalities to ones without negatives. [Algebra review: $-5 < -2$ means $5 > 2$!]
+\vspace{.1in}
+
+\item Now we can string our inequalities together. For example, if $a < b$ and $b < c$ then we can write $a < b < c$. [Be careful, the inequalities must face the same way; we cannot write $a> b < c$!]
+\vspace{.1in}
+
+\item Explain why you now have a contradiction (a statement that {\it must} be false). 
+We can now conclude that our assumption that $a \neq b$ was wrong.
+\vspace{.1in}
+
+\item Repeat the above argument (problems (6)-(8)) for the case that the two equilibria are $(d, -d)$ and $(c, -c)$ with $d\neq c$.
+\vspace{.1in}
+
+\item Explain why you can conclude that all equilibria in a $2 \times 2$ two-player zero-sum game have the same value.
+\vspace{.1in}
+
+\end{enumerate}
+
+\noindent
+For this activity, you only need to turn in the following summary of your work above.
+\begin{itemize}
+\item Write up the proof for the $2 \times 2$ case in your own words.
+%\vspace{.1in}
+
+\item Can you see how you might generalize to a larger game matrix? You do not need to write up a proof of the general case, just explain how the key ideas from the $2 \times 2$ case would apply to a bigger game matrix. Hint: think about equilibria in (a) the same row, (b) in the same column, or (c) in a different row and column. 
+
+\item It is important to note that just because to outcomes have the same value, it does not mean they are both equilibria. Give a specific example of a game matrix with two outcomes that are (0,0), where one is an equilibrium point and the other is not.
+\end{itemize}
+
+
+
+
+ 

@@ -1,0 +1,145 @@
+
+%\subsection{More Two Player Zero-Sum Games}
+
+%\markright{More Two Player Zero-Sum Games}
+
+%\vspace{.2in}
+%Do all of your work on your own paper. Give complete answers (complete sentences!).
+
+%\vspace{.1in}
+
+
+\begin{enumerate}
+\item Use the idea of {\it dominated strategies} to determine any equilibrium pairs in the zero-sum game given below. Note, since it is a zero-sum game we need only show Player 1's payoffs. Explain all the steps in your solution. If you are unable to find an equilibrium pair, explain what goes wrong.
+\vspace{.1in}
+
+\hspace{1in}Player 2
+
+\begin{tabular}{l|r|c|c|c|c|}\cline{2-6}
+&&\textbf{W}&\textbf{X}&\textbf{Y}&\textbf{Z}\\ \cline{2-6}
+Player 1&\textbf{A} &1&0&0&10\\ \cline{2-6}
+&\textbf{B} &-1&0&-2&9\\ \cline{2-6}
+&\textbf{C} &1&1&1&8\\ \cline{2-6}
+&\textbf{D} &-2&0&0&7\\ \cline{2-6}
+\end{tabular}
+\vspace{.2in}
+
+\item Determine any equilibrium pairs in the zero-sum game given below.  Explain all the steps in your solution. If you are unable to find an equilibrium pair, explain what goes wrong.
+
+\vspace{.1in}
+
+\hspace{1in}Player 2
+
+\begin{tabular}{l|r|c|c|c|c|}\cline{2-6}
+&&\textbf{W}&\textbf{X}&\textbf{Y}&\textbf{Z}\\ \cline{2-6}
+Player 1&\textbf{A} &1&2&3&4\\ \cline{2-6}
+&\textbf{B} &0&-1&0&5\\ \cline{2-6}
+&\textbf{C} &-1&3&2&4\\ \cline{2-6}
+&\textbf{D} &0&1&-1&1\\ \cline{2-6}
+\end{tabular}
+\vspace{.2in}
+
+\item Determine any equilibrium pairs in the zero-sum game given below.  Explain all the steps in your solution. If you are unable to find an equilibrium pair, explain what goes wrong.
+
+\vspace{.1in}
+
+\hspace{1in}Player 2
+
+\begin{tabular}{l|r|c|c|c|c|}\cline{2-6}
+&&\textbf{W}&\textbf{X}&\textbf{Y}&\textbf{Z}\\ \cline{2-6}
+Player 1&\textbf{A} &-2&0&3&20\\ \cline{2-6}
+&\textbf{B} &1&-2&-3&0\\ \cline{2-6}
+&\textbf{C} &10&-10&-1&1\\ \cline{2-6}
+&\textbf{D} &0&0&10&15\\ \cline{2-6}
+\end{tabular}
+\vspace{.2in}
+
+\item Determine any equilibrium pairs in the zero-sum game given below.  Explain all the steps in your solution. If you are unable to find an equilibrium pair, explain what goes wrong.
+
+\vspace{.1in}
+
+\hspace{1in}Player 2
+
+\begin{tabular}{l|r|c|c|c|c|}\cline{2-6}
+&&\textbf{W}&\textbf{X}&\textbf{Y}&\textbf{Z}\\ \cline{2-6}
+Player 1&\textbf{A} &-2&0&3&20\\ \cline{2-6}
+&\textbf{B} &1&-2&-5&-3\\ \cline{2-6}
+&\textbf{C} &10&-10&-1&1\\ \cline{2-6}
+&\textbf{D} &0&0&10&8\\ \cline{2-6}
+\end{tabular}
+\vspace{.2in}
+
+
+
+
+\end{enumerate}
+%\newpage
+
+Chances are you had trouble determining an equilibrium pair for the last game. Does this mean there isn't an equilibrium pair? Not necessarily, but we are stuck if we try to use only the idea of eliminating dominated strategies. So we need a new strategy. 
+
+We might think of this as the ``worst case scenario," or ``extremely defensive play." The idea is that we want to assume our opponent is the best player to ever live. In fact, we might assume our opponent is telepathic. So no matter what we do, our opponent will always guess what we are going to choose. Assume you are Player 1, and you are playing against this ``infinitely smart" Player 2. Consider Example (1). If you pick row A, what will Player 2 do? Try this for each of the rows. Which row is your best choice? Now assume you are Player 2, and Player 1 is ``infinitely smart." Which column is your best choice?
+
+\vspace{.1in}
+
+\begin{enumerate}
+\setcounter{enumi}{4}
+\item Using the strategy described above. Determine what each player should do in the game in Example (2).
+
+\vspace{.08in}
+
+\item Using the strategy described above. Determine what each player should do in the game in Example (3).
+
+\vspace{.08in}
+
+
+\item Generalize this strategy. In other words, give a general rule for how Player 1 should determine his or her best move. Do the same for Player 2.
+
+\vspace{.08in}
+
+
+\item What do you notice about using this strategy on Examples (1), (2), and (3)? Is the solution an equilibrium pair?
+
+\vspace{.08in}
+
+
+\item Now try this strategy on the elusive Example (4). What should each player do? Do you think we get an equilibrium pair? Explain.
+
+\end{enumerate}
+%\vspace{.1in}
+
+ This strategy has a more official name. Player~1's strategy is called the {\it maximin} strategy. Player~1 is maximizing the minimum values from each row. Player 2's strategy is called the {\it minimax} strategy. Player 2 is minimizing the maximum values from each column. 
+
+
+\vspace{.08in}
+
+\begin{enumerate}
+\setcounter{enumi}{9}
+\item Let's consider another game matrix, given below. Explain why you cannot use dominated strategies to find an equilibrium pair. Do you think there is an equilibrium pair for this game (why or why not)?
+\vspace{.1in}
+
+\hspace{1in}Player 2
+
+\begin{tabular}{l|r|c|c|c|c|}\cline{2-6}
+&&\textbf{W}&\textbf{X}&\textbf{Y}&\textbf{Z}\\ \cline{2-6}
+Player 1&\textbf{A} &-2&0&3&20\\ \cline{2-6}
+&\textbf{B} &1&2&-3&0\\ \cline{2-6}
+&\textbf{C} &10&-10&-1&1\\ \cline{2-6}
+&\textbf{D} &0&0&10&15\\ \cline{2-6}
+\end{tabular}
+\vspace{.2in}
+
+\item If both players use the maximin/ minimax strategy, what is the outcome of the game? 
+\vspace{.08in}
+
+\item If Player 1's opponent can guess that Player 1 will choose to use a maximin strategy, is Player 1 better off {\it not} using the maximin strategy?
+\vspace{.08in}
+
+\item Suppose both players initially decide to use the minimax/ maximin strategy. Is Player 1 better off choosing a different strategy? If Player 2 guesses a change, is Player 2 better off changing strategies? Continue this line of reasoning for several iterations. What strategies do each of the players choose? Is at least one player always better off switching strategies? Can we conclude that the maximin/ minimax strategy does not lead to an equilibrium pair?
+
+\vspace{.08in}
+
+\item Compare your answers in (13) to what happens in Examples (1), (2), and (3). Can you identify any key differences between Example (10) and Examples (1), (2), and (3)?
+   
+\end{enumerate}
+
+ 

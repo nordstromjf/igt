@@ -1,0 +1,50 @@
+\section{Game Matrices and Payoff Vectors}
+
+%\markright{Game Matrices}
+
+\vspace{.2in}
+
+We need a way to describe the possible choices for the players and the outcomes of those choices.
+
+For the time being, we will stick with games that have only two players. We will call them Player 1 and Player 2.
+
+\subsection*{Example}
+
+Suppose each player has two choices: A or B. If they choose the same letter, then Player 1 wins \$1 from Player 2. If they don't match, then Player 1 loses \$1 to Player 2. We can represent all the possible outcomes of the game with a {\it matrix}.  
+
+Player 1's options will always correspond to the rows of the matrix, and Player 2's options will correspond to the columns:
+
+\hspace{1in}Player 2
+
+\begin{tabular}{l|r|c|c|}\cline{2-4}
+&&\textbf{A}&\textbf{B}\\ \cline{2-4}
+Player 1&\textbf{A} &&\\ \cline{2-4}
+&\textbf{B} &&\\ \cline{2-4}
+
+\end{tabular}
+\medskip
+
+{\bf Definition.} A {\it payoff} is the amount a player receives for  given outcome of the game.
+
+Now we can fill in the matrix with each player's payoff. Since the payoffs to each player are different, we will use ordered pairs where the first number is Player 1's payoff and the second number is Player 2's payoff. The ordered pair is called the {\it payoff vector}. For example, if both players choose A, then Player 1's payoff is \$1 and Player 2's payoff is -\$1 (since he loses to Player 1). Thus the payoff vector associated with the outcome A, A is (1, -1). 
+
+We fill in the matrix with the appropriate payoff vectors:
+
+\hspace{1.2in}Player 2
+
+\begin{tabular}{l|r|c|c|}\cline{2-4}
+&&\textbf{A}&\textbf{B}\\ \cline{2-4}
+Player 1&\textbf{A} &(1, -1)&(-1, 1)\\ \cline{2-4}
+&\textbf{B} &(-1, 1)&(1, -1)\\ \cline{2-4}
+
+\end{tabular}
+\medskip
+
+It is useful to think about different ways to quantify winning and losing. What are some possible measures? 
+\begin{itemize}
+\item money, chips, counters, votes, points, amount of cake, etc.
+\end{itemize}
+
+Remember, a player always prefers to win the MOST points (money, chips, votes, cake), not just more than her opponent. If you want to study a game where players simply win or lose (such as Tic Tac Toe), we could simply use ``1" for a win and ``-1" for a loss. 
+
+ 

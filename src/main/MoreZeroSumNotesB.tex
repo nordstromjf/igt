@@ -1,0 +1,161 @@
+
+\section{More Two-Person Zero-Sum Games: Dominated Strategies}
+
+%\markright{More Two Player Zero-Sum Games}
+
+\vspace{.2in}
+
+
+Recall that in a zero-sum game, we know that one player's win is the other player's loss. Furthermore, we know we can rewrite any zero-sum game so that the player's payoffs are in the form $(a, -a)$. Note, this works even if $a$ is negative; in which case, $-a$ is positive.
+
+{\bf Example 1.} Consider the following zero-sum game.
+
+\hspace{1.2in}Player 2
+
+\begin{tabular}{l|c|c|}\cline{2-3}
+Player 1&(1, -1)&(0, 0)\\ \cline{2-3}
+&(-1, 1)&(-2, 2)\\ \cline{2-3}
+
+\end{tabular}
+\medskip
+
+If we know we are playing a zero-sum game, then the use of ordered pair seems somewhat redundant: If Player 1 wins 1, then we know that Player 2 must lose 1 (win $-1$). Thus, if we KNOW we are playing a zero-sum game, we can simplify our notation by just using Player 1's payoffs. For example, the above matrix can be simplified to the following matrix. 
+
+\hspace{.8in}Player 2
+
+\begin{tabular}{l|c|c|}\cline{2-3}
+Player 1&1&0\\ \cline{2-3}
+&-1&-2\\ \cline{2-3}
+
+\end{tabular}
+\medskip
+
+When simplifying, keep a few things in mind:
+\begin{enumerate}
+\item You MUST know that the game is zero-sum.
+\item If it is not otherwise specified, the payoffs represent Player 1's payoffs.
+\item You can always give a similar matrix representing Player 2's payoffs. However, due to (2), you should indicate that the matrix is for Player 2. For example, Player 2's payoff matrix would be given by
+
+\hspace{.8in}Player 2
+
+\begin{tabular}{l|c|c|}\cline{2-3}
+Player 1&-1&0\\ \cline{2-3}
+&1&2\\ \cline{2-3}
+
+\end{tabular}\ .
+
+\medskip
+\item Both players can make strategy decisions by considering only Player 1's payoff matrix. (Why?) Just to test this out, by looking only at the matrix 
+
+\hspace{.8in}Player 2
+
+\begin{tabular}{l|c|c|}\cline{2-3}
+Player 1&1&0\\ \cline{2-3}
+&-1&-2\\ \cline{2-3}
+
+\end{tabular}
+\medskip
+
+ determine which strategy each player should choose.
+
+\end{enumerate}
+
+In this last example, it should be clear that Player 1 is looking for rows which give her the largest payoff-- this is nothing new. However, Player 2 is now looking for columns which give Player 1 the SMALLEST payoff. (Why?) 
+
+Now that we have simplified our notation for zero-sum games, let's try to find a way to determine the best strategy for each player.
+
+\break
+
+{\bf Example 2.} Consider the following zero-sum game.
+
+\hspace{1in}Player 2
+
+\begin{tabular}{l|c|c|c|}\cline{2-4}
+Player 1&1&0&2\\ \cline{2-4}
+&-1&-2&2\\ \cline{2-4}
+
+\end{tabular}
+\medskip
+
+Determine which row Player 1 should choose. Is there any situation in which Player 1 would choose the other row? 
+
+\bigskip
+
+{\bf Example 3.} Consider the following zero-sum game.
+
+\hspace{1in}Player 2
+
+\begin{tabular}{l|c|c|c|}\cline{2-4}
+Player 1&1&0&2\\ \cline{2-4}
+&-1&-2&3\\ \cline{2-4}
+
+\end{tabular}
+\medskip
+
+Determine which row Player 1 should choose. Is there any situation in which Player 1 would choose the other row? 
+
+\bigskip
+
+In Example 2, no matter what Player 2 does, Player 1 would always choose Row 1, since every payoff in Row 1 is greater than or equal to the corresponding payoff in Row 2 ($1\ge -1$, $0\ge -2$, $2\ge 2$). In Example 3, this is not the case: If Player 2 were to choose Column 3, then Player 1 would prefer Row 2. In Example 2 we would say that Row 1 {\it dominates} Row 2.
+
+
+{\bf Definition.} A strategy $X$ {\it dominates} a strategy $Y$ if every entry for $X$ is greater than or equal to the corresponding entry for $Y$. In this case, we say $Y$ is {\it dominated by} $X$.
+
+In mathematical notation: The $i^{\rm th}$ row dominates the  $j^{\rm th}$ row if $a_{ik}\ge a_{jk}$ for all $k$, and $a_{ik}> a_{jk}$ for at least one $k$. If $X$ dominates $Y$, we can write $X\succ Y$.
+
+This definition can also be used for Player 2: we consider columns instead of rows. If we are looking at Player 1's payoffs, then Player 2 prefers smaller payoffs. Thus one column $X$ dominates another column $Y$ if all the entries in $X$ are smaller than or equal to the corresponding entries in $Y$.  
+
+Here is the great thing: we can always eliminate dominated strategies! (Why?)
+Thus, in Example 2, we can eliminate Row 2.
+
+\hspace{1in}Player 2
+
+\begin{tabular}{l|c|c|c|}\cline{2-4}
+Player 1&1&0&2\\ \cline{2-4}
+&-1&-2&2\\ \cline{2-4}
+
+\end{tabular}
+\begin{picture}(0,0)
+\put(-70,-5){\line(1,0){72}}
+\end{picture}
+
+\medskip
+ Now it is easy to see what Player 2 should do.
+ 
+ In Example 3, we cannot eliminate Row 2 since it is not dominated by Row 1. However, it should be clear that Column 2 dominates Column 3 (remember, Player 2 prefers SMALLER columns). Thus we can eliminate Column 3.
+ 
+ \hspace{1in}Player 2
+
+\begin{tabular}{l|c|c|c|}\cline{2-4}
+Player 1&1&0&2\\ \cline{2-4}
+&-1&-2&3\\ \cline{2-4}
+
+\end{tabular}
+\begin{picture}(0,0)
+\put(-12,-12){\line(0,1){32}}
+\end{picture}
+
+\medskip
+ AFTER eliminating Column 3, Row 1 dominates Row 2:
+ 
+ \hspace{1in}Player 2
+
+\begin{tabular}{l|c|c|c|}\cline{2-4}
+Player 1&1&0&2\\ \cline{2-4}
+&-1&-2&3\\ \cline{2-4}
+
+\end{tabular}
+\begin{picture}(0,0)
+\put(-12,-12){\line(0,1){32}}
+\put(-70,-5){\line(1,0){50}}
+\end{picture}
+\medskip
+
+Again, now it is easy to determine what each player should do.
+
+{\bf Exercise.} Check that the strategy pairs we determined in Examples 2 and 3 are, in fact, equilibrium pairs.
+
+{\bf Exercise.} Use the idea of eliminating dominated strategies on the Arnold/ Bainbridge examples from the previous section. Do you get the same strategy pairs?
+
+
+ 

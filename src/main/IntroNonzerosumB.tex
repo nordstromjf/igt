@@ -1,0 +1,108 @@
+
+\section{Introduction to Two Player Non-Zero-Sum Games}
+
+%\markright{Non-Zero-Sum Games}
+
+%\vspace{.2in}
+%Do all of your work on your own paper. Give complete answers (complete sentences!).
+
+\vspace{.1in}
+In this section we begin examining non-zero-sum games. In a non-zero-sum game the players' payoffs no longer need to sum to a constant value. Now it is possible for both players to gain or both players to lose.
+
+
+\begin{enumerate}
+\item What are some properties of a zero-sum game that may no longer hold for a non-zero-sum game? For example, in a zero-sum game is it ever advantageous to inform your opponent of your strategy? Is it advantageous to communicate prior to game play and determine a joint plan  of action? Would you still want to minimize your opponents payoff?
+%\vspace{.1in}
+\end{enumerate}
+
+Let's build an understanding of non-zero-sum games by looking at an example.
+
+{\bf Battle of the Sexes:}  Alice and Bob  want to go out to a movie. Bob wants to see an action movie, Alice wants to see a romantic comedy. Both prefer to go to a movie together rather than to go alone. We can represent the situation with the following payoff matrix:
+
+\hspace{3in}Alice
+
+\begin{center}
+\begin{tabular}{l|r|c|c|}\cline{2-4}
+&&\textbf{Action}&\textbf{Comedy}\\ \cline{2-4}
+Bob&\textbf{Action} &(2, 1)&(-1, -1)\\ \cline{2-4}
+&\textbf{Comedy} &(-1, -1)&(1, 2)\\ \cline{2-4}
+\end{tabular}
+\end{center}
+\vspace{.1in}
+
+\begin{enumerate}
+\setcounter{enumi}{1}
+
+\item Explain why this is not a zero-sum game. 
+%\vspace{.1 in}
+
+\item Could it be advantageous for a player to announce his or her strategy? Could it be harmful to announce his or her strategy? If possible, describe a scenario  in which it would be advantageous to announce a strategy. If possible, describe a scenario  in which it would be harmful to announce a strategy.
+%\vspace{.1 in}
+
+\item Since our main goal in analyzing games has been to find equilibrium points,  let's think about equilibrium points for this game. Are there any strategy pairs where players would not want to switch? [Hint: there are two!] 
+%\vspace{.1in}
+
+\item Are the equilibrium points the same (in other words, does each player get the same payoff at each equilibrium point)? Compare this to what must happen for zero-sum games.
+%\vspace{.1 in}
+
+\item Suppose the game is played repeatedly. For example, Alice and Bob have movie night once a month. Suggest a strategy for Alice and for Bob.  Feel free to ``play" the game with someone from class. Try a playing several times {\it without communicating} about your strategy before each game.
+%\vspace{.1 in}
+
+\item How could communication affect the choice of strategy? Now play several times where you are allowed to communicate about your strategy. Does this change your strategy? 
+\item In either case, communicating and not communicating, do you think your strategies for Alice and Bob represent a mixed strategy equilibrium?
+
+\item In a zero-sum game, if there is a pure strategy equilibrium, then what happens when you repeat a game? If you repeat Battle of the Sexes, does the game always result in an equilibrium pair? 
+\end{enumerate}
+
+Hopefully, you are beginning to see some of the challenges for analyzing non-zero-sum games. We know there are equilibrium points, but even rational play may not result in an equilibrium. For the remainder of this activity, let's assume that players are {\it not} allowed to communicate about strategy prior to play.  Such games are called {\it non-cooperative} games.
+
+ \begin{enumerate}
+\setcounter{enumi}{9} 
+\item Consider the game from Bob's point of view. We know that Bob wants to maximize his payoff (that has not changed). So Bob doesn't care what Alice's payoff's are. Write down Bob's payoff matrix.
+
+\item Recall that the graphical method represents Bob's expected payoff depending on how often he plays each of his options. Sketch the graph associated with Bob's payoff matrix. 
+
+\item  The area between the two lines still represents the possible expected values for Bob, depending on how often Alice plays each of her strategies. So as before, the bottom lines represent the {\it least} Bob can expect as he varies his strategy. Thus the point of intersection will represent the biggest of these smallest values (the maximin strategy). Find this point of intersection. How often should Bob play each option? What is his expected payoff?
+
+\end{enumerate}
+So no matter what Alice does, Bob can expect that over the long run he wins at least the value you found in (12). Make sure you understand this before moving on.
+
+\begin{enumerate}
+\setcounter{enumi}{12}
+
+\item Now consider the game from Alice's point of view. Write down her payoff matrix and use the graphical method to find the probability with which she should play each option and her expected payoff.
+\end{enumerate}
+
+Now you have the minimum payoff each player should expect. Note that since this is not a zero-sum game, both players can expect a positive payoff. But now we want to see how this pair of mixed strategies really works for the players.
+
+\begin{enumerate}
+\setcounter{enumi}{13}
+
+\item Assume Bob plays the mixed strategy from (12). Calculate Alice's expected value for each of her {\it pure} strategies ($E_2$(Comedy) and $E_2$(Action)).
+
+\item  Are Alice's expected values equal? If not, which strategy does she prefer when Bob plays the mixed strategy from (12)? Does Alice want to deviate from her mixed strategy?
+
+\item Now if Alice plays a pure strategy, does Bob want to change his strategy? So is the mixed strategy pair for Bob and Alice an equilibrium? In fact, if Bob changes his strategy, how does his expected value compare to the expected value for the mixed strategy?
+
+\item What goes wrong with the graphical method in the case of a non-zero-sum game? Hint: is it important for Alice to consider the minimax strategy? Does Alice have any reason to minimize Bob's payoff?
+\end{enumerate} 
+
+As we can see by the above example, the methods used to analyze zero-sum games may not be too helpful for non-zero-sum games. Part of the problem is that in solving zero-sum games we take into consideration that one player wants to {\it minimize} the payoff to the other player. This is no longer the case. Changing strategies may allow BOTH players to do better. A player no longer has any reason to prevent the other player from doing better. 
+
+\begin{enumerate}
+\setcounter{enumi}{17}
+\item So we know the mixed strategy won't give us an equilibrium. But suppose we start there. In other words, suppose Bob plans to play the mixed strategy from (12). Which pure strategy should Alice play? In response, which pure strategy should Bob play? What is the outcome? Do you end up at an equilibrium?
+
+\item Now suppose Alice plans to play the mixed strategy from (13). Calculate the expected value for Bob for each of his pure strategies. Which pure strategy does Bob prefer to play? How will Alice respond to Bob's pure strategy? What is the outcome? Do you end up at an equilibrium.
+
+\item Suppose Bob thinks Alice will try the mixed strategy and Alice thinks Bob will try the mixed strategy. Which pure strategy will each play? What is the outcome? Do you end up at an equilibrium?
+
+\item Considering (18), (19) and (20) is it in a player's best interest to even consider playing the mixed strategy from (12) or (13)?
+
+\item We have only considered the graphical method. Try applying the expected value method. What mixed strategies do you get? Explain why this method will also not result in an equilibrium. You might want to consider whether it is important for one player to minimize the expected value for the other player.
+
+\end{enumerate}
+
+
+
+ 

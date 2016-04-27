@@ -68,11 +68,33 @@ Now let's do the same thing, assuming Player 2 plays only D.</li>
 <li>If Player 1 plays pure strategy <b>B</b>, then what is the probability that she plays B? <m>p=1</m>. What is the payoff to Player 1? <m>m=2</m>. Thus, for the strategy pair <m>\{B, D\}</m> we get <m>(1, -1)</m> for <m>(p, m)</m>.</li>
 <li>Now, on our same graph from Step 1, we can plot the points we determined in (1) and (2). We will connect them with a line representing Player 2's pure strategy D.
 
-<figure>
+<figure xml:id="figure-main-ex-mixedstrategies-linear-twolines">
+<!--<caption>Two Lines</caption>-->
+<image>
+  <description>Two lines crossing</description>
+  <latex-image-code>
+    \begin{tikzpicture}
+    \begin{axis}[xmin=-0.2,xmax=1.4, ymin=-1.5, ymax=2.5,xtick={0,1}]
+    \addplot[-, mark=*]coordinates{(0,0)(1,2)}
+    node[pos=0,above left]{$(0,0)$}
+    node[pos=1,above]{$(1,2)$}
+    node[pos=.5,above]{$D$};
 
+    \addplot[-, mark=*]coordinates{(0,1)(1,-1)}
+    node[pos=0,above left]{$(0,1)$}
+    node[pos=1,above right]{$(1,-1)$}
+    node[pos=.7,below]{$C$};
 
-\leavevmode
-{<img src="MISSINGFILE"  width="400" /> } 
+    \node[anchor=south west]
+    at ({axis cs:0,0}|-{axis description cs: 0,0}){$A$};
+
+    \node[anchor=south west]
+    at ({axis cs:1,0}|-{axis description cs: 0,0}){$B$};
+
+    \end{axis}
+    \end{tikzpicture}
+  </latex-image-code>
+</image>
 </figure>
 
    

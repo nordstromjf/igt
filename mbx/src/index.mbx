@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <mathbook xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
 <docinfo>
+	<latex-image-preamble>
+		\usepackage{pgfplots}
+		\pgfplotsset{axis lines=middle}
+	</latex-image-preamble>
 <macros>
 </macros>
 

@@ -19,13 +19,33 @@ Suppose each player has two choices: A or B. If they choose the same letter, the
 Player 1's options will always correspond to the rows of the matrix, and Player 2's options will correspond to the columns:
 </p>
   
-<p>
-Player 2
-</p>
-  <table id="235b8488f3fdc61fc0353a84ba0acb9f12cf7609" ><tr><td class='lv'>\amp \amp <b>A</b>\amp <b>B</b></td></tr>
-<tr><td class='lv'>Player 1\amp <b>A</b> \amp \amp </td></tr>
-<tr><td class='lv'>\amp <b>B</b> \amp \amp </td></tr>
-<tr><td class='lv'></td></tr></table>  
+  <table>
+     <tabular>
+        <row>
+           <cell/>
+           <cell colspan="3" bottom="medium">Player 2</cell>
+        </row>
+        <row>
+            <cell right="medium"/>
+            <cell right="medium" bottom="medium"/>
+            <cell right="medium" bottom="medium">A</cell>
+            <cell right="medium" bottom="medium">B</cell>
+        </row>
+        <row>
+            <cell right="medium">Player 1</cell>
+            <cell right="medium" bottom="medium">A</cell>
+            <cell right="medium" bottom="medium"/>
+            <cell right="medium" bottom="medium"/>
+        </row>
+        <row>
+            <cell right="medium"/>
+            <cell right="medium" bottom="medium">B</cell>
+            <cell right="medium" bottom="medium"/>
+            <cell right="medium" bottom="medium"/>
+        </row>
+     </tabular>
+  </table>
+
 <p>
 <b>Definition.</b> A <em>payoff</em> is the amount a player receives for given outcome of the game.
 </p>

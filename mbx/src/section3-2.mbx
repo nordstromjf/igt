@@ -74,7 +74,7 @@ Now let's do the same thing, assuming Player 2 plays only D.</li>
   <description>Two lines crossing</description>
   <latex-image-code>
     \begin{tikzpicture}
-    \begin{axis}[xmin=-0.2,xmax=1.4, ymin=-1.5, ymax=2.5,xtick={0,1}]
+    \begin{axis}[xmin=-0.25,xmax=1.4, ymin=-1.5, ymax=2.5,xtick={0,1}]
     \addplot[-, mark=*]coordinates{(0,0)(1,2)}
     node[pos=0,above left]{$(0,0)$}
     node[pos=1,above]{$(1,2)$}

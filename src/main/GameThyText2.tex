@@ -5,6 +5,13 @@
 \usepackage {amsmath}
 \usepackage {amsthm}
 \usepackage {epsf}
+\usepackage{tikz, pgfplots, caption}
+\usepackage{enumerate}
+
+
+\usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+
+%\pgfplotsset{axis lines=middle, }
 
 %\setlength{\topmargin}{-.5in}
 \setlength{\textheight}{8.5in}
@@ -15,9 +22,11 @@
 %\setcounter{tocdepth}{5}
 \pagestyle{myheadings}
 
-\newtheorem{theorem}{Theorem}
-\newtheorem{definition}{Definition}
 
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{xca}{Exercise}[section]
 
 
 
@@ -26,6 +35,9 @@
  a Discovery Approach}
  \author{Jennifer Firkins Nordstrom}
  
+ %Be sure to run makeindex <filename.idx>
+
+\makeindex
 
 \begin{document}
 \frontmatter
@@ -42,7 +54,7 @@
 
 \input{intronotesB}
 
-\input{IntroductionB}
+%\input{IntroductionB}
 \include{GameMatricesB}
 
 \include{zerosum0B}
@@ -92,6 +104,7 @@
 \include{RepeatPDB}
 \include{popculture2}
 
+\printindex
 
 
 \end{document}

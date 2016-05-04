@@ -1,13 +1,16 @@
 \vspace{.2in}
-``Game Theory is not about `playing games.' It is about conflict resolution among rational but distrustful beings." Poundstone, {\it Prisoner's Dilemma}, p. 39.
+``Game Theory is not about `playing games.' It is about conflict resolution among rational but distrustful beings.'' Poundstone, {\it Prisoner's Dilemma}, p. 39.
 
-Although we will play lots of games in throughout this book, our goal is to understand how rational, distrustful players would play the game. We will explore how to behave as such players, and how to ``solve" games under certain assumptions about our players.
+Although we will play lots of games in throughout this book, our goal is to understand how rational, distrustful players would play the game. We will explore how to behave as such players, and how to ``solve'' games under certain assumptions about our players.
 
 \vspace{.1in}
 
-\section{The Assumptions}
+\section{Players and Strategies}\label{S:intro}
 
-\subsection{Exploring the Assumptions: Cake Division}
+In this book most of the games will be played by two \emph{players}\index{player}. Each player must decide how he or she will play the game. In order to study games mathematically, we need to make some assumptions about how the players should play the game. This allows us to be able to better predict what our players should do. The following example illustrates the characteristics we will assume about our players.
+
+
+\subsection{Example: Cake Division}\label{Ex:Cake}\index{Cake Division}
 
 
 
@@ -17,8 +20,8 @@ Why does this work? In other words, why should both children feel they received 
 
 What are the underlying assumptions that make this process work?
 \begin{enumerate}
-\item The goal of each player is to get the largest piece. We can think of this as each player acting in his or her {\it self-interest}.
-\item Both players know that the other player has the same goal, and will act to further this goal. Thus, we know that each player is {\it rational}. Even more, each player knows the {\it other} player is rational.
+\item The goal of each player is to get the largest piece. We can think of this as each player acting in his or her \emph{self-interest}\index{self-interest}.
+\item Both players know that the other player has the same goal, and will act to further this goal. Thus, we know that each player is \emph{rational}\index{rational} Even more, each player knows the \emph{other} player is rational.
 \end{enumerate}
 
 We need both (1) and (2) to reach the solution that the cake is divided evenly and both children receive equal sized pieces.
@@ -27,11 +30,11 @@ The idea that players are self-interested is crucial to game theory. There are l
 
 %\subsection{Understanding the Assumptions}
 
-{\bf Assumption 1:} Players are self-interested. The goal is to win the most or lose the least. What does it mean to win? Players will always strive to maximize their payoffs. 
+{\bf Assumption 1:}\index{assumptions} Players are self-interested. The goal is to win the most or lose the least. What does it mean to win? 
 
-A player's {\it payoff} is the amount (points, money, or anything a player values) a player receives for a particular outcome of a game.
+A player's \emph{payoff}\index{payoff} is the amount (points, money, or anything a player values) a player receives for a particular outcome of a game. We say that the player's goal is to maximize his or her payoff. We should note that the maximum payoff for a player might even be negative, in which case the player wants the least negative (or closest to 0) payoff.
 
-It is important to recognize the difference between having the goal of maximizing the payoff, rather than simply winning. Here are some examples.
+It is important to recognize the difference between having the goal of maximizing the payoff and having the goal of simply winning. Here are some examples.
 \begin{enumerate}
 \item If two players were racing, a player wouldn't just want to finish first, she would want to finish by as large a margin as possible.
 \item If two teams were playing basketball, the team wouldn't want to just have the higher score, they would want to win by the largest number of points. In other words, a team would prefer to win by 10 points rather than by 1 point.
@@ -40,7 +43,7 @@ It is important to recognize the difference between having the goal of maximizin
 
 It is important to keep in mind the the goal of each player is to win the most (or lose the least). It will be tempting to look for strategies which simply assure a player of a positive payoff, but we need to make sure a player can't do even better with a different strategy. 
 
-{\bf Assumption 2:}  Players are perfectly logical. Players will always take into account all available information and make the decision which maximizes his payoff. This includes knowing that his opponent is also making the best decision for herself. 
+{\bf Assumption 2:}\index{assumptions}  Players are perfectly logical. Players will always take into account all available information and make the decision which maximizes his payoff. This includes knowing that his opponent is also making the best decision for herself. 
 For example, in the cake cutting game a player wouldn't cut one large piece hoping that his opponent will by chance pick the smaller piece. A player must assume that her opponent will always choose the larger piece.
 
 Now you may be wondering what these assumptions have to do with reality. After all, no one's perfect. But we often study ideal situations (especially in math!). For example, you've all studied geometry. Can anyone here draw a perfectly straight line? Yet you've all studied such an object!
@@ -48,28 +51,65 @@ Now you may be wondering what these assumptions have to do with reality. After a
 
 {\bf Our Goal: Develop strategies for our perfectly logical, self-interested players.}
 
-\subsection{Developing Strategies: Tic Tac Toe}
+\subsection{Developing Strategies: Tic Tac Toe}\label{Ex:Tic}\index{Tic Tac Toe }
 
-\begin{enumerate}
-\item Play several games of Tic-Tac-Toe with an opponent. Make sure you take turns being the first player and the second player. Develop a strategy for winning Tic Tac Toe. You may have a different strategy for the first player and for the second player. Be as specific as possible. You may need to consider several possibilities which depend on what the opponent does.
+%\begin{enumerate}
+\begin{xca} Play several games of Tic TacToe with an opponent. Make sure you take turns being the first player and the second player. Develop a strategy for winning Tic Tac Toe. You may have a different strategy for the first player and for the second player. Be as specific as possible. You may need to consider several possibilities which depend on what the opponent does.
 
-\begin{enumerate}
+\begin{enumerate}[(a)]
 \item Who wins? Player 1 or Player 2?
 \item What must each player do in order to have the best possible outcome?
 \item How did you develop your strategy?
 \item How do you know it will always work?
 \end{enumerate}
+\end{xca}
  
-\end{enumerate}
+%\end{enumerate}
 
 Let us note some characteristics of Tic Tac Toe.
 \begin{itemize}
 \item There are two players.
-\item Players have {\it perfect information}. Each player knows what all of hi or her own options are AND all of his or her opponent's options. Additionally, both players know what the outcome of each option is. Can you think of another  example of a game with perfect information? What is an example of a game that does not have perfect information?
-\item This game has a {\it solution}. If both players play their best the game will always end in a tie. The solution consists of a strategy for each player and the outcome of the game when each player plays his or her strategy.
-\item The game is {\it finite}. The game must end after 9 or fewer turns. Give some examples of finite games and infinite games.
+\item Players have {\it perfect information}\index{perfect information}. This means each player knows what all of his or her own options are, what all of his or her opponent's options are, and both players know what the outcome of each option is. Additionally, players know that both players have all of this information.
+
+\item This game has a {\it solution}\index{solution}.  A solution for a game consists of a strategy for each player and the outcome of the game when each player plays his or her strategy. In Tic Tac Toe, if both players play their best, the game will always end in a tie.
+\item The game is {\it finite}\index{finite game}. This means the game must end after a finite number of moves of turns. In other words, the game cannot go on forever. A game that is not finite is called \emph{infinite}\index{infinite game}. Note, an infinite game may end after a finite number of turns, but there is no maximum number of turns or process to ensure the game ends. In Tic Tac Toe, the game must end after 9 or fewer turns. 
 \end{itemize}
 
-{\bf Definition.} A {\it strategy} for a player is a complete way to play the game regardless of what the other player does. 
+\begin{xca}
+Can you think of another  example of a game with perfect information? What is an example of a game that does not have perfect information?
+\end{xca}
 
-The choice of what a player does may depend on the opponent, but that choice is predetermined before game play. For example, in the cake cutting game, it doesn't matter which piece the ``chooser" will pick, the ``cutter" will always cut evenly. Similarly, it doesn't matter how the cutter cuts, the chooser will always pick the largest piece. In tic-tac-toe, Player 2's strategy should determine his first move no matter what Player 1 plays first. For  example, if Player 1 plays the center square, where should Player 2 play? If Player 1 plays a corner, where should Player 2 play?    
+\begin{xca}
+Give some examples of finite games and infinite games.
+\end{xca}
+
+
+\begin{definition} A  \emph{strategy} for a player is a complete way to play the game regardless of what the other player does. 
+\end{definition}
+
+The choice of what a player does may depend on the opponent, but that choice is predetermined before game play. For example, in the cake cutting game, it doesn't matter which piece the ``chooser'' will pick, the ``cutter'' will always cut evenly. Similarly, it doesn't matter how the cutter cuts, the chooser will always pick the largest piece. In tic-tac-toe, Player 2's strategy should determine his first move no matter what Player 1 plays first. For  example, if Player 1 plays the center square, where should Player 2 play? If Player 1 plays a corner, where should Player 2 play?    
+
+%\begin{enumerate}
+%\setcounter{enumi}{1}
+%\item Earlier you developed a solution for TIC-TAC-TOE. Write up the complete solution for TIC-TAC-TOE. Your solution should include strategies for each player and the outcome of the game. You may include charts or tables if they will help clarify your solution, but you should have a complete written solution as well.
+
+\vspace{.1in}
+
+\begin{xca}What is your favorite game?
+\begin{enumerate}[(a)]
+\item Give a brief description of the game, including what it means to ``win'' or ``lose'' the game.
+
+\item How many players do you need?
+
+\item Do the players have perfect information for the game?
+
+\item Is the game finite or can it go on forever?
+
+\item Give some possible strategies for the player(s). Note, depending on the game, these strategies may not always result in a definite win, but they should suggest a way to increase a player's chances of winning (or not losing).
+
+\end{enumerate}
+
+
+\end{xca}
+
+

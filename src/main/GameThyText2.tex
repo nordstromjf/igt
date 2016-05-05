@@ -7,6 +7,7 @@
 \usepackage {epsf}
 \usepackage{tikz, pgfplots, caption}
 \usepackage{enumerate}
+\usepackage{multirow}
 
 
 \usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
@@ -28,7 +29,8 @@
 \newtheorem{definition}{Definition}[section]
 \newtheorem{xca}{Exercise}[section]
 
-
+\usepackage{chngcntr}
+\counterwithin{table}{section}
 
 \title[Introduction to Game Theory]%
 {Introduction to Game Theory:
@@ -46,15 +48,14 @@
 \include{Preface}
 \mainmatter
 
+% Master file for IGT
 
 \chapter{What is Game Theory?}
-
-%\markright{Introduction}
-% Master file for IGT
 
 \input{intronotesB}
 
 %\input{IntroductionB}
+
 \include{GameMatricesB}
 
 \include{zerosum0B}

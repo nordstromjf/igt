@@ -5,39 +5,61 @@
 \vspace{.2in}
 
 We need a way to describe the possible choices for the players and the outcomes of those choices.
+For now, we will stick with games that have only two players. We will call them Player 1 and Player 2.
 
-For the time being, we will stick with games that have only two players. We will call them Player 1 and Player 2.
+\subsection{Example: Matching Pennies}\label{Ex:MatchPennies}\index{Matching Pennies}
 
-\subsection*{Example}
+Suppose each player has two choices: Heads (H) or Tails (T). If they choose the same letter, then Player 1 wins \$1 from Player 2. If they don't match, then Player 1 loses \$1 to Player 2. We can represent all the possible outcomes of the game with a {\emph{matrix}\index{game matrix}.  
 
-Suppose each player has two choices: A or B. If they choose the same letter, then Player 1 wins \$1 from Player 2. If they don't match, then Player 1 loses \$1 to Player 2. We can represent all the possible outcomes of the game with a {\it matrix}.  
+Player 1's options will always correspond to the rows of the matrix, and Player 2's options will correspond to the columns. See Table \ref{T:template}.
 
-Player 1's options will always correspond to the rows of the matrix, and Player 2's options will correspond to the columns:
+%\hspace{1in}Player 2
+%\begin{tabular}{l|r|c|c|}\cline{2-4}
+%&&\textbf{H}&\textbf{T}\\ \cline{2-4}
+%Player 1&\textbf{H} &&\\ \cline{2-4}
+%&\textbf{T} &&\\ \cline{2-4}
+%\end{tabular}
 
-\hspace{1in}Player 2
+\begin{table}[h]
+\centering
 
-\begin{tabular}{l|r|c|c|}\cline{2-4}
-&&\textbf{A}&\textbf{B}\\ \cline{2-4}
-Player 1&\textbf{A} &&\\ \cline{2-4}
-&\textbf{B} &&\\ \cline{2-4}
-
+\begin{tabular}{llll}
+                      & \multicolumn{3}{l}{Player 2}                                                  \\ \cline{2-4} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{H} & \multicolumn{1}{l|}{T} \\ \cline{2-4} 
+\multicolumn{1}{l|}{Player 1} & \multicolumn{1}{l|}{H} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \cline{2-4} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{l|}{T} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \cline{2-4} 
 \end{tabular}
-\medskip
+\caption{A game matrix showing the strategies for each player}
+\label{T:template}
+\end{table}\medskip
 
-{\bf Definition.} A {\it payoff} is the amount a player receives for  given outcome of the game.
+\begin{definition} A \emph{payoff}\index{payoff} is the amount a player receives for  given outcome of the game.\end{definition}
 
-Now we can fill in the matrix with each player's payoff. Since the payoffs to each player are different, we will use ordered pairs where the first number is Player 1's payoff and the second number is Player 2's payoff. The ordered pair is called the {\it payoff vector}. For example, if both players choose A, then Player 1's payoff is \$1 and Player 2's payoff is -\$1 (since he loses to Player 1). Thus the payoff vector associated with the outcome A, A is (1, -1). 
+Now we can fill in the matrix with each player's payoff. Since the payoffs to each player are different, we will use ordered pairs where the first number is Player 1's payoff and the second number is Player 2's payoff. The ordered pair is called the \emph{payoff vector}\index{payoff vector}. For example, if both players choose H, then Player 1's payoff is \$1 and Player 2's payoff is -\$1 (since he loses to Player 1). Thus the payoff vector associated with the outcome H, H is $(1, -1)$. 
 
-We fill in the matrix with the appropriate payoff vectors:
+We fill in the matrix with the appropriate payoff vectors in Table \ref{T:matchpennies}
 
-\hspace{1.2in}Player 2
+%\hspace{1.2in}Player 2
 
-\begin{tabular}{l|r|c|c|}\cline{2-4}
-&&\textbf{A}&\textbf{B}\\ \cline{2-4}
-Player 1&\textbf{A} &(1, -1)&(-1, 1)\\ \cline{2-4}
-&\textbf{B} &(-1, 1)&(1, -1)\\ \cline{2-4}
+%\begin{tabular}{l|r|c|c|}\cline{2-4}
+%&&\textbf{A}&\textbf{B}\\ \cline{2-4}
+%Player 1&\textbf{A} &(1, -1)&(-1, 1)\\ \cline{2-4}
+%&\textbf{B} &(-1, 1)&(1, -1)\\ \cline{2-4}
 
+%\end{tabular}
+\begin{table}[h]
+\centering
+
+\begin{tabular}{cccc}
+                      & \multicolumn{3}{c}{Player 2}                                                  \\ \cline{2-4} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{H} & \multicolumn{1}{c|}{T} \\ \cline{2-4} 
+\multicolumn{1}{l|}{Player 1} & \multicolumn{1}{c|}{H} & \multicolumn{1}{c|}{$(1, -1)$} & \multicolumn{1}{c|}{$(-1, 1)$} \\ \cline{2-4} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{c|}{T} & \multicolumn{1}{c|}{$(-1, 1)$} & \multicolumn{1}{c|}{$(1, -1)$} \\ \cline{2-4} 
 \end{tabular}
+\caption{A game matrix showing the payoff vectors}
+\label{T:matchpennies}
+\end{table}
+
 \medskip
 
 It is useful to think about different ways to quantify winning and losing. What are some possible measures? 
@@ -45,6 +67,6 @@ It is useful to think about different ways to quantify winning and losing. What 
 \item money, chips, counters, votes, points, amount of cake, etc.
 \end{itemize}
 
-Remember, a player always prefers to win the MOST points (money, chips, votes, cake), not just more than her opponent. If you want to study a game where players simply win or lose (such as Tic Tac Toe), we could simply use ``1" for a win and ``-1" for a loss. 
+Remember, a player always prefers to win the MOST points (money, chips, votes, cake), not just more than her opponent. If you want to study a game where players simply win or lose (such as Tic Tac Toe), we could simply use ``1'' for a win and ``-1'' for a loss. 
 
  

@@ -1,31 +1,46 @@
 
 
-\subsection{Practice with Two-Person Zero-Sum Games}
+\subsection{Example: An Election Campaign Game}\label{Ex:election}
 
 %\markright{Two Player Zero-Sum Games}
 
 %\vspace{.2in}
 %Do all of your work on your own paper. Give complete answers (complete sentences!).
 
-\vspace{.1in}
+%\vspace{.1in}
 
-Two candidates, Arnold and Bainbridge,  are facing each other in a state election. They have three choices regarding the issue of the speed limit on I-5: They can support raising the speed limit to 70 MPH, they can support keeping the current speed limit, or they can dodge the issue entirely. 
+Two candidates, Arnold and Bainbridge, are facing each other in a state election. They have three choices regarding the issue of the speed limit on I-5: They can support raising the speed limit to 70 MPH, they can support keeping the current speed limit, or they can dodge the issue entirely. 
 
-\begin{enumerate}
-\item The candidates have the following information about how they would fare in the election based on how they stand on the speed limit:
-\vspace{.1in}
+\begin{xca}\label{E:election1}
+The candidates have the information given in Table \ref{T:election1} about how they would likely fare in the election based on how they stand on the speed limit.
+%\vspace{.1in}
 
-\hspace{2in}Bainbridge
+%\hspace{2in}Bainbridge
 
-\begin{tabular}{l|r|c|c|c|}\cline{2-5}
-&&\textbf{Raise Limit}&\textbf{Keep Limit}&\textbf{Dodge}\\ \cline{2-5}
-Arnold&\textbf{Raise Limit} &(45, 55)&(50, 50)&(40, 60)\\ \cline{2-5}
-&\textbf{Keep Limit} &(60, 40)&(55, 45)&(50, 50)\\ \cline{2-5}
-&\textbf{Dodge} &(45, 55)&(55, 45)&(40, 60)\\ \cline{2-5}
+%\begin{tabular}{l|r|c|c|c|}\cline{2-5}
+%&&\textbf{Raise Limit}&\textbf{Keep Limit}&\textbf{Dodge}\\ \cline{2-5}
+%Arnold&\textbf{Raise Limit} &(45, 55)&(50, 50)&(40, 60)\\ \cline{2-5}
+%&\textbf{Keep Limit} &(60, 40)&(55, 45)&(50, 50)\\ \cline{2-5}
+%&\textbf{Dodge} &(45, 55)&(55, 45)&(40, 60)\\ \cline{2-5}
+%\end{tabular}
+
+\begin{table}[h]
+\centering
+
+\begin{tabular}{ccccc}
+                      & \multicolumn{4}{c}{Bainbridge}                                                  \\ \cline{2-5} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Raise Limit} & \multicolumn{1}{c|}{Keep Limit} & \multicolumn{1}{c|}{Dodge}\\ \cline{2-5} 
+\multicolumn{1}{l|}{Arnold} & \multicolumn{1}{c|}{Raise Limit} & \multicolumn{1}{c|}{$(45, 55)$} & \multicolumn{1}{c|}{$(50, 50)$} & \multicolumn{1}{c|}{$(40, 60)$}\\ \cline{2-5} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Keep Limit} & \multicolumn{1}{c|}{$(60, 40)$} & \multicolumn{1}{c|}{$(55, 45)$} & \multicolumn{1}{c|}{$(50, 50)$}\\ \cline{2-5} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Dodge} & \multicolumn{1}{c|}{$(45, 55)$} & \multicolumn{1}{c|}{$(55, 45)$} & \multicolumn{1}{c|}{$(40, 60)$} \\ \cline{2-5} 
 \end{tabular}
-\vspace{.1in}
+\caption{Percentage of the vote for Exercise \ref{E:election1}}
+\label{T:election1}
+\end{table}
 
-\begin{enumerate}
+%\vspace{.1in}
+
+\begin{enumerate}[(a)]
 \item Explain why this is a zero-sum game.
 
 \item What should Arnold choose to do? What should Bainbridge choose to do? Be sure to explain each candidate's choice. And remember, a player doesn't just want to win, he wants to get THE MOST votes-- for example, you could assume these are polling numbers and that there is some margin of error, thus a candidate prefers to have a larger margin over his opponent!
@@ -35,25 +50,38 @@ Arnold&\textbf{Raise Limit} &(45, 55)&(50, 50)&(40, 60)\\ \cline{2-5}
 \item Does Arnold need to consider Bainbridge's strategies is in order to decide on his own strategy? Does Bainbridge need to consider Arnold's strategies is in order to decide on his own strategy? Explain your answer.
 
 \end{enumerate}
+\end{xca}
 
-\vspace{.1in}
+\begin{xca}\label{E:election2}
+Bainbridge's mother is injured in a highway accident caused by speeding. The new payoff matrix is given in Table \ref{T:election2}
 
-\item Bainbridge's mother is injured in a highway accident caused by speeding. The new payoff matrix is
+%\hspace{2in}Bainbridge
 
-\vspace{.1in}
+%\begin{tabular}{l|r|c|c|c|}\cline{2-5}
+%&&\textbf{Raise Limit}&\textbf{Keep Limit}&\textbf{Dodge}\\ \cline{2-5}
+%Arnold&\textbf{Raise Limit} &(45, 55)&(10, 90)&(40, 60)\\ \cline{2-5}
+%&\textbf{Keep Limit} &(60, 40)&(55, 45)&(50, 50)\\ \cline{2-5}
+%&\textbf{Dodge} &(45, 55)&(10, 90)&(40, 60)\\ \cline{2-5}
+%\end{tabular}
 
-\hspace{2in}Bainbridge
+\begin{table}[h]
+\centering
 
-\begin{tabular}{l|r|c|c|c|}\cline{2-5}
-&&\textbf{Raise Limit}&\textbf{Keep Limit}&\textbf{Dodge}\\ \cline{2-5}
-Arnold&\textbf{Raise Limit} &(45, 55)&(10, 90)&(40, 60)\\ \cline{2-5}
-&\textbf{Keep Limit} &(60, 40)&(55, 45)&(50, 50)\\ \cline{2-5}
-&\textbf{Dodge} &(45, 55)&(10, 90)&(40, 60)\\ \cline{2-5}
+\begin{tabular}{ccccc}
+                      & \multicolumn{4}{c}{Bainbridge}                                                  \\ \cline{2-5} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Raise Limit} & \multicolumn{1}{c|}{Keep Limit} & \multicolumn{1}{c|}{Dodge}\\ \cline{2-5} 
+\multicolumn{1}{l|}{Arnold} & \multicolumn{1}{c|}{Raise Limit} & \multicolumn{1}{c|}{$(45, 55)$} & \multicolumn{1}{c|}{$(10, 90)$} & \multicolumn{1}{c|}{$(40, 60)$}\\ \cline{2-5} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Keep Limit} & \multicolumn{1}{c|}{$(60, 40)$} & \multicolumn{1}{c|}{$(55, 45)$} & \multicolumn{1}{c|}{$(50, 50)$}\\ \cline{2-5} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Dodge} & \multicolumn{1}{c|}{$(45, 55)$} & \multicolumn{1}{c|}{$(10, 90)$} & \multicolumn{1}{c|}{$(40, 60)$} \\ \cline{2-5} 
 \end{tabular}
+\caption{Percentage of the vote for Exercise \ref{E:election2}}
+\label{T:election2}
+\end{table}
 
-\vspace{.1in}
 
-\begin{enumerate}
+%\vspace{.1in}
+
+\begin{enumerate}[(a)]
 \item Explain why this is a zero-sum game.
 
 \item What should Arnold choose to do? What should Bainbridge choose to do? Be sure to explain each candidate's choice.
@@ -62,28 +90,43 @@ Arnold&\textbf{Raise Limit} &(45, 55)&(10, 90)&(40, 60)\\ \cline{2-5}
 \item Does Arnold need to consider Bainbridge's strategies is in order to decide on his own strategy? Does Bainbridge need to consider Arnold's strategies is in order to decide on his own strategy? Explain your answer.
 
 \end{enumerate}
-
-\vspace{.1in}
+\end{xca}
+%\vspace{.1in}
 
 %\break
+\begin{xca}\label{E:election3}
+Bainbridge begins giving election speeches at college campuses and monster truck rallies.
+The new payoff matrix is given in Table \ref{T:election3}
 
-\item Bainbridge begins giving election speeches at college campuses and monster truck rallies.
-The new payoff matrix is
+%\vspace{.1in}
 
-\vspace{.1in}
+%\hspace{2in}Bainbridge
 
-\hspace{2in}Bainbridge
+%\begin{tabular}{l|r|c|c|c|}\cline{2-5}
+%&&\textbf{Raise Limit}&\textbf{Keep Limit}&\textbf{Dodge}\\ \cline{2-5}
+%Arnold&\textbf{Raise Limit} &(35, 65)&(10, 90)&(60, 40)\\ \cline{2-5}
+%&\textbf{Keep Limit} &(45, 55)&(55, 45)&(50, 50)\\ \cline{2-5}
+%&\textbf{Dodge} &(40, 60)&(10, 90)&(65, 35)\\ \cline{2-5}
+%\end{tabular}
 
-\begin{tabular}{l|r|c|c|c|}\cline{2-5}
-&&\textbf{Raise Limit}&\textbf{Keep Limit}&\textbf{Dodge}\\ \cline{2-5}
-Arnold&\textbf{Raise Limit} &(35, 65)&(10, 90)&(60, 40)\\ \cline{2-5}
-&\textbf{Keep Limit} &(45, 55)&(55, 45)&(50, 50)\\ \cline{2-5}
-&\textbf{Dodge} &(40, 60)&(10, 90)&(65, 35)\\ \cline{2-5}
+%\vspace{.1in}
+
+\begin{table}[h]
+\centering
+
+\begin{tabular}{ccccc}
+                      & \multicolumn{4}{c}{Bainbridge}                                                  \\ \cline{2-5} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Raise Limit} & \multicolumn{1}{c|}{Keep Limit} & \multicolumn{1}{c|}{Dodge}\\ \cline{2-5} 
+\multicolumn{1}{l|}{Arnold} & \multicolumn{1}{c|}{Raise Limit} & \multicolumn{1}{c|}{$(35, 65)$} & \multicolumn{1}{c|}{$(10, 90)$} & \multicolumn{1}{c|}{$(60, 40)$}\\ \cline{2-5} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Keep Limit} & \multicolumn{1}{c|}{$(45, 55)$} & \multicolumn{1}{c|}{$(55, 45)$} & \multicolumn{1}{c|}{$(50, 50)$}\\ \cline{2-5} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Dodge} & \multicolumn{1}{c|}{$(40, 60)$} & \multicolumn{1}{c|}{$(10, 90)$} & \multicolumn{1}{c|}{$(65, 35)$} \\ \cline{2-5} 
 \end{tabular}
+\caption{Percentage of the vote for Exercise \ref{E:election3}}
+\label{T:election3}
+\end{table}
 
-\vspace{.1in}
 
-\begin{enumerate}
+\begin{enumerate}[(a)]
 \item Explain why this is a zero-sum game.
 
 \item What should Arnold choose to do? What should Bainbridge choose to do? Be sure to explain each candidate's choice.
@@ -92,110 +135,174 @@ Arnold&\textbf{Raise Limit} &(35, 65)&(10, 90)&(60, 40)\\ \cline{2-5}
 \item Does Arnold need to consider Bainbridge's strategies is in order to decide on his own strategy? Does Bainbridge need to consider Arnold's strategies is in order to decide on his own strategy? Explain your answer.
 
 \end{enumerate}
+\end{xca}
 
-\vspace{.1in}
+%\vspace{.1in}
 
-\item In each of the above scenarios, is there any reason for Arnold or Bainbridge to change his strategy? If there is, explain under what circumstances does it makes sense to change strategy. If not, explain why it never makes sense to change strategy.
+\begin{xca}
+In each of the above scenarios, is there any reason for Arnold or Bainbridge to change his strategy? If there is, explain under what circumstances does it makes sense to change strategy. If not, explain why it never makes sense to change strategy.
+\end{xca}
 
-\end{enumerate}
 
 \vspace{.2in}
+\subsection{Equilibrium Pairs}
 
-\textbf{Definition} A pair of strategies is an {\it equilibrium pair} if neither player gains by changing strategies.
+Chances are, in each of the exercises above, you were able to determine what each player should do. I particular, if both players play your suggested strategies, there is no reason for either player to change to a different strategy.
 
-For example, consider the game matrix from {\bf 2.1 Understanding the Assumptions}, (2).
+\begin{definition}\label{D:equilpair}\index{equilibrium pair} A pair of strategies is an \emph{equilibrium pair} if neither player gains by changing strategies.
+\end{definition}
 
-\hspace{1.2in}Player 2
 
-\begin{tabular}{l|r|c|c|}\cline{2-4}
-&&\textbf{X}&\textbf{Y}\\ \cline{2-4}
-Player 1&\textbf{A} &(100, -100)&(-10, 10)\\ \cline{2-4}
-&\textbf{B} &(0, 0)&(-1, 1)\\ \cline{2-4}
+For example, consider the game matrix from Exercise \ref{E:Sec2.2small}, Table \ref{T:matrixEx1Sec2.2}.
 
+%\hspace{1.2in}Player 2
+
+%\begin{tabular}{l|r|c|c|}\cline{2-4}
+%&&\textbf{X}&\textbf{Y}\\ \cline{2-4}
+%Player 1&\textbf{A} &(100, -100)&(-10, 10)\\ \cline{2-4}
+%&\textbf{B} &(0, 0)&(-1, 1)\\ \cline{2-4}
+
+%\end{tabular}
+
+%\vspace{.1in}
+
+\begin{table}[h]
+\centering
+
+\begin{tabular}{cccc}
+                      & \multicolumn{3}{c}{Player 2}                                                  \\ \cline{2-4} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{X} & \multicolumn{1}{c|}{Y} \\ \cline{2-4} 
+\multicolumn{1}{l|}{Player 1} & \multicolumn{1}{c|}{A} & \multicolumn{1}{c|}{$(100, -100)$} & \multicolumn{1}{c|}{$(-10, 10)$} \\ \cline{2-4} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{c|}{B} & \multicolumn{1}{c|}{$(0, 0)$} & \multicolumn{1}{c|}{$(-1, 11)$} \\ \cline{2-4} 
 \end{tabular}
+\caption{Payoff matrix for Exercise \ref{E:Sec2.2small}}
+%\label{T:matrixEx1Sec2.2}
+\end{table}
 
-\vspace{.1in}
 
 You determined that Player 2 should choose to play Y, and thus, Player 1 should play B (i.e., we have the strategy pair \{B, Y\}). Why is this an equilibrium pair? If Player 2 plays Y, does Player 1 have any reason to change to strategy A? No, she would lose 10 instead of 1! If Player 1 plays B, does player 2 have any reason to change to strategy X? No, she would gain 0 instead of 1! Thus neither player benefits from changing strategy, and so we say \{B, Y\} is an equilibrium pair. 
 
-For now, we can use a ``guess and check" method for finding equilibrium pairs. Take each outcome and decide whether a player would prefer to switch. Remember, Player 1 can only choose a different row, and Player 2 can only choose a different column. In our above example there are four outcomes to check: \{A, X\}, \{A, Y\}, \{B, X\}, and \{B, Y\}. We already know \{B, Y\} is an equilibrium pair, but let's check the rest! Suppose the players play \{A, X\}. Does Player 1 want to switch to B? No, she'd rather get 100 than 0. Does player 2 want to switch to Y? Yes! She'd rather get 10 than -100. So \{A, X\} is NOT an equilibrium pair since a player wants to switch. Now check that for \{A, Y\} Player 1 would want to switch, and for \{B, X\} both players would want to switch. Thus \{A, Y\} and \{B, X\} are NOT equilibrium pairs. 
+For now, we can use a ``guess and check'' method for finding equilibrium pairs. Take each outcome and decide whether either player would prefer to switch. Remember, Player 1 can only choose a different row, and Player 2 can only choose a different column. In our above example there are four outcomes to check: \{A, X\}, \{A, Y\}, \{B, X\}, and \{B, Y\}. We already know \{B, Y\} is an equilibrium pair, but let's check the rest. Suppose the players play \{A, X\}. Does Player 1 want to switch to B? No, she'd rather get 100 than 0. Does player 2 want to switch to Y? Yes! She'd rather get 10 than -100. So \{A, X\} is NOT an equilibrium pair since a player wants to switch. Now check that for \{A, Y\} Player 1 would want to switch, and for \{B, X\} both players would want to switch. Thus \{A, Y\} and \{B, X\} are NOT equilibrium pairs. 
 \vspace{.2in}
-\begin{enumerate}
-\setcounter{enumi}{4}
+%\begin{enumerate}
+%\setcounter{enumi}{4}
 
-\item Are the strategy pairs you determined in the three election scenarios equilibrium pairs? In other words, would either player prefer to change strategies? (You don't need to check whether any other strategies are equilibrium pairs.)
+\begin{xca} Are the strategy pairs you determined in the three election scenarios equilibrium pairs? In other words, would either player prefer to change strategies? (You don't need to check whether any other strategies are equilibrium pairs.)
+\end{xca}
 
-\vspace{.1in}
+%\vspace{.1in}
 
-\item Use the ``guess an check" method to determine any equilibrium pairs for the following payoff matrices.
+\begin{xca} Use the ``guess an check'' method to determine any equilibrium pairs for the following payoff matrices.
 
-
+\begin{enumerate}[(a)]
+\item
 \begin{equation*}
-{\rm(a)} \left[\begin{matrix}
+ \left[\begin{matrix}
 (2,-2)&(2, -2)\\
 (1, -1) & (3, -3)
 \end{matrix}\right]\hspace{.5in}
-{\rm(b)}\left[\begin{matrix}
+\end{equation*}
+\item
+\begin{equation*}
+\left[\begin{matrix}
 (3,-3)&(1, -1)\\
 (2, -2) & (4, -4)
 \end{matrix}\right]\hspace{.5in}
-{\rm(c)}\left[\begin{matrix}
+\end{equation*}
+\item
+\begin{equation*}
+\left[\begin{matrix}
 (4,-4)&(5, -5)&(4, -4)\\
 (3, -3) & (0, 0)&(1, -1)
 \end{matrix}\right]
 \end{equation*}
+\end{enumerate}
+\end{xca}
 
-\vspace{.1in}
-\item Do all games have equilibrium pairs?
+\begin{xca}
+Do all games have equilibrium pairs?
+\end{xca}
 
-\vspace{.1in}
-\item Can a game have more than one equilibrium pair?
+\begin{xca}
+Can a game have more than one equilibrium pair?
+\end{xca}
 
-\vspace{.1in}
-\item Consider the game ROCK, PAPER, SCISSORS (Rock beats Scissors, Scissors beat Paper, Paper beats Rock). Construct the payoff matrix for this game. Does it have an equilibrium pair? Explain your answer.
+\begin{xca}
+Consider the game ROCK, PAPER, SCISSORS\index{Rock-Paper-Scissors} (Rock beats Scissors, Scissors beat Paper, Paper beats Rock). Construct the payoff matrix for this game. Does it have an equilibrium pair? Explain your answer.
+\end{xca}
 
-\item Two television networks are battling for viewers for 7pm Monday night. They each need to decide if they are going to show a sitcom or a sporting event. The following table gives the payoffs as percent of viewers.
+\begin{xca}\label{E:network}
+Two television networks are battling for viewers for 7pm Monday night. They each need to decide if they are going to show a sitcom or a sporting event. Table \ref{T:network} gives the payoffs as percent of viewers.
 
-\vspace{.1in}
 
-\hspace{1.7in}Network 2
-\vspace{6pt}
+%\vspace{.1in}
 
-\begin{tabular}{l|r|c|c|}\cline{2-4}
-&&\textbf{Sitcom}&\textbf{Sports}\\ \cline{2-4}
-Network 1&\textbf{Sitcom} &(55, 45)&(52, 48)\\ \cline{2-4}
-&\textbf{Sports} &(50, 50)&(45, 55)\\ \cline{2-4}
+%\hspace{1.7in}Network 2
+%\vspace{6pt}
+
+%\begin{tabular}{l|r|c|c|}\cline{2-4}
+%&&\textbf{Sitcom}&\textbf{Sports}\\ \cline{2-4}
+%Network 1&\textbf{Sitcom} &(55, 45)&(52, 48)\\ \cline{2-4}
+%&\textbf{Sports} &(50, 50)&(45, 55)\\ \cline{2-4}
+%\end{tabular}
+
+%\vspace{.1in}
+\begin{table}[h]
+\centering
+
+\begin{tabular}{cccc}
+                      & \multicolumn{3}{c}{Network 2}                                                  \\ \cline{2-4} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Sitcom} & \multicolumn{1}{c|}{Sports} \\ \cline{2-4} 
+\multicolumn{1}{l|}{Network 1} & \multicolumn{1}{c|}{Sitcom} & \multicolumn{1}{c|}{$(55, 45)$} & \multicolumn{1}{c|}{$(52, 48)$} \\ \cline{2-4} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Sports} & \multicolumn{1}{c|}{$(50, 50)$} & \multicolumn{1}{c|}{$(45, 55)$} \\ \cline{2-4} 
 \end{tabular}
+\caption{Payoff matrix for Battle of the Networks}
+\label{T:network}
+\end{table}
 
-\vspace{.1in}
 
-\begin{enumerate}
+\begin{enumerate}[(a)]
 \item Explain why this is a zero-sum game.
 
 \item Does this game have an equilibrium pair? If so, find it and explain what each network should do.
 
-\item Convert this game to one in which the payoffs actually sum to zero. Hint: if a player wins 60\% of the vote, how much more than 50\% of the vote does he have?
+\item Convert this game to one in which the payoffs actually sum to zero. Hint: if a network wins 60\% of the viewers, how much more than 50\% of the viewers does it have?
 
 \end{enumerate}
-
+\end{xca}
 %\newpage
 
-\item This game is an example of what economists call {\it Competitive Advantage}. Two competing firms need to decide whether or not to adopt a new type of technology. The variable $a$ is a positive number representing the economic advantage a firm will gain if it is first to adopt the new technology.
+\begin{xca}\label{E:compadvantage}
+This game is an example of what economists call \emph{Competitive Advantage}\index{Competitive Advantage}. Two competing firms need to decide whether or not to adopt a new type of technology. The payoff matrix is in Table \ref{T:compadvantage}. The variable $a$ is a positive number representing the economic advantage a firm will gain if it is the first to adopt the new technology.
  
-\vspace{.1in}
+%\vspace{.1in}
 
-\hspace{2.5in}Firm A
-\vspace{6pt}
+%\hspace{2.5in}Firm A
+%\vspace{6pt}
 
-\begin{tabular}{l|r|c|c|}\cline{2-4}
-&&\textbf{Adopt New Tech}&\textbf{Stay Put}\\ \cline{2-4}
-Firm B&\textbf{Adopt New Tech} &(0, 0)&$(a, -a)$\\ \cline{2-4}
-&\textbf{Stay Put} &$(-a, a)$&(0, 0)\\ \cline{2-4}
+%\begin{tabular}{l|r|c|c|}\cline{2-4}
+%&&\textbf{Adopt New Tech}&\textbf{Stay Put}\\ \cline{2-4}
+%Firm B&\textbf{Adopt New Tech} &(0, 0)&$(a, -a)$\\ \cline{2-4}
+%&\textbf{Stay Put} &$(-a, a)$&(0, 0)\\ \cline{2-4}
+%\end{tabular}
+
+%\vspace{.1in}
+
+\begin{table}[h]
+\centering
+
+\begin{tabular}{cccc}
+                      & \multicolumn{3}{c}{Firm A}                                                  \\ \cline{2-4} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Adopt New Tech} & \multicolumn{1}{c|}{Stay Put} \\ \cline{2-4} 
+\multicolumn{1}{l|}{Firm B} & \multicolumn{1}{c|}{Adopt New Tech} & \multicolumn{1}{c|}{$(0, 0)$} & \multicolumn{1}{c|}{$(a, -a)$} \\ \cline{2-4} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Stay Put} & \multicolumn{1}{c|}{$(-a, a)$} & \multicolumn{1}{c|}{$(0, 0)$} \\ \cline{2-4} 
 \end{tabular}
+\caption{Payoff matrix for Competitive Advantage}
+\label{T:compadvantage}
+\end{table}
 
-\vspace{.1in}
 
-\begin{enumerate}
+\begin{enumerate}[(a)]
 \item Explain the payoff vector for each strategy pair. For example, why should the pair \{Adopt New Tech, Stay Put\} have the payoff $(a, -a)$?
 
 \item Explain what each firm should do.
@@ -204,7 +311,7 @@ Firm B&\textbf{Adopt New Tech} &(0, 0)&$(a, -a)$\\ \cline{2-4}
 
 \end{enumerate}
 
-\end{enumerate}
+\end{xca}
 
 
 

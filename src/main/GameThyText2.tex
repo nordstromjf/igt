@@ -5,12 +5,12 @@
 \usepackage {amsmath}
 \usepackage {amsthm}
 \usepackage {epsf}
-\usepackage{tikz, pgfplots, caption}
+\usepackage{tikz, pgfplots, caption, tikz-inet}
 \usepackage{enumerate}
 \usepackage{multirow}
 
 
-\usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+\usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri,matrix, tikzmark}
 
 %\pgfplotsset{axis lines=middle, }
 
@@ -23,11 +23,29 @@
 %\setcounter{tocdepth}{5}
 \pagestyle{myheadings}
 
+\newcommand{\MyTikzmark}[2]{%
+     \tikz[overlay,remember picture,baseline] \node [anchor=base] (#1) {$#2$};%
+}
+
+\newcommand{\DrawVLine}[3][]{%
+  \begin{tikzpicture}[overlay,remember picture]
+    \draw[shorten <=0.3ex, #1] (#2.north) -- (#3.south);
+  \end{tikzpicture}
+}
+
+\newcommand{\DrawHLine}[3][]{%
+  \begin{tikzpicture}[overlay,remember picture]
+    \draw[shorten <=0.2em, #1] (#2.west) -- (#3.east);
+  \end{tikzpicture}
+}
+
+
 
 \theoremstyle{definition}
 \newtheorem{theorem}{Theorem}
 \newtheorem{definition}{Definition}[section]
 \newtheorem{xca}{Exercise}[section]
+\newtheorem{example}{Example}[section]
 
 \usepackage{chngcntr}
 \counterwithin{table}{section}

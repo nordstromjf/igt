@@ -8,15 +8,16 @@
 \contentsline {subsection}{\tocsubsection {}{2.2}{Understanding the Players}}{5}
 \contentsline {chapter}{\tocchapter {Chapter}{2}{Two-Person Zero-Sum Games}}{7}
 \contentsline {section}{\tocsection {}{1}{Introduction to Two-Person Zero-Sum Games}}{7}
-\contentsline {subsection}{\tocsubsection {}{1.1}{Practice with Two-Person Zero-Sum Games}}{8}
-\contentsline {section}{\tocsection {}{2}{More Two-Person Zero-Sum Games: Dominated Strategies}}{12}
-\contentsline {section}{\tocsection {}{3}{Probability and Expected Value}}{18}
-\contentsline {section}{\tocsection {}{4}{Determining the Payoff Matrix}}{21}
-\contentsline {subsection}{\tocsubsection {}{4.1}{One-Card Stud Poker}}{21}
-\contentsline {subsection}{\tocsubsection {}{4.2}{Generalized One-Card Stud Poker}}{22}
-\contentsline {section}{\tocsection {}{5}{Equilibrium Points}}{24}
-\contentsline {section}{\tocsection {}{6}{Summary of Strategies for Zero-Sum Games}}{26}
-\contentsline {section}{\tocsection {}{7}{Applications to Popular Culture: Rationality and Perfect Information}}{27}
+\contentsline {subsection}{\tocsubsection {}{1.1}{Example: An Election Campaign Game}}{9}
+\contentsline {subsection}{\tocsubsection {}{1.2}{Equilibrium Pairs}}{10}
+\contentsline {section}{\tocsection {}{2}{More Two-Person Zero-Sum Games: Dominated Strategies}}{13}
+\contentsline {section}{\tocsection {}{3}{Probability and Expected Value}}{19}
+\contentsline {section}{\tocsection {}{4}{Determining the Payoff Matrix}}{22}
+\contentsline {subsection}{\tocsubsection {}{4.1}{One-Card Stud Poker}}{22}
+\contentsline {subsection}{\tocsubsection {}{4.2}{Generalized One-Card Stud Poker}}{23}
+\contentsline {section}{\tocsection {}{5}{Equilibrium Points}}{25}
+\contentsline {section}{\tocsection {}{6}{Summary of Strategies for Zero-Sum Games}}{27}
+\contentsline {section}{\tocsection {}{7}{Applications to Popular Culture: Rationality and Perfect Information}}{28}
 \contentsline {chapter}{\tocchapter {Chapter}{3}{Repeated Two-Person Zero-sum Games}}{29}
 \contentsline {section}{\tocsection {}{1}{Introduction}}{29}
 \contentsline {subsection}{\tocsubsection {}{1.1}{Rock-Paper-Scissors}}{30}

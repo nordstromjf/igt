@@ -5,128 +5,145 @@
 
 %\vspace{.2in}
 %Do all of your work on your own paper. Give complete answers (complete sentences!).
+Now that we have worked with expected value, we can begin to analyze some simple games that involve an element of chance.
 
-\vspace{.1in}
-\subsection{One-Card Stud Poker}
 
-The Game: We begin with a deck of cards in which 50\% are Aces (you can use Red cards for Aces) and 50\% are Kings (you can use Black cards for Kings). There are two players and one dealer. The play begins by each player putting in the ante (1 chip). Each player is dealt one card face down. WITHOUT LOOKING AT HIS OR HER CARD, the players decide to Bet (say, 1 chip) or Fold. Players secretly show the dealer their choice. If one player bet and the other folded, then the player who bet wins. If both bet or both fold, then Ace beats King (or Red beats Black); winner takes the pot. If there is a tie, they split the pot.
+\begin{example}\label{E:onecardstud}{\bf One-Card Stud Poker.}\index{One-Card Stud Poker}
 
-\vspace{.1in}
+We begin with a deck of cards in which 50\% are Aces (you can use Red cards for Aces) and 50\% are Kings (you can use Black cards for Kings). There are two players and one dealer. The play begins by each player putting in the ante (1 chip). Each player is dealt one card face down. WITHOUT LOOKING AT HIS OR HER CARD, the players decide to Bet (say, 1 chip) or Fold. Players secretly show the dealer their choice. If one player bet and the other folded, then the player who bet wins. If both bet or both fold, then Ace beats King (or Red beats Black); winner takes the pot. If there is a tie, they split the pot.
+\end{example}
+
+\begin{xca}\label{E:playonecard}
 Play the game several times, keeping track of the strategy choices and the resulting payoffs. Take turns as dealer. 
+\end{xca}
 
-\vspace{.1in}
 
-\begin{enumerate}
 
-\item Based on playing the game, determine a possible winning strategy.
-\vspace{.1in}
 
-\item Is this a zero-sum game? Why or why not?
-\vspace{.1in}
+\begin{xca}\label{E:onecardconjecturestrat}
+Based on playing the game, determine a possible winning strategy.
+\end{xca}
 
-\item Does the actual deal affect the choice of strategy?
-\vspace{.1in}
+\begin{xca}\label{E:onecardzerosum}
+Is this a zero-sum game? Why or why not?
+\end{xca}
 
-\item On any given deal, what strategy choices does a player have?
-\vspace{.1in}
+\begin{xca}
+Does the actual deal affect the choice of strategy?
+\end{xca}
 
-\end{enumerate}
+\begin{xca}
+On any given deal, what strategy choices does a player have?
+\end{xca}
 
-Before moving on, you should attempt to determine the payoff matrix. The remainder of this activity will be more meaningful if you have given some thought to what you think the payoff matrix should be. It is OK to be wrong at this point, it is not OK to not try. 
-\vspace{.1in}
+
+
+Before moving on, you should attempt to determine the payoff matrix. The remainder of this section will be more meaningful if you have given some thought to what you think the payoff matrix should be. It is OK to be wrong at this point, it is not OK to not try. 
+
+\begin{xca}\label{E:possiblematrix}
+Write down a possible payoff matrix for this game.
+\end{xca}
 
 Now let's work through creating the payoff matrix for One-Card Stud Poker.
-\vspace{.1in}
-
-\begin{enumerate}
-\setcounter{enumi}{4}
-
-\item If Player 1 Bets and Player 2 Folds, does it matter which cards were dealt? How much does Player 1 win? How much does Player 2 lose? What is the payoff vector for \{Bet, Fold\}? (Keep in mind your answer to (2).)
-\vspace{.1in}
-
-\item If Player 1 Folds and Player 2 Bets, does it matter which cards were dealt? What is the payoff vector for \{Fold, Bet\}? 
-\vspace{.1in}
 
 
-\item If both players Bet, does the payoff depend on which cards were dealt?
-\vspace{.1in}
+%\begin{enumerate}
+%\setcounter{enumi}{4}
+
+\begin{xca}\label{E:payoffBF}
+If Player 1 Bets and Player 2 Folds, does it matter which cards were dealt? How much does Player 1 win? How much does Player 2 lose? What is the payoff vector for \{Bet, Fold\}? (Keep in mind your answer to Exercise \ref{E:onecardzerosum}.)
+\end{xca}
+
+\begin{xca}\label{E:payoffFB}
+If Player 1 Folds and Player 2 Bets, does it matter which cards were dealt? What is the payoff vector for \{Fold, Bet\}? 
+\end{xca}
 
 
-\end{enumerate} 
+\begin{xca}
+If both players Bet, does the payoff depend on which cards were dealt?
+\end{xca}
+
 
 To determine the payoff vector for \{Bet, Bet\} and \{Fold, Fold\} we will need to consider which cards were dealt. We can use some probability to determine the remaining payoff vectors.
 
-\vspace{.1in}
 
-\begin{enumerate}
-\setcounter{enumi}{7}
-\item There are four possible outcomes of the deal-- list them. What is the probability that each occurs? (Remember: the probability of an event is a number between 0 and 1.)
-
-\vspace{.1in}
-
-\item Consider the pair of strategies \{Bet, Bet\}. For each possible deal, determine the payoff vector. For example, if the players are each dealt an Ace (Red), how much does each player win? (Again, keep in mind your answer to (2).)
-
-\vspace{.1in}
-
-\end{enumerate}
-
-In order to calculate the payoff for \{Bet, Bet\}, we need to take a weighted average of the possible payoff vectors in (9). In particular, we will ``weight" a payoff by the probability that it occurs. Recall that this is the {\it expected value}. We will calculate the expected value separately for each player. 
-\vspace{.1in}
-
-\begin{enumerate}
-\setcounter{enumi}{9}
-
-\item Find the expected value for \{Bet, Bet\} for Player 1.
-\vspace{.1in}
-\item Find the expected value for \{Bet, Bet\} for Player 2.
-\vspace{.1in}
-\end{enumerate}
-
-\noindent
-The pair of expected values from (10) and (11) is the payoff vector for \{Bet, Bet\}.
-\vspace{.1in}
-
-\begin{enumerate}
-\setcounter{enumi}{11}
-\item Explain why it should make sense to use the expected values for the payoffs in the matrix for the strategy pair \{Bet, Bet\}. Hint: think about what a player needs to know to choose a strategy in a game of chance.
-
-\item Now repeat (9)-(11) for the pair of strategies \{Fold, Fold\}.
-
-\vspace{.1in}
-\item Summarize the above work by giving the completed payoff matrix for One-Card Stud Poker. 
-
-\vspace{.1in}
-
-\item Now that you have done all the hard work of finding the payoff matrix for One-Card Stud Poker, use it to determine the best strategy for each player. If each player uses their best strategy, what will be the outcome of the game?
-\vspace{.1in}
-
-\item Compare the strategy you found in (14) to your suggested strategy in (1). In particular, discuss how knowing the payoff matrix might have changed your strategy. Also compare the payoff that results from the strategy in (14) to the payoff that results from your original strategy in (1).
-\vspace{.1in}
-
-\item  Use the payoff matrix to predict what the payoff to each player would be if the game is played several times.
-\vspace{.1in}
-
-\item Play the game ten times using the best strategy. How much has each player won or lost after ten hands of One-Card Stud Poker? Compare your answer to your prediction in (16). Does the actual payoff differ from the theoretical payoff? If so, why do you think this might be?
-\vspace{.1in}
-
-\item Explain why this game is considered fair.
-\end{enumerate}
-
-\vspace{.2in}
-\subsection{Generalized One-Card Stud Poker}
-\vspace{.2in}
-
-In One-Card Stud Poker we  anted one chip and bet one chip. Now, suppose we let players ante a different amount and bet  a different amount (although players will still ante and bet the same amount as each other). Suppose a player antes $a$ and bets $b$. 
-
-\vspace{.1in}
-
-\begin{enumerate}
-\setcounter{enumi}{18}
-\item Use the method outlined for One-Card Stud Poker to determine the payoff matrix for Generalized One-Card Stud Poker. 
-\vspace{.1in}
+%\begin{enumerate}
+%\setcounter{enumi}{7}
+\begin{xca}\label{E:probofdeal}
+There are four possible outcomes of the deal-- list them. What is the probability that each occurs? (Remember: the probability of an event is a number between 0 and 1.)
+\end{xca}
 
 
-\item Does the strategy change for the generalized version of the game? Explain.
-\vspace{.1in}
-\end{enumerate}
+\begin{xca}\label{E:BBpayoffperdeal}
+Consider the pair of strategies \{Bet, Bet\}. For each possible deal, determine the payoff vector. For example, if the players are each dealt an Ace (Red), how much does each player win? (Again, keep in mind your answer to Exercise \ref{E:onecardzerosum}.)
+\end{xca}
+
+In order to calculate the payoff for \{Bet, Bet\}, we need to take a weighted average of the possible payoff vectors in Exercise \ref{E:BBpayoffperdeal}. In particular, we will ``weight'' a payoff by the probability that it occurs. Recall that this is the \emph{expected value}\index{expected value}. We will calculate the expected value separately for each player. 
+
+
+%\begin{enumerate}
+%\setcounter{enumi}{9}
+\begin{xca}\label{E:BBev1}
+Find the expected value for \{Bet, Bet\} for Player 1.
+\end{xca}
+
+\begin{xca}\label{E:BBev2}
+Find the expected value for \{Bet, Bet\} for Player 2.
+\end{xca}
+
+The pair of expected values from Exercises \ref{E:BBev1} and \ref{E:BBev2} is the payoff vector for \{Bet, Bet\}.
+
+%\begin{enumerate}
+%\setcounter{enumi}{11}
+\begin{xca}\label{E:BBexplain}
+Explain why it should make sense to use the expected values for the payoffs in the matrix for the strategy pair \{Bet, Bet\}. Hint: think about what a player needs to know to choose a strategy in a game of chance.
+\end{xca}
+
+\begin{xca}\label{E:FF}
+Now repeat Exercises \ref{E:BBpayoffperdeal}, \ref{E:BBev1}, and \ref{E:BBev2} for the pair of strategies \{Fold, Fold\}.
+\end{xca}
+
+
+\begin{xca}\label{E:onecardmatrix}
+Summarize the above work by giving the completed payoff matrix for One-Card Stud Poker.
+\end{xca} 
+
+
+\begin{xca}\label{E:onecardstrategy}
+Now that you have done all the hard work of finding the payoff matrix for One-Card Stud Poker, use it to determine the best strategy for each player. If each player uses their best strategy, what will be the outcome of the game?
+\end{xca}
+
+\begin{xca}\label{E:onecardcompare}
+Compare the strategy you found in Exercise \ref{E:onecardstrategy} to your suggested strategy in Exercise \ref{E:onecardconjecturestrat}. In particular, discuss how knowing the payoff matrix might have changed your strategy. Also compare the payoff that results from the strategy in Exercise \ref{E:onecardstrategy} to the payoff that results from your original strategy in Exercise \ref{E:onecardconjecturestrat} .
+\end{xca}
+
+\begin{xca}\label{E:onecardlongrun}
+Use the payoff matrix to predict what the payoff to each player would be if the game is played several times.
+\end{xca}
+
+\begin{xca}\label{E:onecardtrials}
+Play the game ten times using the best strategy. How much has each player won or lost after ten hands of One-Card Stud Poker? Compare your answer to your prediction in Exercise \ref{E:onecardlongrun}. Does the actual payoff differ from the theoretical payoff? If so, why do you think this might be?
+\end{xca}
+
+\begin{xca}\label{E:onecardfair}
+Explain why this game is considered fair.
+\end{xca}
+
+\begin{example}\label{E:onecardstud}{\bf Generalized One-Card Stud Poker.}\index{Generalized One-Card Stud Poker}
+
+In One-Card Stud Poker we anted one chip and bet one chip. Now, suppose we let players ante a different amount and bet  a different amount (although players will still ante and bet the same amount as each other). Suppose a player antes $a$ and bets $b$. 
+\end{example}
+
+
+%\begin{enumerate}
+%\setcounter{enumi}{18}
+\begin{xca}\label{E:genonecard}
+Use the method outlined for One-Card Stud Poker to determine the payoff matrix for Generalized One-Card Stud Poker. 
+\end{xca}
+
+
+\begin{xca}
+Does the strategy change for the generalized version of the game? Explain.
+\end{xca}
+
 

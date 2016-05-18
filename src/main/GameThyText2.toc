@@ -12,28 +12,27 @@
 \contentsline {subsection}{\tocsubsection {}{1.2}{Equilibrium Pairs}}{10}
 \contentsline {section}{\tocsection {}{2}{More Two-Person Zero-Sum Games: Dominated Strategies}}{13}
 \contentsline {section}{\tocsection {}{3}{Probability and Expected Value}}{19}
+\contentsline {subsection}{\tocsubsection {}{3.1}{Some Basic Probability}}{19}
+\contentsline {subsection}{\tocsubsection {}{3.2}{Expected Value}}{20}
 \contentsline {section}{\tocsection {}{4}{Determining the Payoff Matrix}}{22}
-\contentsline {subsection}{\tocsubsection {}{4.1}{One-Card Stud Poker}}{22}
-\contentsline {subsection}{\tocsubsection {}{4.2}{Generalized One-Card Stud Poker}}{23}
 \contentsline {section}{\tocsection {}{5}{Equilibrium Points}}{25}
-\contentsline {section}{\tocsection {}{6}{Summary of Strategies for Zero-Sum Games}}{27}
+\contentsline {section}{\tocsection {}{6}{Strategies for Zero-Sum Games and Equilibrium Points}}{27}
 \contentsline {section}{\tocsection {}{7}{Applications to Popular Culture: Rationality and Perfect Information}}{28}
-\contentsline {chapter}{\tocchapter {Chapter}{3}{Repeated Two-Person Zero-sum Games}}{29}
-\contentsline {section}{\tocsection {}{1}{Introduction}}{29}
-\contentsline {subsection}{\tocsubsection {}{1.1}{Rock-Paper-Scissors}}{30}
-\contentsline {section}{\tocsection {}{2}{Mixed Strategies: Linear Solution}}{32}
-\contentsline {section}{\tocsection {}{3}{Repeated Two-person Zero-Sum Games: Expected Value}}{41}
-\contentsline {section}{\tocsection {}{4}{Repeated Two-person Zero-Sum Games: Liar's Poker}}{44}
-\contentsline {section}{\tocsection {}{5}{Augmented Matrices}}{46}
-\contentsline {section}{\tocsection {}{6}{Undercut}}{50}
-\contentsline {chapter}{\tocchapter {Chapter}{4}{Non-Zero-Sum Games}}{53}
-\contentsline {section}{\tocsection {}{1}{Introduction to Two Player Non-Zero-Sum Games}}{53}
-\contentsline {section}{\tocsection {}{2}{Two-Player Non-Zero-Sum Games}}{56}
-\contentsline {section}{\tocsection {}{3}{Prisoner's Dilemma and Chicken}}{58}
-\contentsline {section}{\tocsection {}{4}{A Class-Wide Experiment}}{60}
-\contentsline {section}{\tocsection {}{5}{Class-wide Prisoner's Dilemma}}{62}
-\contentsline {section}{\tocsection {}{6}{Another Multiplayer Experiment}}{64}
-\contentsline {section}{\tocsection {}{7}{Volunteer's Dilemma}}{66}
-\contentsline {section}{\tocsection {}{8}{Repeated Prisoner's Dilemma}}{68}
-\contentsline {section}{\tocsection {}{9}{Applications to Popular Culture: Prisoner's Dilemma and Chicken}}{71}
-\contentsline {chapter}{\tocchapter {Chapter}{}{Index}}{73}
+\contentsline {chapter}{\tocchapter {Chapter}{3}{Repeated Two-Person Zero-sum Games}}{31}
+\contentsline {section}{\tocsection {}{1}{Introduction to Repeated Games}}{31}
+\contentsline {section}{\tocsection {}{2}{Mixed Strategies: Graphical Solution}}{35}
+\contentsline {section}{\tocsection {}{3}{Repeated Two-person Zero-Sum Games: Expected Value}}{43}
+\contentsline {section}{\tocsection {}{4}{Repeated Two-person Zero-Sum Games: Liar's Poker}}{46}
+\contentsline {section}{\tocsection {}{5}{Augmented Matrices}}{48}
+\contentsline {section}{\tocsection {}{6}{Undercut}}{52}
+\contentsline {chapter}{\tocchapter {Chapter}{4}{Non-Zero-Sum Games}}{55}
+\contentsline {section}{\tocsection {}{1}{Introduction to Two Player Non-Zero-Sum Games}}{55}
+\contentsline {section}{\tocsection {}{2}{Two-Player Non-Zero-Sum Games}}{58}
+\contentsline {section}{\tocsection {}{3}{Prisoner's Dilemma and Chicken}}{60}
+\contentsline {section}{\tocsection {}{4}{A Class-Wide Experiment}}{62}
+\contentsline {section}{\tocsection {}{5}{Class-wide Prisoner's Dilemma}}{64}
+\contentsline {section}{\tocsection {}{6}{Another Multiplayer Experiment}}{66}
+\contentsline {section}{\tocsection {}{7}{Volunteer's Dilemma}}{68}
+\contentsline {section}{\tocsection {}{8}{Repeated Prisoner's Dilemma}}{70}
+\contentsline {section}{\tocsection {}{9}{Applications to Popular Culture: Prisoner's Dilemma and Chicken}}{73}
+\contentsline {chapter}{\tocchapter {Chapter}{}{Index}}{75}

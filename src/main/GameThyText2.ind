@@ -1,6 +1,7 @@
 \begin{theindex}
 
   \item assumptions, 1, 2
+  \item augmented matrix, 48
 
   \indexspace
 
@@ -10,7 +11,18 @@
 
   \indexspace
 
-  \item equilibrium pair, 10
+  \item dominated by, 14
+  \item dominates, 14
+  \item \textit{Dr. Strangelove}, 28
+
+  \indexspace
+
+  \item equally likely events, 19
+  \item equilibrium pair, 10, 25
+  \item equilibrium point, 25
+  \item equilibrium, mixed strategy, 40
+  \item expected payoff, 37
+  \item expected value, 20, 23, 32, 43
 
   \indexspace
 
@@ -19,6 +31,8 @@
   \indexspace
 
   \item game matrix, 4
+  \item Generalized One-Card Stud Poker, 23
+  \item graphical solution, 35
 
   \indexspace
 
@@ -26,31 +40,67 @@
 
   \indexspace
 
-  \item Matching Pennies, 4
+  \item Liar's Poker, 46
+
+  \indexspace
+
+  \item Matching Pennies, 4, 43
+  \item maximin mixed strategy, 39
+  \item maximin strategy, 17
+  \item maximin strategy, repeated games, 38
+  \item minimax, 17
+  \item minimax strategy, repeated games, 40
+  \item mixed strategies, expected value solution, 43
+  \item mixed strategy, 31
+  \item mixed strategy equilibrium, 40
+
+  \indexspace
+
+  \item net gain, 52
+
+  \indexspace
+
+  \item One-Card Stud Poker, 22
 
   \indexspace
 
   \item payoff, 2, 4
   \item payoff vector, 4
-  \item perfect information, 3
+  \item perfect information, 3, 28
   \item perfectly logical, 5
   \item player, 1
+  \item popular culture, 28
+  \item probability, 19
+  \item proof by contradiction, 25
+  \item pure strategy, 31
 
   \indexspace
 
   \item rational, 1
-  \item Rock-Paper-Scissors, 11
+  \item rationality, 28
+  \item Rock-Paper-Scissors, 11, 45
 
   \indexspace
 
   \item self-interest, 1
   \item self-interested, 5
   \item solution, 3
+  \item Solution Theorem for Zero-Sum Games, 25
   \item strategy pair, 8
+  \item strategy, mixed, 31
+  \item strategy, pure, 31
+  \item strategy, repeated game, 31
+  \item symmetric game, 53
+  \item systems of equations, 48
 
   \indexspace
 
+  \item \textit{The Princess Bride}, 28
   \item Tic Tac Toe , 2
+
+  \indexspace
+
+  \item Undercut, 52
 
   \indexspace
 

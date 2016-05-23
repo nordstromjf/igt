@@ -1,28 +1,40 @@
 
-\section{Class-wide Prisoner's Dilemma}
+\section{What Makes a Prisoner's Dilemma?}\label{S:PDconditions}
 
 %\markright{Class-wide Prisoner's Dilemma}
 
 %\vspace{.2in}
 %Do all of your work on your own paper. Give complete answers (complete sentences!).
 
-\vspace{.1in}
 In this section we give mathematical description of Prisoner's Dilemma and compare it to some similar games.
 
-The Class-wide Prisoner's Dilemma game we played has the following payoff matrix for each pair of players:
+The Class-wide Prisoner's Dilemma game we played has the payoff matrix  given in Table \ref{T:CWPD}for each pair of players.
  
-\hspace{3in}Player 2
+%\hspace{3in}Player 2
 
-\begin{center}
-\begin{tabular}{l|r|c|c|}\cline{2-4}
-&&\textbf{Cooperate}&\textbf{Defect}\\ \cline{2-4}
-Player 1&\textbf{Cooperate} &(3, 3)&(0, 5)\\ \cline{2-4}
-&\textbf{Defect} &(5, 0)&(1, 1)\\ \cline{2-4}
+%\begin{center}
+%\begin{tabular}{l|r|c|c|}\cline{2-4}
+%&&\textbf{Cooperate}&\textbf{Defect}\\ \cline{2-4}
+%Player 1&\textbf{Cooperate} &(3, 3)&(0, 5)\\ \cline{2-4}
+%&\textbf{Defect} &(5, 0)&(1, 1)\\ \cline{2-4}
+%\end{tabular}
+%\end{center}
+%\vspace{.1in}
+
+\begin{table}[h]
+\centering
+
+\begin{tabular}{cccc}
+                      & \multicolumn{3}{c}{Player 2}                                                  \\ \cline{2-4} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Cooperate} & \multicolumn{1}{c|}{Defect} \\ \cline{2-4} 
+\multicolumn{1}{l|}{Player 1} & \multicolumn{1}{c|}{Cooperate} & \multicolumn{1}{c|}{$(3, 3)$} & \multicolumn{1}{c|}{$(0, 5)$} \\ \cline{2-4} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Defect} & \multicolumn{1}{c|}{$(5, 0)$} & \multicolumn{1}{c|}{$(1, 1)$} \\ \cline{2-4} 
 \end{tabular}
-\end{center}
-\vspace{.1in}
+\caption{Class-wide Prisoner's Dilemma}
+\label{T:CWPD}
+\end{table}
 
-We can classify each of these values for the payoffs as follows:
+We can classify each of the values for the payoffs as follows:
 \begin{itemize}
 \item  Reward for Mutual Cooperation: $R=3.$
 \item Punishment for Defecting: $P=1.$
@@ -31,79 +43,120 @@ We can classify each of these values for the payoffs as follows:
 \end{itemize}
 
 In order for a game to be a variation of Prisoner's Dilemma it must satisfy two conditions:
-\begin{enumerate}
-\item[(A)] $T>R>P>S$
-\item[(B)] $(T+S)/2 < R$
+\begin{enumerate}[(A)]
+\item $T>R>P>S$
+\item $(T+S)/2 < R$
 \end{enumerate}
 
-\noindent
 Let's apply this description of Prisoner's Dilemma to a few games we've seen.
 
 
-\begin{enumerate}
-\item Describe each of the conditions (A) and (B) in words. Hint: $(T+S)/2$ is the average of $T$ and $S$.
+\begin{xca}\label{E:describeconditions}
+Describe each of the conditions (A) and (B) in words. Hint: $(T+S)/2$ is the average of $T$ and $S$.
+\end{xca}
 %\item Why do you think each of these conditions is required for a Prisoner's Dilemma? You might think about what would happen if each of the conditions were false. For example, what would change if $T<R$? Would players be likely to play differently? 
-\item Show that the two conditions hold for the Class-wide Prisoner's Dilemma.
 
-\item Recall the matrix for Prisoner's Dilemma from the last activity:
+\begin{xca}\label{E:CWPDshow}
+Show that the two conditions hold for the Class-wide Prisoner's Dilemma.
+\end{xca}
 
- \hspace{3in}Prisoner 2
+\begin{xca}\label{E:PDshow}
+Recall the matrix for Prisoner's Dilemma from Example \ref{E:PrisonersDilemma}.
 
-\begin{center}
-\begin{tabular}{l|r|c|c|}\cline{2-4}
-&&\textbf{Confess}&\textbf{Don't confess}\\ \cline{2-4}
-Prisoner 1&\textbf{Confess} &(8, 8)&(0.25, 10)\\ \cline{2-4}
-&\textbf{Don't confess} &(10, 0.25)&(1, 1)\\ \cline{2-4}
+%\hspace{3in}Prisoner 2
+
+%\begin{center}
+%\begin{tabular}{l|r|c|c|}\cline{2-4}
+%&&\textbf{Confess}&\textbf{Don't confess}\\ \cline{2-4}
+%Prisoner 1&\textbf{Confess} &(8, 8)&(0.25, 10)\\ \cline{2-4}
+%&\textbf{Don't confess} &(10, 0.25)&(1, 1)\\ \cline{2-4}
+%\end{tabular}
+%\end{center}
+%\vspace{.1in}
+\begin{table}[h]
+\centering
+
+\begin{tabular}{cccc}
+                      & \multicolumn{3}{c}{Prisoner 2}                                                  \\ \cline{2-4} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Confess} & \multicolumn{1}{c|}{Don't Confess} \\ \cline{2-4} 
+\multicolumn{1}{l|}{Prisoner 1} & \multicolumn{1}{c|}{Confess} & \multicolumn{1}{c|}{$(8, 8)$} & \multicolumn{1}{c|}{$(0.25, 10)$} \\ \cline{2-4} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Don't Confess} & \multicolumn{1}{c|}{$(10, 0.25)$} & \multicolumn{1}{c|}{$(1, 1)$} \\ \cline{2-4} 
 \end{tabular}
-\end{center}
-\vspace{.1in}
+\caption{Prisoner's Dilemma (again)}
+%\label{T:PrisonersDilemma2}
+\end{table}
+
+
+
 Determine $R, P, T,$ and $S$ for this game. Be careful: think about what cooperating versus defecting should mean. Show the conditions for Prisoner's Dilemma are satisfied. (Hint: time in jail is bad, so the bigger the number, the worse you do; thus, it might be helpful to think of the payoffs as negatives.)
+\end{xca}
 
-\item Recall the matrix for Chicken from the last activity:
+\begin{xca}\label{E:chickenshow}
+Recall the matrix for Chicken from Example \ref{E:Chicken}.
 
-\hspace{3in}Driver 2
+%\hspace{3in}Driver 2
 
-\begin{center}
-\begin{tabular}{l|r|c|c|}\cline{2-4}
-&&\textbf{Swerve}&\textbf{Straight}\\ \cline{2-4}
-Driver 1&\textbf{Swerve} &(0, 0)&(-1, 10)\\ \cline{2-4}
-&\textbf{Straight} &(10, -1)&(-100, -100)\\ \cline{2-4}
+%\begin{center}
+%\begin{tabular}{l|r|c|c|}\cline{2-4}
+%&&\textbf{Swerve}&\textbf{Straight}\\ \cline{2-4}
+%Driver 1&\textbf{Swerve} &(0, 0)&(-1, 10)\\ \cline{2-4}
+%&\textbf{Straight} &(10, -1)&(-100, -100)\\ \cline{2-4}
+%\end{tabular}
+%\end{center}
+%\vspace{.1in}
+\begin{table}[h]
+\centering
+
+\begin{tabular}{cccc}
+                      & \multicolumn{3}{c}{Driver 2}                                                  \\ \cline{2-4} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Swerve} & \multicolumn{1}{c|}{Straight} \\ \cline{2-4} 
+\multicolumn{1}{l|}{Driver 1} & \multicolumn{1}{c|}{Swerve} & \multicolumn{1}{c|}{$(0, 0)$} & \multicolumn{1}{c|}{$(-1, 10)$} \\ \cline{2-4} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Straight} & \multicolumn{1}{c|}{$(10, -1)$} & \multicolumn{1}{c|}{$(-100, -100)$} \\ \cline{2-4} 
 \end{tabular}
-\end{center}
-\vspace{.1in}
-Determine $R, P, T,$ and $S$ for this game. Again, think about what cooperating and defecting mean in this game. Determine if the conditions for Prisoner's Dilemma are satisfied. If not, which condition(s) fail?
+\caption{Chicken (again)}
+%\label{T:chicken}
+\end{table}
 
-\item Consider the game:
-$$\begin{matrix}
+Determine $R, P, T,$ and $S$ for this game. Again, think about what cooperating and defecting mean in this game. Determine if the conditions for Prisoner's Dilemma are satisfied. If not, which condition(s) fail?
+\end{xca}
+
+\begin{xca}\label{E:conditionspractice1} 
+Consider the game:
+\[\begin{matrix}
 & C& D\\
 C& (3, 3) & (0, 50)\\
 D &(50, 0) & (.01, .01)
-\end{matrix}$$
+\end{matrix}\]
+
 Determine $R, P, T,$ and $S$ for this game. Determine if the conditions for Prisoner's Dilemma are satisfied. If not, which condition(s) fail?
+\end{xca}
 
-
-\item Consider the game:
-$$\begin{matrix}
+\begin{xca}\label{E:conditionspractice2}
+Consider the game:
+\[\begin{matrix}
 & C& D\\
 C& (1000, 1000) & (0, 100)\\
 D &(100, 0) & (100, 100)
-\end{matrix}$$
+\end{matrix}\]
 Determine $R, P, T,$ and $S$ for this game. Determine if the conditions for Prisoner's Dilemma are satisfied. If not, which condition(s) fail?
+\end{xca}
 
-\item The games in (4), (5) and (6) are not true Prisoner's Dilemmas. For each game, how do the changes in payoffs affect how you play? In particular, in Prisoner's Dilemma, a player will generally choose to defect. This results in a non-optimal payoff for each player. Is this still true in (4), (5) and (6)? If possible, use the changes in the conditions (A) and (B) to help explain any differences in how one should play. 
+\begin{xca}\label{E:conditionscompare}
+The games in Exercises \ref{E:chickenshow}, \ref{E:conditionspractice1}, and \ref{E:conditionspractice2} are not true Prisoner's Dilemmas. For each game, how do the changes in payoffs affect how you play? In particular, in Prisoner's Dilemma, a player will generally choose to defect. This results in a non-optimal payoff for each player. Is this still true in Exercises \ref{E:chickenshow}, \ref{E:conditionspractice1}, and \ref{E:conditionspractice2}? If possible, use the changes in the conditions (A) and (B) to help explain any differences in how one should play. 
+\end{xca}
 
-\end{enumerate}
 
-We can define ``Defection" as the idea that if everyone did it, things would be worse for everyone. Yet, if only one (or a small) number did it, life would be sweeter for that individual. We can define ``Cooperation" as the act of resisting temptation.
+We can define \emph{defection}\index{defection} as the idea that if everyone did it, things would be worse for everyone. Yet, if only one (or a small) number did it, life would be sweeter for that individual. We can define \emph{cooperation}\index{cooperation} as the act of resisting temptation for the betterment of all players.
 
-\begin{enumerate}
-\setcounter{enumi}{7}
+%\begin{enumerate}
+%\setcounter{enumi}{7}
 
-\item Give an example of defection and cooperation from real life.
+\begin{xca}\label{E:reallifeex}
+Give an example of defection and cooperation from real life.
+\end{xca}
 
 %\item Read the ``Tale of Happiton" [{\it Metamagical Themas}, D. Hofstadter, p.767] Write a short essay relating the story to a current political, environmental, or social issue.
 
-\end{enumerate}
 
 
 

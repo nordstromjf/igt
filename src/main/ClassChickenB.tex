@@ -7,52 +7,87 @@
 %Do all of your work on your own paper. Give complete answers (complete sentences!).
 
 \vspace{.1in}
-In the previous section we played a game called Volunteer's Dilemma. One example was everyone choses ``1 point" or ``5 points." If at least one person writes down 1 point, then everyone gets the number of points they wrote down. If no one chooses 1 point, then everyone gets 0 points. Choosing ``1 point" is considered volunteering or cooperating. Choosing to not volunteer and take ``5 points" is defecting.
+In Section \ref{VDexperiment} we played a game called Volunteer's Dilemma\index{Volunteer's Dilemma}. 
+\begin{example}\label{E:VDpoints}
+One example of a Volunteer's Dilemma is the game where everyone chooses ``1 point'' or ``5 points.'' If at least one person writes down 1 point, then everyone gets the number of points they wrote down. If no one chooses 1 point, then everyone gets 0 points. Choosing ``1 point'' is considered volunteering or cooperating. Choosing to not volunteer and take ``5 points'' is defecting.
 
-You should note that it is difficult to put this game into a matrix form since payoffs depend on wether there is at least one volunteer or cooperator. 
+You should note that it is difficult to put this game into a matrix form since payoffs depend on whether there is at least one volunteer or cooperator. 
+\end{example}
 
-In this activity you will compare Class-wide Prisoner's Dilemma with Volunteer's Dilemma. We will use the following matrix for Prisoner's Dilemma:
+In this section we will compare Class-wide Prisoner's Dilemma with Volunteer's Dilemma. We will use the payoffs for Prisoner's Dilemma from Section \ref{S:CWPD}, given again in Table \ref{T:CWPD2}.
 
-\hspace{3in}Player 2
+%\hspace{3in}Player 2
 
-\begin{center}
-\begin{tabular}{l|r|c|c|}\cline{2-4}
-&&\textbf{Cooperate}&\textbf{Defect}\\ \cline{2-4}
-Player 1&\textbf{Cooperate} &(3, 3)&(0, 5)\\ \cline{2-4}
-&\textbf{Defect} &(5, 0)&(1, 1)\\ \cline{2-4}
+%\begin{center}
+%\begin{tabular}{l|r|c|c|}\cline{2-4}
+%&&\textbf{Cooperate}&\textbf{Defect}\\ \cline{2-4}
+%Player 1&\textbf{Cooperate} &(3, 3)&(0, 5)\\ \cline{2-4}
+%&\textbf{Defect} &(5, 0)&(1, 1)\\ \cline{2-4}
+%\end{tabular}
+%\end{center}
+%\vspace{.1in}
+
+\begin{table}[h]
+\centering
+
+\begin{tabular}{cccc}
+                      & \multicolumn{3}{c}{Player 2}                                                  \\ \cline{2-4} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Cooperate} & \multicolumn{1}{c|}{Defect} \\ \cline{2-4} 
+\multicolumn{1}{l|}{Player 1} & \multicolumn{1}{c|}{Cooperate} & \multicolumn{1}{c|}{$(3, 3)$} & \multicolumn{1}{c|}{$(0, 5)$} \\ \cline{2-4} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Defect} & \multicolumn{1}{c|}{$(5, 0)$} & \multicolumn{1}{c|}{$(1, 1)$} \\ \cline{2-4} 
 \end{tabular}
-\end{center}
-\vspace{.1in}
-
+\caption{Class-wide Prisoner's Dilemma (again)}
+\label{T:CWPD2}
+\end{table}
 
 
  
-\begin{enumerate}
-\item In class-wide {\bf Prisoner's Dilemma} (the game in Section 4) what effect does one defector have on the group? In other words, if a single player defects, how many points does he cost each of the other players?
+\begin{xca}\label{E:CWPDdefecteffect}
+In Class-wide \textbf{Prisoner's Dilemma} what effect does one defector have on the group? In other words, if a single player defects, how many points does he cost each of the other players?
+\end{xca}
 
-\item In class-wide {\bf Prisoner's Dilemma} what effect does everyone's defection have on the group? In other words, what is the most points lost by the group if everyone defects? 
+\begin{xca}\label{E:CWPDalldefecteffect}
+In Class-wide \textbf{Prisoner's Dilemma} what effect does everyone's defection have on the group? In other words, what is the most points lost by the group if everyone defects?
+\end{xca}
 
-\item In class-wide {\bf Prisoner's Dilemma} what effect could your own defection have on the group? In other words, how many points does the group lose if you defect instead of cooperate? You may need to consider different cases depending on how many cooperators there are. For example what if there are no cooperators? What if there are no defectors? What if there are some of each?
+\begin{xca}\label{E:CWPDowndefect} 
+In class-wide \textbf{Prisoner's Dilemma} what effect could your own defection have on the group? In other words, how many points does the group lose if you defect instead of cooperate? You may need to consider different cases depending on how many cooperators there are. For example what if there are no cooperators? What if there are no defectors? What if there are some of each?
+\end{xca}
 
-\item In {\bf Volunteer's Dilemma}, with the payoffs given above, what effect does one defector have on the group. In other words, if there is a single defector, how many points do each of the other players lose?
+\begin{xca}\label{E:VDdefecteffect} 
+In \textbf{Volunteer's Dilemma}, with the payoffs given in Example \ref{E:VDpoints}, what effect does one defector have on the group? In other words, if there is a single defector, how many points do each of the other players lose?
+\end{xca}
 
-\item In {\bf Volunteer's Dilemma} what effect does everyone's defection have on the group? In other words, if everyone defects, how many points does the group lose?
+\begin{xca}\label{E:VDalldefecteffect} 
+In \textbf{Volunteer's Dilemma}, with the payoffs given in Example \ref{E:VDpoints}, what effect does everyone's defection have on the group? In other words, if everyone defects, how many points does the group lose?
+\end{xca}
 
-\item In {\bf Volunteer's Dilemma} what effect could your own defection have on the group? In other words, how many points does the group lose if you defect instead of cooperate? You may need to consider different cases depending on how many cooperators there are. For example what if there are no cooperators? What if there are no defectors? What if there are some of each?
+\begin{xca}\label{E:VDowndefect} 
+In {\bf Volunteer's Dilemma}, with the payoffs given in Example \ref{E:VDpoints}, what effect could your own defection have on the group? In other words, how many points does the group lose if you defect instead of cooperate? You may need to consider different cases depending on how many cooperators there are. For example what if there are no cooperators? What if there are no defectors? What if there are some of each?
+\end{xca}
 
-\item Considering your answers above and to previous work with Prisoner's Dilemma, in class-wide {\bf Prisoner's Dilemma}, which is more {\it rational} to be a cooperator or a defector? Why? 
+\begin{xca}\label{E:CWPDcoopordefect} 
+Considering your answers above and to previous work with Prisoner's Dilemma, in Class-wide \textbf{Prisoner's Dilemma}, which is more \emph{rational} to be a cooperator or a defector? Why?
+\end{xca} 
 
-\item Whichever you chose in (7), explain what would happen if everyone was the most rational. Is it now more rational to do the opposite?
+\begin{xca}\label{E:CWPDallrational}
+Whichever you chose in Exercise \ref{E:CWPDcoopordefect}, explain what would happen if everyone was the most rational. Is it now more rational to do the opposite?
+\end{xca}
 
-\item Considering your answers above, in {\bf Volunteer's Dilemma}, which is more {\it rational} to be a cooperator (volunteer) or a defector? Why?
+\begin{xca}\label{E:VDcoopordefect}
+Considering your answers above, in \textbf{Volunteer's Dilemma}, which is more \emph{rational} to be a cooperator (volunteer) or a defector? Why?
+\end{xca}
 
 
-\item Whichever you chose in (9), explain what would happen if everyone was the most rational. Is it now more rational to do the opposite?
+\begin{xca}\label{E:VDallrational}
+Whichever you chose in Exercise \ref{E:VDcoopordefect}, explain what would happen if everyone was the most rational. Is it now more rational to do the opposite?
+\end{xca}
 
-\item  Volunteer's Dilemma can also be called ``Class-wide Chicken." Try to describe this class-wide game in terms of ``swerving" and ``going straight." How do the payoffs for Volunteer's Dilemma relate to the payoffs for Chicken?
+\begin{xca}\label{E:classchicken}  
+Volunteer's Dilemma can also be called ``Class-wide Chicken.'' Try to describe this class-wide game in terms of ``swerving'' and ``going straight.'' How do the payoffs for Volunteer's Dilemma relate to the payoffs for Chicken?
+\end{xca}
 
 
-\end{enumerate}
 
 
 

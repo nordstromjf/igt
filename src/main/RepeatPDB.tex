@@ -6,32 +6,53 @@
 %\vspace{.2in}
 %Do all of your work on your own paper. Give complete answers (complete sentences!).
 
-\vspace{.1in}
-In this section we look at two players playing Prisoner's Dilemma repeatedly. We call this game an {\it iterated} Prisoner's Dilemma.
-Recall the general Prisoner's Dilemma matrix:
 
-\hspace{3in}Player 2
+In this section we look at two players playing Prisoner's Dilemma repeatedly. We call this game an \emph{iterated} Prisoner's Dilemma\index{iterated Prisoner's Dilemma}.
+Recall the general Prisoner's Dilemma matrix from previous sections, given again in Table \ref{T:CWPD3}.
 
-\begin{center}
-\begin{tabular}{l|r|c|c|}\cline{2-4}
-&&\textbf{Cooperate}&\textbf{Defect}\\ \cline{2-4}
-Player 1&\textbf{Cooperate} &(3, 3)&(0, 5)\\ \cline{2-4}
-&\textbf{Defect} &(5, 0)&(1, 1)\\ \cline{2-4}
+%\hspace{3in}Player 2
+
+%\begin{center}
+%\begin{tabular}{l|r|c|c|}\cline{2-4}
+%&&\textbf{Cooperate}&\textbf{Defect}\\ \cline{2-4}
+%Player 1&\textbf{Cooperate} &(3, 3)&(0, 5)\\ \cline{2-4}
+%&\textbf{Defect} &(5, 0)&(1, 1)\\ \cline{2-4}
+%\end{tabular}
+%\end{center}
+%\vspace{.1in}
+
+\begin{table}[h]
+\centering
+
+\begin{tabular}{cccc}
+                      & \multicolumn{3}{c}{Player 2}                                                  \\ \cline{2-4} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Cooperate} & \multicolumn{1}{c|}{Defect} \\ \cline{2-4} 
+\multicolumn{1}{l|}{Player 1} & \multicolumn{1}{c|}{Cooperate} & \multicolumn{1}{c|}{$(3, 3)$} & \multicolumn{1}{c|}{$(0, 5)$} \\ \cline{2-4} 
+\multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Defect} & \multicolumn{1}{c|}{$(5, 0)$} & \multicolumn{1}{c|}{$(1, 1)$} \\ \cline{2-4} 
 \end{tabular}
-\end{center}
-\vspace{.1in}
+\caption{A Prisoner's Dilemma matrix}
+\label{T:CWPD3}
+\end{table}
 
-\begin{enumerate}
-\item Suppose this represented the situation of purchasing an item (say, a collectable Star Wars action figure) on the internet where both parties are untraceable. You agree to send the money at the same time that the seller agrees to send the toy. Then we can think of Cooperating as each of you sending money/ toy, and Defecting as not sending money/ toy. What should you do and why?
 
-\item Now suppose you wish to continue to do business with the other party. For example, instead of buying a Star Wars action figure, maybe you are buying music downloads. What should you do and why?
+\begin{xca}\label{E:internetpurchaseonce}
+Suppose this represented the situation of purchasing an item (say, a collectable Star Wars action figure) on the internet where both parties are untraceable. You agree to send the money at the same time that the seller agrees to send the toy. Then we can think of Cooperating as each of you sending money/ toy, and Defecting as not sending money/ toy. What should you do and why?
+\end{xca}
 
-\item Suggest a strategy for playing the above Prisoner's Dilemma repeatedly. DON'T SHARE YOUR STRATEGY WITH ANYONE YET! 
+\begin{xca}\label{E:internetpurchaserepeat}
+Now suppose you wish to continue to do business with the other party. For example, instead of buying a Star Wars action figure, maybe you are buying music downloads. What should you do and why?
+\end{xca}
 
-\item Play 10 rounds of Prisoner's Dilemma with someone in class. Use your suggested strategy. Keep track of the payoffs. Did your strategy seem effective? What should it mean to have an ``effective" strategy?
-\end{enumerate}
+\begin{xca}\label{E:RPDstrategy}
+Suggest a strategy for playing the Prisoner's Dilemma in Table \ref{T:CWPD3} repeatedly. DON'T SHARE YOUR STRATEGY WITH ANYONE YET! 
+\end{xca}
 
-We are now going to play a Prisoner's Dilemma Tournament! Choose one of the strategies below. You are to play your strategy against everyone else in the class. Keep a running total of your score. %The winner of the tournament will be the player with the highest total score at the end of the tournament.
+\begin{xca}\label{E:RPDplay}
+Play 10 rounds of Prisoner's Dilemma with someone in class. Use your suggested strategy. Keep track of the payoffs. Did your strategy seem effective? What should it mean to have an ``effective'' strategy?
+\end{xca}
+
+We are now going to play a Prisoner's Dilemma Tournament! Choose one of the strategies below. You are to play your strategy against everyone else in the class. Keep a running total of your score. Don't tell your opponents your strategy. 
+
 
 Some possible strategies:
 
@@ -57,45 +78,50 @@ Some possible strategies:
 
 \item Strategy: {\bf Tit for Tat with Occasional Surprise D.} Your strategy is to play whatever your opponent just played. Your first move is to COOPERATE (C), but then you need to repeat your opponent's last move. Occasionally, you will deviate from this strategy by playing D.
 \vspace{.2in}
-
-
-\begin{enumerate}
-\setcounter{enumi}{4}
-
-\item WITHOUT SHARING YOUR STRATEGY, play Prisoner's Dilemma 10 times with each of the other members of the class. Keep track of the payoffs for each game and your total score.
-
-\item After playing Repeated Prisoner's Dilemma as a class, can you determine who had which strategy? At this point you may share your strategy with others. Was your strategy more effective with some strategies than with others? Describe which opponents' strategies seemed to give you more points, which seemed to give you fewer?
-
-\item Describe the strategy or strategies that had the highest scores in the tournament. Does this seem surprising? Why or why not? How do the winning strategies compare to the strategy you suggested in 3?
-
-\item How does Repeated Prisoner's Dilemma differ from the ``one-time" Prisoner's Dilemma? Try to think in terms of ``rational" strategies.
-
-\item Describe a situation from real life that resembles a Repeated Prisoner's Dilemma. 
-\end{enumerate}
-
-Repeated or Iterated Prisoner's Dilemma has applications to biology and sociology. If you think of higher point totals as ``success as a species" in biology or ``success of a society" in sociology, we can try to determine which strategies seem the most effective or successful.
-
-\begin{enumerate}
-\setcounter{enumi}{9}
-
-\item How do a few defectors fare in a society of mostly cooperators? How do the cooperators fare?  (In other words, who will be more successful?) Keep in mind that everyone is playing with lots of cooperators and only a few defectors. Who will have the most points, cooperators or defectors?
-
-\item How do a few cooperators fare in a society of mostly defectors? How do the defectors fare? (In other words, who will be more successful?) Keep in mind that everyone is playing with lots of defectors and only a few cooperators. Who will have the most points, cooperators or defectors?
-
-\item Now consider a society of mostly TIT-FOR-TATers. How do a few defectors fare in a society of mostly TIT-FOR-TATers? How do the TIT-FOR-TATers fare? How would a few cooperators fare with the TIT-FOR-TATers? Would the evolution of such a society favor cooperation or defection?
-
-\end{enumerate}
-
-
-
-
-
-
-
-
 \end{itemize}
 
-%\end{document}
+
+%\begin{enumerate}
+%\setcounter{enumi}{4}
+\begin{xca}\label{E:RPDplaytournament}
+WITHOUT SHARING YOUR STRATEGY, play Prisoner's Dilemma 10 times with each of the other members of the class. Keep track of the payoffs for each game and your total score.
+\end{xca}
+
+\begin{xca}\label{E:RPDeffectivestrategies}
+After playing Repeated Prisoner's Dilemma as a class, can you determine who had which strategy? At this point you may share your strategy with others. Was your strategy more effective with some strategies than with others? Describe which opponents' strategies seemed to give you more points, which seemed to give you fewer?
+\end{xca}
+
+\begin{xca}\label{E:RPDbeststrategies}
+Describe the strategy or strategies that had the highest scores in the tournament. Does this seem surprising? Why or why not? How do the winning strategies compare to the strategy you suggested in Exercise \ref{E:RPDstrategy}?
+\end{xca}
+
+\begin{xca}\label{E:RPDcompare}
+How does Repeated Prisoner's Dilemma differ from the ``one-time'' Prisoner's Dilemma? Try to think in terms of rational strategies.
+\end{xca}
+
+\begin{xca}\label{E:RPDreallife}
+Describe a situation from real life that resembles a Repeated Prisoner's Dilemma. 
+\end{xca}
+
+Repeated or Iterated Prisoner's Dilemma has applications to biology and sociology. If you think of higher point totals as ``success as a species'' in biology or ``success of a society'' in sociology, we can try to determine which strategies seem the most effective or successful.
+
+%\begin{enumerate}
+%\setcounter{enumi}{9}
+
+\begin{xca}\label{E:RPDfewdefect}
+How do a few defectors fare in a society of mostly cooperators? How do the cooperators fare?  (In other words, who will be more successful?) Keep in mind that everyone is playing with lots of cooperators and only a few defectors. Who will have the most points, cooperators or defectors?
+\end{xca}
+
+\begin{xca}\label{E:RPDfewcoop} 
+How do a few cooperators fare in a society of mostly defectors? How do the defectors fare? (In other words, who will be more successful?) Keep in mind that everyone is playing with lots of defectors and only a few cooperators. Who will have the most points, cooperators or defectors?
+\end{xca}
+
+\begin{xca}\label{E:RPDtft}
+Now consider a society of mostly TIT-FOR-TATers. How do a few defectors fare in a society of mostly TIT-FOR-TATers? How do the TIT-FOR-TATers fare? How would a few cooperators fare with the TIT-FOR-TATers? Would the evolution of such a society favor cooperation or defection?
+\end{xca}
+
+
+
 
 
  

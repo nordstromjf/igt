@@ -1,16 +1,27 @@
 \begin{theindex}
 
   \item assumptions, 1, 2
-  \item augmented matrix, 48
+  \item augmented matrix, 46
+
+  \indexspace
+
+  \item Battle of the Sexes, 53
 
   \indexspace
 
   \item Cake Division, 1
+  \item Chicken, 59, 72
+  \item Class-Wide Prisoner's Dilemma, 61
   \item Competitive Advantage, 12
   \item constant-sum game, 7
+  \item cooperate, 61
+  \item cooperation, 64
+  \item cooperative game, 57
 
   \indexspace
 
+  \item defect, 61
+  \item defection, 64
   \item dominated by, 14
   \item dominates, 14
   \item \textit{Dr. Strangelove}, 28
@@ -20,43 +31,48 @@
   \item equally likely events, 19
   \item equilibrium pair, 10, 25
   \item equilibrium point, 25
-  \item equilibrium, mixed strategy, 40
-  \item expected payoff, 37
-  \item expected value, 20, 23, 32, 43
+  \item equilibrium, mixed strategy, 38
+  \item expected payoff, 35
+  \item expected value, 20, 23, 30, 41
 
   \indexspace
 
   \item finite game, 3
+  \item \textit{Footloose}, 72
 
   \indexspace
 
   \item game matrix, 4
   \item Generalized One-Card Stud Poker, 23
-  \item graphical solution, 35
+  \item graphical solution, 33
 
   \indexspace
 
   \item infinite game, 3
+  \item iterated Prisoner's Dilemma, 69
 
   \indexspace
 
-  \item Liar's Poker, 46
+  \item Liar's Poker, 44
 
   \indexspace
 
-  \item Matching Pennies, 4, 43
-  \item maximin mixed strategy, 39
+  \item Matching Pennies, 4, 41
+  \item maximin mixed strategy, 37
   \item maximin strategy, 17
-  \item maximin strategy, repeated games, 38
+  \item maximin strategy, repeated games, 36
   \item minimax, 17
-  \item minimax strategy, repeated games, 40
-  \item mixed strategies, expected value solution, 43
-  \item mixed strategy, 31
-  \item mixed strategy equilibrium, 40
+  \item minimax strategy, repeated games, 38
+  \item mixed strategies, expected value solution, 41
+  \item mixed strategy, 29
+  \item mixed strategy equilibrium, 38
 
   \indexspace
 
-  \item net gain, 52
+  \item net gain, 50
+  \item non-cooperative game, 57
+  \item non-cooperative games, 54
+  \item non-zero-sum game, 53
 
   \indexspace
 
@@ -69,16 +85,19 @@
   \item perfect information, 3, 28
   \item perfectly logical, 5
   \item player, 1
-  \item popular culture, 28
+  \item popular culture, 28, 72
+  \item Prisoner's Dilemma, 59, 72
   \item probability, 19
   \item proof by contradiction, 25
-  \item pure strategy, 31
+  \item pure strategy, 29
 
   \indexspace
 
   \item rational, 1
   \item rationality, 28
-  \item Rock-Paper-Scissors, 11, 45
+  \item \textit{Rebel Without a Cause}, 72
+  \item \textit{Return to Paradise}, 72
+  \item Rock-Paper-Scissors, 11, 43
 
   \indexspace
 
@@ -87,11 +106,11 @@
   \item solution, 3
   \item Solution Theorem for Zero-Sum Games, 25
   \item strategy pair, 8
-  \item strategy, mixed, 31
-  \item strategy, pure, 31
-  \item strategy, repeated game, 31
-  \item symmetric game, 53
-  \item systems of equations, 48
+  \item strategy, mixed, 29
+  \item strategy, pure, 29
+  \item strategy, repeated game, 29
+  \item symmetric game, 51
+  \item systems of equations, 46
 
   \indexspace
 
@@ -100,7 +119,11 @@
 
   \indexspace
 
-  \item Undercut, 52
+  \item Undercut, 50
+
+  \indexspace
+
+  \item Volunteer's Dilemma, 67
 
   \indexspace
 

@@ -45,27 +45,47 @@
 \indexentry{perfect information}{28}
 \indexentry{Dr. Strangelove@\textit{Dr. Strangelove}}{28}
 \indexentry{The Princess Bride@\textit{The Princess Bride}}{28}
-\indexentry{strategy, repeated game}{31}
-\indexentry{pure strategy}{31}
-\indexentry{strategy, pure}{31}
-\indexentry{mixed strategy}{31}
-\indexentry{strategy, mixed}{31}
-\indexentry{expected value}{32}
-\indexentry{graphical solution}{35}
-\indexentry{expected payoff}{37}
-\indexentry{maximin strategy, repeated games}{38}
-\indexentry{maximin mixed strategy}{39}
-\indexentry{minimax strategy, repeated games}{40}
-\indexentry{mixed strategy equilibrium}{40}
-\indexentry{equilibrium, mixed strategy}{40}
-\indexentry{mixed strategies, expected value solution}{43}
-\indexentry{expected value}{43}
-\indexentry{Matching Pennies}{43}
-\indexentry{Rock-Paper-Scissors}{45}
-\indexentry{Liar's Poker}{46}
-\indexentry{augmented matrix}{48}
-\indexentry{systems of equations}{48}
-\indexentry{augmented matrix}{48}
-\indexentry{Undercut}{52}
-\indexentry{net gain}{52}
-\indexentry{symmetric game}{53}
+\indexentry{strategy, repeated game}{29}
+\indexentry{pure strategy}{29}
+\indexentry{strategy, pure}{29}
+\indexentry{mixed strategy}{29}
+\indexentry{strategy, mixed}{29}
+\indexentry{expected value}{30}
+\indexentry{graphical solution}{33}
+\indexentry{expected payoff}{35}
+\indexentry{maximin strategy, repeated games}{36}
+\indexentry{maximin mixed strategy}{37}
+\indexentry{minimax strategy, repeated games}{38}
+\indexentry{mixed strategy equilibrium}{38}
+\indexentry{equilibrium, mixed strategy}{38}
+\indexentry{mixed strategies, expected value solution}{41}
+\indexentry{expected value}{41}
+\indexentry{Matching Pennies}{41}
+\indexentry{Rock-Paper-Scissors}{43}
+\indexentry{Liar's Poker}{44}
+\indexentry{augmented matrix}{46}
+\indexentry{systems of equations}{46}
+\indexentry{augmented matrix}{46}
+\indexentry{Undercut}{50}
+\indexentry{net gain}{50}
+\indexentry{symmetric game}{51}
+\indexentry{non-zero-sum game}{53}
+\indexentry{Battle of the Sexes}{53}
+\indexentry{non-cooperative games}{54}
+\indexentry{cooperative game}{57}
+\indexentry{non-cooperative game}{57}
+\indexentry{Prisoner's Dilemma}{59}
+\indexentry{Chicken}{59}
+\indexentry{Class-Wide Prisoner's Dilemma}{61}
+\indexentry{cooperate}{61}
+\indexentry{defect}{61}
+\indexentry{defection}{64}
+\indexentry{cooperation}{64}
+\indexentry{Volunteer's Dilemma}{67}
+\indexentry{iterated Prisoner's Dilemma}{69}
+\indexentry{popular culture}{72}
+\indexentry{Prisoner's Dilemma}{72}
+\indexentry{Chicken}{72}
+\indexentry{Return to Paradise@\textit{Return to Paradise}}{72}
+\indexentry{Rebel Without a Cause@\textit{Rebel Without a Cause}}{72}
+\indexentry{Footloose@\textit{Footloose}}{72}

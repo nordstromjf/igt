@@ -1,0 +1,344 @@
+<section>
+<title>Introduction to Two-Person Zero-Sum Games</title>
+
+
+<introduction>
+<p>
+<index><main>zero-sum game</main></index>
+</p>
+
+<p>
+In all of the examples from the last section, whatever one player won, the other player lost.
+</p>
+<definition xml:id="D_zerosum">
+<statement>
+<p>
+A two player game is called a <term>zero-sum</term><index><main>zero-sum game</main></index> game if the sum of the payoffs to each player is constant for all possible outcomes of the game. More specifically, the terms (or coordinates) in each payoff vector must add up to the same value for each payoff vector. Such games are sometimes called<term>constant-sum</term><index><main>constant-sum game</main></index> games instead.
+</p>
+</statement>
+</definition>
+<p>
+We can always think of zero-sum games as being games in which one player's win is the other player's loss.
+</p>
+
+<example xml:id="poker">
+<statement>
+<p>
+Consider a poker game in which each player comes to the game with <dollar />100. If there are five players, then the sum of money for all five players is always <dollar />500. At any give time during the game, a particular player may have more than <dollar />100, but then another player must have less than <dollar />100. One player's win is another player's loss.
+</p>
+</statement>
+</example>
+
+<example xml:id="E_cakecutting2">
+<statement>
+<p>
+Consider the cake division game. Determine the payoff matrix for this game. It is important to determine what each player's options are first: how can the <q>cutter</q> cut the cake? How can the <q>chooser</q> pick her piece? The payoff matrix is given in <xref ref="T_cakecutting">Table</xref>.
+</p>
+<table xml:id="T_cakecutting" >
+<caption>Payoff matrix for Cake Cutting game</caption>
+<tabular>
+<row><cell></cell><cell>Chooser</cell></row>
+<row><cell>\multicolumn{1}{l|}</cell><cell>\multicolumn{1}{l|}</cell><cell>Larger Piece</cell><cell>Smaller Piece</cell></row>
+<row><cell>Cutter</cell><cell>Cut Evenly</cell><cell>(half, half)</cell><cell>(half, half)</cell></row>
+<row><cell>\multicolumn{1}{l|}</cell><cell>Cut Unvenly</cell><cell>(small piece, large piece)</cell><cell>(large piece, small piece)</cell></row>
+<row><cell></cell></row>
+</tabular>
+</table>
+<p>
+In order to better see that this game is zero-sum (or constant-sum), we could give values for the amount of cake each player gets. For example, half the cake would be 50<percent />, a small piece might be 40<percent />. Then we can rewrite the matrix with the percentage values in <xref ref="T_cakecuttingpercent">Table</xref>
+</p>
+<table xml:id="T_cakecuttingpercent" >
+<caption>Payoff matrix, in percent of cake, for Cake Cutting game</caption>
+<tabular>
+<row><cell></cell><cell>Chooser</cell></row>
+<row><cell>\multicolumn{1}{l|}</cell><cell>\multicolumn{1}{l|}</cell><cell>Larger Piece</cell><cell>Smaller Piece</cell></row>
+<row><cell>Cutter</cell><cell>Cut Evenly</cell><cell><m>(50, 50)</m></cell><cell><m>(50, 50)</m></cell></row>
+<row><cell>\multicolumn{1}{l|}</cell><cell>Cut Unvenly</cell><cell><m>(40, 60)</m></cell><cell><m>(60, 40)</m></cell></row>
+<row><cell></cell></row>
+</tabular>
+</table>
+<p>
+In each outcome, the payoffs to each player add up to 100 (or 100<percent />). In more mathematical terms, the coordinates of each payoff vector add up to 100. Thus the sum is the same, or constant, for each outcome.
+</p>
+</statement>
+</example>
+
+<p>
+It is probably simple to see from the matrix in <xref ref="T_cakecuttingpercent">Table</xref> that Player 2 will always choose the large piece, thus Player 1 does best to cut the cake evenly. The outcome of the game is the <em>strategy pair</em><index><main>strategy pair</main></index> denoted \{Cut Evenly, Larger Piece\}, with resulting payoff vector <m>(50, 50)</m>.
+</p>
+
+<p>
+But why are we going to call these games <q>zero-sum</q> rather than <q>constant-sum</q>? We can convert any zero-sum game to a game where the payoffs actually sum to zero.
+</p>
+
+<example xml:id="E_pokerzero">
+<statement>
+<p>
+Consider the above poker game where each player begins the game with <dollar />100. Suppose at some point in the game the five players have the following amounts of money: <dollar />50, <dollar />200, <dollar />140, <dollar />100. <dollar />10. Then we could think of their gain as -<dollar />50, <dollar />100, <dollar />40, <dollar />0, -<dollar />90. What do these five numbers add up to?
+</p>
+</statement>
+</example>
+
+<example xml:id="E_cakecuttingzero">
+<statement>
+<p>
+Convert the cake division payoffs so that the payoff vectors sum to zero (rather than 100).
+</p>
+
+<p>
+The solution is given in <xref ref="T_cakecuttingzerosum">Table</xref>.
+</p>
+<table xml:id="T_cakecuttingzerosum" >
+<caption>Zero-sum payoff matrix for Cake Cutting game</caption>
+<tabular>
+<row><cell></cell><cell>Chooser</cell></row>
+<row><cell>\multicolumn{1}{l|}</cell><cell>\multicolumn{1}{l|}</cell><cell>Larger Piece</cell><cell>Smaller Piece</cell></row>
+<row><cell>Cutter</cell><cell>Cut Evenly</cell><cell><m>(0, 0)</m></cell><cell><m>(0, 0)</m></cell></row>
+<row><cell>\multicolumn{1}{l|}</cell><cell>Cut Unvenly</cell><cell><m>(-10, 10)</m></cell><cell><m>(10, -10)</m></cell></row>
+<row><cell></cell></row>
+</tabular>
+</table>
+<p>
+But let's make sure we understand what these numbers mean. For example, a payoff of <m>(0,0)</m> does not mean each player gets no cake, it means they don't get any more cake than the other player. In this example, each player gets half the cake (50<percent />) plus the payoff.
+</p>
+</statement>
+</example>
+
+<p>
+In the form of <xref ref="E_cakecuttingzero">Example</xref>, it is easy to recognize a zero-sum game since each payoff vector has the form <m>(a, -a)</m> (or <m>(-a, a)</m>).
+</p>
+</introduction>
+
+
+<subsection xml:id="Ex_election">
+<title>Example: An Election Campaign Game</title>
+<p>
+Two candidates, Arnold and Bainbridge, are facing each other in a state election. They have three choices regarding the issue of the speed limit on I-5: They can support raising the speed limit to 70 MPH, they can support keeping the current speed limit, or they can dodge the issue entirely.
+</p>
+<exercise xml:id="E_election1">
+<statement>
+<p>
+The candidates have the information given in <xref ref="T_election1">Table</xref> about how they would likely fare in the election based on how they stand on the speed limit.
+</p>
+<table xml:id="T_election1" >
+<caption>Percentage of the vote for <xref ref="E_election1">Exercise</xref></caption>
+<tabular>
+<row><cell></cell><cell>Bainbridge</cell></row>
+<row><cell>\multicolumn{1}{l|}</cell><cell>\multicolumn{1}{l|}</cell><cell>Raise Limit</cell><cell>Keep Limit</cell><cell>Dodge</cell></row>
+<row><cell>Arnold</cell><cell>Raise Limit</cell><cell><m>(45, 55)</m></cell><cell><m>(50, 50)</m></cell><cell><m>(40, 60)</m></cell></row>
+<row><cell>\multicolumn{1}{l|}</cell><cell>Keep Limit</cell><cell><m>(60, 40)</m></cell><cell><m>(55, 45)</m></cell><cell><m>(50, 50)</m></cell></row>
+<row><cell>\multicolumn{1}{l|}</cell><cell>Dodge</cell><cell><m>(45, 55)</m></cell><cell><m>(55, 45)</m></cell><cell><m>(40, 60)</m></cell></row>
+<row><cell></cell></row>
+</tabular>
+</table>
+<ol type="a">
+<li><p>Explain why this is a zero-sum game.</p></li>
+<li><p>What should Arnold choose to do? What should Bainbridge choose to do? Be sure to explain each candidate's choice. And remember, a player doesn't just want to win, he wants to get THE MOST votes<ndash /> for example, you could assume these are polling numbers and that there is some margin of error, thus a candidate prefers to have a larger margin over his opponent!</p></li>
+<li><p>What is the outcome of the election?</p></li>
+<li><p>Does Arnold need to consider Bainbridge's strategies is in order to decide on his own strategy? Does Bainbridge need to consider Arnold's strategies is in order to decide on his own strategy? Explain your answer.</p></li>
+</ol>
+</statement>
+</exercise>
+
+<exercise xml:id="E_election2">
+<statement>
+<p>
+Bainbridge's mother is injured in a highway accident caused by speeding. The new payoff matrix is given in <xref ref="T_election2">Table</xref>
+</p>
+<table xml:id="T_election2" >
+<caption>Percentage of the vote for <xref ref="E_election2">Exercise</xref></caption>
+<tabular>
+<row><cell></cell><cell>Bainbridge</cell></row>
+<row><cell>\multicolumn{1}{l|}</cell><cell>\multicolumn{1}{l|}</cell><cell>Raise Limit</cell><cell>Keep Limit</cell><cell>Dodge</cell></row>
+<row><cell>Arnold</cell><cell>Raise Limit</cell><cell><m>(45, 55)</m></cell><cell><m>(10, 90)</m></cell><cell><m>(40, 60)</m></cell></row>
+<row><cell>\multicolumn{1}{l|}</cell><cell>Keep Limit</cell><cell><m>(60, 40)</m></cell><cell><m>(55, 45)</m></cell><cell><m>(50, 50)</m></cell></row>
+<row><cell>\multicolumn{1}{l|}</cell><cell>Dodge</cell><cell><m>(45, 55)</m></cell><cell><m>(10, 90)</m></cell><cell><m>(40, 60)</m></cell></row>
+<row><cell></cell></row>
+</tabular>
+</table>
+<ol type="a">
+<li><p>Explain why this is a zero-sum game.</p></li>
+<li><p>What should Arnold choose to do? What should Bainbridge choose to do? Be sure to explain each candidate's choice.</p></li>
+<li><p>What is the outcome of the election?</p></li>
+<li><p>Does Arnold need to consider Bainbridge's strategies is in order to decide on his own strategy? Does Bainbridge need to consider Arnold's strategies is in order to decide on his own strategy? Explain your answer.</p></li>
+</ol>
+</statement>
+</exercise>
+
+<exercise xml:id="E_election3">
+<statement>
+<p>
+Bainbridge begins giving election speeches at college campuses and monster truck rallies.
+The new payoff matrix is given in <xref ref="T_election3">Table</xref>
+</p>
+<table xml:id="T_election3" >
+<caption>Percentage of the vote for <xref ref="E_election3">Exercise</xref></caption>
+<tabular>
+<row><cell></cell><cell>Bainbridge</cell></row>
+<row><cell>\multicolumn{1}{l|}</cell><cell>\multicolumn{1}{l|}</cell><cell>Raise Limit</cell><cell>Keep Limit</cell><cell>Dodge</cell></row>
+<row><cell>Arnold</cell><cell>Raise Limit</cell><cell><m>(35, 65)</m></cell><cell><m>(10, 90)</m></cell><cell><m>(60, 40)</m></cell></row>
+<row><cell>\multicolumn{1}{l|}</cell><cell>Keep Limit</cell><cell><m>(45, 55)</m></cell><cell><m>(55, 45)</m></cell><cell><m>(50, 50)</m></cell></row>
+<row><cell>\multicolumn{1}{l|}</cell><cell>Dodge</cell><cell><m>(40, 60)</m></cell><cell><m>(10, 90)</m></cell><cell><m>(65, 35)</m></cell></row>
+<row><cell></cell></row>
+</tabular>
+</table>
+<ol type="a">
+<li><p>Explain why this is a zero-sum game.</p></li>
+<li><p>What should Arnold choose to do? What should Bainbridge choose to do? Be sure to explain each candidate's choice.</p></li>
+<li><p>What is the outcome of the election?</p></li>
+<li><p>Does Arnold need to consider Bainbridge's strategies is in order to decide on his own strategy? Does Bainbridge need to consider Arnold's strategies is in order to decide on his own strategy? Explain your answer.</p></li>
+</ol>
+</statement>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+In each of the above scenarios, is there any reason for Arnold or Bainbridge to change his strategy? If there is, explain under what circumstances does it makes sense to change strategy. If not, explain why it never makes sense to change strategy.
+</p>
+</statement>
+</exercise>
+</exercisegroup>
+
+</exercises><subsection>
+<title>Equilibrium Pairs</title>
+<p>
+Chances are, in each of the exercises above, you were able to determine what each player should do. I particular, if both players play your suggested strategies, there is no reason for either player to change to a different strategy.
+</p>
+<definition xml:id="D_equilpair">
+<statement>
+<p>
+<index><main>equilibrium pair</main></index> A pair of strategies is an <term>equilibrium pair</term> if neither player gains by changing strategies.
+</p>
+</statement>
+</definition>
+<p>
+For example, consider the game matrix from <xref ref="E_Sec2_2small">Exercise</xref>, <xref ref="T_matrixEx1Sec2_2">Table</xref>.
+</p>
+<table>
+<caption>Payoff matrix for <xref ref="E_Sec2_2small">Exercise</xref></caption>
+<tabular>
+<row><cell></cell><cell>Player 2</cell></row>
+<row><cell>\multicolumn{1}{l|}</cell><cell>\multicolumn{1}{l|}</cell><cell>X</cell><cell>Y</cell></row>
+<row><cell>Player 1</cell><cell>A</cell><cell><m>(100, -100)</m></cell><cell><m>(-10, 10)</m></cell></row>
+<row><cell>\multicolumn{1}{l|}</cell><cell>B</cell><cell><m>(0, 0)</m></cell><cell><m>(-1, 11)</m></cell></row>
+<row><cell></cell></row>
+</tabular>
+</table>
+<p>
+You determined that Player 2 should choose to play Y, and thus, Player 1 should play B (i.e., we have the strategy pair \{B, Y\}). Why is this an equilibrium pair? If Player 2 plays Y, does Player 1 have any reason to change to strategy A? No, she would lose 10 instead of 1! If Player 1 plays B, does player 2 have any reason to change to strategy X? No, she would gain 0 instead of 1! Thus neither player benefits from changing strategy, and so we say \{B, Y\} is an equilibrium pair.
+</p>
+
+<p>
+For now, we can use a <q>guess and check</q> method for finding equilibrium pairs. Take each outcome and decide whether either player would prefer to switch. Remember, Player 1 can only choose a different row, and Player 2 can only choose a different column. In our above example there are four outcomes to check: \{A, X\}, \{A, Y\}, \{B, X\}, and \{B, Y\}. We already know \{B, Y\} is an equilibrium pair, but let's check the rest. Suppose the players play \{A, X\}. Does Player 1 want to switch to B? No, she'd rather get 100 than 0. Does player 2 want to switch to Y? Yes! She'd rather get 10 than -100. So \{A, X\} is NOT an equilibrium pair since a player wants to switch. Now check that for \{A, Y\} Player 1 would want to switch, and for \{B, X\} both players would want to switch. Thus \{A, Y\} and \{B, X\} are NOT equilibrium pairs.
+</p>
+<exercise>
+<statement>
+<p>
+Are the strategy pairs you determined in the three election scenarios equilibrium pairs? In other words, would either player prefer to change strategies? (You don't need to check whether any other strategies are equilibrium pairs.)
+</p>
+</statement>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+Use the <q>guess an check</q> method to determine any equilibrium pairs for the following payoff matrices.
+
+<ol type="a">
+<li><p><me>
+  \left[\begin{matrix}
+(2,-2)\amp (2, -2)\\
+(1, -1) \amp  (3, -3)
+\end{matrix}\right]\hspace{.5in}
+</me></p></li>
+<li><p><me>
+  \left[\begin{matrix}
+(3,-3)\amp (1, -1)\\
+(2, -2) \amp  (4, -4)
+\end{matrix}\right]\hspace{.5in}
+</me></p></li>
+<li><p><me>
+  \left[\begin{matrix}
+(4,-4)\amp (5, -5)\amp (4, -4)\\
+(3, -3) \amp  (0, 0)\amp (1, -1)
+\end{matrix}\right]
+</me></p></li>
+</ol>
+
+</p>
+</statement>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+Do all games have equilibrium pairs?
+</p>
+</statement>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+Can a game have more than one equilibrium pair?
+</p>
+</statement>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+Consider the game ROCK, PAPER, SCISSORS<index><main>Rock-Paper-Scissors</main></index> (Rock beats Scissors, Scissors beat Paper, Paper beats Rock). Construct the payoff matrix for this game. Does it have an equilibrium pair? Explain your answer.
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="E_network">
+<statement>
+<p>
+Two television networks are battling for viewers for 7pm Monday night. They each need to decide if they are going to show a sitcom or a sporting event. <xref ref="T_network">Table</xref> gives the payoffs as percent of viewers.
+</p>
+<table xml:id="T_network" >
+<caption>Payoff matrix for Battle of the Networks</caption>
+<tabular>
+<row><cell></cell><cell>Network 2</cell></row>
+<row><cell>\multicolumn{1}{l|}</cell><cell>\multicolumn{1}{l|}</cell><cell>Sitcom</cell><cell>Sports</cell></row>
+<row><cell>Network 1</cell><cell>Sitcom</cell><cell><m>(55, 45)</m></cell><cell><m>(52, 48)</m></cell></row>
+<row><cell>\multicolumn{1}{l|}</cell><cell>Sports</cell><cell><m>(50, 50)</m></cell><cell><m>(45, 55)</m></cell></row>
+<row><cell></cell></row>
+</tabular>
+</table>
+<ol type="a">
+<li><p>Explain why this is a zero-sum game.</p></li>
+<li><p>Does this game have an equilibrium pair? If so, find it and explain what each network should do.</p></li>
+<li><p>Convert this game to one in which the payoffs actually sum to zero. Hint: if a network wins 60<percent /> of the viewers, how much more than 50<percent /> of the viewers does it have?</p></li>
+</ol>
+</statement>
+</exercise>
+
+<exercise xml:id="E_compadvantage">
+<statement>
+<p>
+This game is an example of what economists call <em>Competitive Advantage</em><index><main>Competitive Advantage</main></index>. Two competing firms need to decide whether or not to adopt a new type of technology. The payoff matrix is in <xref ref="T_compadvantage">Table</xref>. The variable <m>a</m> is a positive number representing the economic advantage a firm will gain if it is the first to adopt the new technology.
+</p>
+<table xml:id="T_compadvantage" >
+<caption>Payoff matrix for Competitive Advantage</caption>
+<tabular>
+<row><cell></cell><cell>Firm A</cell></row>
+<row><cell>\multicolumn{1}{l|}</cell><cell>\multicolumn{1}{l|}</cell><cell>Adopt New Tech</cell><cell>Stay Put</cell></row>
+<row><cell>Firm B</cell><cell>Adopt New Tech</cell><cell><m>(0, 0)</m></cell><cell><m>(a, -a)</m></cell></row>
+<row><cell>\multicolumn{1}{l|}</cell><cell>Stay Put</cell><cell><m>(-a, a)</m></cell><cell><m>(0, 0)</m></cell></row>
+<row><cell></cell></row>
+</tabular>
+</table>
+<ol type="a">
+<li><p>Explain the payoff vector for each strategy pair. For example, why should the pair \{Adopt New Tech, Stay Put\} have the payoff <m>(a, -a)</m>?</p></li>
+<li><p>Explain what each firm should do.</p></li>
+<li><p>Give a real life example of Competitive Advantage.</p></li>
+</ol>
+</statement>
+</exercise>
+</exercisegroup>
+
+</exercises></section>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mathbook xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<docinfo>
+<macros>
+\newcommand{\MyTikzmark}[2]{
+     \tikz[overlay,remember picture,baseline] \node [anchor=base] (#1) {$#2$};}
+\newcommand{\DrawVLine}[3][]{
+  \begin{tikzpicture}[overlay,remember picture]
+    \draw[shorten \lt =0.3ex, #1] (#2.north) -- (#3.south);
+  \end{tikzpicture}
+}
+\newcommand{\DrawHLine}[3][]{
+  \begin{tikzpicture}[overlay,remember picture]
+    \draw[shorten \lt =0.2em, #1] (#2.west) -- (#3.east);
+  \end{tikzpicture}
+}
+</macros>
+
+<latex-image-preamble>
+
+\usepackage{tikz}
+\usetikzlibrary{positioning,matrix,arrows}
+\usetikzlibrary{shapes,decorations,shadows,fadings}
+
+\usepackage{pgfplots}
+
+</latex-image-preamble>
+
+</docinfo>
+
+
+<book>
+    <title>Introduction to Game Theory:
+ a Discovery Approach    </title>
+<frontmatter>
+<titlepage>
+<author>
+<personname>Jennifer Firkins Nordstrom</personname>
+</author>
+</titlepage>
+</frontmatter>
+
+
+<xi:include href="./chapter1.mbx" />
+
+<xi:include href="./chapter2.mbx" />
+
+<xi:include href="./chapter3.mbx" />
+
+<xi:include href="./chapter4.mbx" />
+<backmatter>
+<index-part>
+<title>Index</title>
+<index-list />
+</index-part>
+
+</backmatter>
+</book>
+</mathbook>

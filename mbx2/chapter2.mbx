@@ -1,0 +1,17 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
+<title>Two-Person Zero-Sum Games</title>
+
+
+<introduction>
+<p>
+In this chapter we will look at a specific type of two-player game. These are often the first games studied in game theory as they can be straightforward to analyze. All of our games in this chapter will have only two players. We will also focus on games in which one player's win is the other player's loss.
+</p>
+</introduction>
+<xi:include  href="section2-1.mbx" />
+<xi:include  href="section2-2.mbx" />
+<xi:include  href="section2-3.mbx" />
+<xi:include  href="section2-4.mbx" />
+<xi:include  href="section2-5.mbx" />
+<xi:include  href="section2-6.mbx" />
+<xi:include  href="section2-7.mbx" />
+</chapter>

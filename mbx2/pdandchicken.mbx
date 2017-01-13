@@ -1,0 +1,247 @@
+<section xml:id="pdandchicken">
+<title>Two-Player Non-Zero-Sum Games</title>
+<p>
+Before getting any further into non-zero-sum games, let's recall some key ideas about zero-sum games.
+<ul>
+<li><p>If a zero-sum game has an equilibrium point, then repeating the game does not affect how the players will play.</p></li>
+<li><p>If a zero-sum game has more that one equilibrium point then the values of the equilibrium points are the same.</p></li>
+<li><p>In a zero-sum game, we can find mixed strategy equilibrium points using the graphical method or the expected value method.</p></li>
+<li><p>In a zero-sum game, a player never benefits from communicating her strategy to her opponent.</p></li>
+</ul>
+</p>
+
+<p>
+Hopefully, in the last section you saw that non-zero-sum games can differ on all of the above!
+</p>
+
+<example xml:id="E_simplenonzero">
+<statement>
+<p>
+Let's consider the game given by <xref ref="T_simplenonzero">Table</xref>.
+</p>
+<table xml:id="T_simplenonzero" >
+<caption>A non-zero sum example</caption>
+<tabular>
+<row><cell></cell><cell><em>C</em></cell><cell><em>D</em></cell></row>
+<row><cell><em>A</em></cell><cell>(0, 0)</cell><cell>(10, 5)</cell></row>
+<row><cell><em>B</em></cell><cell>(5, 10)</cell><cell>(0, 0)</cell></row>
+</tabular>
+</table>
+</statement>
+</example>
+
+<exercise xml:id="E_simplenzero">
+<statement>
+<p>
+Check that this is NOT a zero-sum game.
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="E_simplefindequil">
+<statement>
+<p>
+Using the <q>guess and check</q> method for finding equilibria, you should be able to determine that there are two equilibrium points. What are they?
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="E_simpleprefer">
+<statement>
+<p>
+As we saw in <xref ref="Intrononzero">Section</xref>, non-zero-sum games equilibrium points need not have the same values. Does Player 1 prefer one of these equilibria over the other?
+</p>
+</statement>
+</exercise>
+<p>
+Since it is now possible for BOTH players to benefit at the same time, it might be a good idea for players to communicate with each other. For example, if Player 1 says that she will choose A no matter what, then it is in Player 2's best interest to choose D. If communication is allowed in the game, then we say the non-zero-sum game is <em>cooperative</em><index><main>cooperative game</main></index>. If no communication is allowed, we say it is <em>non-cooperative</em><index><main>non-cooperative game</main></index>.
+</p>
+
+<p>
+We saw in <xref ref="Intrononzero">Section</xref>, that our methods for analyzing zero-sum games do not work very well on non-zero-sum games. Let's look a little closer at this.
+</p>
+
+<p>
+If we apply the graphical method for Player 1 to the above game, we get that Player 1 should play a (1/3, 2/3) mixed strategy for an expected payoff of 10/3. Similarly we can determine that Player 2 should play a (2/3, 1/3) mixed strategy for an expected payoff of 10/3. Recall we developed this strategy as a <q>super defensive</q> strategy. But are our players motivated to play as defensively in a non-zero-sum game? Not necessarily! It is no longer true that Player 2 needs to keep Player 1 from gaining!
+</p>
+
+<p>
+Now suppose, Player 1 plays the (1/3, 2/3) strategy. Then the expected payoff to Player 2 for playing pure strategy C, <m>E_2(C)</m>, is 20/3; and the expected payoff to Player 2 for playing pure strategy D, <m>E_2(D)</m>, is 5/3. Thus Player 2 prefers C over D. But if Player 2 plays only C, then Player 1 should abandon her (1/3, 2/3) strategy and just play B! This results in the payoff vector (5, 10). Notice, that now the expected value for Player 1 is 5, which is better than 10/3! Again, since Player 2 is not trying to keep Player 1 from gaining, there is no reason to apply the maximin strategy to non-zero-sum games. Similarly, we don't want to apply the expected value solution since Player 1 does not care if Player 2's expected values are equal. Each player only cares about his or her own payoff, not the payoff of the other player.
+</p>
+
+<p>
+OK, so now, how do we analyze these games?
+</p>
+<exercise xml:id="E_conjgeneralstrat">
+<statement>
+<p>
+What are some possible strategies for each player? Might some strategies depend on what a player knows about her opponent?
+</p>
+</statement>
+</exercise>
+<p>
+Can you see that some of the analysis might be better understood with psychology than with mathematics?
+</p>
+
+<p>
+In order to better understand non-zero-sum games we look at two classic games.
+</p>
+
+<example xml:id="E_PrisonersDilemma">
+<statement>
+<p>
+<em>Prisoner's Dilemma.</em><index><main>Prisoner's Dilemma</main></index>
+Two partners in crime are arrested for burglary and sent to separate rooms. They are each offered a deal: if they confess and rat on their partner, they will receive a reduced sentence. So if one confesses and the other doesn't, the confessor only gets 3 months in prison, while the partner serves 10 years. If both confess, then they each get 8 years. However, if neither confess, there isn't enough evidence, and each gets just one year. We can represent the situation with the matrix in <xref ref="T_PrisonersDilemma">Table</xref>.
+</p>
+<table xml:id="T_PrisonersDilemma" >
+<caption>Prisoner's Dilemma (years in prison)</caption>
+<tabular>
+<row><cell></cell><cell>Prisoner 2</cell></row>
+<row><cell>\multicolumn{1}{l|}</cell><cell>\multicolumn{1}{l|}</cell><cell>Confess</cell><cell>Don't Confess</cell></row>
+<row><cell>Prisoner 1</cell><cell>Confess</cell><cell><m>(8, 8)</m></cell><cell><m>(0.25, 10)</m></cell></row>
+<row><cell>\multicolumn{1}{l|}</cell><cell>Don't Confess</cell><cell><m>(10, 0.25)</m></cell><cell><m>(1, 1)</m></cell></row>
+<row><cell></cell></row>
+</tabular>
+</table>
+</statement>
+</example>
+
+<exercise xml:id="E_PDdomstrat">
+<statement>
+<p>
+Does the matrix in <xref ref="T_PrisonersDilemma">Table</xref> have any dominated strategies for Player 1? Does it have any dominated strategies for Player 2? Keep in mind that a prisoner prefers smaller numbers since prison time is bad.
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="E_PDbeststrat">
+<statement>
+<p>
+Suppose you are Prisoner 1. What should you do? Why? Suppose you are Prisoner 2. What should you do? Why? Does your choice of strategies result in an equilibrium pair?
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="E_PDbestforall">
+<statement>
+<p>
+Looking at the game as an outsider, what strategy pair is the best option for both prisoners.
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="E_PDsamedecision">
+<statement>
+<p>
+Now suppose both prisoners are perfectly rational, so that any decision Prisoner 1 makes would also be the decision Prisoner 2 makes. Further, suppose both prisoners know that their opponent is perfectly rational. What should each prisoner do?
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="E_PDrandomP2">
+<statement>
+<p>
+Suppose Prisoner 2 is crazy and is likely to confess with 50/50 chance. What should Prisoner 1 do? Does it change if he confesses with a 75<percent /> chance? What if he confesses with a 25<percent /> chance.
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="E_PDcommunicate">
+<statement>
+<p>
+Suppose the prisoners are able to communicate about their strategy. How might this affect what they choose to do?
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="E_PDdilemma">
+<statement>
+<p>
+Explain why this is a <q>dilemma</q> for the prisoners. Is it likely they will chose a strategy which leads to the best outcome for both? You might want to consider whether there are dominated strategies.
+</p>
+</statement>
+</exercise>
+
+<example xml:id="E_Chicken">
+<statement>
+<p>
+<em>Chicken.</em><index><main>Chicken</main></index>
+Two drivers drive towards each other. If one driver swerves, he is considered a <q>chicken.</q> If a driver doesn't swerve (drives straight), he is considered the winner. Of course if neither swerves, they crash and neither wins. A possible payoff matrix for this game is given in <xref ref="T_chicken">Table</xref>
+</p>
+<table xml:id="T_chicken" >
+<caption>Chicken</caption>
+<tabular>
+<row><cell></cell><cell>Driver 2</cell></row>
+<row><cell>\multicolumn{1}{l|}</cell><cell>\multicolumn{1}{l|}</cell><cell>Swerve</cell><cell>Straight</cell></row>
+<row><cell>Driver 1</cell><cell>Swerve</cell><cell><m>(0, 0)</m></cell><cell><m>(-1, 10)</m></cell></row>
+<row><cell>\multicolumn{1}{l|}</cell><cell>Straight</cell><cell><m>(10, -1)</m></cell><cell><m>(-100, -100)</m></cell></row>
+<row><cell></cell></row>
+</tabular>
+</table>
+</statement>
+</example>
+
+<exercise xml:id="E_Cdomstrat">
+<statement>
+<p>
+Does game in <xref ref="T_chicken">Table</xref> have any dominated strategies?
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="E_Cbestoutcome">
+<statement>
+<p>
+What strategy results in the best outcome for Driver 1? What strategy results in the best outcome for Driver 2? What happens if they both choose that strategy?
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="E_Cequilpairs">
+<statement>
+<p>
+Consider the strategy pair with outcome <m>(-1, 10)</m>. Does Driver 1 have any regrets about his choice? What about Driver 2? Is this an equilibrium pair? Are there any other points in which neither driver would regret his choice?
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="E_Cbeststrat">
+<statement>
+<p>
+Can you determine what each driver should do in this game? If so, does this result in an equilibrium pair?
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="E_Csamestrat">
+<statement>
+<p>
+Now suppose both drivers in the game of chicken are perfectly rational, so that any decision Driver 1 makes would also be the decision Driver 2 makes. Further, suppose both drivers know that their opponent is perfectly rational. What should each driver do?
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="E_Crandom">
+<statement>
+<p>
+Suppose Driver 2 is a remote control dummy and will swerve or drive straight with a 50/50 chance. What should Driver 1 do? Does it change if he swerves with 75<percent /> chance?
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="E_Ccommunicate">
+<statement>
+<p>
+Can it benefit drivers in the game of chicken to communicate about their strategy? Explain.
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="E_comparePDC">
+<statement>
+<p>
+Compare Prisoner's Dilemma and Chicken. Are there dominated strategies in both games? Are there equilibrium pairs? Are players likely to reach the optimal payoff for one player, both players, or neither player? Does a player's choice depend on what he knows about his opponent (perfectly rational or perfectly random)?
+</p>
+</statement>
+</exercise>
+</section>

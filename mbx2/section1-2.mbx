@@ -1,155 +1,299 @@
+
 <section>
-<title>Game Matrices and Payoff Vectors</title>
+  <title>Game Matrices and Payoff Vectors</title>
+  <introduction>
+    <p>
+      We need a way to describe the possible choices for the players and the outcomes of those choices.
+      For now, we will stick with games that have only two players. We will call them Player 1 and Player 2.
+    </p>
+  </introduction>
 
+  <subsection xml:id="Ex_MatchPennies">
+    <title>Example: Matching Pennies</title>
+    <p>
+      <index><main>Matching Pennies</main></index>
+    </p>
 
-<introduction>
-<p>
-We need a way to describe the possible choices for the players and the outcomes of those choices.
-For now, we will stick with games that have only two players. We will call them Player 1 and Player 2.
-</p>
-</introduction>
+    <p>
+      Suppose each player has two choices: Heads (H) or Tails (T). If they choose the same letter, then Player 1 wins <dollar />1 from Player 2. If they don't match, then Player 1 loses <dollar />1 to Player 2. We can represent all the possible outcomes of the game with a {<em>matrix</em><index><main>game matrix</main></index>.
+    </p>
 
+    <p>
+      Player 1's options will always correspond to the rows of the matrix, and Player 2's options will correspond to the columns. See <xref ref="T_template">Table</xref>.
+    </p>
 
-<subsection xml:id="Ex_MatchPennies">
-<title>Example: Matching Pennies</title>
-<p>
-<index><main>Matching Pennies</main></index>
-</p>
+    <table xml:id="T_template" >
+      <caption>A game matrix showing the strategies for each player</caption>
+      <tabular>
+        <row>
+          <cell></cell>
+          <cell>Player 2</cell>
+        </row>
+        <row>
+          <cell>\multicolumn{1}{l|}</cell>
+          <cell>\multicolumn{1}{l|}</cell>
+          <cell>H</cell>
+          <cell>T</cell>
+        </row>
+        <row>
+          <cell>Player 1</cell>
+          <cell>H</cell>
+          <cell>\multicolumn{1}{l|}</cell>
+          <cell>\multicolumn{1}{l|}</cell>
+        </row>
+        <row>
+          <cell>\multicolumn{1}{l|}</cell>
+          <cell>T</cell>
+          <cell>\multicolumn{1}{l|}</cell>
+          <cell>\multicolumn{1}{l|}</cell>
+        </row>
+        <row>
+          <cell></cell>
+        </row>
+      </tabular>
+    </table>
 
-<p>
-Suppose each player has two choices: Heads (H) or Tails (T). If they choose the same letter, then Player 1 wins <dollar />1 from Player 2. If they don't match, then Player 1 loses <dollar />1 to Player 2. We can represent all the possible outcomes of the game with a {<em>matrix</em><index><main>game matrix</main></index>.
-</p>
+    <definition>
+      <statement>
+        <p>
+          A <term>payoff</term><index><main>payoff</main></index> is the amount a player receives for given outcome of the game.
+        </p>
+      </statement>
+    </definition>
 
-<p>
-Player 1's options will always correspond to the rows of the matrix, and Player 2's options will correspond to the columns. See <xref ref="T_template">Table</xref>.
-</p>
-<table xml:id="T_template" >
-<caption>A game matrix showing the strategies for each player</caption>
-<tabular>
-<row><cell></cell><cell>Player 2</cell></row>
-<row><cell>\multicolumn{1}{l|}</cell><cell>\multicolumn{1}{l|}</cell><cell>H</cell><cell>T</cell></row>
-<row><cell>Player 1</cell><cell>H</cell><cell>\multicolumn{1}{l|}</cell><cell>\multicolumn{1}{l|}</cell></row>
-<row><cell>\multicolumn{1}{l|}</cell><cell>T</cell><cell>\multicolumn{1}{l|}</cell><cell>\multicolumn{1}{l|}</cell></row>
-<row><cell></cell></row>
-</tabular>
-</table>
-<definition>
-<statement>
-<p>
-A <term>payoff</term><index><main>payoff</main></index> is the amount a player receives for given outcome of the game.
-</p>
-</statement>
-</definition>
-<p>
-Now we can fill in the matrix with each player's payoff. Since the payoffs to each player are different, we will use ordered pairs where the first number is Player 1's payoff and the second number is Player 2's payoff. The ordered pair is called the <em>payoff vector</em><index><main>payoff vector</main></index>. For example, if both players choose H, then Player 1's payoff is <dollar />1 and Player 2's payoff is -<dollar />1 (since he loses to Player 1). Thus the payoff vector associated with the outcome H, H is <m>(1, -1)</m>.
-</p>
+    <p>
+      Now we can fill in the matrix with each player's payoff. Since the payoffs to each player are different, we will use ordered pairs where the first number is Player 1's payoff and the second number is Player 2's payoff. The ordered pair is called the <em>payoff vector</em><index><main>payoff vector</main></index>. For example, if both players choose H, then Player 1's payoff is <dollar />1 and Player 2's payoff is -<dollar />1 (since he loses to Player 1). Thus the payoff vector associated with the outcome H, H is <m>(1, -1)</m>.
+    </p>
 
-<p>
-We fill in the matrix with the appropriate payoff vectors in <xref ref="T_matchpennies">Table</xref>
-</p>
-<table xml:id="T_matchpennies" >
-<caption>A game matrix showing the payoff vectors</caption>
-<tabular>
-<row><cell></cell><cell>Player 2</cell></row>
-<row><cell>\multicolumn{1}{l|}</cell><cell>\multicolumn{1}{l|}</cell><cell>H</cell><cell>T</cell></row>
-<row><cell>Player 1</cell><cell>H</cell><cell><m>(1, -1)</m></cell><cell><m>(-1, 1)</m></cell></row>
-<row><cell>\multicolumn{1}{l|}</cell><cell>T</cell><cell><m>(-1, 1)</m></cell><cell><m>(1, -1)</m></cell></row>
-<row><cell></cell></row>
-</tabular>
-</table>
-<p>
-It is useful to think about different ways to quantify winning and losing. What are some possible measures?
-<ul>
-<li><p>money, chips, counters, votes, points, amount of cake, etc.</p></li>
-</ul>
-</p>
+    <p>
+      We fill in the matrix with the appropriate payoff vectors in <xref ref="T_matchpennies">Table</xref>
+    </p>
 
-<p>
-Remember, a player always prefers to win the MOST points (money, chips, votes, cake), not just more than her opponent. If you want to study a game where players simply win or lose (such as Tic Tac Toe), we could simply use <q>1</q> for a win and <q>-1</q> for a loss.
-</p>
-</subsection>
+    <table xml:id="T_matchpennies" >
+      <caption>A game matrix showing the payoff vectors</caption>
+      <tabular>
+        <row>
+          <cell></cell>
+          <cell>Player 2</cell>
+        </row>
+        <row>
+          <cell>\multicolumn{1}{l|}</cell>
+          <cell>\multicolumn{1}{l|}</cell>
+          <cell>H</cell>
+          <cell>T</cell>
+        </row>
+        <row>
+          <cell>Player 1</cell>
+          <cell>H</cell>
+          <cell><m>(1, -1)</m></cell>
+          <cell><m>(-1, 1)</m></cell>
+        </row>
+        <row>
+          <cell>\multicolumn{1}{l|}</cell>
+          <cell>T</cell>
+          <cell><m>(-1, 1)</m></cell>
+          <cell><m>(1, -1)</m></cell>
+        </row>
+        <row>
+          <cell></cell>
+        </row>
+      </tabular>
+    </table>
 
+    <p>
+    It is useful to think about different ways to quantify winning and losing. What are some possible measures?
 
-<subsection>
-<title>Understanding the Players</title>
-<p>
-Recall that we said there are two major assumptions we must make about our players:
-<ul>
-<li><p>Our players are <em>self-interested</em><index><main>self-interested</main></index>. This means they will always prefer the largest  possible payoff. They will choose a strategy which maximizes their payoff.</p></li>
-<li><p>Our players are <em>perfectly logical</em><index><main>perfectly logical</main></index>. This means they will use all the information available and make the wisest choice for themselves.</p></li>
-</ul>
-</p>
+    <ul>
+      <li><p>
+          money, chips, counters, votes, points, amount of cake, etc.
+        </p></li>
+    </ul>
+    </p>
 
-<p>
-It is important to note that each player also knows that his or her opponent is also self-interested and perfectly logical!
-</p>
-<exercise>
-<statement>
-<ol type="a">
-<li><p>Which payoff does the player prefer: 0, 2, or -2?</p></li>
-<li><p>Which payoff does the player prefer: -2, -5, or -10?</p></li>
-<li><p>Which payoff does the player prefer: -1, -3, or 0?</p></li>
-</ol>
-</statement>
-</exercise>
-<p>
-The real work begins when there are two players since Player 1 can only choose the row and Player 2 can only choose the column. Thus the outcome depends on BOTH players.
-</p>
-<exercise xml:id="E_Sec2_2small">
-<statement>
-<p>
-Suppose two players are playing a game in which they can choose A or B with the payoffs given in the game matrix in <xref ref="T_matrixEx1Sec2_2">Table</xref>.
-</p>
-<table xml:id="T_matrixEx1Sec2_2" >
-<caption>Payoff matrix for <xref ref="E_Sec2_2small">Exercise</xref></caption>
-<tabular>
-<row><cell></cell><cell>Player 2</cell></row>
-<row><cell>\multicolumn{1}{l|}</cell><cell>\multicolumn{1}{l|}</cell><cell>X</cell><cell>Y</cell></row>
-<row><cell>Player 1</cell><cell>A</cell><cell><m>(100, -100)</m></cell><cell><m>(-10, 10)</m></cell></row>
-<row><cell>\multicolumn{1}{l|}</cell><cell>B</cell><cell><m>(0, 0)</m></cell><cell><m>(-1, 11)</m></cell></row>
-<row><cell></cell></row>
-</tabular>
-</table>
-<ol type="a">
-<li><p>Just by quickly looking at the matrix, which player appears to be able to win more than the other player? Does one player seem to have an advantage? Explain.</p></li>
-<li><p>Determine what each player should do. Explain your answer.</p></li>
-<li><p>Compare your answer in (b) to your answer in (a). Did the player you suggested in (a) actually win more than the other player?</p></li>
-<li><p>According to your answer in (b), does Player 1 end up with the largest possible payoff (for Player 1) in the matrix?</p></li>
-<li><p>According to your answer in (b), does Player 2 end up with the largest possible payoff (for Player 2) in the matrix?</p></li>
-<li><p>Do you still think a player has an advantage in this game? Is it the same answer as in (a)?</p></li>
-</ol>
-</statement>
-</exercise>
+    <p>
+      Remember, a player always prefers to win the MOST points (money, chips, votes, cake), not just more than her opponent. If you want to study a game where players simply win or lose (such as Tic Tac Toe), we could simply use <q>1</q> for a win and <q>-1</q> for a loss.
+    </p>
+  </subsection>
 
-<exercise xml:id="E_Sec2_2large">
-<statement>
-<p>
-Suppose there are two players with the game matrix given in <xref ref="T_matrixEx2Sec2_2">Table</xref>.
-</p>
-<table xml:id="T_matrixEx2Sec2_2" >
-<caption>Payoff matrix for <xref ref="E_Sec2_2large">Exercise</xref></caption>
-<tabular>
-<row><cell></cell><cell>Player 2</cell></row>
-<row><cell>\multicolumn{1}{l|}</cell><cell>\multicolumn{1}{l|}</cell><cell>X</cell><cell>Y</cell><cell>Z</cell></row>
-<row><cell>Player 1</cell><cell>A</cell><cell><m>(1000, -1000)</m></cell><cell><m>(-5, 5)</m></cell><cell><m>(-15,15)</m></cell></row>
-<row><cell>\multicolumn{1}{l|}</cell><cell>B</cell><cell><m>(200, -200)</m></cell><cell><m>(0, 0)</m></cell><cell><m>(-5,5)</m></cell></row>
-<row><cell>\multicolumn{1}{l|}</cell><cell>C</cell><cell><m>(500, -500)</m></cell><cell><m>(20, -20)</m></cell><cell><m>(-25,25)</m></cell></row>
-<row><cell></cell></row>
-</tabular>
-</table>
-<ol type="a">
-<li><p>Just by quickly looking at the matrix, which player appears to be able to win more than the other player? Does one player seem to have an advantage? Explain.</p></li>
-<li><p>Determine what each player should do. Explain your answer.</p></li>
-<li><p>Compare your answer in (b) to your answer in (a). Did the player you suggested in (a) actually win more than the other player?</p></li>
-<li><p>According to your answer in (b), does Player 1 end up with the largest possible payoff (for Player 1) in the matrix?</p></li>
-<li><p>According to your answer in (b), does Player 2 end up with the largest possible payoff (for Player 2) in the matrix?</p></li>
-<li><p>Do you still think a player has an advantage in this game? Is it the same answer as in (a)?</p></li>
-</ol>
-</statement>
-</exercise>
-<p>
-This chapter introduced you to who the players are and how to organize strategies and payoffs into a matrix. In the next chapter we will study some methods for how a player can determine his or her best strategy.
-</p>
-</subsection>
+  <subsection>
+    <title>Understanding the Players</title>
+    <p>
+    Recall that we said there are two major assumptions we must make about our players:
 
+    <ul>
+      <li><p>
+          Our players are <em>self-interested</em><index><main>self-interested</main></index>. This means they will always prefer the largest  possible payoff. They will choose a strategy which maximizes their payoff.
+        </p></li>
+
+      <li><p>
+          Our players are <em>perfectly logical</em><index><main>perfectly logical</main></index>. This means they will use all the information available and make the wisest choice for themselves.
+        </p></li>
+    </ul>
+    </p>
+
+    <p>
+      It is important to note that each player also knows that his or her opponent is also self-interested and perfectly logical!
+    </p>
+    <exercise>
+      <statement>
+        <ol type="a">
+          <li><p>
+              Which payoff does the player prefer: 0, 2, or -2?
+            </p></li>
+
+          <li><p>
+              Which payoff does the player prefer: -2, -5, or -10?
+            </p></li>
+
+          <li><p>
+              Which payoff does the player prefer: -1, -3, or 0?
+            </p></li>
+        </ol>
+      </statement>
+    </exercise>
+    <p>
+      The real work begins when there are two players since Player 1 can only choose the row and Player 2 can only choose the column. Thus the outcome depends on BOTH players.
+    </p>
+    <exercise xml:id="E_Sec2_2small">
+      <statement>
+        <p>
+          Suppose two players are playing a game in which they can choose A or B with the payoffs given in the game matrix in <xref ref="T_matrixEx1Sec2_2">Table</xref>.
+        </p>
+
+        <table xml:id="T_matrixEx1Sec2_2" >
+          <caption>Payoff matrix for <xref ref="E_Sec2_2small">Exercise</xref></caption>
+          <tabular>
+            <row>
+              <cell></cell>
+              <cell>Player 2</cell>
+            </row>
+            <row>
+              <cell>\multicolumn{1}{l|}</cell>
+              <cell>\multicolumn{1}{l|}</cell>
+              <cell>X</cell>
+              <cell>Y</cell>
+            </row>
+            <row>
+              <cell>Player 1</cell>
+              <cell>A</cell>
+              <cell><m>(100, -100)</m></cell>
+              <cell><m>(-10, 10)</m></cell>
+            </row>
+            <row>
+              <cell>\multicolumn{1}{l|}</cell>
+              <cell>B</cell>
+              <cell><m>(0, 0)</m></cell>
+              <cell><m>(-1, 11)</m></cell>
+            </row>
+            <row>
+              <cell></cell>
+            </row>
+          </tabular>
+        </table>
+
+        <ol type="a">
+          <li><p>
+              Just by quickly looking at the matrix, which player appears to be able to win more than the other player? Does one player seem to have an advantage? Explain.
+            </p></li>
+
+          <li><p>
+              Determine what each player should do. Explain your answer.
+            </p></li>
+
+          <li><p>
+              Compare your answer in (b) to your answer in (a). Did the player you suggested in (a) actually win more than the other player?
+            </p></li>
+
+          <li><p>
+              According to your answer in (b), does Player 1 end up with the largest possible payoff (for Player 1) in the matrix?
+            </p></li>
+
+          <li><p>
+              According to your answer in (b), does Player 2 end up with the largest possible payoff (for Player 2) in the matrix?
+            </p></li>
+
+          <li><p>
+              Do you still think a player has an advantage in this game? Is it the same answer as in (a)?
+            </p></li>
+        </ol>
+      </statement>
+    </exercise>
+    <exercise xml:id="E_Sec2_2large">
+      <statement>
+        <p>
+          Suppose there are two players with the game matrix given in <xref ref="T_matrixEx2Sec2_2">Table</xref>.
+        </p>
+
+        <table xml:id="T_matrixEx2Sec2_2" >
+          <caption>Payoff matrix for <xref ref="E_Sec2_2large">Exercise</xref></caption>
+          <tabular>
+            <row>
+              <cell></cell>
+              <cell>Player 2</cell>
+            </row>
+            <row>
+              <cell>\multicolumn{1}{l|}</cell>
+              <cell>\multicolumn{1}{l|}</cell>
+              <cell>X</cell>
+              <cell>Y</cell>
+              <cell>Z</cell>
+            </row>
+            <row>
+              <cell>Player 1</cell>
+              <cell>A</cell>
+              <cell><m>(1000, -1000)</m></cell>
+              <cell><m>(-5, 5)</m></cell>
+              <cell><m>(-15,15)</m></cell>
+            </row>
+            <row>
+              <cell>\multicolumn{1}{l|}</cell>
+              <cell>B</cell>
+              <cell><m>(200, -200)</m></cell>
+              <cell><m>(0, 0)</m></cell>
+              <cell><m>(-5,5)</m></cell>
+            </row>
+            <row>
+              <cell>\multicolumn{1}{l|}</cell>
+              <cell>C</cell>
+              <cell><m>(500, -500)</m></cell>
+              <cell><m>(20, -20)</m></cell>
+              <cell><m>(-25,25)</m></cell>
+            </row>
+            <row>
+              <cell></cell>
+            </row>
+          </tabular>
+        </table>
+
+        <ol type="a">
+          <li><p>
+              Just by quickly looking at the matrix, which player appears to be able to win more than the other player? Does one player seem to have an advantage? Explain.
+            </p></li>
+
+          <li><p>
+              Determine what each player should do. Explain your answer.
+            </p></li>
+
+          <li><p>
+              Compare your answer in (b) to your answer in (a). Did the player you suggested in (a) actually win more than the other player?
+            </p></li>
+
+          <li><p>
+              According to your answer in (b), does Player 1 end up with the largest possible payoff (for Player 1) in the matrix?
+            </p></li>
+
+          <li><p>
+              According to your answer in (b), does Player 2 end up with the largest possible payoff (for Player 2) in the matrix?
+            </p></li>
+
+          <li><p>
+              Do you still think a player has an advantage in this game? Is it the same answer as in (a)?
+            </p></li>
+        </ol>
+      </statement>
+    </exercise>
+    <p>
+      This chapter introduced you to who the players are and how to organize strategies and payoffs into a matrix. In the next chapter we will study some methods for how a player can determine his or her best strategy.
+    </p>
+  </subsection>
 </section>

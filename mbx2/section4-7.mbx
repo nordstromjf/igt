@@ -1,131 +1,168 @@
+
 <section>
-<title>Repeated Prisoner's Dilemma</title>
-<p>
-In this section we look at two players playing Prisoner's Dilemma repeatedly. We call this game an <em>iterated</em> Prisoner's Dilemma<index><main>iterated Prisoner's Dilemma</main></index>.
-Recall the general Prisoner's Dilemma matrix from previous sections, given again in <xref ref="T_CWPD3">Table</xref>.
-</p>
-<table xml:id="T_CWPD3" >
-<caption>A Prisoner's Dilemma matrix</caption>
-<tabular>
-<row><cell></cell><cell>Player 2</cell></row>
-<row><cell>\multicolumn{1}{l|}</cell><cell>\multicolumn{1}{l|}</cell><cell>Cooperate</cell><cell>Defect</cell></row>
-<row><cell>Player 1</cell><cell>Cooperate</cell><cell><m>(3, 3)</m></cell><cell><m>(0, 5)</m></cell></row>
-<row><cell>\multicolumn{1}{l|}</cell><cell>Defect</cell><cell><m>(5, 0)</m></cell><cell><m>(1, 1)</m></cell></row>
-<row><cell></cell></row>
-</tabular>
-</table>
-<exercise xml:id="E_internetpurchaseonce">
-<statement>
-<p>
-Suppose this represented the situation of purchasing an item (say, a collectable Star Wars action figure) on the internet where both parties are untraceable. You agree to send the money at the same time that the seller agrees to send the toy. Then we can think of Cooperating as each of you sending money/ toy, and Defecting as not sending money/ toy. What should you do and why?
-</p>
-</statement>
-</exercise>
+  <title>Repeated Prisoner's Dilemma</title>
+  <p>
+    In this section we look at two players playing Prisoner's Dilemma repeatedly. We call this game an <em>iterated</em> Prisoner's Dilemma<index><main>iterated Prisoner's Dilemma</main></index>.
+    Recall the general Prisoner's Dilemma matrix from previous sections, given again in <xref ref="T_CWPD3">Table</xref>.
+  </p>
 
-<exercise xml:id="E_internetpurchaserepeat">
-<statement>
-<p>
-Now suppose you wish to continue to do business with the other party. For example, instead of buying a Star Wars action figure, maybe you are buying music downloads. What should you do and why?
-</p>
-</statement>
-</exercise>
+  <table xml:id="T_CWPD3" >
+    <caption>A Prisoner's Dilemma matrix</caption>
+    <tabular>
+      <row>
+        <cell></cell>
+        <cell>Player 2</cell>
+      </row>
+      <row>
+        <cell>\multicolumn{1}{l|}</cell>
+        <cell>\multicolumn{1}{l|}</cell>
+        <cell>Cooperate</cell>
+        <cell>Defect</cell>
+      </row>
+      <row>
+        <cell>Player 1</cell>
+        <cell>Cooperate</cell>
+        <cell><m>(3, 3)</m></cell>
+        <cell><m>(0, 5)</m></cell>
+      </row>
+      <row>
+        <cell>\multicolumn{1}{l|}</cell>
+        <cell>Defect</cell>
+        <cell><m>(5, 0)</m></cell>
+        <cell><m>(1, 1)</m></cell>
+      </row>
+      <row>
+        <cell></cell>
+      </row>
+    </tabular>
+  </table>
 
-<exercise xml:id="E_RPDstrategy">
-<statement>
-<p>
-Suggest a strategy for playing the Prisoner's Dilemma in <xref ref="T_CWPD3">Table</xref> repeatedly. DON'T SHARE YOUR STRATEGY WITH ANYONE YET!
-</p>
-</statement>
-</exercise>
+  <exercise xml:id="E_internetpurchaseonce">
+    <statement>
+      <p>
+        Suppose this represented the situation of purchasing an item (say, a collectable Star Wars action figure) on the internet where both parties are untraceable. You agree to send the money at the same time that the seller agrees to send the toy. Then we can think of Cooperating as each of you sending money/ toy, and Defecting as not sending money/ toy. What should you do and why?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_internetpurchaserepeat">
+    <statement>
+      <p>
+        Now suppose you wish to continue to do business with the other party. For example, instead of buying a Star Wars action figure, maybe you are buying music downloads. What should you do and why?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_RPDstrategy">
+    <statement>
+      <p>
+        Suggest a strategy for playing the Prisoner's Dilemma in <xref ref="T_CWPD3">Table</xref> repeatedly. DON'T SHARE YOUR STRATEGY WITH ANYONE YET!
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_RPDplay">
+    <statement>
+      <p>
+        Play 10 rounds of Prisoner's Dilemma with someone in class. Use your suggested strategy. Keep track of the payoffs. Did your strategy seem effective? What should it mean to have an <q>effective</q> strategy?
+      </p>
+    </statement>
+  </exercise>
+  <p>
+    We are now going to play a Prisoner's Dilemma Tournament! Choose one of the strategies below. You are to play your strategy against everyone else in the class. Keep a running total of your score. Don't tell your opponents your strategy.
+  </p>
 
-<exercise xml:id="E_RPDplay">
-<statement>
-<p>
-Play 10 rounds of Prisoner's Dilemma with someone in class. Use your suggested strategy. Keep track of the payoffs. Did your strategy seem effective? What should it mean to have an <q>effective</q> strategy?
-</p>
-</statement>
-</exercise>
-<p>
-We are now going to play a Prisoner's Dilemma Tournament! Choose one of the strategies below. You are to play your strategy against everyone else in the class. Keep a running total of your score. Don't tell your opponents your strategy.
-</p>
+  <p>
+  Some possible strategies:
 
-<p>
-Some possible strategies:
-<ul>
-<li><p>Strategy: <em>Defection.</em> Your strategy is to <em>always</em> choose DEFECT (D).</p></li>
-<li><p>Strategy: <em>Cooperation.</em> Your strategy is to <em>always</em> choose COOPERATE (C).</p></li>
-<li><p>Strategy: <em>Tit for Tat.</em> Your strategy is to play whatever your opponent just played. Your first move is to COOPERATE (C), but then you need to repeat your opponent's last move.</p></li>
-<li><p>Strategy: <em>Tit for Two Tats.</em> Your strategy is to COOPERATE (C) unless your opponent DEFECTS twice in a row. After two D's you respond with D.</p></li>
-<li><p>Strategy: <em>Random (1/2, 1/2).</em> Your strategy is to COOPERATE (C) randomly 50<percent /> of the time and DEFECT (D) 50<percent /> of the time. [Note: it will be hard to be truly random, but try to play each option approximately the same amount.]</p></li>
-<li><p>Strategy: <em>Random (3/4, 1/4).</em> Your strategy is to COOPERATE (C) randomly 75<percent /> of the time and DEFECT (D) 25<percent /> of the time. [Note: it will be hard to be truly random, but try to play C more often than D.]</p></li>
-<li><p>Strategy: <em>Random (1/4, 3/4).</em> Your strategy is to COOPERATE (C) randomly 25<percent /> of the time and DEFECT (D) 75<percent /> of the time. [Note: it will be hard to be truly random, but try to play D more often than C.]</p></li>
-<li><p>Strategy: <em>Tit for Tat with Occasional Surprise D.</em> Your strategy is to play whatever your opponent just played. Your first move is to COOPERATE (C), but then you need to repeat your opponent's last move. Occasionally, you will deviate from this strategy by playing D.</p></li>
-</ul>
+  <ul>
+    <li><p>
+        Strategy: <em>Defection.</em> Your strategy is to <em>always</em> choose DEFECT (D).
+      </p></li>
 
-</p>
-<exercise xml:id="E_RPDplaytournament">
-<statement>
-<p>
-WITHOUT SHARING YOUR STRATEGY, play Prisoner's Dilemma 10 times with each of the other members of the class. Keep track of the payoffs for each game and your total score.
-</p>
-</statement>
-</exercise>
+    <li><p>
+        Strategy: <em>Cooperation.</em> Your strategy is to <em>always</em> choose COOPERATE (C).
+      </p></li>
 
-<exercise xml:id="E_RPDeffectivestrategies">
-<statement>
-<p>
-After playing Repeated Prisoner's Dilemma as a class, can you determine who had which strategy? At this point you may share your strategy with others. Was your strategy more effective with some strategies than with others? Describe which opponents' strategies seemed to give you more points, which seemed to give you fewer?
-</p>
-</statement>
-</exercise>
+    <li><p>
+        Strategy: <em>Tit for Tat.</em> Your strategy is to play whatever your opponent just played. Your first move is to COOPERATE (C), but then you need to repeat your opponent's last move.
+      </p></li>
 
-<exercise xml:id="E_RPDbeststrategies">
-<statement>
-<p>
-Describe the strategy or strategies that had the highest scores in the tournament. Does this seem surprising? Why or why not? How do the winning strategies compare to the strategy you suggested in <xref ref="E_RPDstrategy">Exercise</xref>?
-</p>
-</statement>
-</exercise>
+    <li><p>
+        Strategy: <em>Tit for Two Tats.</em> Your strategy is to COOPERATE (C) unless your opponent DEFECTS twice in a row. After two D's you respond with D.
+      </p></li>
 
-<exercise xml:id="E_RPDcompare">
-<statement>
-<p>
-How does Repeated Prisoner's Dilemma differ from the <q>one-time</q> Prisoner's Dilemma? Try to think in terms of rational strategies.
-</p>
-</statement>
-</exercise>
+    <li><p>
+        Strategy: <em>Random (1/2, 1/2).</em> Your strategy is to COOPERATE (C) randomly 50<percent /> of the time and DEFECT (D) 50<percent /> of the time. [Note: it will be hard to be truly random, but try to play each option approximately the same amount.]
+      </p></li>
 
-<exercise xml:id="E_RPDreallife">
-<statement>
-<p>
-Describe a situation from real life that resembles a Repeated Prisoner's Dilemma.
-</p>
-</statement>
-</exercise>
-<p>
-Repeated or Iterated Prisoner's Dilemma has applications to biology and sociology. If you think of higher point totals as <q>success as a species</q> in biology or <q>success of a society</q> in sociology, we can try to determine which strategies seem the most effective or successful.
-</p>
-<exercise xml:id="E_RPDfewdefect">
-<statement>
-<p>
-How do a few defectors fare in a society of mostly cooperators? How do the cooperators fare? (In other words, who will be more successful?) Keep in mind that everyone is playing with lots of cooperators and only a few defectors. Who will have the most points, cooperators or defectors?
-</p>
-</statement>
-</exercise>
+    <li><p>
+        Strategy: <em>Random (3/4, 1/4).</em> Your strategy is to COOPERATE (C) randomly 75<percent /> of the time and DEFECT (D) 25<percent /> of the time. [Note: it will be hard to be truly random, but try to play C more often than D.]
+      </p></li>
 
-<exercise xml:id="E_RPDfewcoop">
-<statement>
-<p>
-How do a few cooperators fare in a society of mostly defectors? How do the defectors fare? (In other words, who will be more successful?) Keep in mind that everyone is playing with lots of defectors and only a few cooperators. Who will have the most points, cooperators or defectors?
-</p>
-</statement>
-</exercise>
+    <li><p>
+        Strategy: <em>Random (1/4, 3/4).</em> Your strategy is to COOPERATE (C) randomly 25<percent /> of the time and DEFECT (D) 75<percent /> of the time. [Note: it will be hard to be truly random, but try to play D more often than C.]
+      </p></li>
 
-<exercise xml:id="E_RPDtft">
-<statement>
-<p>
-Now consider a society of mostly TIT-FOR-TATers. How do a few defectors fare in a society of mostly TIT-FOR-TATers? How do the TIT-FOR-TATers fare? How would a few cooperators fare with the TIT-FOR-TATers? Would the evolution of such a society favor cooperation or defection?
-</p>
-</statement>
-</exercise>
+    <li><p>
+        Strategy: <em>Tit for Tat with Occasional Surprise D.</em> Your strategy is to play whatever your opponent just played. Your first move is to COOPERATE (C), but then you need to repeat your opponent's last move. Occasionally, you will deviate from this strategy by playing D.
+      </p></li>
+  </ul>
+  </p>
+  <exercise xml:id="E_RPDplaytournament">
+    <statement>
+      <p>
+        WITHOUT SHARING YOUR STRATEGY, play Prisoner's Dilemma 10 times with each of the other members of the class. Keep track of the payoffs for each game and your total score.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_RPDeffectivestrategies">
+    <statement>
+      <p>
+        After playing Repeated Prisoner's Dilemma as a class, can you determine who had which strategy? At this point you may share your strategy with others. Was your strategy more effective with some strategies than with others? Describe which opponents' strategies seemed to give you more points, which seemed to give you fewer?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_RPDbeststrategies">
+    <statement>
+      <p>
+        Describe the strategy or strategies that had the highest scores in the tournament. Does this seem surprising? Why or why not? How do the winning strategies compare to the strategy you suggested in <xref ref="E_RPDstrategy">Exercise</xref>?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_RPDcompare">
+    <statement>
+      <p>
+        How does Repeated Prisoner's Dilemma differ from the <q>one-time</q> Prisoner's Dilemma? Try to think in terms of rational strategies.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_RPDreallife">
+    <statement>
+      <p>
+        Describe a situation from real life that resembles a Repeated Prisoner's Dilemma.
+      </p>
+    </statement>
+  </exercise>
+  <p>
+    Repeated or Iterated Prisoner's Dilemma has applications to biology and sociology. If you think of higher point totals as <q>success as a species</q> in biology or <q>success of a society</q> in sociology, we can try to determine which strategies seem the most effective or successful.
+  </p>
+  <exercise xml:id="E_RPDfewdefect">
+    <statement>
+      <p>
+        How do a few defectors fare in a society of mostly cooperators? How do the cooperators fare? (In other words, who will be more successful?) Keep in mind that everyone is playing with lots of cooperators and only a few defectors. Who will have the most points, cooperators or defectors?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_RPDfewcoop">
+    <statement>
+      <p>
+        How do a few cooperators fare in a society of mostly defectors? How do the defectors fare? (In other words, who will be more successful?) Keep in mind that everyone is playing with lots of defectors and only a few cooperators. Who will have the most points, cooperators or defectors?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_RPDtft">
+    <statement>
+      <p>
+        Now consider a society of mostly TIT-FOR-TATers. How do a few defectors fare in a society of mostly TIT-FOR-TATers? How do the TIT-FOR-TATers fare? How would a few cooperators fare with the TIT-FOR-TATers? Would the evolution of such a society favor cooperation or defection?
+      </p>
+    </statement>
+  </exercise>
 </section>

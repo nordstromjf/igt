@@ -1,135 +1,167 @@
+
 <section xml:id="S_CWPD">
-<title>A Class-Wide Experiment</title>
-<p>
-<index><main>Class-Wide Prisoner's Dilemma</main></index>
-</p>
+  <title>A Class-Wide Experiment</title>
+  <p>
+    <index><main>Class-Wide Prisoner's Dilemma</main></index>
+  </p>
 
-<p>
-We are going to look at a class-wide game.
-</p>
+  <p>
+    We are going to look at a class-wide game.
+  </p>
 
-<p>
-Each member of the class secretly chooses a single letter: <q>C</q> or <q>D,</q> standing for <q>cooperate</q><index><main>cooperate</main></index> or <q>defect.</q><index><main>defect</main></index> This will be used as your strategy choice in the following game with each of the other players in the class. Here is how it works for each pair of players: if they both cooperate, they get each get 3 points. If they both defect, they each get 1 point. If one cooperates and one defects, the cooperator gets nothing, but the defector gets 5 points. Your one choice of <q>C</q> or <q>D</q> will be used to play the game with all the other players in the class.
-</p>
+  <p>
+    Each member of the class secretly chooses a single letter: <q>C</q> or <q>D,</q> standing for <q>cooperate</q><index><main>cooperate</main></index> or <q>defect.</q><index><main>defect</main></index> This will be used as your strategy choice in the following game with each of the other players in the class. Here is how it works for each pair of players: if they both cooperate, they get each get 3 points. If they both defect, they each get 1 point. If one cooperates and one defects, the cooperator gets nothing, but the defector gets 5 points. Your one choice of <q>C</q> or <q>D</q> will be used to play the game with all the other players in the class.
+  </p>
 
-<p>
-Thus, if everyone chooses <q>C,</q> everyone will get 3 points per person (not counting yourself). If everyone chooses <q>D,</q> everyone will get 1 point per person (not counting yourself). You can't lose! And of course, anyone chooses <q>D</q> will get at least as much as everyone else will. If, for example in a class of 20, 11 people send in <q>C</q> and 9 send in <q>D,</q> then the 11 C-ers will get 3 points apiece from the other C-ers (making 30 points), and zero from the D-ers. So C-ers will get 30 points each. The D-ers, by contrast, will pick up 5 points apiece from each of the C-ers, making 55 points, and 1 point from each of the other D-ers, making 8 points, for a grand total of 63 points. No matter what the distribution is, D-ers always do better than C-ers. Of course, the more C-ers there are, the better everyone will do!
-</p>
+  <p>
+    Thus, if everyone chooses <q>C,</q> everyone will get 3 points per person (not counting yourself). If everyone chooses <q>D,</q> everyone will get 1 point per person (not counting yourself). You can't lose! And of course, anyone chooses <q>D</q> will get at least as much as everyone else will. If, for example in a class of 20, 11 people send in <q>C</q> and 9 send in <q>D,</q> then the 11 C-ers will get 3 points apiece from the other C-ers (making 30 points), and zero from the D-ers. So C-ers will get 30 points each. The D-ers, by contrast, will pick up 5 points apiece from each of the C-ers, making 55 points, and 1 point from each of the other D-ers, making 8 points, for a grand total of 63 points. No matter what the distribution is, D-ers always do better than C-ers. Of course, the more C-ers there are, the better everyone will do!
+  </p>
 
-<p>
-By the way, I should make it clear that in making your choice, you should not aim to be the winner, but simply to get as many points for yourself as possible. Thus you should be happier to get 30 points (as a result of saying <q>C</q> along with 10 others, even though the 9 D-sayers get more than you) than to get 19 points (by saying <q>D</q> along with everybody else, so nobody <q>beats</q> you).
-</p>
+  <p>
+    By the way, I should make it clear that in making your choice, you should not aim to be the winner, but simply to get as many points for yourself as possible. Thus you should be happier to get 30 points (as a result of saying <q>C</q> along with 10 others, even though the 9 D-sayers get more than you) than to get 19 points (by saying <q>D</q> along with everybody else, so nobody <q>beats</q> you).
+  </p>
 
-<p>
-Of course, your hope is to be the only defector, thus really cleaning up: with 19 C-ers, you'll get 95 points, and they'll each get 18 times 3, namely 54 points! But why am I doing the multiplication or any of this figuring for you? You've been studying game theory. So have all of you! You are all equally versed in game theory and understand about making rational choices. Therefore, I hardly need to tell you that you are to make what you consider to be your maximally rational choice. In particular, feelings of morality, guilt, apathy, and so on, are to be disregarded. Reasoning alone (of course including reasoning about others' reasoning) should be the basis of your decision.
-</p>
+  <p>
+    Of course, your hope is to be the only defector, thus really cleaning up: with 19 C-ers, you'll get 95 points, and they'll each get 18 times 3, namely 54 points! But why am I doing the multiplication or any of this figuring for you? You've been studying game theory. So have all of you! You are all equally versed in game theory and understand about making rational choices. Therefore, I hardly need to tell you that you are to make what you consider to be your maximally rational choice. In particular, feelings of morality, guilt, apathy, and so on, are to be disregarded. Reasoning alone (of course including reasoning about others' reasoning) should be the basis of your decision.
+  </p>
 
-<p>
-So all you need to do is make your choice. Write it down.
-</p>
+  <p>
+    So all you need to do is make your choice. Write it down.
+  </p>
 
-<p>
-It is to be understood (it almost goes without saying, but not quite) that you are not to discuss your answer with anyone else from the class. The purpose is to see what people do on their own, in isolation. Along with your answer you should include a short explanation for why you made your particular choice.
-</p>
+  <p>
+    It is to be understood (it almost goes without saying, but not quite) that you are not to discuss your answer with anyone else from the class. The purpose is to see what people do on their own, in isolation. Along with your answer you should include a short explanation for why you made your particular choice.
+  </p>
 
-<p>
-[Adapted from Douglas Hofstadter, <em>Metamagical Themas</em>]
-</p>
+  <p>
+    [Adapted from Douglas Hofstadter, <em>Metamagical Themas</em>]
+  </p>
 
-<p>
-<ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash />
-</p>
-<exercise xml:id="E_CWPDsummary">
-<statement>
-<p>
-Once everyone in class has made his or her choice, share your answers with the class.
+  <p>
+    <ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash /><ndash />
+  </p>
+  <exercise xml:id="E_CWPDsummary">
+    <statement>
+      <p>
+      Once everyone in class has made his or her choice, share your answers with the class.
 
-<ol type="a">
-<li><p>How many C's were there?</p></li>
-<li><p>How many D's were there?</p></li>
-<li><p>What was the payoff to each C?</p></li>
-<li><p>What was the payoff to each D?</p></li>
-</ol>
+      <ol type="a">
+        <li><p>
+            How many C's were there?
+          </p></li>
 
-</p>
-</statement>
-</exercise>
+        <li><p>
+            How many D's were there?
+          </p></li>
 
-<exercise xml:id="E_CWPDmatrix">
-<statement>
-<p>
-Determine the payoff matrix for class-wide Prisoner's Dilemma. [Hint: although you played this game with each other person in the class, this is still a 2 person game!]
-</p>
-</statement>
-</exercise>
+        <li><p>
+            What was the payoff to each C?
+          </p></li>
 
-<exercise xml:id="E_CWPDreasons">
-<statement>
-<p>
-What are some reasons people chose C? What are some reasons people chose D?
-</p>
-</statement>
-</exercise>
+        <li><p>
+            What was the payoff to each D?
+          </p></li>
+      </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_CWPDmatrix">
+    <statement>
+      <p>
+        Determine the payoff matrix for class-wide Prisoner's Dilemma. [Hint: although you played this game with each other person in the class, this is still a 2 person game!]
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_CWPDreasons">
+    <statement>
+      <p>
+        What are some reasons people chose C? What are some reasons people chose D?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_CWPDrational">
+    <statement>
+      <p>
+        Let's think about the idea of <em>rationality</em>. What appears to be the most rational choice, C or D? If everyone is <em>equally</em> rational, then what would everyone do? If everyone is equally rational, should everyone choose the same thing?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_CWPDsame">
+    <statement>
+      <p>
+        Now suppose everyone is equally (and perfectly) rational. AND everyone knows that everyone else is equally (and perfectly) rational. What should everyone choose? [Hint: if everyone knows that everyone will choose the same answer, what should everyone choose to do?]
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_PDvariant1">
+    <statement>
+      <p>
+        Consider the game in <xref ref="T_PDvariant1">Table</xref>
+      </p>
 
-<exercise xml:id="E_CWPDrational">
-<statement>
-<p>
-Let's think about the idea of <em>rationality</em>. What appears to be the most rational choice, C or D? If everyone is <em>equally</em> rational, then what would everyone do? If everyone is equally rational, should everyone choose the same thing?
-</p>
-</statement>
-</exercise>
+      <table xml:id="T_PDvariant1" >
+        <caption>Matrix for <xref ref="E_PDvariant1">Exercise</xref></caption>
+        <tabular>
+          <row>
+            <cell></cell>
+            <cell><em>C</em></cell>
+            <cell><em>D</em></cell>
+          </row>
+          <row>
+            <cell><em>C</em></cell>
+            <cell>(3, 3)</cell>
+            <cell>(0, 50)</cell>
+          </row>
+          <row>
+            <cell><em>D</em></cell>
+            <cell>(50, 0)</cell>
+            <cell>(.01, .01)</cell>
+          </row>
+        </tabular>
+      </table>
 
-<exercise xml:id="E_CWPDsame">
-<statement>
-<p>
-Now suppose everyone is equally (and perfectly) rational. AND everyone knows that everyone else is equally (and perfectly) rational. What should everyone choose? [Hint: if everyone knows that everyone will choose the same answer, what should everyone choose to do?]
-</p>
-</statement>
-</exercise>
+      <p>
+        What would you do? Why? What seems to be the most rational thing to do? Why?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_PDvariant2">
+    <statement>
+      <p>
+        Consider the game in <xref ref="T_PDvariant2">Table</xref>
+      </p>
 
-<exercise xml:id="E_PDvariant1">
-<statement>
-<p>
-Consider the game in <xref ref="T_PDvariant1">Table</xref>
-</p>
-<table xml:id="T_PDvariant1" >
-<caption>Matrix for <xref ref="E_PDvariant1">Exercise</xref></caption>
-<tabular>
-<row><cell></cell><cell><em>C</em></cell><cell><em>D</em></cell></row>
-<row><cell><em>C</em></cell><cell>(3, 3)</cell><cell>(0, 50)</cell></row>
-<row><cell><em>D</em></cell><cell>(50, 0)</cell><cell>(.01, .01)</cell></row>
-</tabular>
-</table>
-<p>
-What would you do? Why? What seems to be the most rational thing to do? Why?
-</p>
-</statement>
-</exercise>
+      <table xml:id="T_PDvariant2" >
+        <caption>Matrix for <xref ref="E_PDvariant2">Exercise</xref></caption>
+        <tabular>
+          <row>
+            <cell></cell>
+            <cell><em>C</em></cell>
+            <cell><em>D</em></cell>
+          </row>
+          <row>
+            <cell><em>C</em></cell>
+            <cell>(1000, 1000)</cell>
+            <cell>(0, 100)</cell>
+          </row>
+          <row>
+            <cell><em>D</em></cell>
+            <cell>(100, 0)</cell>
+            <cell>(100, 100)</cell>
+          </row>
+        </tabular>
+      </table>
 
-<exercise xml:id="E_PDvariant2">
-<statement>
-<p>
-Consider the game in <xref ref="T_PDvariant2">Table</xref>
-</p>
-<table xml:id="T_PDvariant2" >
-<caption>Matrix for <xref ref="E_PDvariant2">Exercise</xref></caption>
-<tabular>
-<row><cell></cell><cell><em>C</em></cell><cell><em>D</em></cell></row>
-<row><cell><em>C</em></cell><cell>(1000, 1000)</cell><cell>(0, 100)</cell></row>
-<row><cell><em>D</em></cell><cell>(100, 0)</cell><cell>(100, 100)</cell></row>
-</tabular>
-</table>
-<p>
-What would you do? Why? What seems to be the most rational thing to do? Why?
-</p>
-</statement>
-</exercise>
-
-<exercise xml:id="E_CWPDpayoffs">
-<statement>
-<p>
-Looking at all three of the above games, can you think of what sort of payoffs you would need in order to cooperate (C)? What about to defect (D)?
-</p>
-</statement>
-</exercise>
+      <p>
+        What would you do? Why? What seems to be the most rational thing to do? Why?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_CWPDpayoffs">
+    <statement>
+      <p>
+        Looking at all three of the above games, can you think of what sort of payoffs you would need in order to cooperate (C)? What about to defect (D)?
+      </p>
+    </statement>
+  </exercise>
 </section>

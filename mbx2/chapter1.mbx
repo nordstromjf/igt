@@ -1,16 +1,15 @@
+
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
-<title>What is Game Theory?</title>
+  <title>What is Game Theory?</title>
+  <introduction>
+    <p>
+      <q>Game Theory is not about `playing games.' It is about conflict resolution among rational but distrustful beings.</q> Poundstone, <em>Prisoner's Dilemma</em>, p. 39.
+    </p>
 
-
-<introduction>
-<p>
-<q>Game Theory is not about `playing games.' It is about conflict resolution among rational but distrustful beings.</q> Poundstone, <em>Prisoner's Dilemma</em>, p. 39.
-</p>
-
-<p>
-Although we will play lots of games in throughout this book, our goal is to understand how rational, distrustful players would play the game. We will explore how to behave as such players, and how to <q>solve</q> games under certain assumptions about our players.
-</p>
-</introduction>
-<xi:include  href="S_intro.mbx" />
-<xi:include  href="section1-2.mbx" />
+    <p>
+      Although we will play lots of games in throughout this book, our goal is to understand how rational, distrustful players would play the game. We will explore how to behave as such players, and how to <q>solve</q> games under certain assumptions about our players.
+    </p>
+  </introduction>
+  <xi:include  href="S_intro.mbx" />
+  <xi:include  href="section1-2.mbx" />
 </chapter>

@@ -1,0 +1,593 @@
+
+<section>
+  <title>Mixed Strategies: Graphical Solution</title>
+  <p>
+    <index><main>graphical solution</main></index>
+  </p>
+
+  <p>
+    In this section we will learn a method for finding the maximin solution for a repeated game using a graph.
+  </p>
+
+  <p>
+    Let's continue to consider the game given in <xref ref="E_smallrepeat">Example</xref> by
+    <me>
+      \left[\begin{matrix}1\amp 0\\
+      -1\amp 2
+      \end{matrix} \right].
+    </me>
+  </p>
+
+  <p>
+    In order to make our analysis easier, let's name the row and column strategies as in <xref ref="T_smallrepeat">Table</xref>.
+  </p>
+
+  <table xml:id="T_smallrepeat" >
+    <caption><xref ref="E_smallrepeat">Example</xref> with named strategies</caption>
+    <tabular>
+      <row>
+        <cell></cell>
+        <cell><em>C</em></cell>
+        <cell><em>D</em></cell>
+      </row>
+      <row>
+        <cell><em>A</em></cell>
+        <cell>1</cell>
+        <cell>0</cell>
+      </row>
+      <row>
+        <cell><em>B</em></cell>
+        <cell>-1</cell>
+        <cell>2</cell>
+      </row>
+    </tabular>
+  </table>
+
+  <p>
+    We want to determine how often Player 1 should play A and how often she should play B.
+  </p>
+  <exercise xml:id="E_linearconjecture">
+    <statement>
+      <p>
+        First it is good to test your instinct. Do you think she should play one of the strategies more often than the other? If so, which strategy should she play the most?
+      </p>
+    </statement>
+  </exercise>
+  <p>
+    What we are really trying to find is the probability with which Player 1 plays A (or B). Since we know that the probabilities sum to one, if we can find one probability, then we know the other.
+  </p>
+
+  <p>
+    Here is one way to do this. Let <m>p</m> be the probability that Player 1 plays B. Let <m>m</m> be the payoff to Player 1. Since we are try to find a mixed strategy for Player 1, we will pick a strategy for Player 2 and try to determine the possible payoffs for Player 1.
+  </p>
+
+  <p>
+    Let us determine some pairs <m>(p, m)</m>.
+  </p>
+
+  <ul>
+  <li>
+  <title>Step 1.</title>
+  <p>
+    Assume <em>Player 2</em> plays pure strategy <em>C</em>.
+  </p>
+
+  <ul>
+    <li>
+      <title>Step 1a.</title>
+      <p>
+        Find the probability (<m>p</m>) and payoff (<m>m</m>) if Player 1 always plays <em>A</em>.
+
+        If Player 1 plays pure strategy A, then she never plays B. Thus the probability she plays B is 0. Hence,  <m>p=0</m>. 
+
+        In the case where Player 1 plays A and Player 2 plays C, what is the payoff to Player 1? This is <m>m</m>, so <m>m=1</m>. 
+
+        Thus, for the strategy pair <m>\{A, C\}</m> we get <m>(0, 1)</m> for <m>(p, m)</m>. 
+
+        It is important to note that <m>(0, 1)</m> is <em>not</em> a payoff vector. This is common notation for any ordered pair. With payoff vectors, the ordered pair represents the payoff to each player. Here the ordered pair represents a probability of playing B and the payoff to Player 1.
+      </p></li>
+
+    <li>
+      <title>Step 1b.</title>
+      <p>
+        Find the probability (<m>p</m>) and payoff (<m>m</m>) if Player 1 always plays <em>B</em>.
+
+        If Player 1 plays pure strategy B, then what is the probability that she plays B? Since she always plays B, <m>p=1</m>. 
+
+        In the case where Player 1 plays B and Player 2 plays C, what is the payoff to Player 1? <m>m=-1</m>. 
+
+        Thus, for the strategy pair <m>\{B, C\}</m> we get <m>(1, -1)</m> for <m>(p, m)</m>.
+      </p></li>
+
+    <li>
+      <title>Step 1c.</title>
+      <p>
+        Now we want to know what Player 1's payoff will be as she varies the probability, <m>p</m>, with which she plays <em>B</em>. We can draw a graph where the <m>x</m>-axis represents to probability with which she plays B (<m>p</m>) and the <m>y</m>-axis represents the expected payoff (<m>m</m>). See <xref ref="F_MixedStrategyAxes">Figure</xref>.
+
+        <figure>
+          <image>
+            <latex-image-code>
+              <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=middle, xmin=-0.25,xmax=1.4, ymin=-1.5, ymax=2.5,xtick={0,1},ytick={0,0}]
+
+
+              \node[anchor=south west]
+              at ({axis cs:0,0}|-{axis description cs: 0,0}){\(A\)};
+
+              \node[anchor=south west]
+              at ({axis cs:1,0}|-{axis description cs: 0,0}){\(B\)};
+
+              \end{axis}\end{tikzpicture}]]>
+            </latex-image-code>
+          </image>
+        </figure>
+
+        Thus, when Player 1 plays only A, she is playing B with probability 0; when Player 1 plays only B, she is playing B with probability 1. It might be easier to remember if you label your graph as in <xref ref="F_MixedStrategyAxes">Figure</xref>.
+      </p></li>
+
+    <li>
+      <title>Step 1d.</title>
+      <p>
+        Now we can plot the points we determined in Step 1a and Step 1b. We will connect them with a line representing Player 2's pure strategy <em>C</em>. See <xref ref="F_MixedStrategyOneLine">Figure</xref>.
+
+        <figure>
+          <image>
+            <latex-image-code>
+              <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=middle, xmin=-0.25,xmax=1.4, ymin=-1.5, ymax=2.5,xtick={0,1}]
+
+              \addplot[-, mark=*]coordinates{(0,1)(1,-1)}
+              node[pos=0,above left]{\((0,1)\)}
+              node[pos=1,above right]{\((1,-1)\)}
+              node[pos=.7,below]{\(C\)};
+
+              \node[anchor=south west]
+              at ({axis cs:0,0}|-{axis description cs: 0,0}){\(A\)};
+
+              \node[anchor=south west]
+              at ({axis cs:1,0}|-{axis description cs: 0,0}){\(B\)};
+
+              \end{axis}\end{tikzpicture}]]>
+            </latex-image-code>
+          </image>
+        </figure>
+
+        Before moving on, let's make sure we understand what this line represents. Any point on it represents the expected payoff to Player 1 as she varies her strategy, <em>assuming Player 2 only plays C</em>. In this case, we can see that as she plays B more often, her expected payoff goes down.
+      </p></li>
+  </ul>
+  Now let's do the same thing, assuming Player 2 plays only D.</li>
+
+  <li>
+  <title>Step 2.</title>
+  <p>
+  Assume <em>Player 2</em> plays pure strategy <em>D</em>.
+
+  <ul>
+    <li>
+      <title>Step 2a.</title>
+      <p>
+        Find the probability (<m>p</m>) and payoff (<m>m</m>) if Player 1 always plays <em>A</em>.
+
+        If Player 1 plays pure strategy <em>A</em>, then what is the probability that she plays B? <m>p=0</m>. What is the payoff to Player 1? <m>m=0</m>. 
+
+        Thus, for the strategy pair <m>\{A, D\}</m> we get <m>(0, 0)</m> for <m>(p, m)</m>.
+      </p></li>
+
+    <li>
+      <title>Step 2b.</title>
+      <p>
+        Find the probability (<m>p</m>) and payoff (<m>m</m>) if Player 1 always plays <em>B</em>.
+
+        If Player 1 plays pure strategy B, then what is the probability that she plays B? <m>p=1</m>. What is the payoff to Player 1? <m>m=2</m>. 
+
+        Thus, for the strategy pair <m>\{B, D\}</m> we get <m>(1, -1)</m> for <m>(p, m)</m>.
+      </p></li>
+
+    <li>
+      <title>Step 2c.</title>
+      <p>
+        Now, on our same graph from Step 1, we can plot the points we determined in Step 2a and Step 2b. We will connect them with a line representing Player 2's pure strategy D. See <xref ref="F_Player_2_s_pure_strategy_D">Figure</xref>
+
+        <figure>
+          <image>
+            <latex-image-code>
+              <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=middle, xmin=-0.25,xmax=1.4, ymin=-1.5, ymax=2.5,xtick={0,1}]
+              \addplot[-, mark=*]coordinates{(0,0)(1,2)}
+              node[pos=0,above left]{\((0,0)\)}
+              node[pos=1,above]{\((1,2)\)}
+              node[pos=.5,above]{\(D\)};
+
+              \addplot[-, mark=*]coordinates{(0,1)(1,-1)}
+              node[pos=0,above left]{\((0,1)\)}
+              node[pos=1,above right]{\((1,-1)\)}
+              node[pos=.7,below]{\(C\)};
+
+              \node[anchor=south west]
+              at ({axis cs:0,0}|-{axis description cs: 0,0}){\(A\)};
+
+              \node[anchor=south west]
+              at ({axis cs:1,0}|-{axis description cs: 0,0}){\(B\)};
+
+              \end{axis}\end{tikzpicture}]]>
+            </latex-image-code>
+          </image>
+        </figure>
+
+        Now we can see that if Player 2 plays only D, then Player 1 does best by playing only B.
+      </p></li>
+  </ul>
+  </p></li>
+  </ul>
+  <p>
+    So we have this nice graph, but what does it really tell us? Although we drew lines representing each of Player 2's pure strategies, Player 1 doesn't know what Player 2 will do. Suppose Player 1 only played A, while Player 2 plays an unknown mixed strategy. Then the possible payoffs for Player 1 are 1 or 0. The more often Player 2 plays C, the more often Player 1 gets 1. So the <em>expected payoff</em><index><main>expected payoff</main></index> per game for a repeated game varies between 0 and 1. We can see the possible expected values as the red line on the graph in <xref ref="F_BoldA">Figure</xref>.
+  </p>
+
+  <figure>
+    <image>
+      <latex-image-code>
+        <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=middle, xmin=-0.25,xmax=1.4, ymin=-1.5, ymax=2.5,xtick={0,1}]
+        \addplot[-, mark=*]coordinates{(0,0)(1,2)}
+        node[pos=0,above left]{\((0,0)\)}
+        node[pos=1,above]{\((1,2)\)}
+        node[pos=.5,above]{\(D\)};
+
+        \addplot[-, mark=*]coordinates{(0,1)(1,-1)}
+        node[pos=0,above left]{\((0,1)\)}
+        node[pos=1,above right]{\((1,-1)\)}
+        node[pos=.7,below]{\(C\)};
+
+        \addplot[-, ultra thick, red]coordinates{(0,0)(0,1)};
+
+        \node[anchor=south west]
+        at ({axis cs:0,0}|-{axis description cs: 0,0}){\(A\)};
+
+        \node[anchor=south west]
+        at ({axis cs:1,0}|-{axis description cs: 0,0}){\(B\)};
+
+        \end{axis}\end{tikzpicture}]]>
+      </latex-image-code>
+    </image>
+  </figure>
+
+  <p>
+    Since we want to understand mixed strategies for Player 1, what would happen if Player 1 played A half the time and B half the time? In other words, what happens if <m>p=1/2</m>? Although we may not easily be able to see the exact values, we can represent the possible expected values on the graph in <xref ref="F_BoldHalf">Figure</xref>
+  </p>
+
+  <figure>
+    <image>
+      <latex-image-code>
+        <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=middle, xmin=-0.25,xmax=1.4, ymin=-1.5, ymax=2.5,xtick={0,1}]
+        \addplot[-, mark=*]coordinates{(0,0)(1,2)}
+        node[pos=0,above left]{\((0,0)\)}
+        node[pos=1,above]{\((1,2)\)}
+        node[pos=.5,above]{\(D\)};
+
+        \addplot[-, mark=*]coordinates{(0,1)(1,-1)}
+        node[pos=0,above left]{\((0,1)\)}
+        node[pos=1,above right]{\((1,-1)\)}
+        node[pos=.7,below]{\(C\)};
+
+        \addplot[-, ultra thick, red]coordinates{(.5,0)(.5,1)};
+
+        \node[anchor=south west]
+        at ({axis cs:0,0}|-{axis description cs: 0,0}){\(A\)};
+
+        \node[anchor=south west]
+        at ({axis cs:1,0}|-{axis description cs: 0,0}){\(B\)};
+
+        \end{axis}\end{tikzpicture}]]>
+      </latex-image-code>
+    </image>
+  </figure>
+
+  <p>
+    Hopefully, you've begun to see that for each choice of <m>p</m>, the top line represents the highest expected value for Player 1; the bottom line represents the lowest expected value for Player 1; the area between the lines represents the possible expected values for Player 1. As we did with non-repeated games, let's look at the <q>worst case scenario</q> for Player 1. In other words, let's assume that Player 2 can figure out Player 1's strategy. Then Player 1 would want to <em>maximize the minimum expected value</em>. Aha! This is just looking for the <em>maximin</em> strategy<index><main>maximin strategy, repeated games</main></index>!
+  </p>
+
+  <p>
+    Now the minimum expected value for each choice of <m>p</m> is given by the bottom lines on the graph, shown in red in <xref ref="F_BoldMin">Figure</xref>.
+  </p>
+
+  <figure>
+    <image>
+      <latex-image-code>
+        <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=middle, xmin=-0.25,xmax=1.4, ymin=-1.5, ymax=2.5,xtick={0,1}]
+        \addplot[-, mark=*]coordinates{(0,0)(1,2)}
+        node[pos=0,above left]{\((0,0)\)}
+        node[pos=1,above]{\((1,2)\)}
+        node[pos=.5,above]{\(D\)};
+
+        \addplot[-, mark=*]coordinates{(0,1)(1,-1)}
+        node[pos=0,above left]{\((0,1)\)}
+        node[pos=1,above right]{\((1,-1)\)}
+        node[pos=.7,below]{\(C\)};
+
+        \addplot[-, ultra thick, red]coordinates{(0,0)(.25,.5)};
+
+        \addplot[-, ultra thick, red]coordinates{(.25,.5)(1,-1)};
+
+        \node[anchor=south west]
+        at ({axis cs:0,0}|-{axis description cs: 0,0}){\(A\)};
+
+        \node[anchor=south west]
+        at ({axis cs:1,0}|-{axis description cs: 0,0}){\(B\)};
+
+        \end{axis}\end{tikzpicture}]]>
+      </latex-image-code>
+    </image>
+  </figure>
+
+  <p>
+    It should be easy to see that the <em>maximum</em> of the minimum expected payoffs occurs at the intersection of the two lines.
+  </p>
+
+  <ul>
+  <li>
+  <title>Step 3.</title>
+  <p>
+    Find the intersection of the two lines.
+  </p>
+
+  <ul>
+    <li>
+      <title>Step 3a.</title>
+      <p>
+        Find the equation for Line C. 
+
+        This is the line passing through the points <m>(0, 1)</m> and <m>(1, -1)</m>. It has slope <m>-2</m> and <m>y</m>-intercept 1. Thus, it has equation <m>y=-2x+1</m>. [Although the <m>x</m>-axis represents probability <m>p</m> and the <m>y</m>-axis represents expected payoff <m>m</m>, you are probably more comfortable solving equations<ndash />at least for the moment<ndash />in <m>x</m> and <m>y</m>.]
+      </p></li>
+
+    <li>
+      <title>Step 3b.</title>
+      <p>
+        Find the equation for Line D. 
+
+        This is the line passing through the points <m>(0, 0)</m> and <m>(1, 2)</m>. It has slope <m>2</m> and <m>y</m>-intercept 0. Thus, it has equation <m>y=2x</m>.
+      </p></li>
+
+    <li>
+      <title>Step 3c.</title>
+      <p>
+        Use substitution to find the point of intersection.
+        <md>
+          <mrow>2x \amp =\amp -2x+1</mrow>
+          <mrow>4x \amp =\amp  1</mrow>
+          <mrow>x\amp =\amp {1\over 4}</mrow>
+        </md>
+        Substituting <m>x={1\over 4}</m> back in to either original equation, say <m>y=2x</m>, gives us <m>y={1\over 2}</m>. Thus, the point of intersection is <m>(1/4, 1/2)</m>.
+      </p></li>
+  </ul>
+  </li>
+
+  <li>
+    <title>Step 4.</title>
+    <p>
+      Determine Player 1's maximin mixed strategy<index><main>maximin mixed strategy</main></index>. 
+
+      Recalling that the first coordinate is <m>p</m>, the probability that Player 1 plays <em>B</em>, we know that Player 1 will play B with probability 1/4, and thus, play A with probability 3/4 [<m>1-1/4=3/4</m>]. The expected payoff for Player 1 is 1/2. It is important to check back to your original intuition about the game from <xref ref="E_linearconjecture">Exercise</xref>. Did it seem as though Player 1 should play A more often than B?
+    </p></li>
+  </ul>
+  <p>
+    Let's make a few important observations. First, it should be clear from the graph that Player 1 expects a payoff of 1/2 NO MATTER WHAT PLAYER 2 DOES. Furthermore, since this is a zero-sum game, we know that Player 2's expected payoff is <m>-1/2</m>. It is important to note that this graph does not give us any information about an optimal strategy for Player 2. We will see how to find a strategy for Player 2 in the following exercises. Can you think of how you might do this?
+  </p>
+
+  <p>
+    We can use the graphical method to find the maximin and minimax mixed strategies for repeated two-person zero-sum games.
+  </p>
+
+  <p>
+    Using the same game matrix as above:
+    <me>
+      \left[\begin{matrix}1\amp 0\\
+      -1\amp 2
+      \end{matrix} \right],
+    </me>
+    we will continue to label Player 1's strategies by <m>A</m> and <m>B</m>, and Player 2's strategies by <m>C</m> and <m>D</m>. We now want to determine the minimax strategy for Player 2. Keep in mind the payoffs are still the payoffs to Player 1, so Player 2 wants the payoff to be as small as possible.
+  </p>
+  <exercise xml:id="E_sketchgraphagain">
+    <statement>
+      <p>
+        Sketch the graph for Player 1 that we drew above. Be sure to label the endpoints of each line. Also label each line according to which strategy they represent.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_showminimax">
+    <statement>
+      <p>
+        Describe the minimax strategy<index><main>minimax strategy, repeated games</main></index> and show it on the graph. (You do not need to find the actual mixed strategy for Player 2.)
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_payoffssame">
+    <statement>
+      <p>
+        Are the payoff vectors for the maximin and minimax strategies the same?
+      </p>
+    </statement>
+  </exercise>
+  <p>
+    For non-repeated games we have seen that if the maximin value is the same as the minimax value, then the game has a pure strategy equilibrium. The same idea applies to mixed strategy games. If the value of the maximin strategy is the same as the value of the minimax strategy, then the corresponding mixed strategies will be an equilibrium point<index><main>mixed strategy equilibrium</main></index><index><main>equilibrium, mixed strategy</main></index>. Thus, your answer to <xref ref="E_payoffssame">Exercise</xref> should tell you this game has a mixed strategy equilibrium point consisting of the maximin/ minimax strategy.
+  </p>
+
+  <p>
+    We now know that Player 2 wants to play the minimax strategy in response to Player 1's maximin strategy, so we need to find the actual mixed strategy for Player 2 to employ. Since we are minimizing Player 1's maximum expected payoff, we will continue to use the matrix representing Player 1's payoff. We will repeat the process we used for Player 1, except the <m>x</m>-axis now represents the probability that Player 2 will play <m>D</m>, and the lines will represent Player 1's strategies <m>A</m> and <m>B</m>. The <m>y</m>-axis continues to represent Player 1's payoff.
+  </p>
+  <exercise xml:id="E_graphStep0">
+    <statement>
+      <p>
+        First sketch the axes. (Recall, the <m>x</m>-axis only goes from 0 to 1.)
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_graphP1A">
+    <statement>
+      <p>
+      Assume Player 1 only plays <m>A</m>.
+
+      <ol type="a">
+        <li><p>
+            If Player 2 only plays <m>C</m>, what is the payoff to Player 1? Recall we called this <m>m</m>. What is the probability that Player 2 plays <m>D</m>? Recall we called this <m>p</m>. On your graph, plot the point (<m>p</m>, <m>m</m>).
+          </p></li>
+
+        <li><p>
+            If Player 2 plays only <m>D</m>, find <m>m</m> and <m>p</m>. Plot <m>(p, m)</m> on the graph.
+          </p></li>
+
+        <li><p>
+            Now sketch the line through your two points. This line represents Player 1's pure strategy <m>A</m> and the expected payoff (to Player 1) for Player 2's mixed strategies. Label it <m>A</m>.
+          </p></li>
+      </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_graphP1B">
+    <statement>
+      <p>
+        Now assume Player 1 plays only <m>B</m>. Repeat the steps in <xref ref="E_graphP1A">Exercise</xref>, using <m>B</m> instead of <m>A</m>, to find the line representing Player 1's pure strategy <m>B</m>. (Label it!)
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_graphminimax">
+    <statement>
+      <p>
+      It is important to keep in mind that although the <m>x</m>-axis refers to how often Player 2 will play <m>C</m> and <m>D</m>, the <m>y</m>-axis represents the payoff to <em>Player 1</em>.
+
+      <ol type="a">
+        <li><p>
+            Explain why we are looking for the <em>minimax</em> strategy for Player 2.
+          </p></li>
+
+        <li><p>
+            Show on the graph the <em>maximum</em> payoff that Player 1 can expect for each of Player 2's possible mixed strategies.
+          </p></li>
+
+        <li><p>
+            Show the point on the graph that represents the minimax strategy.
+          </p></li>
+      </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_graphFindEquations">
+    <statement>
+      <p>
+        Find the equations of the two lines.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_graphFindIntersection">
+    <statement>
+      <p>
+        Find the point of intersection of the two lines.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_graphSolution">
+    <statement>
+      <p>
+        How often should Player 2 play <m>C</m>? How often should he play <m>D</m>? What is Player 1's expected payoff? And hence, what is Player 2's expected payoff?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_whyequil">
+    <statement>
+      <p>
+        Explain why each player should play the maximin/ minimax mixed strategy. In other words, explain why neither player benefits by changing his or her strategy. (Hint: think about playing defensively and assuming the other player is the <q>perfect</q> player.)
+      </p>
+    </statement>
+  </exercise>
+  <p>
+    Now it may have occurred to you that since this is a zero-sum game, we could have just converted our matrix to the payoff matrix for Player 2, and found Player 2's maximin strategy. But it is important to understand the relationship between the maximin and the minimax strategies. So for the sake of practice and a little more insight <ellipsis />
+  </p>
+  <exercise xml:id="E_graphconvert">
+    <statement>
+      <p>
+        Convert the payoff matrix above into the payoff matrix for Player 2. Find the maximin strategy for Player 2 using the graphical method. Be sure to include a sketch of the graph (labeled!!), the equations for the lines, the probability that Player 2 will play <m>C</m> and <m>D</m>, and the expected payoff for Player 2.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_graphcompareapproaches">
+    <statement>
+      <p>
+        Compare your answer in <xref ref="E_graphconvert">Exercise</xref> to your answer in <xref ref="E_graphSolution">Exercise</xref>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="graphfair">
+    <statement>
+      <p>
+        Is this game fair? Explain.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_graphexplainEV">
+    <statement>
+      <p>
+        We saw above that the expected payoff for Player 1 was 1/2. Explain what this means for a repeated game. (Hint: is it actually possible for a player to win 1/2 in a given game?)
+      </p>
+    </statement>
+  </exercise>
+  <p>
+    Now you are ready to try to analyze some more games!
+  </p>
+  <exercise xml:id="E_graph2practice">
+    <statement>
+      <p>
+      Consider the zero-sum game <m>\left[\begin{matrix}-4\amp 4\\
+      2\amp -2
+      \end{matrix} \right].</m>
+
+      <ol type="a">
+        <li><p>
+            Does this game have a pure strategy equilibrium?
+          </p></li>
+
+        <li><p>
+            Just by looking at the matrix, do you think this game will be fair? (Would you rather be Player 1 or Player 2?)
+          </p></li>
+
+        <li><p>
+            Sketch (and label!) the appropriate graph for this game.
+          </p></li>
+
+        <li><p>
+            Use you graph to determine if there is a mixed strategy equilibrium point. If there is, how often should Player 1 play each strategy? What is the expected payoff to each player?
+          </p></li>
+
+        <li><p>
+            Is this game fair? Explain. Compare your answer to (b).
+          </p></li>
+      </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_graph3practice">
+    <statement>
+      <p>
+      Consider the zero-sum game <m>\left[\begin{matrix}0\amp 1\\
+      1\amp -10
+      \end{matrix} \right].</m>
+
+      <ol type="a">
+        <li><p>
+            Does this game have a pure strategy equilibrium?
+          </p></li>
+
+        <li><p>
+            Just by looking at the matrix, do you think this game will be fair? (Would you rather be Player 1 or Player 2?)
+          </p></li>
+
+        <li><p>
+            Sketch (and label!) the appropriate graph for this game.
+          </p></li>
+
+        <li><p>
+            Use you graph to determine if there is a mixed strategy equilibrium point. If there is, how often should Player 1 play each strategy? What is the expected payoff to each player?
+          </p></li>
+
+        <li><p>
+            Is this game fair? Explain. Compare your answer to (b).
+          </p></li>
+      </ol>
+      </p>
+    </statement>
+  </exercise>
+</section>

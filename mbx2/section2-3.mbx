@@ -1,0 +1,257 @@
+
+<section>
+  <title>Probability and Expected Value</title>
+  <introduction>
+    <p>
+      Many games have an element of chance. In order to model such games and determine strategies, we should understand how mathematicians use probability to represent chance.
+    </p>
+  </introduction>
+
+  <subsection>
+    <title>Some Basic Probability</title>
+    <p>
+      <index><main>probability</main></index>
+    </p>
+
+    <p>
+      You are probably a little bit familiar with the idea of probability. People often talk about the chance of some event happening. For example, a weather forecast might say there is a 20<percent /> chance of rain. Now determining the chance of rain can be difficult, so we will stick with some easier examples.
+    </p>
+
+    <p>
+      Consider a standard deck of 52 playing cards. What is the chance of drawing a red card? What is the <em>probability</em> of drawing a red card? Is there a difference between chance and probability? Yes! The probability of an event has a very specific meaning in mathematics.
+    </p>
+
+    <p>
+      The <em>probability</em><index><main>probability</main></index> of an event <m>E</m> is the number of different outcomes resulting in <m>E</m> divided by the total number of equally likely outcomes. In mathematical symbols,
+      <me>
+        P(E)=\frac{\mbox{number of different outcomes resulting in \(E\)} }{\mbox{total number of equally likely outcomes} }.
+      </me>
+    </p>
+
+    <p>
+      Notice that the probability of <m>E</m> will always be a number between 0 and 1. An impossible event will have probability 0; an event that always occurs will have probability 1.
+    </p>
+
+    <p>
+      Thus, the probability of drawing a red card is <m>\frac{1}{2}</m>, not 50<percent />. Although we can convert between probability and percent (since <m>0.5</m> converted to percent is <m>50\%</m>), it is important to answer a question about probability with a probability, not a percent.
+    </p>
+
+    <example xml:id="E_drawheart">
+      <statement>
+        <p>
+          Given a standard deck of playing cards, what is the probability of drawing a heart?
+        </p>
+
+        <p>
+          <em>Answer:</em> You might say since there are four suits, and one of the suits is hearts, you have a probability of <m>\frac{1}{4}</m>. You'd be correct, but be careful with this reasoning. This works because each suit has the same number of cards, so each suit is <em>equally likely</em><index><main>equally likely events</main></index>. Another way the calculate the probability is to count the number of hearts (13) divided by the number of cards (52). Thus, we get a probability of <m>\frac{13}{52}=\frac{1}{4}=0.25</m>.
+        </p>
+      </statement>
+    </example>
+
+    <example xml:id="E_takeawayspade">
+      <statement>
+        <p>
+          Now suppose the ace of spades is missing from the deck. What is the probability of drawing a heart?
+        </p>
+
+        <p>
+          <em>Answer:</em> As before, there are still four suits in the deck, so it might be tempting to say the probability is still <m>\frac{1}{4}</m>. But we'd be wrong! Each suit is no longer equally likely since, it is slightly <em>less</em> likely that we draw a spade. Each individual card is still equally likely, though. So now
+          <me>
+            P(\mbox{drawing a heart} )= \frac{\mbox{number of hearts} }{\mbox{number of cards} }=\frac{13}{51}= 0.255.
+          </me>
+        </p>
+
+        <p>
+          As you can see, it is now slightly more likely that we draw a heart if the ace of spades is removed from the deck.
+        </p>
+      </statement>
+    </example>
+
+    <p>
+      Now try to compute some probabilities on your own.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          Consider rolling a single die. List the possible outcomes. Assuming that it is a fair die, are all the outcomes equally likely? What is the probability of rolling a 2? What is the probability of rolling an even number?
+        </p>
+      </statement>
+    </exercise>
+    <exercise xml:id="E_redgreendice">
+      <statement>
+        <p>
+        Now consider rolling two fair dice, say a red die and a green die.
+
+        <ol type="a">
+          <li><p>
+              How many equally likely outcomes are there? List them.
+            </p></li>
+
+          <li><p>
+              What is the probability that you get a two on the red die and a four on the green die?
+            </p></li>
+
+          <li><p>
+              What is the probability that you roll a three on the red die?
+            </p></li>
+
+          <li><p>
+              What is the probability that you roll a two and a four?
+            </p></li>
+
+          <li><p>
+              What is the probability  that you roll a three?
+            </p></li>
+
+          <li><p>
+              Compare your answers in (b) and (c) with your answers in (d) and (e). Are they the same or different? Explain.
+            </p></li>
+        </ol>
+        </p>
+      </statement>
+    </exercise>
+    <exercise xml:id="E_twodice">
+      <statement>
+        <p>
+        Again consider rolling two fair dice, but now we don't care what color they are.
+
+        <ol type="a">
+          <li><p>
+              Does this change the number of equally likely outcomes from <xref ref="E_redgreendice">Exercise</xref>? Why or why not? It may be helpful to list the possible outcomes.
+            </p></li>
+
+          <li><p>
+              What is the probability that you get snake eyes (two ones)?
+            </p></li>
+
+          <li><p>
+              What is the probability that you roll a two and a four?
+            </p></li>
+
+          <li><p>
+              What is the probability  that you roll a three?
+            </p></li>
+
+          <li><p>
+              What is the probability that you roll a two OR a four?
+            </p></li>
+        </ol>
+        </p>
+      </statement>
+    </exercise>
+    <exercise xml:id="E_sumdice">
+      <statement>
+        <p>
+        Suppose we roll two dice and add them.
+
+        <ol type="a">
+          <li><p>
+              List the possible sums.
+            </p></li>
+
+          <li><p>
+              What is the probability that you get a total of seven on the two dice?
+            </p></li>
+
+          <li><p>
+              What is the probability that you get a total of four when you roll two dice?
+            </p></li>
+
+          <li><p>
+              Are the events of getting a total of seven and getting a total of four equally likely? Explain.
+            </p></li>
+        </ol>
+        </p>
+      </statement>
+    </exercise>
+    <p>
+      It is important to note that just because you can list all of the possible outcomes, they may not be equally likely. As we see from <xref ref="E_sumdice">Exercise</xref>, although there are 11 possible sums, the probability of getting any particular sum (such as seven) is not <m>1/11</m>.
+    </p>
+  </subsection>
+
+  <subsection>
+    <title>Expected Value</title>
+    <p>
+      <index><main>expected value</main></index>
+    </p>
+
+    <definition xml:id="D_expectedvalue">
+      <statement>
+        <p>
+          The <term>expected value</term><index><main>expected value</main></index> of a game of chance is the average net gain or loss that we would expect per game if we played the game many times. We compute the expected value by multiplying the value of each outcome by its probability of occurring and then add up all of the products.
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      For example, suppose you toss a fair coin: Heads, you win 25 cents, Tails, you lose 25 cents. The probability of getting Heads is <m>1/2</m>, as is the probability of getting Tails. The expected value of the game is
+      <me>
+        \biggl(\frac{1}{2}\times .25\biggr)+\biggl(\frac{1}{2}\times(- .25)\biggr)=0.
+      </me>
+    </p>
+
+    <p>
+      Thus, you would expect an average payoff of <dollar />0, if you were to play the game several times. Note, the expected value is not necessarily the actual value of playing the game.
+    </p>
+    <exercise xml:id="E_Toss2coins">
+      <statement>
+        <p>
+          Consider a game where you toss two coins. If you get two Heads, you win <dollar />2. If you get a Head and a Tail, you win <dollar />1, if you get two Tails, you lose <dollar />4. Find the expected value of the game. (Caution: first you need to find the probability of each event<ndash /> think about <q>equally likely</q> events.)
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+        Now play the game in <xref ref="E_Toss2coins">Exercise</xref> the indicated number of times. Give your actual payoff and compare it to the expected value.
+
+        <ol type="a">
+          <li><p>
+              One time.
+            </p></li>
+
+          <li><p>
+              Ten times.
+            </p></li>
+
+          <li><p>
+              Twenty-five times.
+            </p></li>
+
+          <li><p>
+              Is there a single possible outcome where you would actually win or lose the exact amount computed for the expected value? If not, why do we call it the expected value?
+            </p></li>
+        </ol>
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          A standard roulette wheel has 38 numbered slots for a small ball to land in: 36 are marked from 1 to 36, with half of those black and half red; two green slots are numbered 0 and 00. An allowable bet is to bet on either red of black. This bet is an even money bet, which means if you win you receive twice what you bet. Many people think that betting black or red is a fair game. What is the expected value of betting <dollar />1000 on red? Is this a fair game? Explain.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Considering again the roulette wheel, if you bet <dollar />100 on a particular number and the ball lands on that number, you win <dollar />3600. What is the expected value of betting <dollar />100 on red 4?
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Use the idea of expected value to explain <q>fairness</q> in a game of chance. Can the expected value help you determine if a game is fair?
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          You place a bet and roll two fair dice. If you roll a 7 or an 11, you receive your bet back (you break even). If you roll a 2, a 3, or a 12, then you lose your bet. If you roll anything else, you receive half of the sum you rolled in dollars. How much should you bet to make this a fair game? Hint: it might be helpful to begin with a table showing the possible sums, their probability, and the payoff for each.
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+</section>

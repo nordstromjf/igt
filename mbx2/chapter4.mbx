@@ -1,0 +1,21 @@
+
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
+  <title>Non-Zero-Sum Games</title>
+  <introduction>
+    <p>
+      In the previous chapters we concentrated on zero-sum games. We know how to solve any zero-sum game. If it has a pure strategy equilibrium, then we know the players should play the equilibrium strategies. If it doesn't have an equilibrium point, then we have seen methods for finding a mixed strategy equilibrium. Assuming both players are our model rational players, then we know they should always play an equilibrium strategy.
+    </p>
+
+    <p>
+      In this chapter we turn our attention to non-zero-sum games.
+    </p>
+  </introduction>
+  <xi:include  href="Intrononzero.mbx" />
+  <xi:include  href="pdandchicken.mbx" />
+  <xi:include  href="S_CWPD.mbx" />
+  <xi:include  href="S_PDconditions.mbx" />
+  <xi:include  href="VDexperiment.mbx" />
+  <xi:include  href="section4-6.mbx" />
+  <xi:include  href="section4-7.mbx" />
+  <xi:include  href="section4-8.mbx" />
+</chapter>

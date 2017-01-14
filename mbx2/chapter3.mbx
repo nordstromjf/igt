@@ -1,0 +1,15 @@
+
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
+  <title>Repeated Two-Person Zero-sum Games</title>
+  <introduction>
+    <p>
+      If we are presented with a two-person zero-sum game we know that our first step is to look for an equilibrium point. If a game has an equilibrium point, then we know that our players should play the corresponding strategy pair. In this case the equilibrium pair and its payoff vector is the <q>solution</q> to the game. In this chapter we will explore games that do not necessarily have an equilibrium point. We will also try to determine what a player should do if they play the game repeatedly.
+    </p>
+  </introduction>
+  <xi:include  href="section3-1.mbx" />
+  <xi:include  href="section3-2.mbx" />
+  <xi:include  href="section3-3.mbx" />
+  <xi:include  href="section3-4.mbx" />
+  <xi:include  href="section3-5.mbx" />
+  <xi:include  href="section3-6.mbx" />
+</chapter>

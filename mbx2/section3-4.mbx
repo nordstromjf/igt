@@ -1,0 +1,128 @@
+
+<section>
+  <title>Repeated Two-person Zero-Sum Games: Liar's Poker</title>
+  <p>
+    In this section, we will continue to explore the ideas of a mixed strategy equilibrium. We have seen several examples of finding an equilibrium. We began with games which had a pure strategy equilibrium and then moved to games with mixed strategy equilibrium. We saw two different methods for finding an equilibrium. The first employed graphs in order to understand and find the maximin and minimax strategies, and hence the equilibrium mixed strategy. The second method employed the ideas of expected value to find the equilibrium strategy. We will continue to solidify these ideas with another game, a simplified variation of poker.
+  </p>
+
+  <example xml:id="liarspoker">
+    <statement>
+      <p>
+        <em>Liar's Poker:</em><index><main>Liar's Poker</main></index>
+        We begin with a deck of cards which has 50<percent /> aces (A) and 50<percent /> kings (K). Aces rank higher than kings. Player 1 is dealt one card, face down. Player 1 can look at the card, but does not show the card to Player 2. Player 1 then says <q>ace</q> or <q>king</q> depending on what his card is. Player 1 can either tell the truth and say what the card is (T), or he can bluff and say that he has a higher ranking card (B). Note that if Player 1 has an ace, he must tell the truth since there are no higher ranking cards. However, if he is dealt a king, he can bluff, by saying he has an ace. If Player 1 says <q>king</q> the game ends and both players break even. If Player 1 says <q>ace</q> then Player 2 can either call (C) or fold (F). If Player 2 folds, then Player 1 wins <dollar />0.50. If Player 2 calls and Player 1 does not have an ace, then Player 2 wins <dollar />1. If Player 2 calls and Player 1 does have an ace, then Player 1 wins <dollar />1.
+      </p>
+    </statement>
+  </example>
+
+  <exercise xml:id="E_PlayLP">
+    <statement>
+      <p>
+        Choose an opponent and play the game several times. Be sure to play the game as Player 1 and as Player 2. This is important for understanding the game. Keep track of the outcomes.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_LPguessstrat">
+    <statement>
+      <p>
+        Just from playing the game several times, can you suggest a strategy for Player 1? What about for Player 2? Does this game seem fair, or does one of the players seem to have an advantage? Explain your answers.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_LPguessmatrix">
+    <statement>
+      <p>
+        In order to formally analyze this game, we should find the payoff matrix. Do your best to find the payoff matrix. In a single hand of Liars Poker, what are the possible strategies for Player 1? What are the possible strategies for Player 2? Determine any payoffs that you can.
+      </p>
+    </statement>
+  </exercise>
+  <p>
+    Finding the payoff matrix in <xref ref="E_LPguessmatrix">Exercise</xref> is probably more challenging than it appears. Eventually we want to employ the same method for finding the payoff matrix that we used in One-Card Stud Poker from <xref ref="E_onecardstud">Example</xref> in Chapter 2, but first we need to understand each player's strategies, and the resulting payoffs. We begin with the fact that Player 1 can be dealt an ace or a king.
+  </p>
+  <exercise xml:id="E_LPP1Ace">
+    <statement>
+      <p>
+        Assume Player 1 is dealt an ace. What can Player 1 do? What can Player 2 do? What is the payoff for each situation?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_LPP1King">
+    <statement>
+      <p>
+        Assume Player 1 is dealt a king. What can Player 1 do? What can Player 2 do? What is the payoff for each situation?
+      </p>
+    </statement>
+  </exercise>
+  <p>
+    Since Player 1 must say <q>ace</q> when dealt an ace, he only has a choice of strategy when dealt a king. So we can define his strategy independent of the deal. One strategy is to say <q>ace</q> when dealt an ace and say <q>ace</q> when dealt a king; call this the <em>bluffing strategy</em> (B). The other strategy is to say <q>ace</q> when dealt an ace and say <q>king</q> when dealt a king; call this the <em>truth strategy</em> (T). Recall that the only time Player 2 has a choice is when Player 1 says <q>ace.</q> In this case Player 2 can <em>call</em> (C) or <em>fold</em> (F). Since we need to determine the payoff matrix, we first need to determine the payoffs for pure strategies. This is similar to what we did for the One-Card Stud game.
+  </p>
+  <exercise xml:id="E_LPBC">
+    <statement>
+      <p>
+        Consider Player 1's pure strategy of always bluffing when dealt a king (B) and Player 2's pure strategy of always calling (C). Determine the expected value for Player 1. (Hint: you need to consider each possible deal.) What is Player 2's expected value?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_LPBF">
+    <statement>
+      <p>
+        Similarly, determine the expected value for Player 1 for the pure strategy pair \{B, F\}. What is Player 2's expected value?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_LPTC">
+    <statement>
+      <p>
+        Determine the expected value for Player 1 for the pure strategy pair \{T, C\}. What is Player 2's expected value?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_LPTF">
+    <statement>
+      <p>
+        Determine the expected value for Player 1 for the pure strategy pair \{T, F\}. What is Player 2's expected value?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_LPmatrix">
+    <statement>
+      <p>
+        Using the expected values you calculated in <xref ref="E_LPBC">Exercises</xref>, <xref ref="E_LPBF"></xref>, <xref ref="E_LPTC"></xref>, and <xref ref="E_LPTF"></xref>, set up the <m>2 \times 2</m> payoff matrix for Liar's Poker.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_LPpureequil">
+    <statement>
+      <p>
+        Using the payoff matrix you found in <xref ref="E_LPmatrix">Exercise</xref>, does Liar's Poker have a pure strategy equilibrium? Explain.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_LPmixedequil">
+    <statement>
+      <p>
+        Use any method you have learned to find a mixed strategy equilibrium for this game. Give the mixed strategy for Player 1 and the mixed strategy for Player 2.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_LPcompare">
+    <statement>
+      <p>
+        Compare your solution from <xref ref="E_LPmixedequil">Exercise</xref> to your conjectured strategy from <xref ref="E_LPguessstrat">Exercise</xref>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_LPexpectedvalue">
+    <statement>
+      <p>
+        What is the expected value of the game for each player? How much would Player 1 expect to win if he played 15 games using the equilibrium mixed strategy?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_LPfair">
+    <statement>
+      <p>
+        Is this game fair? Explain. Again, compare your answer to your conjecture <xref ref="E_LPguessstrat">inExercise</xref>.
+      </p>
+    </statement>
+  </exercise>
+</section>

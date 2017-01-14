@@ -1,0 +1,132 @@
+
+<section>
+  <title>Volunteer's Dilemma</title>
+  <p>
+    In <xref ref="VDexperiment">Section</xref> we played a game called Volunteer's Dilemma<index><main>Volunteer's Dilemma</main></index>.
+  </p>
+
+  <example xml:id="E_VDpoints">
+    <statement>
+      <p>
+        One example of a Volunteer's Dilemma is the game where everyone chooses <q>1 point</q> or <q>5 points.</q> If at least one person writes down 1 point, then everyone gets the number of points they wrote down. If no one chooses 1 point, then everyone gets 0 points. Choosing <q>1 point</q> is considered volunteering or cooperating. Choosing to not volunteer and take <q>5 points</q> is defecting.
+      </p>
+
+      <p>
+        You should note that it is difficult to put this game into a matrix form since payoffs depend on whether there is at least one volunteer or cooperator.
+      </p>
+    </statement>
+  </example>
+
+  <p>
+    In this section we will compare Class-wide Prisoner's Dilemma with Volunteer's Dilemma. We will use the payoffs for Prisoner's Dilemma from <xref ref="S_CWPD">Section</xref>, given again in <xref ref="T_CWPD2">Table</xref>.
+  </p>
+
+  <table xml:id="T_CWPD2" >
+    <caption>Class-wide Prisoner's Dilemma (again)</caption>
+    <tabular>
+      <row>
+        <cell></cell>
+        <cell>Player 2</cell>
+      </row>
+      <row>
+        <cell>\multicolumn{1}{l|}</cell>
+        <cell>\multicolumn{1}{l|}</cell>
+        <cell>Cooperate</cell>
+        <cell>Defect</cell>
+      </row>
+      <row>
+        <cell>Player 1</cell>
+        <cell>Cooperate</cell>
+        <cell><m>(3, 3)</m></cell>
+        <cell><m>(0, 5)</m></cell>
+      </row>
+      <row>
+        <cell>\multicolumn{1}{l|}</cell>
+        <cell>Defect</cell>
+        <cell><m>(5, 0)</m></cell>
+        <cell><m>(1, 1)</m></cell>
+      </row>
+      <row>
+        <cell></cell>
+      </row>
+    </tabular>
+  </table>
+
+  <exercise xml:id="E_CWPDdefecteffect">
+    <statement>
+      <p>
+        In Class-wide <em>Prisoner's Dilemma</em> what effect does one defector have on the group? In other words, if a single player defects, how many points does he cost each of the other players?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_CWPDalldefecteffect">
+    <statement>
+      <p>
+        In Class-wide <em>Prisoner's Dilemma</em> what effect does everyone's defection have on the group? In other words, what is the most points lost by the group if everyone defects?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_CWPDowndefect">
+    <statement>
+      <p>
+        In class-wide <em>Prisoner's Dilemma</em> what effect could your own defection have on the group? In other words, how many points does the group lose if you defect instead of cooperate? You may need to consider different cases depending on how many cooperators there are. For example what if there are no cooperators? What if there are no defectors? What if there are some of each?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_VDdefecteffect">
+    <statement>
+      <p>
+        In <em>Volunteer's Dilemma</em>, with the payoffs given in <xref ref="E_VDpoints">Example</xref>, what effect does one defector have on the group? In other words, if there is a single defector, how many points do each of the other players lose?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_VDalldefecteffect">
+    <statement>
+      <p>
+        In <em>Volunteer's Dilemma</em>, with the payoffs given in <xref ref="E_VDpoints">Example</xref>, what effect does everyone's defection have on the group? In other words, if everyone defects, how many points does the group lose?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_VDowndefect">
+    <statement>
+      <p>
+        In <em>Volunteer's Dilemma</em>, with the payoffs given in <xref ref="E_VDpoints">Example</xref>, what effect could your own defection have on the group? In other words, how many points does the group lose if you defect instead of cooperate? You may need to consider different cases depending on how many cooperators there are. For example what if there are no cooperators? What if there are no defectors? What if there are some of each?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_CWPDcoopordefect">
+    <statement>
+      <p>
+        Considering your answers above and to previous work with Prisoner's Dilemma, in Class-wide <em>Prisoner's Dilemma</em>, which is more <em>rational</em> to be a cooperator or a defector? Why?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_CWPDallrational">
+    <statement>
+      <p>
+        Whichever you chose in <xref ref="E_CWPDcoopordefect">Exercise</xref>, explain what would happen if everyone was the most rational. Is it now more rational to do the opposite?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_VDcoopordefect">
+    <statement>
+      <p>
+        Considering your answers above, in <em>Volunteer's Dilemma</em>, which is more <em>rational</em> to be a cooperator (volunteer) or a defector? Why?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_VDallrational">
+    <statement>
+      <p>
+        Whichever you chose in <xref ref="E_VDcoopordefect">Exercise</xref>, explain what would happen if everyone was the most rational. Is it now more rational to do the opposite?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_classchicken">
+    <statement>
+      <p>
+        Volunteer's Dilemma can also be called <q>Class-wide Chicken.</q> Try to describe this class-wide game in terms of <q>swerving</q> and <q>going straight.</q> How do the payoffs for Volunteer's Dilemma relate to the payoffs for Chicken?
+      </p>
+    </statement>
+  </exercise>
+</section>

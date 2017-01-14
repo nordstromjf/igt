@@ -1,0 +1,278 @@
+
+<section>
+  <title>Augmented Matrices</title>
+  <p>
+    <index><main>augmented matrix</main></index>
+  </p>
+
+  <p>
+    In this section, we will see how to use matrices to solve systems of equations<index><main>systems of equations</main></index>. In both the graphical method and the expected value method, you have had to solve a system of equations. In the graphical method you had systems consisting of two lines such as <xref ref="E_twoeq">Example</xref>.
+  </p>
+
+  <example xml:id="E_twoeq">
+    <statement>
+      <md>
+        <mrow>y \amp = \frac{3}{5}x-\frac{1}{5}</mrow>
+        <mrow>y \amp =-x+3.</mrow>
+      </md>
+    </statement>
+  </example>
+
+  <p>
+    In the expected value method we had systems of three equations such as <xref ref="E_threeeq">Example</xref>.
+  </p>
+
+  <example xml:id="E_threeeq">
+    <statement>
+      <md>
+        <mrow>E_1(A) \amp = P_2(C)-P_2(D)</mrow>
+        <mrow>E_1(B) \amp = 2P_2(D)</mrow>
+        <mrow>1 \amp = P_2(C)+P_2(D).</mrow>
+      </md>
+    </statement>
+  </example>
+
+  <p>
+    Even in <xref ref="E_threeeq">Example</xref>, the algebra began to get cumbersome. What if we wanted to solve much larger games, such as a 5 X 5 game?
+  </p>
+
+  <p>
+    In order to use matrices to solve our systems of equations, we want to write all our equations in the same form: we will have all the variable terms on the left of the equals sign and all constants on the right.
+  </p>
+
+  <p>
+    Thus, in <xref ref="E_twoeq">Example</xref> we can write the system as
+    <md>
+      <mrow>\frac{3}{5}x-y \amp =\frac{1}{5}</mrow>
+      <mrow>x+y \amp = 3.</mrow>
+    </md>
+  </p>
+
+  <p>
+    In fact, we can simplify the first equation by multiplying both sides by 5:
+    <md>
+      <mrow>3x-5y \amp =1</mrow>
+      <mrow>x+y \amp = 3.</mrow>
+    </md>
+  </p>
+
+  <p>
+    We can use the coefficients and constants to create a matrix:
+    <me>
+      \left[
+      \begin{matrix}3 \amp  -5 \amp  1\\
+      1 \amp  1 \amp  3
+      \end{matrix} 
+      \right].
+    </me>
+  </p>
+
+  <p>
+    In this matrix you have a column for the coefficients of each variable. So the coefficients of <m>x</m> are in the first column, the coefficients of <m>y</m> are in the second. The constant terms are always in the last column. Each row corresponds to one equation.
+    This matrix is called an <em>augmented matrix</em><index><main>augmented matrix</main></index>. It is really just a matrix, but we call it <em>augmented</em> if we include information from both sides of the equation (the coefficients and the constants).
+  </p>
+
+  <p>
+    The algebraic method for solving the system of equations (finding the <m>x</m> and <m>y</m> values that satisfy both equations) is called <em>row reduction</em>. It is based on the <em>elimination method</em> that you may have seen in a precalculus or college algebra course. We won't go through the algebra here, as we really don't need it. Since our goal is to be able to easily solve larger systems of equations, we will rely on technology to do the algebra.
+  </p>
+
+  <p>
+    Computer algebra systems such as <em>Sage</em>, <em>Mathematica</em>, and <em>Maple</em>, as well as graphing calculators, can easily do the row reduction for us.
+  </p>
+
+  <p>
+    On your graphing calculator, use the matrix function to enter the matrix. Then use the <q>rref</q> function (this stands for <q>reduced row echelon form</q>). The result will be the following matrix:
+    <me>
+      \left[
+      \begin{matrix}1 \amp  0 \amp  2\\
+      0 \amp  1 \amp  1
+      \end{matrix} 
+      \right].
+    </me>
+  </p>
+
+  <p>
+    Recall that the first column is the <m>x</m> and the second is the <m>y</m>. Each row represents an equation. So translating each row back to equations, we have the following system of equations:
+    <md>
+      <mrow>x+0y \amp =2</mrow>
+      <mrow>0x+y \amp = 1</mrow>
+    </md>
+    or
+    <md>
+      <mrow>x \amp =2</mrow>
+      <mrow>y \amp = 1.</mrow>
+    </md>
+  </p>
+
+  <p>
+    By plugging these values back into the original equations, you can verify that this is in fact the solution.
+  </p>
+
+  <p>
+    Since the technology does all the algebra for us, our job is to translate the equations into an appropriate matrix and then translate the final matrix back into the solution to the system of equations. Remember, when using a matrix to solve a game, the matrix is only a tool, it is not the solution to the game.
+  </p>
+
+  <p>
+    Now, let's try the equations for the expected value method using <xref ref="E_threeeq">Example</xref>. As presented, how many variables does the system have?
+    <md>
+      <mrow>E_1(A) \amp = P_2(C)-P_2(D)</mrow>
+      <mrow>E_1(B) \amp = 2P_2(D)</mrow>
+      <mrow>1 \amp = P_2(C)+P_2(D)</mrow>
+    </md>
+  </p>
+
+  <p>
+    It has 4: <m>E_1(A), E_1(B), P_2(C) and P_2(D)</m>. But when we solved these equations, we set the expected values equal. This gives us the two equations
+    <md>
+      <mrow>P_2(C)-P_2(D) \amp = 2P_2(D)</mrow>
+      <mrow>1 \amp = P_2(C)+P_2(D).</mrow>
+    </md>
+  </p>
+
+  <p>
+    Now if we put these into the form with all variables on the left and constants on the right, we get
+    <md>
+      <mrow>P_2(C)-3P_2(D) \amp = 0</mrow>
+      <mrow>P_2(C)+P_2(D) \amp = 1.</mrow>
+    </md>
+  </p>
+
+  <p>
+    Putting these equations into an augmented matrix, gives us
+    <me>
+      \left[
+      \begin{matrix}1 \amp  -3 \amp  0\\
+      1 \amp  1 \amp  1
+      \end{matrix} 
+      \right],
+    </me>
+    where the first column corresponds to <m>P_2(C)</m> and the second column corresponds to <m>P_2(D)</m>. Using row reduction, we get
+    <me>
+      \left[
+      \begin{matrix}1 \amp  0 \amp  3/4\\
+      0 \amp  1 \amp  1/4
+      \end{matrix} 
+      \right].
+    </me>
+  </p>
+
+  <p>
+    Thus, our solution is <m>P_2(C)=3/4</m>, and <m>P_2(D)=1/4</m>.
+  </p>
+
+  <p>
+    Here are some more systems of equations to practice solving using augmented matrices.
+  </p>
+  <exercise>
+    <statement>
+      <p>
+        Solve the system of equations.
+      </p>
+
+      <p>
+        <m>\begin{matrix}2x-2y\amp =6\\x+3y\amp =7
+        \end{matrix}</m>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Solve the system of equations.
+      </p>
+
+      <p>
+        <m>\begin{matrix}4p_1-2p_2\amp =0\\p_1+p_2\amp =1
+        \end{matrix}</m>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Consider the system of equations
+      </p>
+
+      <p>
+      <m>\begin{matrix}4x+8y-4z\amp =4\\3x+8y+5z\amp =-11\\-2x+y+12z\amp =-17
+      \end{matrix}</m>
+
+      <ol type="a">
+        <li><p>
+            Set up the augmented matrix for this system.
+          </p></li>
+
+        <li><p>
+            Use row reduction to find the solution.
+          </p></li>
+      </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Consider the system of equations
+      </p>
+
+      <p>
+      <m>\begin{matrix}2x+y-4z\amp =10\\3x+5z\amp =-5\\y+2z\amp =7
+      \end{matrix}</m>
+
+      <ol type="a">
+        <li><p>
+            Set up the augmented matrix for this system.
+          </p></li>
+
+        <li><p>
+            Use row reduction to find the solution.
+          </p></li>
+      </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Consider the system of equations
+      </p>
+
+      <p>
+      <m>\begin{matrix}a+b-5c\amp =0\\-4a-b+6c\amp =0\\a+b+c\amp =1
+      \end{matrix}</m>
+
+      <ol type="a">
+        <li><p>
+            Set up the augmented matrix for this system.
+          </p></li>
+
+        <li><p>
+            Use row reduction to find the solution.
+          </p></li>
+      </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Consider the system of equations
+      </p>
+
+      <p>
+      <m>\begin{matrix}3x+2y-w-v\amp =0\\2x-y+3z+w+5v\amp =0\\x+2y+6z-w\amp =0\\ -y+z-3w+v\amp =0\\x+y+z+w+v\amp =1
+      \end{matrix}</m>.
+
+      <ol type="a">
+        <li><p>
+            Set up the augmented matrix for this system.
+          </p></li>
+
+        <li><p>
+            Use row reduction to find the solution.
+          </p></li>
+      </ol>
+      </p>
+    </statement>
+  </exercise>
+</section>

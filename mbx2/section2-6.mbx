@@ -30,7 +30,7 @@
       <p>
       Exchange your list of matrices with another student in the class. For each matrix you have been given
 
-      <ol type="a">
+      <ol label="a">
         <li><p>
             try to determine any dominated strategies, if they exist.
           </p></li>

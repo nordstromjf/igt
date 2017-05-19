@@ -26,28 +26,26 @@
         <tabular>
           <row>
             <cell></cell>
-            <cell>Alice</cell>
-          </row>
-          <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>Action</cell>
-            <cell>Comedy</cell>
-          </row>
-          <row>
-            <cell>Bob</cell>
-            <cell>Action</cell>
-            <cell><m>(2, 1)</m></cell>
-            <cell><m>(-1, -1)</m></cell>
-          </row>
-          <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>Comedy</cell>
-            <cell><m>(-1, -1)</m></cell>
-            <cell><m>(1, 2)</m></cell>
+            <cell></cell>
+            <cell colspan="2" halign="center" bottom="minor">Alice</cell>
           </row>
           <row>
             <cell></cell>
+            <cell></cell>
+            <cell bottom="minor">Action</cell>
+            <cell bottom="minor">Comedy</cell>
+          </row>
+          <row>
+            <cell>Bob</cell>
+            <cell right="minor">Action</cell>
+            <cell right="minor" bottom="minor"><m>(2, 1)</m></cell>
+            <cell right="minor" bottom="minor"><m>(-1, -1)</m></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell right="minor">Comedy</cell>
+            <cell right="minor" bottom="minor"><m>(-1, -1)</m></cell>
+            <cell right="minor" bottom="minor"><m>(1, 2)</m></cell>
           </row>
         </tabular>
       </table>

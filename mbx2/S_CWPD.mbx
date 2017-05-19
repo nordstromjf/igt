@@ -45,7 +45,7 @@
       <p>
       Once everyone in class has made his or her choice, share your answers with the class.
 
-      <ol type="a">
+      <ol label="a">
         <li><p>
             How many C's were there?
           </p></li>
@@ -101,7 +101,7 @@
 
       <table xml:id="T_PDvariant1" >
         <caption>Matrix for <xref ref="E_PDvariant1">Exercise</xref></caption>
-        <tabular>
+        <tabular halign="center">
           <row>
             <cell></cell>
             <cell><em>C</em></cell>
@@ -133,7 +133,7 @@
 
       <table xml:id="T_PDvariant2" >
         <caption>Matrix for <xref ref="E_PDvariant2">Exercise</xref></caption>
-        <tabular>
+        <tabular halign="center">
           <row>
             <cell></cell>
             <cell><em>C</em></cell>

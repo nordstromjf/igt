@@ -35,7 +35,7 @@
 
       <table xml:id="T_simplenonzero" >
         <caption>A non-zero sum example</caption>
-        <tabular>
+        <tabular halign="center">
           <row>
             <cell></cell>
             <cell><em>C</em></cell>
@@ -114,7 +114,7 @@
   <example xml:id="E_PrisonersDilemma">
     <statement>
       <p>
-        <em>Prisoner's Dilemma.</em><index><main>Prisoner's Dilemma</main></index>
+        <term>Prisoner's Dilemma.</term><index><main>Prisoner's Dilemma</main></index>
         Two partners in crime are arrested for burglary and sent to separate rooms. They are each offered a deal: if they confess and rat on their partner, they will receive a reduced sentence. So if one confesses and the other doesn't, the confessor only gets 3 months in prison, while the partner serves 10 years. If both confess, then they each get 8 years. However, if neither confess, there isn't enough evidence, and each gets just one year. We can represent the situation with the matrix in <xref ref="T_PrisonersDilemma">Table</xref>.
       </p>
 
@@ -123,28 +123,26 @@
         <tabular>
           <row>
             <cell></cell>
-            <cell>Prisoner 2</cell>
-          </row>
-          <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>Confess</cell>
-            <cell>Don't Confess</cell>
-          </row>
-          <row>
-            <cell>Prisoner 1</cell>
-            <cell>Confess</cell>
-            <cell><m>(8, 8)</m></cell>
-            <cell><m>(0.25, 10)</m></cell>
-          </row>
-          <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>Don't Confess</cell>
-            <cell><m>(10, 0.25)</m></cell>
-            <cell><m>(1, 1)</m></cell>
+            <cell></cell>
+            <cell colspan="2" halign="center">Prisoner 2</cell>
           </row>
           <row>
             <cell></cell>
+            <cell></cell>
+            <cell halign="center" bottom="minor">Confess</cell>
+            <cell halign="center" bottom="minor">Don't Confess</cell>
+          </row>
+          <row>
+            <cell>Prisoner 1</cell>
+            <cell right="minor">Confess</cell>
+            <cell halign="center" bottom="minor" right="minor"><m>(8, 8)</m></cell>
+            <cell halign="center" bottom="minor" right="minor"><m>(0.25, 10)</m></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell right="minor">Don't Confess</cell>
+            <cell halign="center" bottom="minor" right="minor"><m>(10, 0.25)</m></cell>
+            <cell halign="center" bottom="minor" right="minor"><m>(1, 1)</m></cell>
           </row>
         </tabular>
       </table>
@@ -204,8 +202,8 @@
   <example xml:id="E_Chicken">
     <statement>
       <p>
-        <em>Chicken.</em><index><main>Chicken</main></index>
-        Two drivers drive towards each other. If one driver swerves, he is considered a <q>chicken.</q> If a driver doesn't swerve (drives straight), he is considered the winner. Of course if neither swerves, they crash and neither wins. A possible payoff matrix for this game is given in <xref ref="T_chicken">Table</xref>
+        <term>Chicken.</term><index><main>Chicken</main></index>
+        Two drivers drive towards each other. If one driver swerves, he is considered a <q>chicken.</q> If a driver doesn't swerve (drives straight), he is considered the winner. Of course if neither swerves, they crash and neither wins. A possible payoff matrix for this game is given in <xref ref="T_chicken">Table</xref>.
       </p>
 
       <table xml:id="T_chicken" >
@@ -213,28 +211,26 @@
         <tabular>
           <row>
             <cell></cell>
-            <cell>Driver 2</cell>
-          </row>
-          <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>Swerve</cell>
-            <cell>Straight</cell>
-          </row>
-          <row>
-            <cell>Driver 1</cell>
-            <cell>Swerve</cell>
-            <cell><m>(0, 0)</m></cell>
-            <cell><m>(-1, 10)</m></cell>
-          </row>
-          <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>Straight</cell>
-            <cell><m>(10, -1)</m></cell>
-            <cell><m>(-100, -100)</m></cell>
+            <cell></cell>
+            <cell colspan="2" halign="center">Driver 2</cell>
           </row>
           <row>
             <cell></cell>
+            <cell></cell>
+            <cell halign="center" bottom="minor">Swerve</cell>
+            <cell halign="center" bottom="minor">Straight</cell>
+          </row>
+          <row>
+            <cell>Driver 1</cell>
+            <cell right="minor">Swerve</cell>
+            <cell halign="center" bottom="minor" right="minor"><m>(0, 0)</m></cell>
+            <cell halign="center" bottom="minor" right="minor"><m>(-1, 10)</m></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell right="minor">Straight</cell>
+            <cell halign="center" bottom="minor" right="minor"><m>(10, -1)</m></cell>
+            <cell halign="center" bottom="minor" right="minor"><m>(-100, -100)</m></cell>
           </row>
         </tabular>
       </table>

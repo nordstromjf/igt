@@ -23,53 +23,51 @@
 
   <table xml:id="T_CWPD2" >
     <caption>Class-wide Prisoner's Dilemma (again)</caption>
-    <tabular>
-      <row>
-        <cell></cell>
-        <cell>Player 2</cell>
-      </row>
-      <row>
-        <cell>\multicolumn{1}{l|}</cell>
-        <cell>\multicolumn{1}{l|}</cell>
-        <cell>Cooperate</cell>
-        <cell>Defect</cell>
-      </row>
-      <row>
-        <cell>Player 1</cell>
-        <cell>Cooperate</cell>
-        <cell><m>(3, 3)</m></cell>
-        <cell><m>(0, 5)</m></cell>
-      </row>
-      <row>
-        <cell>\multicolumn{1}{l|}</cell>
-        <cell>Defect</cell>
-        <cell><m>(5, 0)</m></cell>
-        <cell><m>(1, 1)</m></cell>
-      </row>
-      <row>
-        <cell></cell>
-      </row>
-    </tabular>
+        <tabular>
+          <row>
+            <cell></cell>
+            <cell></cell>
+            <cell colspan="2" halign="center">Player 2</cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell></cell>
+            <cell halign="center" bottom="minor">Cooperate</cell>
+            <cell halign="center" bottom="minor">Defect</cell>
+          </row>
+          <row>
+            <cell>Driver 1</cell>
+            <cell right="minor">Cooperate</cell>
+            <cell halign="center" bottom="minor" right="minor"><m>(3, 3)</m></cell>
+            <cell halign="center" bottom="minor" right="minor"><m>(0, 5)</m></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell right="minor">Defect</cell>
+            <cell halign="center" bottom="minor" right="minor"><m>(5, 0)</m></cell>
+            <cell halign="center" bottom="minor" right="minor"><m>(1, 1)</m></cell>
+          </row>
+        </tabular>
   </table>
 
   <exercise xml:id="E_CWPDdefecteffect">
     <statement>
       <p>
-        In Class-wide <em>Prisoner's Dilemma</em> what effect does one defector have on the group? In other words, if a single player defects, how many points does he cost each of the other players?
+        In <em>Class-wide Prisoner's Dilemma</em> what effect does one defector have on the group? In other words, if a single player defects, how many points does he cost each of the other players?
       </p>
     </statement>
   </exercise>
   <exercise xml:id="E_CWPDalldefecteffect">
     <statement>
       <p>
-        In Class-wide <em>Prisoner's Dilemma</em> what effect does everyone's defection have on the group? In other words, what is the most points lost by the group if everyone defects?
+        In <em>Class-wide Prisoner's Dilemma</em> what effect does everyone's defection have on the group? In other words, what is the most points lost by the group if everyone defects?
       </p>
     </statement>
   </exercise>
   <exercise xml:id="E_CWPDowndefect">
     <statement>
       <p>
-        In class-wide <em>Prisoner's Dilemma</em> what effect could your own defection have on the group? In other words, how many points does the group lose if you defect instead of cooperate? You may need to consider different cases depending on how many cooperators there are. For example what if there are no cooperators? What if there are no defectors? What if there are some of each?
+        In <em>Class-wide Prisoner's Dilemma</em> what effect could your own defection have on the group? In other words, how many points does the group lose if you defect instead of cooperate? You may need to consider different cases depending on how many cooperators there are. For example what if there are no cooperators? What if there are no defectors? What if there are some of each?
       </p>
     </statement>
   </exercise>
@@ -97,7 +95,7 @@
   <exercise xml:id="E_CWPDcoopordefect">
     <statement>
       <p>
-        Considering your answers above and to previous work with Prisoner's Dilemma, in Class-wide <em>Prisoner's Dilemma</em>, which is more <em>rational</em> to be a cooperator or a defector? Why?
+        Considering your answers above and to previous work with Prisoner's Dilemma, in <em>Class-wide Prisoner's Dilemma</em>, which is more <em>rational</em> to be a cooperator or a defector? Why?
       </p>
     </statement>
   </exercise>

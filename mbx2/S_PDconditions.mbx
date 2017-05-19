@@ -6,7 +6,7 @@
   </p>
 
   <p>
-    The Class-wide Prisoner's Dilemma game we played has the payoff matrix given in <xref ref="T_CWPD">Table</xref>for each pair of players.
+    The Class-wide Prisoner's Dilemma game we played has the payoff matrix given in <xref ref="T_CWPD">Table</xref> for each pair of players.
   </p>
 
   <table xml:id="T_CWPD" >
@@ -14,28 +14,26 @@
     <tabular>
       <row>
         <cell></cell>
-        <cell>Player 2</cell>
-      </row>
-      <row>
-        <cell>\multicolumn{1}{l|}</cell>
-        <cell>\multicolumn{1}{l|}</cell>
-        <cell>Cooperate</cell>
-        <cell>Defect</cell>
-      </row>
-      <row>
-        <cell>Player 1</cell>
-        <cell>Cooperate</cell>
-        <cell><m>(3, 3)</m></cell>
-        <cell><m>(0, 5)</m></cell>
-      </row>
-      <row>
-        <cell>\multicolumn{1}{l|}</cell>
-        <cell>Defect</cell>
-        <cell><m>(5, 0)</m></cell>
-        <cell><m>(1, 1)</m></cell>
+        <cell></cell>
+        <cell colspan="2" halign="center">Player 2</cell>
       </row>
       <row>
         <cell></cell>
+        <cell></cell>
+        <cell halign="center" bottom="minor">Cooperate</cell>
+        <cell halign="center" bottom="minor">Defect</cell>
+      </row>
+      <row>
+        <cell>Player 1</cell>
+        <cell right="minor">Cooperate</cell>
+        <cell halign="center" bottom="minor" right="minor"><m>(3, 3)</m></cell>
+        <cell halign="center" bottom="minor" right="minor"><m>(0, 5)</m></cell>
+      </row>
+      <row>
+        <cell></cell>
+        <cell right="minor">Defect</cell>
+        <cell halign="center" bottom="minor" right="minor"><m>(5, 0)</m></cell>
+        <cell halign="center" bottom="minor" right="minor"><m>(1, 1)</m></cell>
       </row>
     </tabular>
   </table>
@@ -104,28 +102,26 @@
         <tabular>
           <row>
             <cell></cell>
-            <cell>Prisoner 2</cell>
-          </row>
-          <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>Confess</cell>
-            <cell>Don't Confess</cell>
-          </row>
-          <row>
-            <cell>Prisoner 1</cell>
-            <cell>Confess</cell>
-            <cell><m>(8, 8)</m></cell>
-            <cell><m>(0.25, 10)</m></cell>
-          </row>
-          <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>Don't Confess</cell>
-            <cell><m>(10, 0.25)</m></cell>
-            <cell><m>(1, 1)</m></cell>
+            <cell></cell>
+            <cell colspan="2" halign="center">Prisoner 2</cell>
           </row>
           <row>
             <cell></cell>
+            <cell></cell>
+            <cell halign="center" bottom="minor">Confess</cell>
+            <cell halign="center" bottom="minor">Don't Confess</cell>
+          </row>
+          <row>
+            <cell>Prisoner 1</cell>
+            <cell right="minor">Confess</cell>
+            <cell halign="center" bottom="minor" right="minor"><m>(8, 8)</m></cell>
+            <cell halign="center" bottom="minor" right="minor"><m>(0.25, 10)</m></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell right="minor">Don't Confess</cell>
+            <cell halign="center" bottom="minor" right="minor"><m>(10, 0.25)</m></cell>
+            <cell halign="center" bottom="minor" right="minor"><m>(1, 1)</m></cell>
           </row>
         </tabular>
       </table>
@@ -146,28 +142,26 @@
         <tabular>
           <row>
             <cell></cell>
-            <cell>Driver 2</cell>
-          </row>
-          <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>Swerve</cell>
-            <cell>Straight</cell>
-          </row>
-          <row>
-            <cell>Driver 1</cell>
-            <cell>Swerve</cell>
-            <cell><m>(0, 0)</m></cell>
-            <cell><m>(-1, 10)</m></cell>
-          </row>
-          <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>Straight</cell>
-            <cell><m>(10, -1)</m></cell>
-            <cell><m>(-100, -100)</m></cell>
+            <cell></cell>
+            <cell colspan="2" halign="center">Driver 2</cell>
           </row>
           <row>
             <cell></cell>
+            <cell></cell>
+            <cell halign="center" bottom="minor">Swerve</cell>
+            <cell halign="center" bottom="minor">Straight</cell>
+          </row>
+          <row>
+            <cell>Driver 1</cell>
+            <cell right="minor">Swerve</cell>
+            <cell halign="center" bottom="minor" right="minor"><m>(0, 0)</m></cell>
+            <cell halign="center" bottom="minor" right="minor"><m>(-1, 10)</m></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell right="minor">Straight</cell>
+            <cell halign="center" bottom="minor" right="minor"><m>(10, -1)</m></cell>
+            <cell halign="center" bottom="minor" right="minor"><m>(-100, -100)</m></cell>
           </row>
         </tabular>
       </table>

@@ -67,7 +67,7 @@
       <p>
       Suppose Player 2 plays H 60<percent /> of the time and T 40<percent /> of the time.
 
-      <ol type="a">
+      <ol label="a">
         <li><p>
             What are <m>P_2(H)</m> and <m>P_2(T)</m>?
           </p></li>

@@ -68,14 +68,14 @@
   <exercise xml:id="E_payoffBF">
     <statement>
       <p>
-        If Player 1 Bets and Player 2 Folds, does it matter which cards were dealt? How much does Player 1 win? How much does Player 2 lose? What is the payoff vector for \{Bet, Fold\}? (Keep in mind your answer to <xref ref="E_onecardzerosum">Exercise</xref>.)
+        If Player 1 Bets and Player 2 Folds, does it matter which cards were dealt? How much does Player 1 win? How much does Player 2 lose? What is the payoff vector for {Bet, Fold}? (Keep in mind your answer to <xref ref="E_onecardzerosum">Exercise</xref>.)
       </p>
     </statement>
   </exercise>
   <exercise xml:id="E_payoffFB">
     <statement>
       <p>
-        If Player 1 Folds and Player 2 Bets, does it matter which cards were dealt? What is the payoff vector for \{Fold, Bet\}?
+        If Player 1 Folds and Player 2 Bets, does it matter which cards were dealt? What is the payoff vector for {Fold, Bet}?
       </p>
     </statement>
   </exercise>
@@ -87,7 +87,7 @@
     </statement>
   </exercise>
   <p>
-    To determine the payoff vector for \{Bet, Bet\} and \{Fold, Fold\} we will need to consider which cards were dealt. We can use some probability to determine the remaining payoff vectors.
+    To determine the payoff vector for {Bet, Bet} and {Fold, Fold} we will need to consider which cards were dealt. We can use some probability to determine the remaining payoff vectors.
   </p>
   <exercise xml:id="E_probofdeal">
     <statement>
@@ -99,41 +99,41 @@
   <exercise xml:id="E_BBpayoffperdeal">
     <statement>
       <p>
-        Consider the pair of strategies \{Bet, Bet\}. For each possible deal, determine the payoff vector. For example, if the players are each dealt an Ace (Red), how much does each player win? (Again, keep in mind your answer to <xref ref="E_onecardzerosum">Exercise</xref>.)
+        Consider the pair of strategies {Bet, Bet}. For each possible deal, determine the payoff vector. For example, if the players are each dealt an Ace (Red), how much does each player win? (Again, keep in mind your answer to <xref ref="E_onecardzerosum">Exercise</xref>.)
       </p>
     </statement>
   </exercise>
   <p>
-    In order to calculate the payoff for \{Bet, Bet\}, we need to take a weighted average of the possible payoff vectors in <xref ref="E_BBpayoffperdeal">Exercise</xref>. In particular, we will <q>weight</q> a payoff by the probability that it occurs. Recall that this is the <em>expected value</em><index><main>expected value</main></index>. We will calculate the expected value separately for each player.
+    In order to calculate the payoff for {Bet, Bet}, we need to take a weighted average of the possible payoff vectors in <xref ref="E_BBpayoffperdeal">Exercise</xref>. In particular, we will <q>weight</q> a payoff by the probability that it occurs. Recall that this is the <em>expected value</em><index><main>expected value</main></index>. We will calculate the expected value separately for each player.
   </p>
   <exercise xml:id="E_BBev1">
     <statement>
       <p>
-        Find the expected value for \{Bet, Bet\} for Player 1.
+        Find the expected value for {Bet, Bet} for Player 1.
       </p>
     </statement>
   </exercise>
   <exercise xml:id="E_BBev2">
     <statement>
       <p>
-        Find the expected value for \{Bet, Bet\} for Player 2.
+        Find the expected value for {Bet, Bet} for Player 2.
       </p>
     </statement>
   </exercise>
   <p>
-    The pair of expected values from <xref ref="E_BBev1">Exercises</xref> and <xref ref="E_BBev2"></xref> is the payoff vector for \{Bet, Bet\}.
+    The pair of expected values from <xref ref="E_BBev1">Exercises</xref> and <xref ref="E_BBev2"></xref> is the payoff vector for {Bet, Bet}.
   </p>
   <exercise xml:id="E_BBexplain">
     <statement>
       <p>
-        Explain why it should make sense to use the expected values for the payoffs in the matrix for the strategy pair \{Bet, Bet\}. Hint: think about what a player needs to know to choose a strategy in a game of chance.
+        Explain why it should make sense to use the expected values for the payoffs in the matrix for the strategy pair {Bet, Bet}. Hint: think about what a player needs to know to choose a strategy in a game of chance.
       </p>
     </statement>
   </exercise>
   <exercise xml:id="E_FF">
     <statement>
       <p>
-        Now repeat <xref ref="E_BBpayoffperdeal">Exercises</xref>, <xref ref="E_BBev1"></xref>, and <xref ref="E_BBev2"></xref> for the pair of strategies \{Fold, Fold\}.
+        Now repeat <xref ref="E_BBpayoffperdeal">Exercises</xref>, <xref ref="E_BBev1"></xref>, and <xref ref="E_BBev2"></xref> for the pair of strategies {Fold, Fold}.
       </p>
     </statement>
   </exercise>
@@ -180,7 +180,7 @@
     </statement>
   </exercise>
 
-  <example xml:id="E_onecardstud">
+  <example xml:id="E_genonecardstud">
     <statement>
       <p>
         <em>Generalized One-Card Stud Poker.</em><index><main>Generalized One-Card Stud Poker</main></index>

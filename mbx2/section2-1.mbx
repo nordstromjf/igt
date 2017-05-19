@@ -13,7 +13,7 @@
     <definition xml:id="D_zerosum">
       <statement>
         <p>
-          A two player game is called a <term>zero-sum</term><index><main>zero-sum game</main></index> game if the sum of the payoffs to each player is constant for all possible outcomes of the game. More specifically, the terms (or coordinates) in each payoff vector must add up to the same value for each payoff vector. Such games are sometimes called<term>constant-sum</term><index><main>constant-sum game</main></index> games instead.
+          A two player game is called a <term>zero-sum</term><index><main>zero-sum game</main></index> game if the sum of the payoffs to each player is constant for all possible outcomes of the game. More specifically, the terms (or coordinates) in each payoff vector must add up to the same value for each payoff vector. Such games are sometimes called <term>constant-sum</term><index><main>constant-sum game</main></index> games instead.
         </p>
       </statement>
     </definition>
@@ -41,28 +41,26 @@
           <tabular>
             <row>
               <cell></cell>
-              <cell>Chooser</cell>
-            </row>
-            <row>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>Larger Piece</cell>
-              <cell>Smaller Piece</cell>
-            </row>
-            <row>
-              <cell>Cutter</cell>
-              <cell>Cut Evenly</cell>
-              <cell>(half, half)</cell>
-              <cell>(half, half)</cell>
-            </row>
-            <row>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>Cut Unvenly</cell>
-              <cell>(small piece, large piece)</cell>
-              <cell>(large piece, small piece)</cell>
+              <cell></cell>
+              <cell colspan="2" halign="center">Chooser</cell>
             </row>
             <row>
               <cell></cell>
+              <cell></cell>
+              <cell bottom="minor">Larger Piece</cell>
+              <cell bottom="minor">Smaller Piece</cell>
+            </row>
+            <row>
+              <cell>Cutter</cell>
+              <cell right="minor">Cut Evenly</cell>
+              <cell right="minor" bottom="minor">(half, half)</cell>
+              <cell right="minor" bottom="minor">(half, half)</cell>
+            </row>
+            <row>
+              <cell></cell>
+              <cell right="minor">Cut Unvenly</cell>
+              <cell right="minor" bottom="minor">(small piece, large piece)</cell>
+              <cell right="minor" bottom="minor">(large piece, small piece)</cell>
             </row>
           </tabular>
         </table>
@@ -76,28 +74,26 @@
           <tabular>
             <row>
               <cell></cell>
-              <cell>Chooser</cell>
-            </row>
-            <row>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>Larger Piece</cell>
-              <cell>Smaller Piece</cell>
-            </row>
-            <row>
-              <cell>Cutter</cell>
-              <cell>Cut Evenly</cell>
-              <cell><m>(50, 50)</m></cell>
-              <cell><m>(50, 50)</m></cell>
-            </row>
-            <row>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>Cut Unvenly</cell>
-              <cell><m>(40, 60)</m></cell>
-              <cell><m>(60, 40)</m></cell>
+              <cell></cell>
+              <cell colspan="2" halign="center">Chooser</cell>
             </row>
             <row>
               <cell></cell>
+              <cell></cell>
+              <cell bottom="minor">Larger Piece</cell>
+              <cell bottom="minor">Smaller Piece</cell>
+            </row>
+            <row>
+              <cell>Cutter</cell>
+              <cell right="minor">Cut Evenly</cell>
+              <cell right="minor" bottom="minor"><m>(50, 50)</m></cell>
+              <cell right="minor" bottom="minor"><m>(50, 50)</m></cell>
+            </row>
+            <row>
+              <cell></cell>
+              <cell right="minor">Cut Unvenly</cell>
+              <cell right="minor" bottom="minor"><m>(40, 60)</m></cell>
+              <cell right="minor" bottom="minor"><m>(60, 40)</m></cell>
             </row>
           </tabular>
         </table>
@@ -109,7 +105,7 @@
     </example>
 
     <p>
-      It is probably simple to see from the matrix in <xref ref="T_cakecuttingpercent">Table</xref> that Player 2 will always choose the large piece, thus Player 1 does best to cut the cake evenly. The outcome of the game is the <em>strategy pair</em><index><main>strategy pair</main></index> denoted \{Cut Evenly, Larger Piece\}, with resulting payoff vector <m>(50, 50)</m>.
+      It is probably simple to see from the matrix in <xref ref="T_cakecuttingpercent">Table</xref> that Player 2 will always choose the large piece, thus Player 1 does best to cut the cake evenly. The outcome of the game is the <em>strategy pair</em><index><main>strategy pair</main></index> denoted {Cut Evenly, Larger Piece}, with resulting payoff vector <m>(50, 50)</m>.
     </p>
 
     <p>
@@ -139,28 +135,26 @@
           <tabular>
             <row>
               <cell></cell>
-              <cell>Chooser</cell>
-            </row>
-            <row>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>Larger Piece</cell>
-              <cell>Smaller Piece</cell>
-            </row>
-            <row>
-              <cell>Cutter</cell>
-              <cell>Cut Evenly</cell>
-              <cell><m>(0, 0)</m></cell>
-              <cell><m>(0, 0)</m></cell>
-            </row>
-            <row>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>Cut Unvenly</cell>
-              <cell><m>(-10, 10)</m></cell>
-              <cell><m>(10, -10)</m></cell>
+              <cell></cell>
+              <cell colspan="2" halign="center">Chooser</cell>
             </row>
             <row>
               <cell></cell>
+              <cell></cell>
+              <cell bottom="minor">Larger Piece</cell>
+              <cell bottom="minor">Smaller Piece</cell>
+            </row>
+            <row>
+              <cell>Cutter</cell>
+              <cell right="minor">Cut Evenly</cell>
+              <cell right="minor" bottom="minor"><m>(0, 0)</m></cell>
+              <cell right="minor" bottom="minor"><m>(0, 0)</m></cell>
+            </row>
+            <row>
+              <cell></cell>
+              <cell right="minor">Cut Unvenly</cell>
+              <cell right="minor" bottom="minor"><m>(-10, 10)</m></cell>
+              <cell right="minor" bottom="minor"><m>(10, -10)</m></cell>
             </row>
           </tabular>
         </table>
@@ -192,43 +186,41 @@
           <tabular>
             <row>
               <cell></cell>
-              <cell>Bainbridge</cell>
-            </row>
-            <row>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>Raise Limit</cell>
-              <cell>Keep Limit</cell>
-              <cell>Dodge</cell>
-            </row>
-            <row>
-              <cell>Arnold</cell>
-              <cell>Raise Limit</cell>
-              <cell><m>(45, 55)</m></cell>
-              <cell><m>(50, 50)</m></cell>
-              <cell><m>(40, 60)</m></cell>
-            </row>
-            <row>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>Keep Limit</cell>
-              <cell><m>(60, 40)</m></cell>
-              <cell><m>(55, 45)</m></cell>
-              <cell><m>(50, 50)</m></cell>
-            </row>
-            <row>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>Dodge</cell>
-              <cell><m>(45, 55)</m></cell>
-              <cell><m>(55, 45)</m></cell>
-              <cell><m>(40, 60)</m></cell>
+              <cell></cell>
+              <cell colspan="3" halign="center">Bainbridge</cell>
             </row>
             <row>
               <cell></cell>
+              <cell></cell>
+              <cell bottom="minor">Raise Limit</cell>
+              <cell bottom="minor">Keep Limit</cell>
+              <cell bottom="minor">Dodge</cell>
+            </row>
+            <row>
+              <cell></cell>
+              <cell right="minor">Raise Limit</cell>
+              <cell right="minor" bottom="minor"><m>(45, 55)</m></cell>
+              <cell right="minor" bottom="minor"><m>(50, 50)</m></cell>
+              <cell right="minor" bottom="minor"><m>(40, 60)</m></cell>
+            </row>
+            <row>
+              <cell>Arnold</cell>
+              <cell right="minor">Keep Limit</cell>
+              <cell right="minor" bottom="minor"><m>(60, 40)</m></cell>
+              <cell right="minor" bottom="minor"><m>(55, 45)</m></cell>
+              <cell right="minor" bottom="minor"><m>(50, 50)</m></cell>
+            </row>
+            <row>
+              <cell></cell>
+              <cell right="minor">Dodge</cell>
+              <cell right="minor" bottom="minor"><m>(45, 55)</m></cell>
+              <cell right="minor" bottom="minor"><m>(55, 45)</m></cell>
+              <cell right="minor" bottom="minor"><m>(40, 60)</m></cell>
             </row>
           </tabular>
         </table>
 
-        <ol type="a">
+        <ol label="a">
           <li><p>
               Explain why this is a zero-sum game.
             </p></li>
@@ -258,43 +250,41 @@
           <tabular>
             <row>
               <cell></cell>
-              <cell>Bainbridge</cell>
-            </row>
-            <row>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>Raise Limit</cell>
-              <cell>Keep Limit</cell>
-              <cell>Dodge</cell>
-            </row>
-            <row>
-              <cell>Arnold</cell>
-              <cell>Raise Limit</cell>
-              <cell><m>(45, 55)</m></cell>
-              <cell><m>(10, 90)</m></cell>
-              <cell><m>(40, 60)</m></cell>
-            </row>
-            <row>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>Keep Limit</cell>
-              <cell><m>(60, 40)</m></cell>
-              <cell><m>(55, 45)</m></cell>
-              <cell><m>(50, 50)</m></cell>
-            </row>
-            <row>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>Dodge</cell>
-              <cell><m>(45, 55)</m></cell>
-              <cell><m>(10, 90)</m></cell>
-              <cell><m>(40, 60)</m></cell>
+              <cell></cell>
+              <cell colspan="3" halign="center">Bainbridge</cell>
             </row>
             <row>
               <cell></cell>
+              <cell></cell>
+              <cell bottom="minor">Raise Limit</cell>
+              <cell bottom="minor">Keep Limit</cell>
+              <cell bottom="minor">Dodge</cell>
+            </row>
+            <row>
+              <cell></cell>
+              <cell right="minor">Raise Limit</cell>
+              <cell right="minor" bottom="minor"><m>(45, 55)</m></cell>
+              <cell right="minor" bottom="minor"><m>(10, 90)</m></cell>
+              <cell right="minor" bottom="minor"><m>(40, 60)</m></cell>
+            </row>
+            <row>
+              <cell>Arnold</cell>
+              <cell right="minor">Keep Limit</cell>
+              <cell right="minor" bottom="minor"><m>(60, 40)</m></cell>
+              <cell right="minor" bottom="minor"><m>(55, 45)</m></cell>
+              <cell right="minor" bottom="minor"><m>(50, 50)</m></cell>
+            </row>
+            <row>
+              <cell></cell>
+              <cell right="minor">Dodge</cell>
+              <cell right="minor" bottom="minor"><m>(45, 55)</m></cell>
+              <cell right="minor" bottom="minor"><m>(10, 90)</m></cell>
+              <cell right="minor" bottom="minor"><m>(40, 60)</m></cell>
             </row>
           </tabular>
         </table>
 
-        <ol type="a">
+        <ol label="a">
           <li><p>
               Explain why this is a zero-sum game.
             </p></li>
@@ -325,43 +315,41 @@
           <tabular>
             <row>
               <cell></cell>
-              <cell>Bainbridge</cell>
-            </row>
-            <row>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>Raise Limit</cell>
-              <cell>Keep Limit</cell>
-              <cell>Dodge</cell>
-            </row>
-            <row>
-              <cell>Arnold</cell>
-              <cell>Raise Limit</cell>
-              <cell><m>(35, 65)</m></cell>
-              <cell><m>(10, 90)</m></cell>
-              <cell><m>(60, 40)</m></cell>
-            </row>
-            <row>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>Keep Limit</cell>
-              <cell><m>(45, 55)</m></cell>
-              <cell><m>(55, 45)</m></cell>
-              <cell><m>(50, 50)</m></cell>
-            </row>
-            <row>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>Dodge</cell>
-              <cell><m>(40, 60)</m></cell>
-              <cell><m>(10, 90)</m></cell>
-              <cell><m>(65, 35)</m></cell>
+              <cell></cell>
+              <cell colspan="3" halign="center">Bainbridge</cell>
             </row>
             <row>
               <cell></cell>
+              <cell></cell>
+              <cell bottom="minor">Raise Limit</cell>
+              <cell bottom="minor">Keep Limit</cell>
+              <cell bottom="minor">Dodge</cell>
+            </row>
+            <row>
+              <cell></cell>
+              <cell right="minor">Raise Limit</cell>
+              <cell right="minor" bottom="minor"><m>(35, 65)</m></cell>
+              <cell right="minor" bottom="minor"><m>(10, 90)</m></cell>
+              <cell right="minor" bottom="minor"><m>(60, 40)</m></cell>
+            </row>
+            <row>
+              <cell>Arnold</cell>
+              <cell right="minor">Keep Limit</cell>
+              <cell right="minor" bottom="minor"><m>(45, 55)</m></cell>
+              <cell right="minor" bottom="minor"><m>(55, 45)</m></cell>
+              <cell right="minor" bottom="minor"><m>(50, 50)</m></cell>
+            </row>
+            <row>
+              <cell></cell>
+              <cell right="minor">Dodge</cell>
+              <cell right="minor" bottom="minor"><m>(40, 60)</m></cell>
+              <cell right="minor" bottom="minor"><m>(10, 90)</m></cell>
+              <cell right="minor" bottom="minor"><m>(65, 35)</m></cell>
             </row>
           </tabular>
         </table>
 
-        <ol type="a">
+        <ol label="a">
           <li><p>
               Explain why this is a zero-sum game.
             </p></li>
@@ -412,38 +400,36 @@
       <tabular>
         <row>
           <cell></cell>
-          <cell>Player 2</cell>
-        </row>
-        <row>
-          <cell>\multicolumn{1}{l|}</cell>
-          <cell>\multicolumn{1}{l|}</cell>
-          <cell>X</cell>
-          <cell>Y</cell>
-        </row>
-        <row>
-          <cell>Player 1</cell>
-          <cell>A</cell>
-          <cell><m>(100, -100)</m></cell>
-          <cell><m>(-10, 10)</m></cell>
-        </row>
-        <row>
-          <cell>\multicolumn{1}{l|}</cell>
-          <cell>B</cell>
-          <cell><m>(0, 0)</m></cell>
-          <cell><m>(-1, 11)</m></cell>
+          <cell></cell>
+          <cell colspan="2" halign="center">Player 2</cell>
         </row>
         <row>
           <cell></cell>
+          <cell></cell>
+          <cell bottom="minor" halign="center">X</cell>
+          <cell bottom="minor" halign="center">Y</cell>
+        </row>
+        <row>
+          <cell>Player 1</cell>
+          <cell right="minor">A</cell>
+          <cell right="minor" bottom="minor" halign="center"><m>(100, -100)</m></cell>
+          <cell right="minor" bottom="minor" halign="center"><m>(-10, 10)</m></cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell right="minor">B</cell>
+          <cell right="minor" bottom="minor" halign="center"><m>(0, 0)</m></cell>
+          <cell right="minor" bottom="minor" halign="center"><m>(-1, 11)</m></cell>
         </row>
       </tabular>
     </table>
 
     <p>
-      You determined that Player 2 should choose to play Y, and thus, Player 1 should play B (i.e., we have the strategy pair \{B, Y\}). Why is this an equilibrium pair? If Player 2 plays Y, does Player 1 have any reason to change to strategy A? No, she would lose 10 instead of 1! If Player 1 plays B, does player 2 have any reason to change to strategy X? No, she would gain 0 instead of 1! Thus neither player benefits from changing strategy, and so we say \{B, Y\} is an equilibrium pair.
+      You determined that Player 2 should choose to play Y, and thus, Player 1 should play B (i.e., we have the strategy pair {B, Y}). Why is this an equilibrium pair? If Player 2 plays Y, does Player 1 have any reason to change to strategy A? No, she would lose 10 instead of 1! If Player 1 plays B, does player 2 have any reason to change to strategy X? No, she would gain 0 instead of 1! Thus neither player benefits from changing strategy, and so we say {B, Y} is an equilibrium pair.
     </p>
 
     <p>
-      For now, we can use a <q>guess and check</q> method for finding equilibrium pairs. Take each outcome and decide whether either player would prefer to switch. Remember, Player 1 can only choose a different row, and Player 2 can only choose a different column. In our above example there are four outcomes to check: \{A, X\}, \{A, Y\}, \{B, X\}, and \{B, Y\}. We already know \{B, Y\} is an equilibrium pair, but let's check the rest. Suppose the players play \{A, X\}. Does Player 1 want to switch to B? No, she'd rather get 100 than 0. Does player 2 want to switch to Y? Yes! She'd rather get 10 than -100. So \{A, X\} is NOT an equilibrium pair since a player wants to switch. Now check that for \{A, Y\} Player 1 would want to switch, and for \{B, X\} both players would want to switch. Thus \{A, Y\} and \{B, X\} are NOT equilibrium pairs.
+      For now, we can use a <q>guess and check</q> method for finding equilibrium pairs. Take each outcome and decide whether either player would prefer to switch. Remember, Player 1 can only choose a different row, and Player 2 can only choose a different column. In our above example there are four outcomes to check: {A, X}, {A, Y}, {B, X}, and {B, Y}. We already know {B, Y} is an equilibrium pair, but let's check the rest. Suppose the players play {A, X}. Does Player 1 want to switch to B? No, she'd rather get 100 than 0. Does player 2 want to switch to Y? Yes! She'd rather get 10 than -100. So {A, X} is NOT an equilibrium pair since a player wants to switch. Now check that for {A, Y} Player 1 would want to switch, and for {B, X} both players would want to switch. Thus {A, Y} and {B, X} are NOT equilibrium pairs.
     </p>
     <exercise>
       <statement>
@@ -457,7 +443,7 @@
         <p>
         Use the <q>guess an check</q> method to determine any equilibrium pairs for the following payoff matrices.
 
-        <ol type="a">
+        <ol label="a">
           <li><p>
               <me>
                 \left[\begin{matrix}
@@ -512,7 +498,7 @@
     <exercise xml:id="E_network">
       <statement>
         <p>
-          Two television networks are battling for viewers for 7pm Monday night. They each need to decide if they are going to show a sitcom or a sporting event. <xref ref="T_network">Table</xref> gives the payoffs as percent of viewers.
+          Two television networks are battling for viewers for 7 pm Monday night. They each need to decide if they are going to show a sitcom or a sporting event. <xref ref="T_network">Table</xref> gives the payoffs as percent of viewers.
         </p>
 
         <table xml:id="T_network" >
@@ -520,33 +506,31 @@
           <tabular>
             <row>
               <cell></cell>
-              <cell>Network 2</cell>
-            </row>
-            <row>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>Sitcom</cell>
-              <cell>Sports</cell>
-            </row>
-            <row>
-              <cell>Network 1</cell>
-              <cell>Sitcom</cell>
-              <cell><m>(55, 45)</m></cell>
-              <cell><m>(52, 48)</m></cell>
-            </row>
-            <row>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>Sports</cell>
-              <cell><m>(50, 50)</m></cell>
-              <cell><m>(45, 55)</m></cell>
+              <cell></cell>
+              <cell colspan="2" halign="center">Network 2</cell>
             </row>
             <row>
               <cell></cell>
+              <cell></cell>
+              <cell bottom="minor">Sitcom</cell>
+              <cell bottom="minor">Sports</cell>
+            </row>
+            <row>
+              <cell>Network 1</cell>
+              <cell right="minor">Sitcom</cell>
+              <cell right="minor" bottom="minor"><m>(55, 45)</m></cell>
+              <cell right="minor" bottom="minor"><m>(52, 48)</m></cell>
+            </row>
+            <row>
+              <cell></cell>
+              <cell right="minor">Sports</cell>
+              <cell right="minor" bottom="minor"><m>(50, 50)</m></cell>
+              <cell right="minor" bottom="minor"><m>(45, 55)</m></cell>
             </row>
           </tabular>
         </table>
 
-        <ol type="a">
+        <ol label="a">
           <li><p>
               Explain why this is a zero-sum game.
             </p></li>
@@ -572,25 +556,26 @@
           <tabular>
             <row>
               <cell></cell>
-              <cell>Firm A</cell>
+              <cell></cell>
+              <cell colspan="2" halign="center">Firm A</cell>
             </row>
             <row>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>Adopt New Tech</cell>
-              <cell>Stay Put</cell>
+              <cell></cell>
+              <cell></cell>
+              <cell bottom="minor">Adopt New Tech</cell>
+              <cell bottom="minor">Stay Put</cell>
             </row>
             <row>
               <cell>Firm B</cell>
-              <cell>Adopt New Tech</cell>
-              <cell><m>(0, 0)</m></cell>
-              <cell><m>(a, -a)</m></cell>
+              <cell right="minor">Adopt New Tech</cell>
+              <cell right="minor" bottom="minor" halign="center"><m>(0, 0)</m></cell>
+              <cell right="minor" bottom="minor" halign="center"><m>(a, -a)</m></cell>
             </row>
             <row>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>Stay Put</cell>
-              <cell><m>(-a, a)</m></cell>
-              <cell><m>(0, 0)</m></cell>
+              <cell></cell>
+              <cell right="minor">Stay Put</cell>
+              <cell right="minor" bottom="minor" halign="center"><m>(-a, a)</m></cell>
+              <cell right="minor" bottom="minor" halign="center"><m>(0, 0)</m></cell>
             </row>
             <row>
               <cell></cell>
@@ -598,9 +583,9 @@
           </tabular>
         </table>
 
-        <ol type="a">
+        <ol label="a">
           <li><p>
-              Explain the payoff vector for each strategy pair. For example, why should the pair \{Adopt New Tech, Stay Put\} have the payoff <m>(a, -a)</m>?
+              Explain the payoff vector for each strategy pair. For example, why should the pair {Adopt New Tech, Stay Put} have the payoff <m>(a, -a)</m>?
             </p></li>
 
           <li><p>

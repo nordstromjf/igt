@@ -15,7 +15,7 @@
     </p>
 
     <p>
-      Suppose each player has two choices: Heads (H) or Tails (T). If they choose the same letter, then Player 1 wins <dollar />1 from Player 2. If they don't match, then Player 1 loses <dollar />1 to Player 2. We can represent all the possible outcomes of the game with a {<em>matrix</em><index><main>game matrix</main></index>.
+      Suppose each player has two choices: Heads (H) or Tails (T). If they choose the same letter, then Player 1 wins <dollar />1 from Player 2. If they don't match, then Player 1 loses <dollar />1 to Player 2. We can represent all the possible outcomes of the game with a <em>matrix</em><index><main>game matrix</main></index>.
     </p>
 
     <p>
@@ -24,33 +24,31 @@
 
     <table xml:id="T_template" >
       <caption>A game matrix showing the strategies for each player</caption>
-      <tabular>
-        <row>
-          <cell></cell>
-          <cell>Player 2</cell>
-        </row>
-        <row>
-          <cell>\multicolumn{1}{l|}</cell>
-          <cell>\multicolumn{1}{l|}</cell>
-          <cell>H</cell>
-          <cell>T</cell>
-        </row>
-        <row>
-          <cell>Player 1</cell>
-          <cell>H</cell>
-          <cell>\multicolumn{1}{l|}</cell>
-          <cell>\multicolumn{1}{l|}</cell>
-        </row>
-        <row>
-          <cell>\multicolumn{1}{l|}</cell>
-          <cell>T</cell>
-          <cell>\multicolumn{1}{l|}</cell>
-          <cell>\multicolumn{1}{l|}</cell>
-        </row>
-        <row>
-          <cell></cell>
-        </row>
-      </tabular>
+                <tabular>
+                    <row>
+                     <cell></cell>
+                     <cell></cell>
+                     <cell colspan="2" halign="center">Player 2</cell>
+                    </row>
+                    <row>
+                     <cell></cell>
+                     <cell></cell>
+                     <cell bottom="minor">Head</cell>
+                     <cell bottom="minor">Tail</cell>
+                    </row>
+                    <row>
+                     <cell>Player 1</cell>
+                     <cell right="minor">Head</cell>
+                     <cell bottom="minor" right="minor"></cell>
+                     <cell bottom="minor" right="minor"></cell>
+                    </row>
+                    <row>
+                     <cell></cell>
+                     <cell right="minor">Tail</cell>
+                     <cell bottom="minor" right="minor"></cell>
+                     <cell bottom="minor" right="minor"></cell>
+                    </row>           
+                </tabular>
     </table>
 
     <definition>
@@ -72,31 +70,29 @@
     <table xml:id="T_matchpennies" >
       <caption>A game matrix showing the payoff vectors</caption>
       <tabular>
-        <row>
-          <cell></cell>
-          <cell>Player 2</cell>
-        </row>
-        <row>
-          <cell>\multicolumn{1}{l|}</cell>
-          <cell>\multicolumn{1}{l|}</cell>
-          <cell>H</cell>
-          <cell>T</cell>
-        </row>
-        <row>
-          <cell>Player 1</cell>
-          <cell>H</cell>
-          <cell><m>(1, -1)</m></cell>
-          <cell><m>(-1, 1)</m></cell>
-        </row>
-        <row>
-          <cell>\multicolumn{1}{l|}</cell>
-          <cell>T</cell>
-          <cell><m>(-1, 1)</m></cell>
-          <cell><m>(1, -1)</m></cell>
-        </row>
-        <row>
-          <cell></cell>
-        </row>
+          <row>
+           <cell></cell>
+           <cell></cell>
+           <cell colspan="2" halign="center">Player 2</cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell></cell>
+            <cell bottom="minor" halign="center">H</cell>
+            <cell bottom="minor" halign="center">T</cell>
+          </row>
+          <row>
+            <cell>Player 1</cell>
+            <cell right="minor">H</cell>
+            <cell bottom="minor" right="minor"><m>(1, -1)</m></cell>
+            <cell bottom="minor" right="minor"><m>(-1, 1)</m></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell right="minor">T</cell>
+            <cell bottom="minor" right="minor"><m>(-1, 1)</m></cell>
+            <cell bottom="minor" right="minor"><m>(1, -1)</m></cell>
+          </row>
       </tabular>
     </table>
 
@@ -136,7 +132,7 @@
     </p>
     <exercise>
       <statement>
-        <ol type="a">
+        <ol label="a">
           <li><p>
               Which payoff does the player prefer: 0, 2, or -2?
             </p></li>
@@ -165,33 +161,31 @@
           <tabular>
             <row>
               <cell></cell>
-              <cell>Player 2</cell>
-            </row>
-            <row>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>X</cell>
-              <cell>Y</cell>
-            </row>
-            <row>
-              <cell>Player 1</cell>
-              <cell>A</cell>
-              <cell><m>(100, -100)</m></cell>
-              <cell><m>(-10, 10)</m></cell>
-            </row>
-            <row>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>B</cell>
-              <cell><m>(0, 0)</m></cell>
-              <cell><m>(-1, 11)</m></cell>
+              <cell></cell>
+              <cell colspan="2" halign="center">Player 2</cell>
             </row>
             <row>
               <cell></cell>
+              <cell></cell>
+              <cell bottom="minor" halign="center">A</cell>
+              <cell bottom="minor" halign="center">B</cell>
+            </row>
+            <row>
+              <cell>Player 1</cell>
+              <cell right="minor">A</cell>
+              <cell bottom="minor" right="minor"><m>(100, -100)</m></cell>
+              <cell bottom="minor" right="minor"><m>(-10, 10)</m></cell>
+            </row>
+            <row>
+              <cell></cell>
+              <cell right="minor">B</cell>
+              <cell right="minor" bottom="minor"><m>(0, 0)</m></cell>
+              <cell right="minor" bottom="minor"><m>(-1, 11)</m></cell>
             </row>
           </tabular>
         </table>
 
-        <ol type="a">
+        <ol label="a">
           <li><p>
               Just by quickly looking at the matrix, which player appears to be able to win more than the other player? Does one player seem to have an advantage? Explain.
             </p></li>
@@ -229,43 +223,41 @@
           <tabular>
             <row>
               <cell></cell>
-              <cell>Player 2</cell>
-            </row>
-            <row>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>X</cell>
-              <cell>Y</cell>
-              <cell>Z</cell>
-            </row>
-            <row>
-              <cell>Player 1</cell>
-              <cell>A</cell>
-              <cell><m>(1000, -1000)</m></cell>
-              <cell><m>(-5, 5)</m></cell>
-              <cell><m>(-15,15)</m></cell>
-            </row>
-            <row>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>B</cell>
-              <cell><m>(200, -200)</m></cell>
-              <cell><m>(0, 0)</m></cell>
-              <cell><m>(-5,5)</m></cell>
-            </row>
-            <row>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>C</cell>
-              <cell><m>(500, -500)</m></cell>
-              <cell><m>(20, -20)</m></cell>
-              <cell><m>(-25,25)</m></cell>
+              <cell></cell>
+              <cell colspan="3" halign="center">Player 2</cell>
             </row>
             <row>
               <cell></cell>
+              <cell></cell>
+              <cell bottom="minor" halign="center">X</cell>
+              <cell bottom="minor" halign="center">Y</cell>
+              <cell bottom="minor" halign="center">Z</cell>
+            </row>
+            <row>
+              <cell></cell>
+              <cell right="minor">A</cell>
+              <cell right="minor" bottom="minor"><m>(1000, -1000)</m></cell>
+              <cell right="minor" bottom="minor"><m>(-5, 5)</m></cell>
+              <cell right="minor" bottom="minor"><m>(-15,15)</m></cell>
+            </row>
+            <row>
+              <cell>Player 1</cell>
+              <cell right="minor">B</cell>
+              <cell right="minor" bottom="minor"><m>(200, -200)</m></cell>
+              <cell right="minor" bottom="minor"><m>(0, 0)</m></cell>
+              <cell right="minor" bottom="minor"><m>(-5,5)</m></cell>
+            </row>
+            <row>
+              <cell></cell>
+              <cell right="minor">C</cell>
+              <cell right="minor" bottom="minor"><m>(500, -500)</m></cell>
+              <cell right="minor" bottom="minor"><m>(20, -20)</m></cell>
+              <cell right="minor" bottom="minor"><m>(-25,25)</m></cell>
             </row>
           </tabular>
         </table>
 
-        <ol type="a">
+        <ol label="a">
           <li><p>
               Just by quickly looking at the matrix, which player appears to be able to win more than the other player? Does one player seem to have an advantage? Explain.
             </p></li>

@@ -8,7 +8,7 @@
   <example xml:id="E_smallrepeat">
     <statement>
       <p>
-        Consider the following zero-sum game.
+        Consider the following zero-sum game
         <me>
           \left[\begin{matrix}1\amp 0\\
           -1\amp 2
@@ -65,7 +65,7 @@
   <example xml:id="E_repeatequil">
     <statement>
       <p>
-        Consider the following zero-sum game.
+        Consider the following zero-sum game
         <me>
           \left[\begin{matrix}-1\amp 1\\
           0\amp 2
@@ -189,7 +189,7 @@
   <exercise xml:id="E_RPSproboutcomes">
     <statement>
       <p>
-        Assume both players are using the Random(1/3, 1/3, 1/3) strategy. List all the possible outcomes for a single game (recall the outcome is the strategy pair and the payoff, for example \{R, P\}, <m>(-1, 1)</m>). What is the probability that any particular pair of strategies will be played? Are the strategy pairs equally likely?
+        Assume both players are using the Random(1/3, 1/3, 1/3) strategy. List all the possible outcomes for a single game (recall the outcome is the strategy pair and the payoff, for example {R, P}, <m>(-1, 1)</m>). What is the probability that any particular pair of strategies will be played? Are the strategy pairs equally likely?
       </p>
     </statement>
   </exercise>

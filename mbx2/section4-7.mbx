@@ -8,33 +8,31 @@
 
   <table xml:id="T_CWPD3" >
     <caption>A Prisoner's Dilemma matrix</caption>
-    <tabular>
-      <row>
-        <cell></cell>
-        <cell>Player 2</cell>
-      </row>
-      <row>
-        <cell>\multicolumn{1}{l|}</cell>
-        <cell>\multicolumn{1}{l|}</cell>
-        <cell>Cooperate</cell>
-        <cell>Defect</cell>
-      </row>
-      <row>
-        <cell>Player 1</cell>
-        <cell>Cooperate</cell>
-        <cell><m>(3, 3)</m></cell>
-        <cell><m>(0, 5)</m></cell>
-      </row>
-      <row>
-        <cell>\multicolumn{1}{l|}</cell>
-        <cell>Defect</cell>
-        <cell><m>(5, 0)</m></cell>
-        <cell><m>(1, 1)</m></cell>
-      </row>
-      <row>
-        <cell></cell>
-      </row>
-    </tabular>
+        <tabular>
+          <row>
+            <cell></cell>
+            <cell></cell>
+            <cell colspan="2" halign="center">Player 2</cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell></cell>
+            <cell halign="center" bottom="minor">Cooperate</cell>
+            <cell halign="center" bottom="minor">Defect</cell>
+          </row>
+          <row>
+            <cell>Driver 1</cell>
+            <cell right="minor">Cooperate</cell>
+            <cell halign="center" bottom="minor" right="minor"><m>(3, 3)</m></cell>
+            <cell halign="center" bottom="minor" right="minor"><m>(0, 5)</m></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell right="minor">Defect</cell>
+            <cell halign="center" bottom="minor" right="minor"><m>(5, 0)</m></cell>
+            <cell halign="center" bottom="minor" right="minor"><m>(1, 1)</m></cell>
+          </row>
+        </tabular>
   </table>
 
   <exercise xml:id="E_internetpurchaseonce">
@@ -74,35 +72,35 @@
 
   <ul>
     <li><p>
-        Strategy: <em>Defection.</em> Your strategy is to <em>always</em> choose DEFECT (D).
+        Strategy: <term>Defection.</term> Your strategy is to <em>always</em> choose DEFECT (D).
       </p></li>
 
     <li><p>
-        Strategy: <em>Cooperation.</em> Your strategy is to <em>always</em> choose COOPERATE (C).
+        Strategy: <term>Cooperation.</term> Your strategy is to <em>always</em> choose COOPERATE (C).
       </p></li>
 
     <li><p>
-        Strategy: <em>Tit for Tat.</em> Your strategy is to play whatever your opponent just played. Your first move is to COOPERATE (C), but then you need to repeat your opponent's last move.
+        Strategy: <term>Tit for Tat.</term> Your strategy is to play whatever your opponent just played. Your first move is to COOPERATE (C), but then you need to repeat your opponent's last move.
       </p></li>
 
     <li><p>
-        Strategy: <em>Tit for Two Tats.</em> Your strategy is to COOPERATE (C) unless your opponent DEFECTS twice in a row. After two D's you respond with D.
+        Strategy: <term>Tit for Two Tats.</term> Your strategy is to COOPERATE (C) unless your opponent DEFECTS twice in a row. After two D's you respond with D.
       </p></li>
 
     <li><p>
-        Strategy: <em>Random (1/2, 1/2).</em> Your strategy is to COOPERATE (C) randomly 50<percent /> of the time and DEFECT (D) 50<percent /> of the time. [Note: it will be hard to be truly random, but try to play each option approximately the same amount.]
+        Strategy: <term>Random (1/2, 1/2).</term> Your strategy is to COOPERATE (C) randomly 50<percent /> of the time and DEFECT (D) 50<percent /> of the time. [Note: it will be hard to be truly random, but try to play each option approximately the same amount.]
       </p></li>
 
     <li><p>
-        Strategy: <em>Random (3/4, 1/4).</em> Your strategy is to COOPERATE (C) randomly 75<percent /> of the time and DEFECT (D) 25<percent /> of the time. [Note: it will be hard to be truly random, but try to play C more often than D.]
+        Strategy: <term>Random (3/4, 1/4).</term> Your strategy is to COOPERATE (C) randomly 75<percent /> of the time and DEFECT (D) 25<percent /> of the time. [Note: it will be hard to be truly random, but try to play C more often than D.]
       </p></li>
 
     <li><p>
-        Strategy: <em>Random (1/4, 3/4).</em> Your strategy is to COOPERATE (C) randomly 25<percent /> of the time and DEFECT (D) 75<percent /> of the time. [Note: it will be hard to be truly random, but try to play D more often than C.]
+        Strategy: <term>Random (1/4, 3/4).</term> Your strategy is to COOPERATE (C) randomly 25<percent /> of the time and DEFECT (D) 75<percent /> of the time. [Note: it will be hard to be truly random, but try to play D more often than C.]
       </p></li>
 
     <li><p>
-        Strategy: <em>Tit for Tat with Occasional Surprise D.</em> Your strategy is to play whatever your opponent just played. Your first move is to COOPERATE (C), but then you need to repeat your opponent's last move. Occasionally, you will deviate from this strategy by playing D.
+        Strategy: <term>Tit for Tat with Occasional Surprise D.</term> Your strategy is to play whatever your opponent just played. Your first move is to COOPERATE (C), but then you need to repeat your opponent's last move. Occasionally, you will deviate from this strategy by playing D.
       </p></li>
   </ul>
   </p>

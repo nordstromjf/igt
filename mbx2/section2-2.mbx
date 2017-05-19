@@ -16,20 +16,17 @@
         <tabular>
           <row>
             <cell></cell>
-            <cell>Player 2</cell>
+            <cell colspan="2" halign="center" bottom="minor">Player 2</cell>
           </row>
           <row>
-            <cell>Player 1</cell>
-            <cell><m>(1, -1)</m></cell>
-            <cell><m>(-0, 0)</m></cell>
+            <cell right="minor">Player 1</cell>
+            <cell bottom="minor" right="minor"><m>(1, -1)</m></cell>
+            <cell bottom="minor" right="minor"><m>(-0, 0)</m></cell>
           </row>
           <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell><m>(-1, 1)</m></cell>
-            <cell><m>(-2, 2)</m></cell>
-          </row>
-          <row>
-            <cell></cell>
+            <cell right="minor"></cell>
+            <cell bottom="minor" right="minor"><m>(-1, 1)</m></cell>
+            <cell bottom="minor" right="minor"><m>(-2, 2)</m></cell>
           </row>
         </tabular>
       </table>
@@ -43,20 +40,17 @@
         <tabular>
           <row>
             <cell></cell>
-            <cell>Player 2</cell>
+            <cell colspan="2" halign="center" bottom="minor">Player 2</cell>
           </row>
           <row>
-            <cell>Player 1</cell>
-            <cell>1</cell>
-            <cell>0</cell>
+            <cell right="minor">Player 1</cell>
+            <cell bottom="minor" right="minor">1</cell>
+            <cell bottom="minor" right="minor">0</cell>
           </row>
           <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>-1</cell>
-            <cell>-2</cell>
-          </row>
-          <row>
-            <cell></cell>
+            <cell right="minor"></cell>
+            <cell bottom="minor" right="minor">-1</cell>
+            <cell bottom="minor" right="minor">-2</cell>
           </row>
         </tabular>
       </table>
@@ -81,24 +75,21 @@
         <table xml:id="T_smallexampleP2" >
           <caption>The payoff matrix for <xref ref="E_domstrat1">Example</xref> using only Player 2's payoffs</caption>
           <tabular>
-            <row>
-              <cell></cell>
-              <cell>Player 2</cell>
-            </row>
-            <row>
-              <cell>Player 1</cell>
-              <cell>-1</cell>
-              <cell>0</cell>
-            </row>
-            <row>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>1</cell>
-              <cell>2</cell>
-            </row>
-            <row>
-              <cell></cell>
-            </row>
-          </tabular>
+          <row>
+            <cell></cell>
+            <cell colspan="2" halign="center" bottom="minor">Player 2</cell>
+          </row>
+          <row>
+            <cell right="minor">Player 1</cell>
+            <cell bottom="minor" right="minor">-1</cell>
+            <cell bottom="minor" right="minor">0</cell>
+          </row>
+          <row>
+            <cell right="minor"></cell>
+            <cell bottom="minor" right="minor">1</cell>
+            <cell bottom="minor" right="minor">2</cell>
+          </row>
+        </tabular>
         </table>
 
       </p></li>
@@ -108,24 +99,21 @@
 
         <table>
           <tabular>
-            <row>
-              <cell></cell>
-              <cell>Player 2</cell>
-            </row>
-            <row>
-              <cell>Player 1</cell>
-              <cell>1</cell>
-              <cell>0</cell>
-            </row>
-            <row>
-              <cell>\multicolumn{1}{l|}</cell>
-              <cell>-1</cell>
-              <cell>-2</cell>
-            </row>
-            <row>
-              <cell></cell>
-            </row>
-          </tabular>
+          <row>
+            <cell></cell>
+            <cell colspan="2" halign="center" bottom="minor">Player 2</cell>
+          </row>
+          <row>
+            <cell right="minor">Player 1</cell>
+            <cell bottom="minor" right="minor">1</cell>
+            <cell bottom="minor" right="minor">0</cell>
+          </row>
+          <row>
+            <cell right="minor"></cell>
+            <cell bottom="minor" right="minor">-1</cell>
+            <cell bottom="minor" right="minor">-2</cell>
+          </row>
+        </tabular>
         </table>
 
       </p></li>
@@ -151,22 +139,19 @@
         <tabular>
           <row>
             <cell></cell>
-            <cell>Player 2</cell>
+            <cell colspan="3" halign="center" bottom="minor">Player 2</cell>
           </row>
           <row>
-            <cell>Player 1</cell>
-            <cell>1</cell>
-            <cell>0</cell>
-            <cell>2</cell>
+            <cell right="minor">Player 1</cell>
+            <cell bottom="minor" right="minor">1</cell>
+            <cell bottom="minor" right="minor">0</cell>
+            <cell bottom="minor" right="minor">2</cell>
           </row>
           <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>-1</cell>
-            <cell>-2</cell>
-            <cell>2</cell>
-          </row>
-          <row>
-            <cell></cell>
+            <cell right="minor"></cell>
+            <cell bottom="minor" right="minor">-1</cell>
+            <cell bottom="minor" right="minor">-2</cell>
+            <cell bottom="minor" right="minor">2</cell>
           </row>
         </tabular>
       </table>
@@ -188,22 +173,19 @@
         <tabular>
           <row>
             <cell></cell>
-            <cell>Player 2</cell>
+            <cell colspan="3" halign="center" bottom="minor">Player 2</cell>
           </row>
           <row>
-            <cell>Player 1</cell>
-            <cell>1</cell>
-            <cell>0</cell>
-            <cell>2</cell>
+            <cell right="minor">Player 1</cell>
+            <cell bottom="minor" right="minor">1</cell>
+            <cell bottom="minor" right="minor">0</cell>
+            <cell bottom="minor" right="minor">2</cell>
           </row>
           <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>-1</cell>
-            <cell>-2</cell>
-            <cell>3</cell>
-          </row>
-          <row>
-            <cell></cell>
+            <cell right="minor"></cell>
+            <cell bottom="minor" right="minor">-1</cell>
+            <cell bottom="minor" right="minor">-2</cell>
+            <cell bottom="minor" right="minor">3</cell>
           </row>
         </tabular>
       </table>
@@ -242,31 +224,24 @@
   <table xml:id="T_strikerow2Ex2" >
     <caption>Row 2 is dominated by Row 1</caption>
     <tabular>
-      <row>
-        <cell></cell>
-        <cell>Player 2</cell>
-      </row>
-      <row>
-        <cell>Player 1</cell>
-        <cell>1</cell>
-        <cell>0</cell>
-        <cell>2</cell>
-      </row>
-      <row>
-        <cell>\multicolumn{1}{l|}</cell>
-        <cell>\multicolumn{1}{c|}{\MyTikzmark{leftA}{<m>-1</m>}}</cell>
-        <cell>-2</cell>
-        <cell>\multicolumn{1}{c|}{\MyTikzmark{rightA}{2}}</cell>
-      </row>
-      <row>
-        <cell></cell>
-      </row>
-    </tabular>
+          <row>
+            <cell></cell>
+            <cell colspan="3" halign="center" bottom="minor">Player 2</cell>
+          </row>
+          <row>
+            <cell right="minor">Player 1</cell>
+            <cell bottom="minor" right="minor">1</cell>
+            <cell bottom="minor" right="minor">0</cell>
+            <cell bottom="minor" right="minor">2</cell>
+          </row>
+          <row>
+            <cell right="minor"></cell>
+            <cell bottom="minor" right="minor">-1</cell>
+            <cell bottom="minor" right="minor">-2</cell>
+            <cell bottom="minor" right="minor">2</cell>
+          </row>
+        </tabular>
   </table>
-
-  <p>
-    \DrawHLine[blue, thick, opacity=0.5]{leftA}{rightA}
-  </p>
 
   <p>
     Now it is easy to see what Player 2 should do.
@@ -279,31 +254,24 @@
   <table xml:id="T_strikecol3Ex3" >
     <caption>Column 3 is dominated by Column 2</caption>
     <tabular>
-      <row>
-        <cell></cell>
-        <cell>Player 2</cell>
-      </row>
-      <row>
-        <cell>Player 1</cell>
-        <cell>1</cell>
-        <cell>0</cell>
-        <cell>\multicolumn{1}{c|}{\MyTikzmark{topB}{2}}</cell>
-      </row>
-      <row>
-        <cell>\multicolumn{1}{l|}</cell>
-        <cell>-1</cell>
-        <cell>-2</cell>
-        <cell>\multicolumn{1}{c|}{\MyTikzmark{bottomB}{3}}</cell>
-      </row>
-      <row>
-        <cell></cell>
-      </row>
-    </tabular>
+          <row>
+            <cell></cell>
+            <cell colspan="3" halign="center" bottom="minor">Player 2</cell>
+          </row>
+          <row>
+            <cell right="minor">Player 1</cell>
+            <cell bottom="minor" right="minor">1</cell>
+            <cell bottom="minor" right="minor">0</cell>
+            <cell bottom="minor" right="minor">2</cell>
+          </row>
+          <row>
+            <cell right="minor"></cell>
+            <cell bottom="minor" right="minor">-1</cell>
+            <cell bottom="minor" right="minor">-2</cell>
+            <cell bottom="minor" right="minor">3</cell>
+          </row>
+        </tabular>
   </table>
-
-  <p>
-    \DrawVLine[blue, thick, opacity=0.5]{topB}{bottomB}
-  </p>
 
   <p>
     AFTER eliminating Column 3, Row 1 dominates Row 2. Now, in <xref ref="T_strikerow2Ex3">Table</xref> we can eliminate Row 2.
@@ -312,32 +280,24 @@
   <table xml:id="T_strikerow2Ex3" >
     <caption>After eliminating Column 3, Row 2 is dominated by Row 1</caption>
     <tabular>
-      <row>
-        <cell></cell>
-        <cell>Player 2</cell>
-      </row>
-      <row>
-        <cell>Player 1</cell>
-        <cell>1</cell>
-        <cell>0</cell>
-        <cell>\multicolumn{1}{c|}{\MyTikzmark{topC}{2}}</cell>
-      </row>
-      <row>
-        <cell>\multicolumn{1}{l|}</cell>
-        <cell>\multicolumn{1}{c|}{\MyTikzmark{leftD}{<m>-1</m>}}</cell>
-        <cell>-2</cell>
-        <cell>\multicolumn{1}{c|}{\MyTikzmark{bottomC}{3}}</cell>
-      </row>
-      <row>
-        <cell></cell>
-      </row>
-    </tabular>
+          <row>
+            <cell></cell>
+            <cell colspan="3" halign="center" bottom="minor">Player 2</cell>
+          </row>
+          <row>
+            <cell right="minor">Player 1</cell>
+            <cell bottom="minor" right="minor">1</cell>
+            <cell bottom="minor" right="minor">0</cell>
+            <cell bottom="minor" right="minor">2</cell>
+          </row>
+          <row>
+            <cell right="minor"></cell>
+            <cell bottom="minor" right="minor">-1</cell>
+            <cell bottom="minor" right="minor">-2</cell>
+            <cell bottom="minor" right="minor">3</cell>
+          </row>
+        </tabular>
   </table>
-
-  <p>
-    \DrawVLine[blue, thick, opacity=0.5]{topC}{bottomC}
-    \DrawHLine[red, thick, opacity=0.5]{leftD}{bottomC}
-  </p>
 
   <p>
     Again, now it is easy to determine what each player should do.
@@ -364,53 +324,51 @@
 
       <table xml:id="T_domstratpractice1" >
         <caption>Payoff matrix for <xref ref="E_domstratpractice1">Exercise</xref></caption>
-        <tabular>
+        <tabular halign="center">
           <row>
             <cell></cell>
-            <cell>Player 2</cell>
+            <cell></cell>
+            <cell colspan="4">Player 2</cell>
           </row>
           <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>\multicolumn{1}{c|}</cell>
-            <cell>W</cell>
-            <cell>X</cell>
-            <cell>Y</cell>
-            <cell>Z</cell>
+            <cell></cell>
+            <cell></cell>
+            <cell bottom="minor">W</cell>
+            <cell bottom="minor">X</cell>
+            <cell bottom="minor">Y</cell>
+            <cell bottom="minor">Z</cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell right="minor">A</cell>
+            <cell right="minor" bottom="minor">1</cell>
+            <cell right="minor" bottom="minor">0</cell>
+            <cell right="minor" bottom="minor">0</cell>
+            <cell right="minor" bottom="minor">0</cell>
           </row>
           <row>
             <cell>Player 1</cell>
-            <cell>A</cell>
-            <cell>1</cell>
-            <cell>0</cell>
-            <cell>0</cell>
-            <cell>0</cell>
-          </row>
-          <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>B</cell>
-            <cell>-1</cell>
-            <cell>0</cell>
-            <cell>-2</cell>
-            <cell>9</cell>
-          </row>
-          <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>C</cell>
-            <cell>1</cell>
-            <cell>1</cell>
-            <cell>1</cell>
-            <cell>8</cell>
-          </row>
-          <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>D</cell>
-            <cell>-2</cell>
-            <cell>0</cell>
-            <cell>0</cell>
-            <cell>7</cell>
+            <cell right="minor">B</cell>
+            <cell right="minor" bottom="minor">-1</cell>
+            <cell right="minor" bottom="minor">0</cell>
+            <cell right="minor" bottom="minor">-2</cell>
+            <cell right="minor" bottom="minor">9</cell>
           </row>
           <row>
             <cell></cell>
+            <cell right="minor">C</cell>
+            <cell right="minor" bottom="minor">1</cell>
+            <cell right="minor" bottom="minor">1</cell>
+            <cell right="minor" bottom="minor">1</cell>
+            <cell right="minor" bottom="minor">8</cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell right="minor">D</cell>
+            <cell right="minor" bottom="minor">-2</cell>
+            <cell right="minor" bottom="minor">0</cell>
+            <cell right="minor" bottom="minor">0</cell>
+            <cell right="minor" bottom="minor">7</cell>
           </row>
         </tabular>
       </table>
@@ -424,53 +382,51 @@
 
       <table xml:id="T_domstratpractice2" >
         <caption>Payoff matrix for <xref ref="E_domstratpractice2">Exercise</xref></caption>
-        <tabular>
+        <tabular halign="center">
           <row>
             <cell></cell>
-            <cell>Player 2</cell>
+            <cell></cell>
+            <cell colspan="4">Player 2</cell>
           </row>
           <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>\multicolumn{1}{c|}</cell>
-            <cell>W</cell>
-            <cell>X</cell>
-            <cell>Y</cell>
-            <cell>Z</cell>
+            <cell></cell>
+            <cell></cell>
+            <cell bottom="minor">W</cell>
+            <cell bottom="minor">X</cell>
+            <cell bottom="minor">Y</cell>
+            <cell bottom="minor">Z</cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell right="minor">A</cell>
+            <cell right="minor" bottom="minor">1</cell>
+            <cell right="minor" bottom="minor">2</cell>
+            <cell right="minor" bottom="minor">3</cell>
+            <cell right="minor" bottom="minor">4</cell>
           </row>
           <row>
             <cell>Player 1</cell>
-            <cell>A</cell>
-            <cell>1</cell>
-            <cell>2</cell>
-            <cell>3</cell>
-            <cell>4</cell>
-          </row>
-          <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>B</cell>
-            <cell>0</cell>
-            <cell>-1</cell>
-            <cell>0</cell>
-            <cell>5</cell>
-          </row>
-          <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>C</cell>
-            <cell>-1</cell>
-            <cell>3</cell>
-            <cell>2</cell>
-            <cell>4</cell>
-          </row>
-          <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>D</cell>
-            <cell>0</cell>
-            <cell>1</cell>
-            <cell>-1</cell>
-            <cell>1</cell>
+            <cell right="minor">B</cell>
+            <cell right="minor" bottom="minor">0</cell>
+            <cell right="minor" bottom="minor">-1</cell>
+            <cell right="minor" bottom="minor">-0</cell>
+            <cell right="minor" bottom="minor">5</cell>
           </row>
           <row>
             <cell></cell>
+            <cell right="minor">C</cell>
+            <cell right="minor" bottom="minor">-1</cell>
+            <cell right="minor" bottom="minor">3</cell>
+            <cell right="minor" bottom="minor">2</cell>
+            <cell right="minor" bottom="minor">4</cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell right="minor">D</cell>
+            <cell right="minor" bottom="minor">0</cell>
+            <cell right="minor" bottom="minor">1</cell>
+            <cell right="minor" bottom="minor">-1</cell>
+            <cell right="minor" bottom="minor">1</cell>
           </row>
         </tabular>
       </table>
@@ -484,53 +440,51 @@
 
       <table xml:id="T_domstratpractice3" >
         <caption>Payoff matrix for <xref ref="E_domstratpractice3">Exercise</xref></caption>
-        <tabular>
+        <tabular halign="center">
           <row>
             <cell></cell>
-            <cell>Player 2</cell>
+            <cell></cell>
+            <cell colspan="4">Player 2</cell>
           </row>
           <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>\multicolumn{1}{c|}</cell>
-            <cell>W</cell>
-            <cell>X</cell>
-            <cell>Y</cell>
-            <cell>Z</cell>
+            <cell></cell>
+            <cell></cell>
+            <cell bottom="minor">W</cell>
+            <cell bottom="minor">X</cell>
+            <cell bottom="minor">Y</cell>
+            <cell bottom="minor">Z</cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell right="minor">A</cell>
+            <cell right="minor" bottom="minor">-2</cell>
+            <cell right="minor" bottom="minor">0</cell>
+            <cell right="minor" bottom="minor">3</cell>
+            <cell right="minor" bottom="minor">20</cell>
           </row>
           <row>
             <cell>Player 1</cell>
-            <cell>A</cell>
-            <cell>-2</cell>
-            <cell>0</cell>
-            <cell>3</cell>
-            <cell>20</cell>
-          </row>
-          <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>B</cell>
-            <cell>1</cell>
-            <cell>-2</cell>
-            <cell>-3</cell>
-            <cell>0</cell>
-          </row>
-          <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>C</cell>
-            <cell>10</cell>
-            <cell>-10</cell>
-            <cell>-1</cell>
-            <cell>1</cell>
-          </row>
-          <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>D</cell>
-            <cell>0</cell>
-            <cell>0</cell>
-            <cell>10</cell>
-            <cell>15</cell>
+            <cell right="minor">B</cell>
+            <cell right="minor" bottom="minor">1</cell>
+            <cell right="minor" bottom="minor">-2</cell>
+            <cell right="minor" bottom="minor">-3</cell>
+            <cell right="minor" bottom="minor">0</cell>
           </row>
           <row>
             <cell></cell>
+            <cell right="minor">C</cell>
+            <cell right="minor" bottom="minor">10</cell>
+            <cell right="minor" bottom="minor">-10</cell>
+            <cell right="minor" bottom="minor">-1</cell>
+            <cell right="minor" bottom="minor">1</cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell right="minor">D</cell>
+            <cell right="minor" bottom="minor">0</cell>
+            <cell right="minor" bottom="minor">0</cell>
+            <cell right="minor" bottom="minor">10</cell>
+            <cell right="minor" bottom="minor">15</cell>
           </row>
         </tabular>
       </table>
@@ -544,53 +498,51 @@
 
       <table xml:id="T_domstratpractice4" >
         <caption>Payoff matrix for <xref ref="E_domstratpractice4">Exercise</xref></caption>
-        <tabular>
+        <tabular halign="center">
           <row>
             <cell></cell>
-            <cell>Player 2</cell>
+            <cell></cell>
+            <cell colspan="4">Player 2</cell>
           </row>
           <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>\multicolumn{1}{c|}</cell>
-            <cell>W</cell>
-            <cell>X</cell>
-            <cell>Y</cell>
-            <cell>Z</cell>
+            <cell></cell>
+            <cell></cell>
+            <cell bottom="minor">W</cell>
+            <cell bottom="minor">X</cell>
+            <cell bottom="minor">Y</cell>
+            <cell bottom="minor">Z</cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell right="minor">A</cell>
+            <cell right="minor" bottom="minor">-2</cell>
+            <cell right="minor" bottom="minor">0</cell>
+            <cell right="minor" bottom="minor">3</cell>
+            <cell right="minor" bottom="minor">20</cell>
           </row>
           <row>
             <cell>Player 1</cell>
-            <cell>A</cell>
-            <cell>-2</cell>
-            <cell>0</cell>
-            <cell>3</cell>
-            <cell>20</cell>
-          </row>
-          <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>B</cell>
-            <cell>1</cell>
-            <cell>-2</cell>
-            <cell>-5</cell>
-            <cell>-3</cell>
-          </row>
-          <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>C</cell>
-            <cell>10</cell>
-            <cell>-10</cell>
-            <cell>-1</cell>
-            <cell>1</cell>
-          </row>
-          <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>D</cell>
-            <cell>0</cell>
-            <cell>0</cell>
-            <cell>10</cell>
-            <cell>8</cell>
+            <cell right="minor">B</cell>
+            <cell right="minor" bottom="minor">1</cell>
+            <cell right="minor" bottom="minor">-2</cell>
+            <cell right="minor" bottom="minor">-5</cell>
+            <cell right="minor" bottom="minor">-3</cell>
           </row>
           <row>
             <cell></cell>
+            <cell right="minor">C</cell>
+            <cell right="minor" bottom="minor">10</cell>
+            <cell right="minor" bottom="minor">-10</cell>
+            <cell right="minor" bottom="minor">-1</cell>
+            <cell right="minor" bottom="minor">1</cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell right="minor">D</cell>
+            <cell right="minor" bottom="minor">0</cell>
+            <cell right="minor" bottom="minor">0</cell>
+            <cell right="minor" bottom="minor">10</cell>
+            <cell right="minor" bottom="minor">8</cell>
           </row>
         </tabular>
       </table>
@@ -607,7 +559,7 @@
   <example xml:id="E_intromaxmin">
     <statement>
       <p>
-        Assume you are Player 1, and you are playing against this <q>infinitely smart</q> Player 2. Consider the game in <xref ref="E_domstratpractice1">Exercise</xref>. If you pick row A, what will Player 2 do? Player 2 would pick column X or Y. Try this for each of the rows. Which row is your best choice? If you pick A, you will get 0; if you pick B, you will get <m>-2</m>; if you pick C, you will get 1; and if you pick D you will get <m>-2</m>. Thus, your best choice is to choose C and get 1. Now assume you are Player 2, and Player 1 is <q>infinitely smart.</q> Which column is your best choice? If you pick W, Player 1 will get 1 (you will get <m>-1</m>); if you pick X, Player 1 will get <m>1</m>; if you pick Y, Player 1 will get 1; and if you pick Z you will get <m>10</m>. Thus, you can choose W, X, or Y (since you want Player 1 to win the least) and get <m>-1</m>.
+        Assume you are Player 1, and you are playing against this <q>infinitely smart</q> Player 2. Consider the game in <xref ref="E_domstratpractice1">Exercise</xref>. If you pick row A, what will Player 2 do? Player 2 would pick column X or Y. Try this for each of the rows. Which row is your best choice? If you pick A, you will get 0; if you pick B, you will get <m>-2</m>; if you pick C, you will get 1; and if you pick D you will get <m>-2</m>. Thus, your best choice is to choose C and get 1. Now assume you are Player 2, and Player 1 is <q>infinitely smart.</q> Which column is your best choice? If you pick W, Player 1 will get 1 (you will get <m>-1</m>); if you pick X, Player 1 will get <m>1</m>; if you pick Y, Player 1 will get 1; and if you pick Z, you will get <m>10</m>. Thus, you can choose W, X, or Y (since you want Player 1 to win the least) and get <m>-1</m>.
       </p>
     </statement>
   </example>
@@ -658,53 +610,51 @@
 
       <table xml:id="T_domstratpractice5" >
         <caption>Payoff matrix for <xref ref="E_domstratpractice5">Exercise</xref></caption>
-        <tabular>
+        <tabular halign="center">
           <row>
             <cell></cell>
-            <cell>Player 2</cell>
+            <cell></cell>
+            <cell colspan="4">Player 2</cell>
           </row>
           <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>\multicolumn{1}{c|}</cell>
-            <cell>W</cell>
-            <cell>X</cell>
-            <cell>Y</cell>
-            <cell>Z</cell>
+            <cell></cell>
+            <cell></cell>
+            <cell bottom="minor">W</cell>
+            <cell bottom="minor">X</cell>
+            <cell bottom="minor">Y</cell>
+            <cell bottom="minor">Z</cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell right="minor">A</cell>
+            <cell right="minor" bottom="minor">-2</cell>
+            <cell right="minor" bottom="minor">0</cell>
+            <cell right="minor" bottom="minor">3</cell>
+            <cell right="minor" bottom="minor">20</cell>
           </row>
           <row>
             <cell>Player 1</cell>
-            <cell>A</cell>
-            <cell>-2</cell>
-            <cell>0</cell>
-            <cell>3</cell>
-            <cell>20</cell>
-          </row>
-          <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>B</cell>
-            <cell>1</cell>
-            <cell>2</cell>
-            <cell>-3</cell>
-            <cell>0</cell>
-          </row>
-          <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>C</cell>
-            <cell>10</cell>
-            <cell>-10</cell>
-            <cell>-1</cell>
-            <cell>1</cell>
-          </row>
-          <row>
-            <cell>\multicolumn{1}{l|}</cell>
-            <cell>D</cell>
-            <cell>0</cell>
-            <cell>0</cell>
-            <cell>10</cell>
-            <cell>15</cell>
+            <cell right="minor">B</cell>
+            <cell right="minor" bottom="minor">1</cell>
+            <cell right="minor" bottom="minor">2</cell>
+            <cell right="minor" bottom="minor">-3</cell>
+            <cell right="minor" bottom="minor">0</cell>
           </row>
           <row>
             <cell></cell>
+            <cell right="minor">C</cell>
+            <cell right="minor" bottom="minor">10</cell>
+            <cell right="minor" bottom="minor">-10</cell>
+            <cell right="minor" bottom="minor">-1</cell>
+            <cell right="minor" bottom="minor">1</cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell right="minor">D</cell>
+            <cell right="minor" bottom="minor">0</cell>
+            <cell right="minor" bottom="minor">0</cell>
+            <cell right="minor" bottom="minor">10</cell>
+            <cell right="minor" bottom="minor">15</cell>
           </row>
         </tabular>
       </table>

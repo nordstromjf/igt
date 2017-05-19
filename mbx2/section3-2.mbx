@@ -27,16 +27,16 @@
     <tabular>
       <row>
         <cell></cell>
-        <cell><em>C</em></cell>
-        <cell><em>D</em></cell>
+        <cell><b>C</b></cell>
+        <cell><b>D</b></cell>
       </row>
       <row>
-        <cell><em>A</em></cell>
+        <cell><b>A</b></cell>
         <cell>1</cell>
         <cell>0</cell>
       </row>
       <row>
-        <cell><em>B</em></cell>
+        <cell><b>B</b></cell>
         <cell>-1</cell>
         <cell>2</cell>
       </row>
@@ -65,14 +65,13 @@
     Let us determine some pairs <m>(p, m)</m>.
   </p>
 
-  <ul>
+  <dl>
   <li>
   <title>Step 1.</title>
   <p>
     Assume <em>Player 2</em> plays pure strategy <em>C</em>.
   </p>
-
-  <ul>
+</li>
     <li>
       <title>Step 1a.</title>
       <p>
@@ -149,18 +148,21 @@
             </latex-image-code>
           </image>
         </figure>
-
-        Before moving on, let's make sure we understand what this line represents. Any point on it represents the expected payoff to Player 1 as she varies her strategy, <em>assuming Player 2 only plays C</em>. In this case, we can see that as she plays B more often, her expected payoff goes down.
       </p></li>
-  </ul>
-  Now let's do the same thing, assuming Player 2 plays only D.</li>
-
+</dl>
+<p>
+  Before moving on, let's make sure we understand what this line represents. Any point on it represents the expected payoff to Player 1 as she varies her strategy, <em>assuming Player 2 only plays C</em>. In this case, we can see that as she plays B more often, her expected payoff goes down.
+</p>
+<p>
+  Now let's do the same thing, assuming Player 2 plays only D.
+</p>
+  <dl>
   <li>
   <title>Step 2.</title>
   <p>
-  Assume <em>Player 2</em> plays pure strategy <em>D</em>.
-
-  <ul>
+    Assume <em>Player 2</em> plays pure strategy <em>D</em>.
+  </p>
+</li>
     <li>
       <title>Step 2a.</title>
       <p>
@@ -213,9 +215,7 @@
 
         Now we can see that if Player 2 plays only D, then Player 1 does best by playing only B.
       </p></li>
-  </ul>
-  </p></li>
-  </ul>
+  </dl>
   <p>
     So we have this nice graph, but what does it really tell us? Although we drew lines representing each of Player 2's pure strategies, Player 1 doesn't know what Player 2 will do. Suppose Player 1 only played A, while Player 2 plays an unknown mixed strategy. Then the possible payoffs for Player 1 are 1 or 0. The more often Player 2 plays C, the more often Player 1 gets 1. So the <em>expected payoff</em><index><main>expected payoff</main></index> per game for a repeated game varies between 0 and 1. We can see the possible expected values as the red line on the graph in <xref ref="F_BoldA">Figure</xref>.
   </p>
@@ -319,14 +319,13 @@
     It should be easy to see that the <em>maximum</em> of the minimum expected payoffs occurs at the intersection of the two lines.
   </p>
 
-  <ul>
+  <dl>
   <li>
   <title>Step 3.</title>
   <p>
     Find the intersection of the two lines.
   </p>
-
-  <ul>
+</li>
     <li>
       <title>Step 3a.</title>
       <p>
@@ -354,9 +353,6 @@
         </md>
         Substituting <m>x={1\over 4}</m> back in to either original equation, say <m>y=2x</m>, gives us <m>y={1\over 2}</m>. Thus, the point of intersection is <m>(1/4, 1/2)</m>.
       </p></li>
-  </ul>
-  </li>
-
   <li>
     <title>Step 4.</title>
     <p>
@@ -364,7 +360,7 @@
 
       Recalling that the first coordinate is <m>p</m>, the probability that Player 1 plays <em>B</em>, we know that Player 1 will play B with probability 1/4, and thus, play A with probability 3/4 [<m>1-1/4=3/4</m>]. The expected payoff for Player 1 is 1/2. It is important to check back to your original intuition about the game from <xref ref="E_linearconjecture">Exercise</xref>. Did it seem as though Player 1 should play A more often than B?
     </p></li>
-  </ul>
+  </dl>
   <p>
     Let's make a few important observations. First, it should be clear from the graph that Player 1 expects a payoff of 1/2 NO MATTER WHAT PLAYER 2 DOES. Furthermore, since this is a zero-sum game, we know that Player 2's expected payoff is <m>-1/2</m>. It is important to note that this graph does not give us any information about an optimal strategy for Player 2. We will see how to find a strategy for Player 2 in the following exercises. Can you think of how you might do this?
   </p>
@@ -450,7 +446,7 @@
       <p>
       It is important to keep in mind that although the <m>x</m>-axis refers to how often Player 2 will play <m>C</m> and <m>D</m>, the <m>y</m>-axis represents the payoff to <em>Player 1</em>.
 
-      <ol type="a">
+      <ol label="a">
         <li><p>
             Explain why we are looking for the <em>minimax</em> strategy for Player 2.
           </p></li>
@@ -535,7 +531,7 @@
       2\amp -2
       \end{matrix} \right].</m>
 
-      <ol type="a">
+      <ol label="a">
         <li><p>
             Does this game have a pure strategy equilibrium?
           </p></li>
@@ -566,7 +562,7 @@
       1\amp -10
       \end{matrix} \right].</m>
 
-      <ol type="a">
+      <ol label="a">
         <li><p>
             Does this game have a pure strategy equilibrium?
           </p></li>

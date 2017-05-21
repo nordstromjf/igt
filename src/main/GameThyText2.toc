@@ -4,11 +4,9 @@
 \contentsline {subsection}{\tocsubsection {}{1.1}{Example: Cake Division}}{1}
 \contentsline {subsection}{\tocsubsection {}{1.2}{Developing Strategies: Tic Tac Toe}}{2}
 \contentsline {section}{\tocsection {}{2}{Game Matrices and Payoff Vectors}}{4}
-\contentsline {subsection}{\tocsubsection {}{2.1}{Example: Matching Pennies}}{4}
-\contentsline {subsection}{\tocsubsection {}{2.2}{Understanding the Players}}{5}
 \contentsline {chapter}{\tocchapter {Chapter}{2}{Two-Person Zero-Sum Games}}{7}
 \contentsline {section}{\tocsection {}{1}{Introduction to Two-Person Zero-Sum Games}}{7}
-\contentsline {subsection}{\tocsubsection {}{1.1}{Example: An Election Campaign Game}}{9}
+\contentsline {subsection}{\tocsubsection {}{1.1}{An Election Campaign Game}}{9}
 \contentsline {subsection}{\tocsubsection {}{1.2}{Equilibrium Pairs}}{10}
 \contentsline {section}{\tocsection {}{2}{More Two-Person Zero-Sum Games: Dominated Strategies}}{13}
 \contentsline {section}{\tocsection {}{3}{Probability and Expected Value}}{19}

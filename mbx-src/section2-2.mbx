@@ -236,9 +236,9 @@
           </row>
           <row>
             <cell right="minor"></cell>
-            <cell bottom="minor" right="minor">-1</cell>
-            <cell bottom="minor" right="minor">-2</cell>
-            <cell bottom="minor" right="minor">2</cell>
+            <cell bottom="minor" right="minor"><stale>-1</stale></cell>
+            <cell bottom="minor" right="minor"><stale>-2</stale></cell>
+            <cell bottom="minor" right="minor"><stale>2</stale></cell>
           </row>
         </tabular>
   </table>
@@ -262,13 +262,13 @@
             <cell right="minor">Player 1</cell>
             <cell bottom="minor" right="minor">1</cell>
             <cell bottom="minor" right="minor">0</cell>
-            <cell bottom="minor" right="minor">2</cell>
+            <cell bottom="minor" right="minor"><stale>2</stale></cell>
           </row>
           <row>
             <cell right="minor"></cell>
             <cell bottom="minor" right="minor">-1</cell>
             <cell bottom="minor" right="minor">-2</cell>
-            <cell bottom="minor" right="minor">3</cell>
+            <cell bottom="minor" right="minor"><stale>3</stale></cell>
           </row>
         </tabular>
   </table>
@@ -288,13 +288,13 @@
             <cell right="minor">Player 1</cell>
             <cell bottom="minor" right="minor">1</cell>
             <cell bottom="minor" right="minor">0</cell>
-            <cell bottom="minor" right="minor">2</cell>
+            <cell bottom="minor" right="minor"><stale>2</stale></cell>
           </row>
           <row>
             <cell right="minor"></cell>
-            <cell bottom="minor" right="minor">-1</cell>
-            <cell bottom="minor" right="minor">-2</cell>
-            <cell bottom="minor" right="minor">3</cell>
+            <cell bottom="minor" right="minor"><stale>-1</stale></cell>
+            <cell bottom="minor" right="minor"><stale>-2</stale></cell>
+            <cell bottom="minor" right="minor"><stale>3</stale></cell>
           </row>
         </tabular>
   </table>

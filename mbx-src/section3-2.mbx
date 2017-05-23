@@ -103,8 +103,9 @@
       <p>
         Now we want to know what Player 1's payoff will be as she varies the probability, <m>p</m>, with which she plays <em>B</em>. We can draw a graph where the <m>x</m>-axis represents to probability with which she plays B (<m>p</m>) and the <m>y</m>-axis represents the expected payoff (<m>m</m>). See <xref ref="F_MixedStrategyAxes">Figure</xref>.
 
-        <figure>
-          <image>
+        <figure xml:id="F_MixedStrategyAxes">
+          <caption> Labeled axes.</caption>
+          <image width="60%" source="images/image-1.svg">
             <latex-image-code>
               <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=middle, xmin=-0.25,xmax=1.4, ymin=-1.5, ymax=2.5,xtick={0,1},ytick={0,0}]
 
@@ -128,8 +129,9 @@
       <p>
         Now we can plot the points we determined in Step 1a and Step 1b. We will connect them with a line representing Player 2's pure strategy <em>C</em>. See <xref ref="F_MixedStrategyOneLine">Figure</xref>.
 
-        <figure>
-          <image>
+        <figure xml:id="F_MixedStrategyOneLine">
+          <caption>Player 2's strategy <em>C</em>.</caption>
+          <image width="60%" source="images/image-2.svg">
             <latex-image-code>
               <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=middle, xmin=-0.25,xmax=1.4, ymin=-1.5, ymax=2.5,xtick={0,1}]
 
@@ -186,10 +188,11 @@
     <li>
       <title>Step 2c.</title>
       <p>
-        Now, on our same graph from Step 1, we can plot the points we determined in Step 2a and Step 2b. We will connect them with a line representing Player 2's pure strategy D. See <xref ref="F_Player_2_s_pure_strategy_D">Figure</xref>
+        Now, on our same graph from Step 1, we can plot the points we determined in Step 2a and Step 2b. We will connect them with a line representing Player 2's pure strategy D. See <xref ref="F_Player_2_s_pure_strategy_D">Figure</xref>.
 
-        <figure>
-          <image>
+        <figure xml:id="F_Player_2_s_pure_strategy_D">
+          <caption>Player 2's strategy <em>D</em>.</caption>
+          <image width="60%" source="images/image-3.svg">
             <latex-image-code>
               <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=middle, xmin=-0.25,xmax=1.4, ymin=-1.5, ymax=2.5,xtick={0,1}]
               \addplot[-, mark=*]coordinates{(0,0)(1,2)}
@@ -220,8 +223,9 @@
     So we have this nice graph, but what does it really tell us? Although we drew lines representing each of Player 2's pure strategies, Player 1 doesn't know what Player 2 will do. Suppose Player 1 only played A, while Player 2 plays an unknown mixed strategy. Then the possible payoffs for Player 1 are 1 or 0. The more often Player 2 plays C, the more often Player 1 gets 1. So the <em>expected payoff</em><index><main>expected payoff</main></index> per game for a repeated game varies between 0 and 1. We can see the possible expected values as the red line on the graph in <xref ref="F_BoldA">Figure</xref>.
   </p>
 
-  <figure>
-    <image>
+  <figure xml:id="F_BoldA">
+    <caption><xref ref="F_BoldA">Figure</xref> of the expected payoffs for Player 1 playing only <em>A</em>.</caption>
+    <image width="60%" source="images/image-4.svg">
       <latex-image-code>
         <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=middle, xmin=-0.25,xmax=1.4, ymin=-1.5, ymax=2.5,xtick={0,1}]
         \addplot[-, mark=*]coordinates{(0,0)(1,2)}
@@ -248,11 +252,12 @@
   </figure>
 
   <p>
-    Since we want to understand mixed strategies for Player 1, what would happen if Player 1 played A half the time and B half the time? In other words, what happens if <m>p=1/2</m>? Although we may not easily be able to see the exact values, we can represent the possible expected values on the graph in <xref ref="F_BoldHalf">Figure</xref>
+    Since we want to understand mixed strategies for Player 1, what would happen if Player 1 played A half the time and B half the time? In other words, what happens if <m>p=1/2</m>? Although we may not easily be able to see the exact values, we can represent the possible expected values on the graph in <xref ref="F_BoldHalf">Figure</xref>.
   </p>
 
-  <figure>
-    <image>
+  <figure xml:id="F_BoldHalf">
+    <caption>The expected payoffs for Player 1 playing <em>B</em> half the time.</caption>
+    <image width="60%" source="images/image-5.svg">
       <latex-image-code>
         <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=middle, xmin=-0.25,xmax=1.4, ymin=-1.5, ymax=2.5,xtick={0,1}]
         \addplot[-, mark=*]coordinates{(0,0)(1,2)}
@@ -286,8 +291,9 @@
     Now the minimum expected value for each choice of <m>p</m> is given by the bottom lines on the graph, shown in red in <xref ref="F_BoldMin">Figure</xref>.
   </p>
 
-  <figure>
-    <image>
+  <figure xml:id="F_BoldMin">
+    <caption>The minimum expected payoffs for Player 1.</caption>
+    <image width="60%" source="images/image-6.svg">
       <latex-image-code>
         <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=middle, xmin=-0.25,xmax=1.4, ymin=-1.5, ymax=2.5,xtick={0,1}]
         \addplot[-, mark=*]coordinates{(0,0)(1,2)}

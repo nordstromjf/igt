@@ -35,8 +35,15 @@
 <frontmatter>
 <titlepage>
 <author>
-<personname>Jennifer Firkins Nordstrom</personname>
+	<personname>Jennifer Firkins Nordstrom</personname>
+	<department>Department of Mathematics</department>
+	<institution>
+		<line>Linfield College</line>
+		<line>McMinnville, OR</line>
+	</institution>
+	<email>jfirkins@linfield.edu</email>
 </author>
+<date><today /></date>
 </titlepage>
 <preface>
 <p>

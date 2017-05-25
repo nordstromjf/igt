@@ -1,5 +1,5 @@
 
-<section>
+<section xml:id="S_ZeroSumStrategySummary">
   <title>Strategies for Zero-Sum Games and Equilibrium Points</title>
   <p>
     In this section, we will try to understand where we are with solving two-player zero-sum games.

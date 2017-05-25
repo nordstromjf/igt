@@ -1,5 +1,5 @@
 
-<section>
+<section xml:id="S_MixStratGraph">
   <title>Mixed Strategies: Graphical Solution</title>
   <p>
     <index><main>graphical solution</main></index>
@@ -105,7 +105,7 @@
 
         <figure xml:id="F_MixedStrategyAxes">
           <caption> Labeled axes.</caption>
-          <image width="60%" source="images/image-1.svg">
+          <image width="60%" source="images/image-4.svg">
             <latex-image-code>
               <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=middle, xmin=-0.25,xmax=1.4, ymin=-1.5, ymax=2.5,xtick={0,1},ytick={0,0}]
 
@@ -131,7 +131,7 @@
 
         <figure xml:id="F_MixedStrategyOneLine">
           <caption>Player 2's strategy <em>C</em>.</caption>
-          <image width="60%" source="images/image-2.svg">
+          <image width="60%" source="images/image-5.svg">
             <latex-image-code>
               <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=middle, xmin=-0.25,xmax=1.4, ymin=-1.5, ymax=2.5,xtick={0,1}]
 
@@ -192,7 +192,7 @@
 
         <figure xml:id="F_Player_2_s_pure_strategy_D">
           <caption>Player 2's strategy <em>D</em>.</caption>
-          <image width="60%" source="images/image-3.svg">
+          <image width="60%" source="images/image-6.svg">
             <latex-image-code>
               <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=middle, xmin=-0.25,xmax=1.4, ymin=-1.5, ymax=2.5,xtick={0,1}]
               \addplot[-, mark=*]coordinates{(0,0)(1,2)}
@@ -225,7 +225,7 @@
 
   <figure xml:id="F_BoldA">
     <caption><xref ref="F_BoldA">Figure</xref> of the expected payoffs for Player 1 playing only <em>A</em>.</caption>
-    <image width="60%" source="images/image-4.svg">
+    <image width="60%" source="images/image-7.svg">
       <latex-image-code>
         <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=middle, xmin=-0.25,xmax=1.4, ymin=-1.5, ymax=2.5,xtick={0,1}]
         \addplot[-, mark=*]coordinates{(0,0)(1,2)}
@@ -257,7 +257,7 @@
 
   <figure xml:id="F_BoldHalf">
     <caption>The expected payoffs for Player 1 playing <em>B</em> half the time.</caption>
-    <image width="60%" source="images/image-5.svg">
+    <image width="60%" source="images/image-8.svg">
       <latex-image-code>
         <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=middle, xmin=-0.25,xmax=1.4, ymin=-1.5, ymax=2.5,xtick={0,1}]
         \addplot[-, mark=*]coordinates{(0,0)(1,2)}
@@ -293,7 +293,7 @@
 
   <figure xml:id="F_BoldMin">
     <caption>The minimum expected payoffs for Player 1.</caption>
-    <image width="60%" source="images/image-6.svg">
+    <image width="60%" source="images/image-9.svg">
       <latex-image-code>
         <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=middle, xmin=-0.25,xmax=1.4, ymin=-1.5, ymax=2.5,xtick={0,1}]
         \addplot[-, mark=*]coordinates{(0,0)(1,2)}

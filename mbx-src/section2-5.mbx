@@ -1,5 +1,5 @@
 
-<section>
+<section xml:id="S_EquilibPoints">
   <title>Equilibrium Points</title>
   <p>
     In this section, we will try to gain a greater understanding of equilibrium points. In general, we call the pair of strategies played an <em>equilibrium pair</em><index><main>equilibrium pair</main></index>, while we call the specific payoff vector associated with an equilibrium pair an <em>equilibrium point</em><index><main>equilibrium point</main></index>.

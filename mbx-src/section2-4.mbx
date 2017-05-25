@@ -1,5 +1,5 @@
 
-<section>
+<section xml:id="S_OneCardStud">
   <title>Determining the Payoff Matrix</title>
   <p>
     Now that we have worked with expected value, we can begin to analyze some simple games that involve an element of chance.

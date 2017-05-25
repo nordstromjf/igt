@@ -1,5 +1,5 @@
 
-<section>
+<section xml:id="S_DominatedStrategies">
   <title>More Two-Person Zero-Sum Games: Dominated Strategies</title>
   <p>
     Recall that in a zero-sum game, we know that one player's win is the other player's loss. Furthermore, we know we can rewrite any zero-sum game so that the player's payoffs are in the form <m>(a, -a)</m>. Note, this works even if <m>a</m> is negative; in which case, <m>-a</m> is positive.
@@ -218,10 +218,10 @@
 
   <p>
     Here is the great thing: we can always eliminate dominated strategies! (Why?)
-    Thus, in <xref ref="E_domstrat2">Example</xref>, we can eliminate Row 2, as in <xref ref="T_strikerow2Ex2">Table</xref>.
+    Thus, in <xref ref="E_domstrat2">Example</xref>, we can eliminate Row 2, as in <xref ref="F_strikerow2Ex2">Figure</xref>.
   </p>
 
-  <table xml:id="T_strikerow2Ex2" >
+  <!--<table xml:id="T_strikerow2Ex2" >
     <caption>Row 2 is dominated by Row 1</caption>
     <tabular>
           <row>
@@ -242,16 +242,36 @@
           </row>
         </tabular>
   </table>
+-->
+<figure xml:id="F_strikerow2Ex2">
+    <caption>Row 2 is dominated by Row 1.</caption>
+    <image width="30%" source="images/image-1.svg">
+      <latex-image-code>
+        <![CDATA[\begin{tikzpicture}
+        \draw[step=1cm] (0,0) grid (3,2);
+        \node at (1.5,2.3) {Player 2};
+        \node at (-.9, 1) {Player 1};
+        \node at (.5, .5) {-1};
+        \node at (1.5, .5) {-2};
+        \node at (2.5, .5) {2};
+        \node at (.5, 1.5) {1};
+        \node at (1.5, 1.5) {0};
+        \node at (2.5, 1.5) {2};
+        \draw[blue, very thick, opacity=0.9] (-0.1, .5)--(3.1, .5);
+        \end{tikzpicture}]]>
+      </latex-image-code>
+    </image>
+</figure>
 
   <p>
     Now it is easy to see what Player 2 should do.
   </p>
 
   <p>
-    In <xref ref="E_domstrat3">Example</xref>, we cannot eliminate Row 2 since it is not dominated by Row 1. However, it should be clear that Column 2 dominates Column 3 (remember, Player 2 prefers SMALLER values). Thus we can eliminate Column 3 as in <xref ref="T_strikecol3Ex3">Table</xref>.
+    In <xref ref="E_domstrat3">Example</xref>, we cannot eliminate Row 2 since it is not dominated by Row 1. However, it should be clear that Column 2 dominates Column 3 (remember, Player 2 prefers SMALLER values). Thus we can eliminate Column 3 as in <xref ref="F_strikecol3Ex3">Figure</xref>.
   </p>
 
-  <table xml:id="T_strikecol3Ex3" >
+  <!--<table xml:id="T_strikecol3Ex3" >
     <caption>Column 3 is dominated by Column 2</caption>
     <tabular>
           <row>
@@ -272,14 +292,33 @@
           </row>
         </tabular>
   </table>
-
+  -->
+<figure xml:id="F_strikecol3Ex3">
+    <caption>Column 3 is dominated by Column 2.</caption>
+    <image width="30%" source="images/image-2.svg">
+      <latex-image-code>
+        <![CDATA[\begin{tikzpicture}
+        \draw[step=1cm] (0,0) grid (3,2);
+        \node at (1.5,2.3) {Player 2};
+        \node at (-.9, 1) {Player 1};
+        \node at (.5, .5) {-1};
+        \node at (1.5, .5) {-2};
+        \node at (2.5, .5) {3};
+        \node at (.5, 1.5) {1};
+        \node at (1.5, 1.5) {0};
+        \node at (2.5, 1.5) {2};
+        \draw[blue, very thick, opacity=0.9] (2.5, -.1)--(2.5, 2.1);
+        \end{tikzpicture}]]>
+      </latex-image-code>
+    </image>
+</figure>
   <p>
-    AFTER eliminating Column 3, Row 1 dominates Row 2. Now, in <xref ref="T_strikerow2Ex3">Table</xref> we can eliminate Row 2.
+    AFTER eliminating Column 3, Row 1 dominates Row 2. Now, in <xref ref="F_strikerow2Ex3">Table</xref> we can eliminate Row 2.
   </p>
 
-  <table xml:id="T_strikerow2Ex3" >
+ <!-- <table xml:id="T_strikerow2Ex3" >
     <caption>After eliminating Column 3, Row 2 is dominated by Row 1</caption>
-    <tabular>
+   <tabular>
           <row>
             <cell></cell>
             <cell colspan="3" halign="center" bottom="minor">Player 2</cell>
@@ -298,7 +337,27 @@
           </row>
         </tabular>
   </table>
-
+-->
+<figure xml:id="F_strikerow2Ex3">
+    <caption>fter eliminating Column 3, Row 2 is dominated by Row 1.</caption>
+    <image width="30%" source="images/image-3.svg">
+      <latex-image-code>
+        <![CDATA[ \begin{tikzpicture}
+        \draw[step=1cm] (0,0) grid (3,2);
+        \node at (1.5,2.3) {Player 2};
+        \node at (-.9, 1) {Player 1};
+        \node at (.5, .5) {-1};
+        \node at (1.5, .5) {-2};
+        \node at (2.5, .5) {3};
+        \node at (.5, 1.5) {1};
+        \node at (1.5, 1.5) {0};
+        \node at (2.5, 1.5) {2};
+        \draw[very thick, opacity=0.9] (2.5, -.1)--(2.5, 2.1);
+        \draw[blue, very thick, opacity=0.9] (-0.1, .5)--(3.1, .5);
+    \end{tikzpicture}]]>
+      </latex-image-code>
+    </image>
+</figure>
   <p>
     Again, now it is easy to determine what each player should do.
   </p>

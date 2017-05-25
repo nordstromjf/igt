@@ -1,5 +1,5 @@
 
-<section>
+<section xml:id="S_RepeatPD">
   <title>Repeated Prisoner's Dilemma</title>
   <p>
     In this section we look at two players playing Prisoner's Dilemma repeatedly. We call this game an <em>iterated</em> Prisoner's Dilemma<index><main>iterated Prisoner's Dilemma</main></index>.

@@ -1,0 +1,343 @@
+<section xml:id="S_solvingeq">
+  <title>Using Sage to Graph Lines and Solve Equations</title><index><main><booktitle>Sage</booktitle></main></index>
+
+  <p>
+    In this section we will use technology to graph lines and solve for the intersection point. In particular, we will use an open online resource called <booktitle>Sage</booktitle><index><booktitle>Sage</booktitle></index>. 
+  </p>
+
+  <p>
+    Let's continue to consider the game given in <xref ref="T_smallrepeat">Table</xref> by
+    
+  <table>
+    <caption>Game from <xref ref="E_smallrepeat">Example</xref>.</caption>
+    <tabular>
+      <row>
+        <cell></cell>
+        <cell><m>C</m></cell>
+        <cell><m>D</m></cell>
+      </row>
+      <row>
+        <cell><m>A</m></cell>
+        <cell>1</cell>
+        <cell>0</cell>
+      </row>
+      <row>
+        <cell><m>B</m></cell>
+        <cell>-1</cell>
+        <cell>2</cell>
+      </row>
+    </tabular>
+  </table>
+  </p>
+  <p>
+    Recall, our goal is to determine how often Player 1 should play A and how often she should play B.
+  </p>
+
+  <p>
+    We will follow the same steps as in <xref ref="S_MixStratGraph">Section</xref>. Let <m>p</m> be the probability that Player 1 plays B. Let <m>m</m> be the payoff to Player 1. Since we are try to find a mixed strategy for Player 1, we will pick a strategy for Player 2 and try to determine the possible payoffs for Player 1.
+  </p>
+
+  <p>
+    Let us determine some pairs <m>(p, m)</m>.
+  </p>
+
+  <dl>
+  <li>
+  <title>Step 1.</title>
+  <p>
+    Assume <em>Player 2</em> plays pure strategy <m>C</m>.
+  </p>
+</li>
+    <li>
+      <title>Step 1a.</title>
+      <p>
+        If Player 1 always plays <m>A</m>, then we are considering the strategy pair <m>\{A, C\}</m>.
+
+        Since Player 1 never plays <m>B</m>,  <m>p=0</m>. 
+
+        The payoff to Player 1 for  <m>\{A, C\}</m> is <m>m=1</m>. 
+
+        Thus, for the strategy pair <m>\{A, C\}</m> we get <m>(p, m)=(0, 1)</m>. 
+
+      </p></li>
+
+    <li>
+      <title>Step 1b.</title>
+      <p>
+        If Player 1 always plays <m>B</m>, then we are considering the strategy pair <m>\{B, C\}</m>.
+
+        Since Player 1 always plays <m>B</m>, <m>p=1</m>. 
+
+        The payoff to Player 1 for <m>\{A, C\}</m> is <m>m=-1</m>. 
+
+        Thus, for the strategy pair <m>\{B, C\}</m> we get <m>(p, m)=(1, -1)</m>.
+      </p></li>
+
+    <li>
+      <title>Step 1c.</title>
+      <p>
+        Now we want to know what Player 1's payoff will be as she varies the probability, <m>p</m>, with which she plays <m>B</m>. We can draw a graph where the <m>x</m>-axis represents to probability with which she plays B (<m>p</m>) and the <m>y</m>-axis represents the expected payoff (<m>m</m>). 
+        Thus, when Player 1 plays only <m>A</m>, she is playing <m>B</m> with probability 0; when Player 1 plays only B, she is playing B with probability 1. It might be easier to remember if you label your graph as in <xref ref="F_MixedStrategyAxes">Figure</xref>.
+      </p></li>
+
+    <li>
+      <title>Step 1d.</title>
+      <p>
+        Now we can use <booktitle>Sage</booktitle> to plot the points we determined in Step 1a and Step 1b  and the line between them. This line represents Player 2's pure strategy <m>C</m>. See <xref ref="F_MixedStrategyOneLine">Figure</xref>.
+
+        <sage>
+          <input>
+          u=(0,1);
+          v=(1,-1);
+          show(line([u, v], thickness=2, color=('blue'))+point(u, color=('blue'), pointsize=70)+point(v, color=('blue'), pointsize=70))
+          </input>
+          <output></output>
+        </sage>
+      </p></li>
+</dl>
+<p>
+  Before moving on, let's again, make sure we understand what this line represents. Any point on it represents the expected payoff to Player 1 as she varies her strategy, <em>assuming Player 2 only plays <m>C</m></em>. In this case, we can see that as she plays <m>B</m> more often, her expected payoff goes down.
+</p>
+<p>
+  Now let's do the same thing, assuming Player 2 plays only <m>D</m>.
+</p>
+  <dl>
+  <li>
+  <title>Step 2.</title>
+  <p>
+    Assume <em>Player 2</em> plays pure strategy <m>D</m>. 
+  </p>
+</li>
+    <li>
+      <title>Step 2a.</title>
+      <p>
+        If Player 1 always plays <m>A</m>, then we are considering the strategy pair <m>\{A, D\}</m>.
+
+        Since Player 1 never plays <m>B</m>,  <m>p=0</m>. 
+
+        The payoff to Player 1 for  <m>\{A, D\}</m> is <m>m=0</m>. 
+
+        Thus, for the strategy pair <m>\{A, D\}</m> we get <m>(p, m)=(0, 0)</m>. 
+      </p></li>
+
+    <li>
+      <title>Step 2b.</title>
+      <p>
+        If Player 1 always plays <m>B</m>, then we are considering the strategy pair <m>\{B, D\}</m>.
+
+        Since Player 1 always plays <m>B</m>,  <m>p=1</m>. 
+
+        The payoff to Player 1 for  <m>\{B, D\}</m> is <m>m=2</m>. 
+
+        Thus, for the strategy pair <m>\{B, D\}</m> we get <m>(p, m)=(1, 2)</m>.
+      </p></li>
+
+    <li>
+      <title>Step 2c.</title>
+      <p>
+        Now, on our same graph from Step 1, we can plot the points we determined in Step 2a and Step 2b. We will connect them with a line representing Player 2's pure strategy <m>D</m>. See <xref ref="F_Player_2_s_pure_strategy_D">Figure</xref>.
+      </p>
+
+        <sage>
+          <input>
+          u=(0,1);
+          v=(1,-1);
+          w=(0,0);
+          z=(1, 2);
+          show(line([u, v], thickness=2, color=('blue'))+point(u, color=('blue'), pointsize=70)
+            +point(v, color=('blue'), pointsize=70)
+            +line([w, z], thickness=2, color=('red'))
+            +point(w, color=('red'), pointsize=70)+point(z, color=('red'), pointsize=70))
+          </input>
+          <output></output>
+        </sage>
+
+      <p>
+        Now we can see that if Player 2 plays only <m>D</m>, then Player 1 does best by playing only <m>B</m>.
+      </p></li>
+  </dl>
+  
+  <p>
+    As we saw in <xref ref="S_MixStratGraph">Section</xref>, for each choice of <m>p</m>, the top line represents the highest expected value for Player 1; the bottom line represents the lowest expected value for Player 1; the area between the lines represents the possible expected values for Player 1. Thus,  Player 1 wants to maximize the minimum expected value, which means she wants to find the maximin strategy<index>maximin strategy, repeated games</index>. ANd, as we saw in <xref ref="S_MixStratGraph">Section</xref>, the maximin strategy occurs at the intersection of the two lines.
+  </p>
+
+  <dl>
+  <li>
+  <title>Step 3.</title>
+  <p>
+    Find the intersection of the two lines.
+  </p>
+</li>
+    <li>
+      <title>Step 3a.</title>
+      <p>
+        Find the equation for Line C. 
+
+        This is the line passing through the points <m>(0, 1)</m> and <m>(1, -1)</m>. It has slope <m>-2</m> and <m>y</m>-intercept 1. Thus, it has equation <m>m=-2p+1</m>. [Recall the <m>x</m>-axis represents probability <m>p</m> and the <m>y</m>-axis represents expected payoff <m>m</m>.]
+      </p></li>
+
+    <li>
+      <title>Step 3b.</title>
+      <p>
+        Find the equation for Line D. 
+
+        This is the line passing through the points <m>(0, 0)</m> and <m>(1, 2)</m>. It has slope <m>2</m> and <m>y</m>-intercept 0. Thus, it has equation <m>m=2p</m>.
+      </p></li>
+
+    <li>
+      <title>Step 3c.</title>
+      <p>
+        Now we can use technology to help us solve the equations.
+        <sage>
+          <input>
+            p, m = var('p, m')
+            show(solve([m==-2*p+1, m==2*p], p, m))
+          </input>
+          <output><m>p=1/4</m>, <m>m=1/2</m>
+          </output>
+        </sage>
+      </p></li>
+  <li>
+    <title>Step 4.</title>
+    <p>
+      Determine Player 1's maximin mixed strategy<index>maximin mixed strategy</index>. 
+
+      Recalling that <m>p</m> is the probability that Player 1 plays <m>B</m>, we know that Player 1 will play <m>B</m> with probability 1/4, and thus, play A with probability 3/4. The expected payoff for Player 1, <m>m</m>, is 1/2. It is important to check the algebraic solution with where the intersection point appears on the graph. Although we are using technology to help us graph and solve for teh intersection point, we need to be able to catch any errors we make entering the information into Sage.
+    </p></li>
+  </dl>
+
+
+  <p>
+    We have seen that we can use the same matrix with Player 1's payoffs to find the strategy for Player 2. Using the same game matrix as above:
+    <me>
+      \left[\begin{matrix}1\amp 0\\
+      -1\amp 2
+      \end{matrix} \right],
+    </me>
+    and continuing to label Player 1's strategies by <m>A</m> and <m>B</m>, and Player 2's strategies by <m>C</m> and <m>D</m>, we can graph lines for Player 1's pure strategies <m>A</m> and <m>B</m>. We now let the <m>x</m>--axis represent the probability that Player 2 plays <m>D</m>. In Sage, enter the two points that determine the line for when Player 1 plays <m>A</m>, then the two points that determine the line for when Player 1 plays <m>B</m>. We will then have Sage graph the lines.
+  </p>
+
+  <sage>
+    <input>
+    @interact(layout=dict(top=[['u','v'],['w','z']]))
+    def jfirkins(u=vector((0,1)), v=vector((1,0)), w=vector((0,-1)), z=vector((1, 2))):
+      L1 = line([u, v], thickness=2, color=('blue'))
+      L2 = line([w, z], thickness=2, color=('red'))
+      P1 = point(u, color=('blue'), pointsize=70)
+      P2 = point(v, color=('blue'), pointsize=70)
+      P3 = point(w, color=('red'), pointsize=70)
+      P4 = point(z, color=('red'), pointsize=70)
+      pretty_print(html("Instructions go here"))
+      show(L1+L2+P1+P2+P3+P4, figsize=4)
+     </input>
+     <output></output> 
+  </sage>
+
+    <!--<sage>
+      <input>
+          u=(0,1);
+          v=(1,0);
+          w=(0,-1);
+          z=(1, 2);
+          show(line([u, v], thickness=2, color=('blue'))+point(u, color=('blue'), pointsize=70)
+            +point(v, color=('blue'), pointsize=70)
+            +line([w, z], thickness=2, color=('red'))
+            +point(w, color=('red'), pointsize=70)+point(z, color=('red'), pointsize=70))
+      </input>
+      <output></output>
+      </sage>-->
+  <p>
+    Now determine and enter the equations of the two lines and have Sage solve for the intersection point.
+  </p>  
+
+  <sage>
+    <input>
+    p, m = var('p, m')
+    @interact
+    def jnordstrom(a=-1,b=3,c=1,d=-1):
+      Eq1 = m==a*p+c
+      Eq2 = m==b*p+d
+      S = solve([Eq1, Eq2], p, m)[0]
+      pretty_print(html("<p>The solutions are <ul><li>$%s$</li><li>$%s$</li></ul></p>"%(latex(S[0]),latex(S[1]))))
+    </input>
+    <output></output>  
+  </sage>
+
+     <!-- <sage>
+        <input>
+            p, m = var('p, m')
+            show(solve([m==-1*p+1, m==3*p-1], p, m))
+        </input>
+        <output><m>p=1/2</m>, <m>m=1/2</m>
+        </output>
+      </sage> -->
+
+  <p>You can now use these two Sage cells to solve any 2 <m>\times</m> 2 game with a mixed strategy equilibrium. You can also take some time to experiment with what happens if the game has a pure strategy equilibrium.</p>
+
+
+  <p>
+    Let's analyze some more games!
+  </p>
+  <exercise xml:id="E_graph2practiceSage">
+    <statement>
+      <p>
+      Consider the zero-sum game <m>\left[\begin{matrix}-4\amp 4\\
+      2\amp -2
+      \end{matrix} \right].</m>
+
+      <ol label="a">
+        <li><p>
+            Does this game have a pure strategy equilibrium?
+          </p></li>
+
+        <li><p>
+            Just by looking at the matrix, do you think this game will be fair? (Would you rather be Player 1 or Player 2?)
+          </p></li>
+
+        <li><p>
+            Use Sage to draw the appropriate graph for this game. Which pure strategy does the blue line represent? Which pure strategy does the red line represent?
+          </p></li>
+
+        <li><p>
+            Use you graph to determine if there is a mixed strategy equilibrium point. If there is, use Sage to determine how often should Player 1 play each strategy? What is the expected payoff to each player?
+          </p></li>
+
+        <li><p>
+            Is this game fair? Explain. Compare your answer to (b).
+          </p></li>
+      </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="E_graph3practiceSage">
+    <statement>
+      <p>
+      Consider the zero-sum game <m>\left[\begin{matrix}0\amp 1\\
+      1\amp -10
+      \end{matrix} \right].</m>
+
+      <ol label="a">
+        <li><p>
+            Does this game have a pure strategy equilibrium?
+          </p></li>
+
+        <li><p>
+            Just by looking at the matrix, do you think this game will be fair? (Would you rather be Player 1 or Player 2?)
+          </p></li>
+
+        <li><p>
+            Use Sage to draw the appropriate graph for this game. Which pure strategy does the blue line represent? Which pure strategy does the red line represent?
+          </p></li>
+
+        <li><p>
+            Use you graph to determine if there is a mixed strategy equilibrium point. If there is, use Sage to determine how often should Player 1 play each strategy? What is the expected payoff to each player?
+          </p></li>
+
+        <li><p>
+            Is this game fair? Explain. Compare your answer to (b).
+          </p></li>
+      </ol>
+      </p>
+    </statement>
+  </exercise>
+</section>

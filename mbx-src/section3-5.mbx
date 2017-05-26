@@ -100,7 +100,7 @@
   <sage>
     <input>
       A=matrix([[3,-5,1],[1,1,3]]);
-      A.rref()
+      show(A.rref())
     </input>
     <output></output>
   </sage>
@@ -169,7 +169,7 @@
   <sage>
     <input>
       A=matrix([[1,-3,0],[1,1,1]]);
-      A.rref()
+      show(A.rref())
     </input>
     <output></output>
   </sage>

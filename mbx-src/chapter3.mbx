@@ -8,6 +8,7 @@
   </introduction>
   <xi:include  href="section3-1.mbx" />
   <xi:include  href="section3-2.mbx" />
+  <xi:include  href="S_solvingeq.mbx" />
   <xi:include  href="section3-3.mbx" />
   <xi:include  href="section3-4.mbx" />
   <xi:include  href="section3-5.mbx" />

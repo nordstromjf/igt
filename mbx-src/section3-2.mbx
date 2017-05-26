@@ -182,7 +182,7 @@
 
         If Player 1 plays pure strategy B, then what is the probability that she plays B? <m>p=1</m>. What is the payoff to Player 1? <m>m=2</m>. 
 
-        Thus, for the strategy pair <m>\{B, D\}</m> we get <m>(1, -1)</m> for <m>(p, m)</m>.
+        Thus, for the strategy pair <m>\{B, D\}</m> we get <m>(1, 2)</m> for <m>(p, m)</m>.
       </p></li>
 
     <li>

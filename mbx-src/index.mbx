@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <mathbook xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
 <docinfo>
+	<brandlogo source="images/image-1.svg" />
 <macros>
 \newcommand{\MyTikzmark}[2]{
      \tikz[overlay,remember picture,baseline] \node [anchor=base] (#1) {$#2$};}
@@ -29,6 +30,7 @@
 </docinfo>
 
 
+
 <book>
 <title>Introduction to Game Theory:
  a Discovery Approach</title>
@@ -45,6 +47,15 @@
 </author>
 <date><today /></date>
 </titlepage>
+
+<colophon>
+	<copyright>
+            <year>2017</year>
+            <holder>Jennifer Firkins Nordstrom</holder>
+            <minilicense>Creative Commons Attribution-ShareAlike 4.0 International License</minilicense>
+            <shortlicense><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</shortlicense>
+        </copyright>
+</colophon>
 <preface>
 <p>
 Many colleges and universities are offering courses in quantitative reasoning for all students. One model for a quantitative reasoning course is to provide students with a single cohesive topic. Ideally, such a topic can pique the curiosity of students with wide ranging academic interests and limited mathematical background. This text is intended for use in such a course. Game theory is an excellent topic for a non-majors quantitative course as it develops mathematical models to understand human behavior in social, political, and economic settings. The variety of applications can appeal to a broad range of students. Additionally, students can learn mathematics through playing games, something many choose to do in their spare time! </p>

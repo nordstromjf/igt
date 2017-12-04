@@ -97,17 +97,11 @@
     </table>
 
     <p>
-    It is useful to think about different ways to quantify winning and losing. What are some possible measures?
-
-    <ul>
-      <li><p>
-          money, chips, counters, votes, points, amount of cake, etc.
-        </p></li>
-    </ul>
+      It is useful to think about different ways to quantify winning and losing. What are some possible measures of value? For example, we could use money, chips, counters, votes, points, amount of cake, etc.
     </p>
 
     <p>
-      Remember, a player always prefers to win the MOST points (money, chips, votes, cake), not just more than her opponent. If you want to study a game where players simply win or lose (such as Tic Tac Toe), we could simply use <q>1</q> for a win and <q>-1</q> for a loss.
+      Remember, a player always prefers to win the MOST points (money, chips, votes, cake), not just more than her opponent. If you want to study a game where players simply win or lose (such as Tic Tac Toe), we could just use <q>1</q> for a win and <q>-1</q> for a loss.
     </p>
   </subsection>
 
@@ -148,16 +142,16 @@
       </statement>
     </exercise>
     <p>
-      The real work begins when there are two players since Player 1 can only choose the row and Player 2 can only choose the column. Thus the outcome depends on BOTH players.
+      It may be strightforward to decide the best payoff for a player out of a list of values, and it would be great if a player could just determine the biggest value in the table and choose that strategy. However, when there are two players a player may have to choose a strategy more carefully, since Player 1 can only choose the row, and Player 2 can only choose the column. Thus, the outcome of the game depends on BOTH players.
     </p>
-    <exercise xml:id="E_Sec2_2small">
+    <example xml:id="E_Sec2_2small">
       <statement>
         <p>
           Suppose two players are playing a game in which they can choose A or B with the payoffs given in the game matrix in <xref ref="T_matrixEx1Sec2_2">Table</xref>.
         </p>
 
         <table xml:id="T_matrixEx1Sec2_2" >
-          <caption>Payoff matrix for <xref ref="E_Sec2_2small">Exercise</xref></caption>
+          <caption>Payoff matrix for <xref ref="E_SolveSec2_2small">Exercise</xref></caption>
           <tabular>
             <row>
               <cell></cell>
@@ -184,7 +178,14 @@
             </row>
           </tabular>
         </table>
+        <p>
+          In the following exercise, we will try to determine what each player should do.
+        </p>
+      </statement>
+    </example>
 
+    <exercise xml:id="E_SolveSec2_2small">
+      <statement>
         <ol label="a">
           <li><p>
               Just by quickly looking at the matrix, which player appears to be able to win more than the other player? Does one player seem to have an advantage? Explain.
@@ -212,14 +213,14 @@
         </ol>
       </statement>
     </exercise>
-    <exercise xml:id="E_Sec2_2large">
+    <example xml:id="E_Sec2_2large">
       <statement>
         <p>
           Suppose there are two players with the game matrix given in <xref ref="T_matrixEx2Sec2_2">Table</xref>.
         </p>
 
         <table xml:id="T_matrixEx2Sec2_2" >
-          <caption>Payoff matrix for <xref ref="E_Sec2_2large">Exercise</xref></caption>
+          <caption>Payoff matrix for <xref ref="E_SolveSec2_2large">Exercise</xref></caption>
           <tabular>
             <row>
               <cell></cell>
@@ -256,7 +257,13 @@
             </row>
           </tabular>
         </table>
-
+        <p>
+          In the following exercise, we will try to determine what each player should do.
+        </p>
+      </statement>
+    </example>
+    <exercise xml:id="E_SolveSec2_2large">
+      <statement>
         <ol label="a">
           <li><p>
               Just by quickly looking at the matrix, which player appears to be able to win more than the other player? Does one player seem to have an advantage? Explain.

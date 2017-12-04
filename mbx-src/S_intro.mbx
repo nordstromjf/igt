@@ -30,7 +30,7 @@
         </p></li>
 
       <li><p>
-          Both players know that the other player has the same goal, and will act to further this goal. Thus, we know that each player is <em>rational</em><index><main>rational</main></index> Even more, each player knows the <em>other</em> player is rational.
+          Both players know that the other player has the same goal, and will act to further this goal. Thus, we know that each player is <em>rational</em><index><main>rational</main></index>. Even more, each player knows the <em>other</em> player is rational.
         </p></li>
     </ol>
     </p>
@@ -44,7 +44,7 @@
     </p>
 
     <p>
-      <em>Assumption 1:</em><index><main>assumptions</main></index> Players are self-interested. The goal is to win the most or lose the least. What does it mean to win?
+      <em>Assumption 1:</em><index><main>assumptions</main></index> Players are self-interested. The goal is to win the most or lose the least. But what does it mean to win?
     </p>
 
     <p>
@@ -74,12 +74,12 @@
     </p>
 
     <p>
-      <em>Assumption 2:</em><index><main>assumptions</main></index> Players are perfectly logical. Players will always take into account all available information and make the decision which maximizes his payoff. This includes knowing that his opponent is also making the best decision for herself.
+      <em>Assumption 2:</em><index><main>assumptions</main></index> Players are perfectly logical. A Player will always take into account all available information and make the decision which maximizes his payoff. This includes knowing that his opponent is also making the best decision for herself.
       For example, in the cake cutting game a player wouldn't cut one large piece hoping that his opponent will by chance pick the smaller piece. A player must assume that her opponent will always choose the larger piece.
     </p>
 
     <p>
-      Now you may be wondering what these assumptions have to do with reality. After all, no one's perfect. But we often study ideal situations (especially in math!). For example, you've all studied geometry. Can anyone here draw a perfectly straight line? Yet you've all studied such an object!
+      Now you may be wondering what these assumptions have to do with reality. After all, no one's perfect. But we often study ideal situations (especially in math!). For example, you've all studied geometry. Can anyone here draw a perfectly straight line? Yet, you've all studied such an object!
     </p>
 
     <p>
@@ -95,7 +95,7 @@
     <exercise>
       <statement>
         <p>
-        Play several games of Tic TacToe with an opponent. Make sure you take turns being the first player and the second player. Develop a strategy for winning Tic Tac Toe. You may have a different strategy for the first player and for the second player. Be as specific as possible. You may need to consider several possibilities which depend on what the opponent does.
+        Play several games of Tic TacToe with an opponent. Make sure you take turns being the first player and the second player. Develop a strategy for winning Tic Tac Toe. You may have a different strategy for the first player and for the second player. Be as specific as possible. You may need to consider several possibilities which depend on what your opponent does.
 
         <ol label="a">
           <li><p>
@@ -162,7 +162,7 @@
     </definition>
 
     <p>
-      The choice of what a player does may depend on the opponent, but that choice is predetermined before game play. For example, in the cake cutting game, it doesn't matter which piece the <q>chooser</q> will pick, the <q>cutter</q> will always cut evenly. Similarly, it doesn't matter how the cutter cuts, the chooser will always pick the largest piece. In tic-tac-toe, Player 2's strategy should determine his first move no matter what Player 1 plays first. For example, if Player 1 plays the center square, where should Player 2 play? If Player 1 plays a corner, where should Player 2 play?
+      The choice of what a player does may depend on the opponent, but that choice is predetermined before game play. For example, in the cake cutting game, it doesn't matter which piece the <q>chooser</q> will pick, the <q>cutter</q> will always cut evenly. Similarly, it doesn't matter how the cutter cuts, the chooser will always pick the largest piece. In Tic Tac Toe, Player 2's strategy should determine his first move no matter what Player 1 plays first. For example, if Player 1 plays the center square, where should Player 2 play? If Player 1 plays a corner, where should Player 2 play?
     </p>
     <exercise>
       <statement>

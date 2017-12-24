@@ -31,7 +31,7 @@
   <exercise xml:id="E_LPguessmatrix">
     <statement>
       <p>
-        In order to formally analyze this game, we should find the payoff matrix. Do your best to find the payoff matrix. In a single hand of Liars Poker, what are the possible strategies for Player 1? What are the possible strategies for Player 2? Determine any payoffs that you can.
+        In order to formally analyze this game, we should find the payoff matrix. Do your best to find the payoff matrix. In a single hand of Liar's Poker, what are the possible strategies for Player 1? What are the possible strategies for Player 2? Determine any payoffs that you can.
       </p>
     </statement>
   </exercise>
@@ -86,10 +86,11 @@
   <exercise xml:id="E_LPmatrix">
     <statement>
       <p>
-        Using the expected values you calculated in <xref ref="E_LPBC">Exercises</xref>, <xref ref="E_LPBF"></xref>, <xref ref="E_LPTC"></xref>, and <xref ref="E_LPTF"></xref>, set up the <m>2 \times 2</m> payoff matrix for Liar's Poker.
+        Using the expected values you calculated in <xref ref="E_LPBC">Exercise</xref>, <xref ref="E_LPBF"></xref>, <xref ref="E_LPTC"></xref>, and <xref ref="E_LPTF"></xref>, set up the <m>2 \times 2</m> payoff matrix for Liar's Poker.
       </p>
     </statement>
   </exercise>
+  <p>Once you have determined the payoff matrix for Liar's Poker, you can use either the grphical method or expected value method to solve the game. But before using either of these methods always check for a pure strategy equilibrium!</p>
   <exercise xml:id="E_LPpureequil">
     <statement>
       <p>
@@ -100,7 +101,7 @@
   <exercise xml:id="E_LPmixedequil">
     <statement>
       <p>
-        Use any method you have learned to find a mixed strategy equilibrium for this game. Give the mixed strategy for Player 1 and the mixed strategy for Player 2.
+        Use any method you have learned to find a mixed strategy equilibrium for Liar's Poker. Give the mixed strategy for Player 1 and the mixed strategy for Player 2.
       </p>
     </statement>
   </exercise>
@@ -125,4 +126,5 @@
       </p>
     </statement>
   </exercise>
+  <p>Congratualtions! You can now set up matrices for simple games of chance and solve for a mixed strategy equilibrium. Before solving a more complicated game, let's get the help of technology for solving larger matrix games.</p>
 </section>

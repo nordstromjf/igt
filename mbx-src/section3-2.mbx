@@ -353,9 +353,9 @@
       <p>
         Use substitution to find the point of intersection.
         <md>
-          <mrow>2x \amp =\amp -2x+1</mrow>
-          <mrow>4x \amp =\amp  1</mrow>
-          <mrow>x\amp =\amp {1\over 4}</mrow>
+          <mrow>2x \amp =  \amp -2x+1</mrow>
+          <mrow>4x \amp = \amp 1</mrow>
+          <mrow>x \amp = \amp {1\over 4}</mrow>
         </md>
         Substituting <m>x={1\over 4}</m> back in to either original equation, say <m>y=2x</m>, gives us <m>y={1\over 2}</m>. Thus, the point of intersection is <m>(1/4, 1/2)</m>.
       </p></li>
@@ -424,7 +424,7 @@
       <p>
       Assume Player 1 only plays <m>A</m>.
 
-      <ol type="a">
+      <ol label="a">
         <li><p>
             If Player 2 only plays <m>C</m>, what is the payoff to Player 1? Recall we called this <m>m</m>. What is the probability that Player 2 plays <m>D</m>? Recall we called this <m>p</m>. On your graph, plot the point (<m>p</m>, <m>m</m>).
           </p></li>
@@ -471,14 +471,14 @@
   <exercise xml:id="E_graphFindEquations">
     <statement>
       <p>
-        Find the equations of the two lines.
+        Find the equations of the lines you drew in <xref ref="E_graphP1A">Exercises</xref> and <xref ref="E_graphP1B"></xref>.
       </p>
     </statement>
   </exercise>
   <exercise xml:id="E_graphFindIntersection">
     <statement>
       <p>
-        Find the point of intersection of the two lines.
+        Using the equations from <xref ref="E_graphFindEquations">Exercise</xref>, find the point of intersection of the two lines.
       </p>
     </statement>
   </exercise>
@@ -497,7 +497,7 @@
     </statement>
   </exercise>
   <p>
-    Now it may have occurred to you that since this is a zero-sum game, we could have just converted our matrix to the payoff matrix for Player 2, and found Player 2's maximin strategy. But it is important to understand the relationship between the maximin and the minimax strategies. So for the sake of practice and a little more insight <ellipsis />
+    Now it may have occurred to you that since this is a zero-sum game, we could have just converted our matrix to the payoff matrix for Player 2, and found Player 2's maximin strategy. But it is important to understand the relationship between the maximin and the minimax strategies. So for the sake of practice and a little more insight, find Player 2's maximin strategy by writing the payoff matrix for Player 2 and repeating the process that we did for Player 1. Keep in mind that Player 2 is finding the probability of playing <m>C</m> and <m>D</m> rather than <m>A</m> and <m>B</m>.
   </p>
   <exercise xml:id="E_graphconvert">
     <statement>
@@ -592,4 +592,6 @@
       </p>
     </statement>
   </exercise>
+  <p>
+    Although it is worth working through examples by hand in order to understand the algebraic process, in the next section we will see how technology can help us solve systems of equations.</p>
 </section>

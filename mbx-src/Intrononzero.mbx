@@ -27,7 +27,7 @@
           <row>
             <cell></cell>
             <cell></cell>
-            <cell colspan="2" halign="center" bottom="minor">Alice</cell>
+            <cell colspan="2" halign="center">Alice</cell>
           </row>
           <row>
             <cell></cell>
@@ -38,14 +38,14 @@
           <row>
             <cell>Bob</cell>
             <cell right="minor">Action</cell>
-            <cell right="minor" bottom="minor"><m>(2, 1)</m></cell>
-            <cell right="minor" bottom="minor"><m>(-1, -1)</m></cell>
+            <cell right="minor" bottom="minor" halign="center"><m>(2, 1)</m></cell>
+            <cell right="minor" bottom="minor" halign="center"><m>(-1, -1)</m></cell>
           </row>
           <row>
             <cell></cell>
             <cell right="minor">Comedy</cell>
-            <cell right="minor" bottom="minor"><m>(-1, -1)</m></cell>
-            <cell right="minor" bottom="minor"><m>(1, 2)</m></cell>
+            <cell right="minor" bottom="minor" halign="center"><m>(-1, -1)</m></cell>
+            <cell right="minor" bottom="minor" halign="center"><m>(1, 2)</m></cell>
           </row>
         </tabular>
       </table>
@@ -59,6 +59,9 @@
       </p>
     </statement>
   </exercise>
+
+  <p> In zero-sum games it is never advantageous to let your opponent know you strategy. Does that property still apply for games like Battle of the Sexes?</p>
+
   <exercise xml:id="E_BoSannounce">
     <statement>
       <p>
@@ -66,6 +69,9 @@
       </p>
     </statement>
   </exercise>
+
+  <p>We might first try to analyze this game using the same techniques as we used for zero-sum games. For example, we might start as we would in zero-sum games by looking for any equilibrium points.</p>
+
   <exercise xml:id="E_BoSequilpoints">
     <statement>
       <p>
@@ -80,6 +86,9 @@
       </p>
     </statement>
   </exercise>
+
+  <p>Now that we know this game has two equilibrium points, we should try to find actual strategies for Alice and Bob. Is there a good strategy for each if they play the game only once? What if they repeat the game? Recall that with zero-sum games, if there was an equilibrium, players always want to play it, even if the game is repeated. Does that still seem to work here? Also, how might the ability to communicate change what the players do? </p>
+
   <exercise xml:id="E_BoSrepeat">
     <statement>
       <p>
@@ -109,7 +118,7 @@
     </statement>
   </exercise>
   <p>
-    Hopefully, you are beginning to see some of the challenges for analyzing non-zero-sum games. We know there are equilibrium points, but even rational play may not result in an equilibrium. For the remainder of this activity, let's assume that players are <em>not</em> allowed to communicate about strategy prior to play. Such games are called <em>non-cooperative</em><index><main>non-cooperative games</main></index> games.
+    Hopefully, you are beginning to see some of the challenges for analyzing non-zero-sum games. We know there are equilibrium points, but even rational play may not result in an equilibrium. For the remainder of this section, let's assume that players are <em>not</em> allowed to communicate about strategy prior to play. Such games are called <em>non-cooperative</em><index><main>non-cooperative games</main></index> games. Before moving on, let's try to find the maximin strategies for our players using the graphical method, as we did with zero-sum games.
   </p>
   <exercise xml:id="E_BoSBobsmatrix">
     <statement>
@@ -143,7 +152,7 @@
     </statement>
   </exercise>
   <p>
-    Now, from <xref ref="E_BoSBobintersection">Exercises</xref> and <xref ref="E_BoSAlicematrix"></xref> you have the minimum payoff each player should expect. Note that since this is not a zero-sum game, both players can expect a positive payoff. But now we want to see how this pair of mixed strategies really works for the players.
+    Now, from <xref ref="E_BoSBobintersection">Exercise</xref> and <xref ref="E_BoSAlicematrix"></xref> you have the minimum payoff each player should expect. Note that since this is not a zero-sum game, both players can expect a positive payoff. But now we want to see how this pair of mixed strategies really works for the players.
   </p>
   <exercise xml:id="E_BoSBobsmaximin">
     <statement>
@@ -200,10 +209,13 @@
   <exercise xml:id="E_BoSeverplaymixed">
     <statement>
       <p>
-        Considering <xref ref="E_BoSstartBmixed">Exercises</xref>, <xref ref="E_BoSstartAmixed"></xref>, and <xref ref="E_BoSoutguess"></xref>, is it in a player's best interest to even consider playing the mixed strategy from <xref ref="E_BoSBobintersection">Exercises</xref> <xref ref="E_BoSAlicematrix">or</xref>?
+        Considering <xref ref="E_BoSstartBmixed">Exercise</xref>, <xref ref="E_BoSstartAmixed"></xref>, and <xref ref="E_BoSoutguess"></xref>, is it in a player's best interest to even consider playing the mixed strategy from <xref ref="E_BoSBobintersection">Exercise</xref> or <xref ref="E_BoSAlicematrix"></xref>?
       </p>
     </statement>
   </exercise>
+
+  <p>We've seen the limitations of the graphical method, what about the expected value method?</p>
+
   <exercise xml:id="E_BoSevsol">
     <statement>
       <p>
@@ -211,4 +223,5 @@
       </p>
     </statement>
   </exercise>
+  <p>Now that we have seen how the methods that allowed us to solve zero-sum games don't work for non-zero-sum games, we will need to find new ways to approach non-zero-sum games.</p>
 </section>

@@ -51,11 +51,11 @@
   </definition>
 
   <p>
-    For example, if a player plays Row A 50<percent /> of the time and Row B 50<percent /> of the time, we will say he is playing a (.5, .5) strategy, as we generally use the probability rather that the percent. The probabilities of each strategy will be listed in the same order as the strategies in the matrix.
+    For example, if a player plays Row A 40<percent /> of the time and Row B 60<percent /> of the time, we will say he is playing a (.4, .6) strategy, as we generally use the probability rather that the percent. The probabilities of each strategy will be listed in the same order as the strategies in the matrix.
   </p>
 
   <p>
-    It is not enough just to determine how often to play a strategy. Suppose Player 1 just alternates rows in <xref ref="E_smallrepeat">Example</xref>. Can player 2 <q>out-guess</q> Player 1? What might be a better way for Player 1 to play?
+    It is not enough just to determine how often to play a strategy. Suppose Player 1 just alternates rows in <xref ref="E_smallrepeat">Example</xref>. Can Player 2 <q>out-guess</q> Player 1? What might be a better way for Player 1 to play?
   </p>
 
   <p>
@@ -84,7 +84,7 @@
   </p>
 
   <p>
-    Recall the familiar game <em>Rock-Paper-Scissors</em>: ROCK beats SCISSORS, SCISSORS beat PAPER, and PAPER beats ROCK.
+    Recall the familiar game <em>Rock-Paper-Scissors</em>: ROCK beats SCISSORS, SCISSORS beat PAPER, and PAPER beats ROCK. Using the payoff matrix and experimentation, we will try to determine the best strategy for this game.
   </p>
   <exercise xml:id="E_RPSmatrix">
     <statement>
@@ -212,8 +212,9 @@
       </p>
 
       <p>
-        See if you can determine how often Player 1 should play each row, and how often Player 2 should play each column. Try testing your proposed strategy (you may be able to use a variation on the dice as we saw above). Write up any conjectured strategies and the results from playing the game with your strategy. Do you think you have come up with the best strategy? Explain.
+        See if you can determine how often Player 1 should play each row, and how often Player 2 should play each column. Try testing your proposed strategy (you may be able to use a variation on the dice as we saw in <xref ref="E_RPSdice">Exercise</xref>). Write up any conjectured strategies and the results from playing the game with your strategy. Do you think you have come up with the best strategy? Explain.
       </p>
     </statement>
   </exercise>
+  <p>You may have had an idea about the best way to play Rock-Paper-Scissors before working through this section, but how can we find solutions to other games, such as the one in <xref ref="E_smallrepeatstrat">Exercise</xref>? We don't want to just use a <q>guess and check</q> method. Especially since there are infinitely many possible mixed strategies to try! The rest of the chapter will develop mathematical methods for solving repeated games with no equilibrium point.</p>
 </section>

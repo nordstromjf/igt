@@ -18,7 +18,7 @@
   </example>
 
   <p>
-    In this section we will compare Class-wide Prisoner's Dilemma with Volunteer's Dilemma. We will use the payoffs for Prisoner's Dilemma from <xref ref="S_CWPD">Section</xref>, given again in <xref ref="T_CWPD2">Table</xref>.
+    In this section we will compare Class-wide Prisoner's Dilemma with Volunteer's Dilemma. In particular, we want to think about the effect cooperating and defecting have on the group of players. How does one player's choice affect everyone else? What happens to the group if there is a single cooperator or a single defector? What happens if everyone cooperates or everyone defects? We will use the payoffs for Prisoner's Dilemma from <xref ref="S_CWPD">Section</xref>, given again in <xref ref="T_CWPD2">Table</xref>.
   </p>
 
   <table xml:id="T_CWPD2" >
@@ -92,6 +92,9 @@
       </p>
     </statement>
   </exercise>
+
+  <p>Now that we've considered how an individual decision can affect the group, we can think about what the most rational strategy is in a multiplayer Prisoner's Dilemma or a Volunteer's Dilemma.</p>
+
   <exercise xml:id="E_CWPDcoopordefect">
     <statement>
       <p>
@@ -127,4 +130,6 @@
       </p>
     </statement>
   </exercise>
+  
+  <p>Even though the Class-wide Prisoner's Dilemma and the Volunteer's Dilemma games were played with multiple players, each game was only played once. In the next section we look at what might happen if we repeatedly play Prisoner's Dilemma with the same opponent.</p>
 </section>

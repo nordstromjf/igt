@@ -165,7 +165,7 @@
       </statement>
     </exercise>
     <p>
-      It is important to note that just because you can list all of the possible outcomes, they may not be equally likely. As we see from <xref ref="E_sumdice">Exercise</xref>, although there are 11 possible sums, the probability of getting any particular sum (such as seven) is not <m>1/11</m>.
+      It is important to note that just because you can list all of the possible outcomes, they may not be equally likely. As we see from <xref ref="E_sumdice">Exercise</xref>, although there are 11 possible sums, the probability of getting any particular sum (such as seven) is <em>not</em> <m>\frac{1}{11}</m>.
     </p>
   </subsection>
 

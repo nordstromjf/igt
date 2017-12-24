@@ -10,13 +10,13 @@
   </p>
 
   <p>
-    One of the significant drawbacks of the graphical solution from the previous section is that it can only solve 2 X 2 matrix games. If each player has 3 options, we would need to graph in three dimensions. Technically this is possible, but rather complicated. If each player has more than 3 options, since we can't graph in four or more dimensions, we are at a complete loss. So we need to think about an alternate way to solve for the mixed strategies. Although we will begin with 2 X 2 games, this method will easily generalize to larger games.
+    One of the significant drawbacks of the graphical solution from the previous sections is that it can only solve 2 X 2 matrix games. If each player has 3 options, we would need to graph in three dimensions. Technically this is possible, but rather complicated. If each player has more than 3 options, since we can't graph in four or more dimensions, we are at a complete loss. So we need to think about an alternate way to solve for the mixed strategies. Although we will begin with 2 X 2 games, this method will easily generalize to larger games.
   </p>
 
   <example xml:id="G_matching_pennies">
     <statement>
       <p>
-        Consider the game called <em>Matching Pennies:</em><index><main>Matching Pennies</main></index> each player can choose HEADS (H) or TAILS (T); if the two players match, Player 1 wins; if the two players differ, Player 2 wins.
+        Consider the game called <em>Matching Pennies:</em><index><main>Matching Pennies</main></index> each player can choose HEADS (H) or TAILS (T); if the two players match, Player 1 wins; if the two players differ, Player 2 wins. What strategy should each player play?
       </p>
     </statement>
   </example>
@@ -24,28 +24,28 @@
   <exercise xml:id="E_mpmatrix">
     <statement>
       <p>
-        Determine the payoff matrix for this game.
+        Determine the payoff matrix for the Matching Pennies game.
       </p>
     </statement>
   </exercise>
   <exercise xml:id="E_mpnoequil">
     <statement>
       <p>
-        Explain why this game has no pure strategy equilibrium point.
+        Explain why the Matching Pennies game has no pure strategy equilibrium point.
       </p>
     </statement>
   </exercise>
   <exercise xml:id="E_mpguess">
     <statement>
       <p>
-        Since we know that there is no pure strategy equilibrium point, we need to look for a mixed strategy equilibrium point. Just by looking at the payoff matrix, what do you think an ideal strategy for each player would be? Explain your choice.
+        Since we know that there is no pure strategy equilibrium point, we need to look for a mixed strategy equilibrium point. Just by looking at the payoff matrix for Matching Pennies, what do you think an ideal strategy for each player would be? Explain your choice.
       </p>
     </statement>
   </exercise>
   <exercise xml:id="E_mpguessev">
     <statement>
       <p>
-        Suppose both players play your ideal strategy, what should the expected value of the game be?
+        Suppose both players play your ideal strategy in the Matching Pennies game, what should the expected value of the game be?
       </p>
     </statement>
   </exercise>
@@ -61,6 +61,7 @@
       <mrow>P_2(H) \amp  = \mbox{ the probability that Player 2 plays H; }</mrow>
       <mrow>P_2(T) \amp  = \mbox{ the probability that Player 2 plays T.}</mrow>
     </md>
+    Also, we will let <m>E_1(H)</m> be the expected value for Player 1 playing pure strategy H against a given strategy for Player 2. Similarly, <m>E_2(H)</m> will be Player 2's expected value for playing pure strategy H.
   </p>
   <exercise xml:id="E_mpP2_60_40">
     <statement>
@@ -73,11 +74,11 @@
           </p></li>
 
         <li><p>
-            What do you think Player 1 should do? Does this differ from your ``ideal" mixed strategy? Explain.
+            What do you think Player 1 should do? Does this differ from your ideal mixed strategy in <xref ref="E_mpguess">Exercise</xref>? Explain.
           </p></li>
 
         <li><p>
-            We can use expected value to compute what Player 1 should do in response to Player 2's 60/40 strategy. First, consider a pure strategy for Player 1. Compute the expected value for Player 1 if she only plays H (call it <m>E_1(H)</m>) while Player 2 plays H with probability .6  and T with probability .4.
+            We can use expected value to compute what Player 1 should do in response to Player 2's 60/40 strategy. First, consider a pure strategy for Player 1. Compute the expected value for Player 1 if she only plays H while Player 2 plays H with probability .6  and T with probability .4. This expected value is <m>E_1(H)</m>, above.
           </p></li>
 
         <li><p>
@@ -85,7 +86,7 @@
           </p></li>
 
         <li><p>
-            Which pure strategy has a higher expected value for Player 1? If Player 1 plays this pure strategy, will she do better that your predicted value of the game?
+            Which pure strategy has a higher expected value for Player 1? If Player 1 plays this pure strategy, will she do better than your predicted value of the game?
           </p></li>
       </ol>
       </p>
@@ -115,24 +116,26 @@
   <exercise xml:id="E_mpuneqbad">
     <statement>
       <p>
-        Explain why the situations in <xref ref="E_mpPlayH">Exercises</xref> and <xref ref="E_mpPlayT"></xref> are bad for Player 2.
+        Explain why the situations in <xref ref="E_mpPlayH">Exercise</xref> and <xref ref="E_mpPlayT"></xref> are bad for Player 2.
       </p>
     </statement>
   </exercise>
-  <exercise>
+  <exercise xml:id="E_eqgood">
     <statement>
       <p>
-        Use your answers from <xref ref="E_mpPlayH">Exercises</xref>, <xref ref="E_mpPlayT"></xref>, and <xref ref="E_mpuneqbad"></xref> to explain why the situation in which <m>E_1(H)=E_1(T)</m> is the best for Player 2.
+        Use your answers from <xref ref="E_mpPlayH">Exercise</xref>, <xref ref="E_mpPlayT"></xref>, and <xref ref="E_mpuneqbad"></xref> to explain why the situation in which <m>E_1(H)=E_1(T)</m> is the best for Player 2.
       </p>
     </statement>
   </exercise>
+
   <p>
-    Since we now know that Player 2 wants <m>E_1(H)=E_1(T)</m>, we can use a little algebra to compute the best defensive strategy for Player 2. Remember, we want to assume that Player 1 will always be able to chose the strategy that will be best for her, and thus Player 2 wants to protect himself. Let's find the probabilities with which Player 2 should play H and T.
+    From <xref ref="E_eqgood">Exercise</xref> we now know that Player 2 wants <m>E_1(H)=E_1(T)</m>, we can use a little algebra to compute the best defensive strategy for Player 2. Remember, we want to assume that Player 1 will always be able to chose the strategy that will be best for her, and thus Player 2 wants to protect himself. Let's find the probabilities with which Player 2 should play H and T.
   </p>
+  
   <exercise xml:id="E_mpequations">
     <statement>
       <p>
-        Let <m>P_2(H)</m> and <m>P_2(T)</m> be the probabilities that Player 2 plays H and T respectively. Find equations for <m>E_1(H)</m> and <m>E_1(T)</m> in terms of <m>P_2(H)</m> and <m>P_2(T)</m> for the game of matching pennies. Since we want <m>E_1(H)=E_1(T)</m>, set your two equations equal to each other. This gives you one equation in terms of <m>P_2(H)</m> and <m>P_2(T)</m>.
+        Let <m>P_2(H)</m> and <m>P_2(T)</m> be the probabilities that Player 2 plays H and T respectively. Find equations for <m>E_1(H)</m> and <m>E_1(T)</m> in terms of <m>P_2(H)</m> and <m>P_2(T)</m> for the game of Matching Pennies. Since we want <m>E_1(H)=E_1(T)</m>, set your two equations equal to each other. This gives you one equation in terms of <m>P_2(H)</m> and <m>P_2(T)</m>.
       </p>
     </statement>
   </exercise>
@@ -143,13 +146,23 @@
       </p>
     </statement>
   </exercise>
+  <p>
+    So in general, to solve for Player 2's strategy, we want to write an equation for each of Player 1's pure strategy expected values in terms of Player 2's probabilities. For example, <m>E_1(T)</m> and <m>E_1(T)</m> in terms of variables <m>P_2(H)</m> and <m>P_2(T)</m>. We then set the expected values equal to each other. We now have an equation in just in terms of Player 2's probablities. 
+  </p>
+
+  <p>
+    In order to solve for the probabilities, we also need to use the fact that Player 2's probabilities sum to 1. For example, <m>P_2(H)+P_2(T)=1</m>. For a <m>2 \times 2</m> game, you now have 2 equations with 2 unknowns (<m>P_2(H)</m> and <m>P_2(T)</m>). Use an algebraic method such as substitution or elimination to solve the system of equations. 
+  </P>
+
   <exercise xml:id="E_mpsolve">
     <statement>
       <p>
-        Using the equations from <xref ref="E_mpequations">Exercises</xref> and <xref ref="E_explainprobeq"></xref>, solve for <m>P_2(H)</m> and <m>P_2(T)</m>. You now have the equilibrium mixed strategy for Player 2. Does this match the mixed strategy you determined in <xref ref="E_mpguess">Exercise</xref>?
+        Using the equations from <xref ref="E_mpequations">Exercise</xref> and <xref ref="E_explainprobeq"></xref>, solve for <m>P_2(H)</m> and <m>P_2(T)</m>. You now have the equilibrium mixed strategy for Player 2. Does this match the mixed strategy you determined in <xref ref="E_mpguess">Exercise</xref>?
       </p>
     </statement>
   </exercise>
+  <p>Now can you use a similar process to find Player 1's strategy? Whose expected values should you use? Whose probabliities?
+  </p>
   <exercise xml:id="E_mpP1sol">
     <statement>
       <p>
@@ -158,7 +171,7 @@
     </statement>
   </exercise>
   <p>
-    We now have a new method for finding the best mixed strategies for Players 1 and 2, assuming that each player is playing defensively against an ideal player. But how can we find the value of the game? For Player 2, we assumed <m>E_1(H)=E_1(T)</m>. In other words, we found the situation in which Player 1's expected value is the same no matter which pure strategy she plays. Thus, Player 1 is <em>indifferent</em> to which pure strategy she plays. If she were not indifferent, then she would play the strategy with a higher expected value. But, as we saw, this would be bad for Player 2. So Player 1 can assume that Player 2 will play the equilibrium mixed strategy. Thus, as long as Player 1 plays a mixed strategy, it doesn't matter whether at any given time, she plays H or T (this is the idea that she is indifferent to them). Hence, the expected value of the game for Player 1 is the same as <m>E_1(H)</m>, which is the same as <m>E_1(T)</m>. Similarly, we find that the expected value of the game for Player 2 is <m>E_2(H)</m> (or <m>E_2(T)</m>). This is a pretty complicated idea. You may need to think about it for a while.
+    We now have a new method for finding the best mixed strategies for Players 1 and 2, assuming that each player is playing defensively against an ideal player. But how can we find the value of the game? For Player 2, we assumed <m>E_1(H)=E_1(T)</m>. In other words, we found the situation in which Player 1's expected value is the same no matter which pure strategy she plays. Thus, Player 1 is <em>indifferent</em> to which pure strategy she plays. If she were not indifferent, then she would play the strategy with a higher expected value. But, as we saw, this would be bad for Player 2. So Player 1 can assume that Player 2 will play the equilibrium mixed strategy. Thus, as long as Player 1 plays a mixed strategy, it doesn't matter whether at any given time, she plays H or T (this is the idea that she is indifferent to them). Hence, the expected value of the game for Player 1 is the same as <m>E_1(H)</m>, which is the same as <m>E_1(T)</m>. Similarly, we find that the expected value of the game for Player 2 is <m>E_2(H)</m> (or <m>E_2(T)</m>). This is a pretty complicated idea. You may need to think about it for a while. In the meantime, use the probabilities you found for each player and the equations for <m>E_1(H)</m> and  <m>E_2(H)</m> to find the value of the game for each player.
   </p>
   <exercise xml:id="E_mpEVP1">
     <statement>
@@ -174,10 +187,12 @@
       </p>
     </statement>
   </exercise>
+  <p>Keep practicing with the expected value method on some other games!
+  </p>
   <exercise xml:id="E_smallrepeatEV">
     <statement>
       <p>
-        Apply this method of using expected value to <xref ref="E_smallrepeat">Example</xref> from the previous section to find the equilibrium mixed strategies for each player and the value of the game for each player:
+        Apply this method of using expected value to <xref ref="E_smallrepeat">Example</xref> (which we solved using the graphical method in the previous section) to find the equilibrium mixed strategies for each player and the value of the game for each player:
         <me>
           \left[\begin{matrix}1\amp 0\\
           -1\amp 2
@@ -193,4 +208,5 @@
       </p>
     </statement>
   </exercise>
+  <p>If you found this last exercise to be algebraically arduous, don't worry, we will eventually use technology to help us solve problems with several variables.</p>
 </section>

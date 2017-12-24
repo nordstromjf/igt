@@ -35,11 +35,11 @@
   </example>
 
   <p>
-    Even in <xref ref="E_threeeq">Example</xref>, the algebra began to get cumbersome. What if we wanted to solve much larger games, such as a 5 X 5 game?
+    In <xref ref="E_threeeq">Example</xref>, even after setting <m>E_1(A)=E_1(B)</m> so that there were only 2 variables, the algebra began to get cumbersome. What if we wanted to solve a much larger game, such as a 5 X 5 game?
   </p>
 
   <p>
-    In order to use matrices to solve our systems of equations, we want to write all our equations in the same form: we will have all the variable terms on the left of the equals sign and all constants on the right.
+    We've used matrices to represent our games, but now we want to use them as a mathematical tool to help us solve systems of equations. In order to use matrices to solve our systems of equations, we want to write all our equations in the same form: we will have all the variable terms on the left of the equals sign and all constants on the right.
   </p>
 
   <p>
@@ -94,7 +94,7 @@
   </p>
 
   <p>
-    We can solve this directly using <em>Sage</em>.
+    We can solve this even more directly using <em>Sage</em>.
   </p>
 
   <sage>
@@ -108,7 +108,7 @@
 
 
   <p>
-    Recall that the first column is the <m>x</m> and the second is the <m>y</m>. Each row represents an equation. So translating each row back to equations, we have the following system of equations:
+    Recall that the first column is for <m>x</m> and the second is for <m>y</m>. Each row represents an equation. So translating each row back to equations, we have the following system of equations:
     <md>
       <mrow>x+0y \amp =2</mrow>
       <mrow>0x+y \amp = 1</mrow>
@@ -188,11 +188,11 @@
 
 
   <p>
-    Thus, our solution is <m>P_2(C)=3/4</m>, and <m>P_2(D)=1/4</m>.
+    Thus, recalling Column 1 is for <m>P_2(C)</m> and Column 2 is for <m>P_2(D)</m>, our solution is <m>P_2(C)=3/4</m>, and <m>P_2(D)=1/4</m>.
   </p>
 
   <p>
-    Here are some more systems of equations to practice solving using augmented matrices.
+    Here are some more systems of equations to practice solving using augmented matrices. If you want to use the above Sage cells just edit the values for each row in the cell.
   </p>
   <exercise>
     <statement>
@@ -218,6 +218,9 @@
       </p>
     </statement>
   </exercise>
+
+  <p>For larger matrices, you can edit the Sage cell by adding additional terms in each row, and adding more rows. For example, you can replace <m>[3,-5,1],[1,1,3]</m> with <m>[4,8,-4,4],[3,8,5,-11],[-2,1,12,-17]</m>.</p>
+
   <exercise>
     <statement>
       <p>
@@ -225,7 +228,7 @@
       </p>
 
       <p>
-      <me>\begin{matrix}4x+8y-4z\amp =4\\3x+8y+5z\amp =-11\\-2x+y+12z\amp =-17
+      <me>\begin{matrix}4x+8y-4z\amp =4\\3x+8y+5z\amp =-11\\-2x+y+12z\amp =-17.
       \end{matrix}</me>
 
       <ol label="a">
@@ -247,8 +250,8 @@
       </p>
 
       <p>
-      <me>\begin{matrix}2x+y-4z\amp =10\\3x+5z\amp =-5\\y+2z\amp =7
-      \end{matrix}.</me>
+      <me>\begin{matrix}2x+y-4z\amp =10\\3x+5z\amp =-5\\y+2z\amp =7.
+      \end{matrix}</me>
 
       <ol label="a">
         <li><p>
@@ -269,8 +272,8 @@
       </p>
 
       <p>
-      <me>\begin{matrix}a+b-5c\amp =0\\-4a-b+6c\amp =0\\a+b+c\amp =1
-      \end{matrix}.</me>
+      <me>\begin{matrix}a+b-5c\amp =0\\-4a-b+6c\amp =0\\a+b+c\amp =1.
+      \end{matrix}</me>
 
       <ol label="a">
         <li><p>
@@ -291,8 +294,8 @@
       </p>
 
       <p>
-      <me>\begin{matrix}3x+2y-w-v\amp =0\\2x-y+3z+w+5v\amp =0\\x+2y+6z-w\amp =0\\ -y+z-3w+v\amp =0\\x+y+z+w+v\amp =1
-      \end{matrix}.</me>
+      <me>\begin{matrix}3x+2y-w-v\amp =0\\2x-y+3z+w+5v\amp =0\\x+2y+6z-w\amp =0\\ -y+z-3w+v\amp =0\\x+y+z+w+v\amp =1.
+      \end{matrix}</me>
 
       <ol label="a">
         <li><p>

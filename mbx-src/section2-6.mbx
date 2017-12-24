@@ -2,7 +2,7 @@
 <section xml:id="S_ZeroSumStrategySummary">
   <title>Strategies for Zero-Sum Games and Equilibrium Points</title>
   <p>
-    In this section, we will try to understand where we are with solving two-player zero-sum games.
+    Throughout this chapter, we have been trying to find solutions for two player zero-sum games by deciding what two rational players should do. In this section, we will try to understand where we are with solving two-player zero-sum games. The exercises in this section are intended to review the concepts of dominated strategies, equlibrium points, and the maximin/minimax strategies. By working through your own examples, we hope to tie these concepts together and ask some bigger questions about equilibrium points. For example, should a player always play an equilibrium strategy? Will the maximin/minimax strategy always find an equilibrium point if one exists? What should a player do if no equlibrium exists? Although the formal answers to some of these questions are outside the scope of this book, you should be able to make some good conjectures about equilibrium points and rational solutions to two-player zero-sum games.
   </p>
   <exercise xml:id="E_random2">
     <statement>
@@ -54,7 +54,7 @@
     </statement>
   </exercise>
   <p>
-    Now we want to use the lists of matrices as experimental examples to try to answer some of the remaining questions we have about finding rational solutions for games and equilibrium points. If you don't feel you have enough examples, you are welcome to create more or gather more from your classmates.
+   We want to use lists of matrices as experimental examples to try to answer some of the remaining questions we have about finding rational solutions for games and equilibrium points. If you don't feel you have enough examples, you are welcome to create more or gather more from your classmates.
   </p>
   <exercise>
     <statement>

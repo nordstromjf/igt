@@ -86,14 +86,14 @@
             <row>
               <cell>Cutter</cell>
               <cell right="minor">Cut Evenly</cell>
-              <cell right="minor" bottom="minor"><m>(50, 50)</m></cell>
-              <cell right="minor" bottom="minor"><m>(50, 50)</m></cell>
+              <cell right="minor" bottom="minor" halign="center"><m>(50, 50)</m></cell>
+              <cell right="minor" bottom="minor" halign="center"><m>(50, 50)</m></cell>
             </row>
             <row>
               <cell></cell>
               <cell right="minor">Cut Unvenly</cell>
-              <cell right="minor" bottom="minor"><m>(40, 60)</m></cell>
-              <cell right="minor" bottom="minor"><m>(60, 40)</m></cell>
+              <cell right="minor" bottom="minor" halign="center"><m>(40, 60)</m></cell>
+              <cell right="minor" bottom="minor" halign="center"><m>(60, 40)</m></cell>
             </row>
           </tabular>
         </table>
@@ -173,16 +173,16 @@
   <subsection xml:id="Ex_election">
     <title>Example: An Election Campaign Game</title>
     <p>
-      Two candidates, Arnold and Bainbridge, are facing each other in a state election. They have three choices regarding the issue of the speed limit on I-5: They can support raising the speed limit to 70 MPH, they can support keeping the current speed limit, or they can dodge the issue entirely.
+      Two candidates, Arnold and Bainbridge, are facing each other in a state election. They have three choices regarding the issue of the speed limit on I-5: They can support raising the speed limit to 70 MPH, they can support keeping the current speed limit, or they can dodge the issue entirely. The next three examples present three different payoff matrices for Arnold and Bainbridge.
     </p>
-    <exercise xml:id="E_election1">
+    <example xml:id="Ex_election1">
       <statement>
         <p>
           The candidates have the information given in <xref ref="T_election1">Table</xref> about how they would likely fare in the election based on how they stand on the speed limit.
         </p>
 
         <table xml:id="T_election1" >
-          <caption>Percentage of the vote for <xref ref="E_election1">Exercise</xref></caption>
+          <caption>Percentage of the vote for <xref ref="Ex_election1">Example</xref></caption>
           <tabular>
             <row>
               <cell></cell>
@@ -219,10 +219,15 @@
             </row>
           </tabular>
         </table>
-
+      </statement>
+    </example>
+    <exercise xml:id="E_election1">
+      <statement>
+      <p> For the following questions, assume Arnold and Bainbridge have the payoff matrix given in <xref ref="Ex_election1">Example</xref>.
+      </p>
         <ol label="a">
           <li><p>
-              Explain why this is a zero-sum game.
+              Explain why <xref ref="Ex_election1">Example</xref> is a zero-sum game.
             </p></li>
 
           <li><p>
@@ -239,14 +244,14 @@
         </ol>
       </statement>
     </exercise>
-    <exercise xml:id="E_election2">
+    <example xml:id="Ex_election2">
       <statement>
         <p>
           Bainbridge's mother is injured in a highway accident caused by speeding. The new payoff matrix is given in <xref ref="T_election2">Table</xref>
         </p>
 
         <table xml:id="T_election2" >
-          <caption>Percentage of the vote for <xref ref="E_election2">Exercise</xref></caption>
+          <caption>Percentage of the vote for <xref ref="Ex_election2">Example</xref></caption>
           <tabular>
             <row>
               <cell></cell>
@@ -283,10 +288,15 @@
             </row>
           </tabular>
         </table>
-
+      </statement>
+    </example>
+   <exercise xml:id="E_election2">
+    <statement>
+      <p> For the following questions, assume Arnold and Bainbridge have the payoff matrix given in <xref ref="Ex_election2">Example</xref>.
+      </p>.
         <ol label="a">
           <li><p>
-              Explain why this is a zero-sum game.
+              Explain why <xref ref="Ex_election2">Example</xref> is a zero-sum game.
             </p></li>
 
           <li><p>
@@ -303,15 +313,15 @@
         </ol>
       </statement>
     </exercise>
-    <exercise xml:id="E_election3">
+    <example xml:id="Ex_election3">
       <statement>
         <p>
           Bainbridge begins giving election speeches at college campuses and monster truck rallies.
-          The new payoff matrix is given in <xref ref="T_election3">Table</xref>
+          The new payoff matrix is given in <xref ref="T_election3">Table</xref>.
         </p>
 
         <table xml:id="T_election3" >
-          <caption>Percentage of the vote for <xref ref="E_election3">Exercise</xref></caption>
+          <caption>Percentage of the vote for <xref ref="Ex_election3">Example</xref></caption>
           <tabular>
             <row>
               <cell></cell>
@@ -348,10 +358,15 @@
             </row>
           </tabular>
         </table>
-
+      </statement>
+    </example>
+   <exercise xml:id="E_election3">
+    <statement>
+      <p> For the following questions, assume Arnold and Bainbridge have the payoff matrix given in <xref ref="Ex_election3">Example</xref>.
+      </p>.
         <ol label="a">
           <li><p>
-              Explain why this is a zero-sum game.
+              Explain why <xref ref="Ex_election3">Example</xref> is a zero-sum game.
             </p></li>
 
           <li><p>
@@ -371,7 +386,7 @@
     <exercise>
       <statement>
         <p>
-          In each of the above scenarios, is there any reason for Arnold or Bainbridge to change his strategy? If there is, explain under what circumstances does it makes sense to change strategy. If not, explain why it never makes sense to change strategy.
+          In each of the above scenarios, is there any reason for Arnold or Bainbridge to change his strategy? If there is, explain under what circumstances it makes sense to change strategy. If not, explain why it never makes sense to change strategy.
         </p>
       </statement>
     </exercise>
@@ -380,7 +395,7 @@
   <subsection>
     <title>Equilibrium Pairs</title>
     <p>
-      Chances are, in each of the exercises above, you were able to determine what each player should do. I particular, if both players play your suggested strategies, there is no reason for either player to change to a different strategy.
+      Chances are, in each of the exercises above, you were able to determine what each player should do. In particular, if both players play your suggested strategies, there is no reason for either player to change to a different strategy.
     </p>
 
     <definition xml:id="D_equilpair">
@@ -425,7 +440,7 @@
     </table>
 
     <p>
-      You determined that Player 2 should choose to play Y, and thus, Player 1 should play B (i.e., we have the strategy pair {B, Y}). Why is this an equilibrium pair? If Player 2 plays Y, does Player 1 have any reason to change to strategy A? No, she would lose 10 instead of 1! If Player 1 plays B, does player 2 have any reason to change to strategy X? No, she would gain 0 instead of 1! Thus neither player benefits from changing strategy, and so we say {B, Y} is an equilibrium pair.
+      You determined that Player 2 should choose to play Y, and thus, Player 1 should play B (i.e., we have the strategy pair {B, Y}). Why is this an equilibrium pair? If Player 2 plays Y, does Player 1 have any reason to change to strategy A? No, she would lose 10 instead of 1! If Player 1 plays B, does Player 2 have any reason to change to strategy X? No, she would gain 0 instead of 1! Thus neither player benefits from changing strategy, and so we say {B, Y} is an equilibrium pair.
     </p>
 
     <p>
@@ -441,7 +456,7 @@
     <exercise>
       <statement>
         <p>
-        Use the <q>guess an check</q> method to determine any equilibrium pairs for the following payoff matrices.
+        Use the <q>guess and check</q> method to determine any equilibrium pairs for the following payoff matrices.
 
         <ol label="a">
           <li><p>

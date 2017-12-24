@@ -2,7 +2,7 @@
 <section xml:id="S_EquilibPoints">
   <title>Equilibrium Points</title>
   <p>
-    In this section, we will try to gain a greater understanding of equilibrium points. In general, we call the pair of strategies played an <em>equilibrium pair</em><index><main>equilibrium pair</main></index>, while we call the specific payoff vector associated with an equilibrium pair an <em>equilibrium point</em><index><main>equilibrium point</main></index>.
+    In this section, we will try to gain a greater understanding of equilibrium strategies in a game. In general, we call the pair of equilibrium strategies an <em>equilibrium pair</em><index><main>equilibrium pair</main></index>, while we call the specific payoff vector associated with an equilibrium pair an <em>equilibrium point</em><index><main>equilibrium point</main></index>.
   </p>
   <exercise xml:id="E_matrixexamples">
     <statement>
@@ -34,11 +34,11 @@
     </statement>
   </exercise>
   <p>
-    The big question we want to answer is <q>Can two equilibrium points for a two-player zero-sum game have different values?</q> Try to create an example for yourself by experimenting with some examples. Try to create an example of a game with two equilibrium points where those points have different values for a player. If you can successfully create such an example, you will have answered the question. But just because you can't find an example, that doesn't mean one doesn't exist!
+    The big question we want to answer is <q>Can two equilibrium points for a two-player zero-sum game have different values?</q> By experimenting with some examples, try to create an example of a game with two equilibrium points where those points have different values for one of the players. If you can successfully create such an example, you will have answered the question. But just because you can't find an example, that doesn't mean one doesn't exist!
   </p>
 
   <p>
-    If you are beginning to believe that the answer to the above question is <q>no,</q> then you are ready to try to prove the following theorem:
+    After trying several examples, you might be beginning to believe that the answer to the above question is <q>no.</q> Now you are ready to try to prove the following theorem:
   </p>
 
   <paragraphs>
@@ -48,11 +48,11 @@
     </p>
   </paragraphs>
   <p>
-    Let's start with the <m>2 \times 2</m> case. We will use a <em>proof by contradiction:</em><index><main>proof by contradiction</main></index> we will assume the theorem is false and show that we get a logical contradiction. Thus, we can conclude we were wrong to assume the theorem was false; hence, the statement must be true. Make sure you are comfortable with the logic of this before moving on.
+    Let's start with the <m>2 \times 2</m> case. We will use a <em>proof by contradiction</em><index><main>proof by contradiction</main></index>. We will assume the theorem is false and show that we get a logical contradiction. Once we reach a logical contradiction (a statement that is both true and false), we can conclude we were wrong to assume the theorem was false; hence, the theorem must be true. Make sure you are comfortable with the logic of this before moving on.
   </p>
 
   <p>
-    Assume we have a two-player zero-sum game with two different equilibrium values. Represent the general game
+    Since we want to assume the theorem is false, we assume we have a two-player zero-sum game with two different equilibrium values. Since we don't have a specific example of such a game, we want to represent the game in a general form. In particular, we can represent the general game
     <me>
       \left[\begin{matrix}(a, -a)\amp (c, -c)\\
       (d, -d)\amp (b, -b)
@@ -61,9 +61,10 @@
   </p>
 
   <p>
-    Note that if <m>a</m> is negative, then <m>-a</m> is positive; thus, every possible set of values is represented by this matrix.
+    Note that if <m>a</m> is negative, then <m>-a</m> is positive; thus, every possible set of values is represented by this matrix. We want to look at the possible cases for equilibria.
   </p>
   <exercise xml:id="E_col1neq">
+    <title> Equilibria in Column 1 </title>
     <statement>
       <p>
         Explain what goes wrong if <m>(a, -a)</m> and <m>(d, -d)</m> are equilibria with <m>a \neq d</m>? Hint: think about the different cases, such as <m>a\lt d</m>, <m>a>d</m>.
@@ -71,6 +72,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_gencolneq">
+    <title> Equilibria in the same column/row </title>
     <statement>
       <p>
         Generalize you answer to <xref ref="E_col1neq">Exercise</xref> to explain what goes wrong if the two equilibria are in the same column. Similarly, explain what happens if the two equilibria are in the same row.
@@ -78,6 +80,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_diag">
+    <title> Diagonal equilibria </title>
     <statement>
       <p>
         Does the same explanation hold if the two equilibria are diagonal from each other? (Explain your answer!)
@@ -88,6 +91,7 @@
     From your last answer, you should see that we need to do more work to figure out what happens if the equilibria are diagonal. So let's assume that the two equilibria are <m>(a, -a)</m> and <m>(b, -b)</m> with <m>a \neq b</m>. It might be helpful to draw the payoff matrix and circle the equilibria.
   </p>
   <exercise xml:id="E_4ineq1">
+    <title> A player prefers the value of an equilibrium to another choice </title>
     <statement>
       <p>
         Construct a system of inequalities using the fact that a player prefers an equilibrium point to another choice. For example, Player 1 prefers <m>a</m> to <m>d</m>. Thus, <m>a > d</m>. List all four inequalities you can get using this fact. You should get two for each player<ndash /> remember that Player 1 can only compare values in the same column since he has no ability to switch columns. If necessary, convert all inequalities to ones without negatives. [Algebra review: <m>-5 \lt  -2</m> means <m>5 > 2</m>!]
@@ -95,6 +99,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_string1">
+    <title> Create strings of inequalities </title>
     <statement>
       <p>
         Now string your inequalities together. For example, if <m>a \lt  b</m> and <m>b \lt  c</m> then we can write <m>a \lt  b \lt  c</m>. [Be careful, the inequalities must face the same way; we cannot write <m>a> b \lt  c</m>!]
@@ -102,6 +107,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_contra1">
+    <title> You now have a contradiction</title>
     <statement>
       <p>
         Explain why you now have a contradiction (a statement that <em>must</em> be false).
@@ -110,6 +116,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_repeatineq">
+    <title> Diagonal case for <m>c</m> and <m>d</m></title>
     <statement>
       <p>
         Repeat the above argument (<xref ref="E_4ineq1">Exercises</xref>, <xref ref="E_string1"></xref>, and <xref ref="E_contra1"></xref>) for the case that the two equilibria are <m>(d, -d)</m> and <m>(c, -c)</m> with <m>d\neq c</m>.
@@ -117,6 +124,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_concl2x2">
+    <title> Sumarize conclusion </title>
     <statement>
       <p>
         Explain why you can conclude that all equilibria in a <m>2 \times 2</m> two-player zero-sum game have the same value.

@@ -75,7 +75,7 @@
   </p>
 
   <p>
-    Let's apply this description of Prisoner's Dilemma to a few games we've seen.
+    Let's apply this description of Prisoner's Dilemma to a few games we've seen. We can use the conditions to check if a game is really a Prisoner's Dilemma.
   </p>
   <exercise xml:id="E_describeconditions">
     <statement>
@@ -213,7 +213,7 @@
     </statement>
   </exercise>
   <p>
-    We can define <em>defection</em><index><main>defection</main></index> as the idea that if everyone did it, things would be worse for everyone. Yet, if only one (or a small) number did it, life would be sweeter for that individual. We can define <em>cooperation</em><index><main>cooperation</main></index> as the act of resisting temptation for the betterment of all players.
+    We can now define <em>defection</em><index><main>defection</main></index> as the idea that if everyone did it, things would be worse for everyone. Yet, if only one (or a small) number did it, life would be sweeter for that individual. We can define <em>cooperation</em><index><main>cooperation</main></index> as the act of resisting temptation for the betterment of all players.
   </p>
   <exercise xml:id="E_reallifeex">
     <statement>

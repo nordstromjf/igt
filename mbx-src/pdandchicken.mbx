@@ -63,6 +63,9 @@
       </p>
     </statement>
   </exercise>
+
+  <p>Even with non-zero-sum games, it is helpful to start by finding any equilibrium points.</p>
+
   <exercise xml:id="E_simplefindequil">
     <statement>
       <p>
@@ -149,6 +152,8 @@
     </statement>
   </example>
 
+<p>Since this game as presented is probably only playerd once, we can begin by looking for dominated strategies and equilibrium points.</p>
+
   <exercise xml:id="E_PDdomstrat">
     <statement>
       <p>
@@ -156,6 +161,8 @@
       </p>
     </statement>
   </exercise>
+
+  <p>If you were to be one of the prisoners, what would you do? Do you think everyone would do that, too? What would our perfectly rational player do? Would your strategy change if you are allowed to communicate? We examine some of these questions in the next few exercises.</p>
   <exercise xml:id="E_PDbeststrat">
     <statement>
       <p>
@@ -199,6 +206,10 @@
     </statement>
   </exercise>
 
+  <p>You should now have some idea about why we call this game a dilemma, since the players may in fact have difficulty deciding on whether to confess or not. Even two perfectly rational players may not be able to get the best payoff.</p>
+
+  <p>We now turn to another classic example. We can ask similar qustions about Chicken that we ask about Prisoner's Dilemma.</p>
+
   <example xml:id="E_Chicken">
     <statement>
       <p>
@@ -237,6 +248,8 @@
     </statement>
   </example>
 
+  <p>Again, since this game as presented is probably only playerd once, we can begin by looking for dominated strategies and equilibrium points.</p>
+
   <exercise xml:id="E_Cdomstrat">
     <statement>
       <p>
@@ -258,6 +271,9 @@
       </p>
     </statement>
   </exercise>
+
+  <p>If you were to be one of the drivers, what would you do? Do you think everyone would do that, too? What would our perfectly rational player do? Would your strategy change if you are allowed to communicate? We examine some of these questions in the next few exercises.</p>
+
   <exercise xml:id="E_Cbeststrat">
     <statement>
       <p>
@@ -286,6 +302,7 @@
       </p>
     </statement>
   </exercise>
+
   <exercise xml:id="E_comparePDC">
     <statement>
       <p>
@@ -293,4 +310,5 @@
       </p>
     </statement>
   </exercise>
+  <p>Both Prisoner's Dilemma and Chicken are models of games where we describe the choice of strategy as <q>Cooperate</q> and <q>Defect</q>. In Prisoner's Dilemma, we think of <q>cooperating</q> as cooperating with the other player, and <q>defecting</q> as turning against the other player. So if both players cooperate (with each other, not the police), they will get the higher payoff of only one year in prison. They defect by ratting on each other. In Chicken, players cooperate by swerving and defect by driving straight. Using the examples of Prisoner's Dilemma and Chicken, think about how these games can model other everyday interactions where you could describe your choices as cooperating and defecting. The remainder of the chapter looks more closely at situations where players can cooperate or defect.</p> 
 </section>

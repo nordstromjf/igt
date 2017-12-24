@@ -1,6 +1,6 @@
 
 <section xml:id="S_OneCardStud">
-  <title>Determining the Payoff Matrix</title>
+  <title>Determining the Payoff Matrix in a Game of Chance</title>
   <p>
     Now that we have worked with expected value, we can begin to analyze some simple games that involve an element of chance.
   </p>
@@ -12,7 +12,7 @@
       </p>
 
       <p>
-        We begin with a deck of cards in which 50<percent /> are Aces (you can use Red cards for Aces) and 50<percent /> are Kings (you can use Black cards for Kings). There are two players and one dealer. The play begins by each player putting in the ante (1 chip). Each player is dealt one card face down. WITHOUT LOOKING AT HIS OR HER CARD, the players decide to Bet (say, 1 chip) or Fold. Players secretly show the dealer their choice. If one player bet and the other folded, then the player who bet wins. If both bet or both fold, then Ace beats King (or Red beats Black); winner takes the pot. If there is a tie, they split the pot.
+        We begin with a deck of cards in which 50<percent /> are Aces (you can use Red cards for Aces) and 50<percent /> are Kings (you can use Black cards for Kings). There are two players and one dealer. The play begins by each player putting in the ante (1 chip). Each player is dealt one card face down. WITHOUT LOOKING AT HIS OR HER CARD, the players decide to Bet (say, 1 chip) or Fold. Players secretly show the dealer their choice. If one player bet and the other folded, then the player who bet wins. If both bet or both fold, then Ace beats King (or Red beats Black); winner takes the pot (all the chips from the ante and any bets). If there is a tie, they split the pot.
       </p>
     </statement>
   </example>
@@ -20,7 +20,7 @@
   <exercise xml:id="E_playonecard">
     <statement>
       <p>
-        Play the game several times, keeping track of the strategy choices and the resulting payoffs. Take turns as dealer.
+        Play the game several times with two other people (so you have two players and a dealer), keeping track of the strategy choices of the players and the resulting payoffs. 
       </p>
     </statement>
   </exercise>
@@ -161,7 +161,7 @@
   <exercise xml:id="E_onecardlongrun">
     <statement>
       <p>
-        Use the payoff matrix to predict what the payoff to each player would be if the game is played several times.
+        Use the payoff matrix to predict what the payoff to each player would be if the game is played ten times.
       </p>
     </statement>
   </exercise>
@@ -187,7 +187,7 @@
       </p>
 
       <p>
-        In One-Card Stud Poker we anted one chip and bet one chip. Now, suppose we let players ante a different amount and bet a different amount (although players will still ante and bet the same amount as each other). Suppose a player antes <m>a</m> and bets <m>b</m>.
+        In One-Card Stud Poker we anted one chip and bet one chip. Now, suppose we let players ante a different amount and bet a different amount (although players will still ante and bet the same amount as each other). Suppose a player antes <m>a</m> and bets <m>b</m>. How might this change the game?
       </p>
     </statement>
   </example>

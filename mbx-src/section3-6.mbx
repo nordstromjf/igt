@@ -2,11 +2,11 @@
 <section xml:id="S_Undercut">
   <title>Undercut</title>
   <p>
-    This section requires you to be able to solve <q>large</q> systems of equations. Before doing this activity you should review how to solve systems of equations using matrices and row reduction. You are encouraged to use a calculator or other technology.
+    This section requires you to be able to solve <q>large</q> systems of equations. You will be using the matrix techniques from <xref ref="S_AugMatrices">Section</xref>. You are encouraged to use technology such as a graphing calculator or Sage.
   </p>
 
   <p>
-    As we saw in the previous section, an important part of game theory is the process of translating a game to a form that we can analyze.
+    As we saw in <xref ref="S_LiarsPoker">Section</xref>, an important part of game theory is the process of translating a game to a form that we can analyze.
   </p>
 
   <example xml:id="Undercut">
@@ -16,6 +16,7 @@
       </p>
 
       <p>
+        (From Douglas Hofstadter's <em>Metamagical Themas</em>.)
         Each player chooses a number 1-5. If the two numbers don't differ by 1, then each player adds their own number to their score. If the two numbers differ by 1, then the player with the <em>lower</em> number adds <em>both</em> numbers to his or her score; the player with the higher number gets nothing.
       </p>
 
@@ -32,6 +33,9 @@
       </p>
     </statement>
   </exercise>
+
+  <p>After playing the game with an opponent, try to devise a good strategy.</p>
+
   <exercise xml:id="E_Uguessstrat">
     <statement>
       <p>
@@ -39,6 +43,9 @@
       </p>
     </statement>
   </exercise>
+
+  <p>As we've seen before, a payoff matrix can help with analyzing a game.</p>
+
   <exercise xml:id="E_Upayoff">
     <statement>
       <p>
@@ -60,6 +67,9 @@
       </p>
     </statement>
   </exercise>
+
+  <p>Let's assume we are going to play this game repeatedly. By the time you and your opponent are done playing, what should it mean to win the game?</p>
+
   <exercise xml:id="E_Uwinner">
     <statement>
       <p>
@@ -91,6 +101,8 @@
       </p>
     </statement>
   </exercise>
+  <p>The method of using net gain to describe the payoffs to each player should be familiar from some of the really early examples where we turned constant-sum payoff vectors into zero-sum vectors. But note that the original form of this game wasn't even a constant-sum game! What we are really doing here is thinking about our payoffs not as points, but a win or loss relative to our opponent. Now that we have reframed undercut as a zero-sum game, we can apply our methods for solving the game that we have learned in this chapter.</p>
+
   <exercise xml:id="E_Unetpureeq">
     <statement>
       <p>
@@ -98,10 +110,13 @@
       </p>
     </statement>
   </exercise>
+
+  <p>This game has one additional property that will help simplify our analysis. This game is <em>symmetric</em><index><main>symmetric game</main></index>, meaning the game looks the same to Players 1 and 2.</p>
+
   <exercise xml:id="E_Usymmetric">
     <statement>
       <p>
-        This game is <em>symmetric</em><index><main>symmetric game</main></index>, meaning the game looks the same to Players 1 and 2. Give an example of another game which is symmetric. Give an example of a game which is <em>not</em> symmetric.
+         Give an example of another game which is symmetric. Give an example of a game which is <em>not</em> symmetric.
       </p>
     </statement>
   </exercise>
@@ -129,10 +144,15 @@
       </p>
     </statement>
   </exercise>
+
+  <p>If we use that the game is symmetric, and hence the expected value of the game for each player must be 0 since neither player can have an advantage over the other, we do not need to set the equations equal to each other. We could not use this method earlier since we had no way of knowing the expected value of a general game.</p>
+
+  <p>We now have five equations and five unknowns. There is a sixth equation: we know that the probabilities must add up to 1. We can now solve for the equilibrium strategy!</p>
+
   <exercise xml:id="E_Usolve">
     <statement>
       <p>
-        We now have five equations and five unknowns. There is a sixth equation: we know that the probabilities must add up to 1. Use matrices to solve the resulting system of equations. Give the mixed strategy equilibrium for Player 2. What is the mixed strategy for Player 1? (Hint: should it be different than the strategy for Player 2?)
+         Use matrices to solve the resulting system of six equations. Give the mixed strategy equilibrium for Player 2. What is the mixed strategy for Player 1? (Hint: should it be different than the strategy for Player 2?)
       </p>
     </statement>
   </exercise>
@@ -143,4 +163,6 @@
       </p>
     </statement>
   </exercise>
+
+  <p>You have now solved a rather complex two-person game. Try playing it with your friends and family. It may be difficult (or even impossible) to play randomly with the exact probabilties. It is also unlikely that your opponent will also be playing the equilibrium strategy, but can you use the solution to assure an advantage, or at least assure that your opponent doensn't have an advantage? Can you see the difference between an exact theoretical solution to a game, and a practical strategy for playing the game? In the next chapter we will see even more differences between theoretical and practical solutions to a game.</p>
 </section>

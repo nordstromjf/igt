@@ -12,7 +12,7 @@
       </p>
 
       <table xml:id="T_smallexample" >
-        <caption>The payoff matrix for <xref ref="E_domstrat1">Example</xref></caption>
+        <caption>The payoff matrix for <xref ref="E_domstrat1">Example</xref>.</caption>
         <tabular>
           <row>
             <cell></cell>
@@ -32,11 +32,11 @@
       </table>
 
       <p>
-        If we know we are playing a zero-sum game, then the use of ordered pair seems somewhat redundant: If Player 1 wins 1, then we know that Player 2 must lose 1 (win <m>-1</m>). Thus, if we KNOW we are playing a zero-sum game, we can simplify our notation by just using Player 1's payoffs. The above matrix in <xref ref="T_smallexample">Table</xref> can be simplified as in <xref ref="T_smallexampleP1">Table</xref>.
+        If we know we are playing a zero-sum game, then the use of ordered pairs seems somewhat redundant: If Player 1 wins 1, then we know that Player 2 must lose 1 (win <m>-1</m>). Thus, if we KNOW we are playing a zero-sum game, we can simplify our notation by just using Player 1's payoffs. The above matrix in <xref ref="T_smallexample">Table</xref> can be simplified as in <xref ref="T_smallexampleP1">Table</xref>.
       </p>
 
       <table xml:id="T_smallexampleP1" >
-        <caption>The payoff matrix for <xref ref="E_domstrat1">Example</xref> using only Player 1's payoffs</caption>
+        <caption>The payoff matrix for <xref ref="E_domstrat1">Example</xref> using only Player 1's payoffs.</caption>
         <tabular>
           <row>
             <cell></cell>
@@ -44,13 +44,13 @@
           </row>
           <row>
             <cell right="minor">Player 1</cell>
-            <cell bottom="minor" right="minor">1</cell>
-            <cell bottom="minor" right="minor">0</cell>
+            <cell bottom="minor" right="minor" halign="center">1</cell>
+            <cell bottom="minor" right="minor" halign="center">0</cell>
           </row>
           <row>
             <cell right="minor"></cell>
-            <cell bottom="minor" right="minor">-1</cell>
-            <cell bottom="minor" right="minor">-2</cell>
+            <cell bottom="minor" right="minor" halign="center">-1</cell>
+            <cell bottom="minor" right="minor" halign="center">-2</cell>
           </row>
         </tabular>
       </table>
@@ -73,7 +73,7 @@
         You can always give a similar matrix representing Player 2's payoffs. However, due to (2), you should indicate that the matrix is for Player 2. For example, Player 2's payoff matrix would be given by <xref ref="T_smallexampleP2">Table</xref>.
 
         <table xml:id="T_smallexampleP2" >
-          <caption>The payoff matrix for <xref ref="E_domstrat1">Example</xref> using only Player 2's payoffs</caption>
+          <caption>The payoff matrix for <xref ref="E_domstrat1">Example</xref> using only Player 2's payoffs.</caption>
           <tabular>
           <row>
             <cell></cell>
@@ -81,13 +81,13 @@
           </row>
           <row>
             <cell right="minor">Player 1</cell>
-            <cell bottom="minor" right="minor">-1</cell>
-            <cell bottom="minor" right="minor">0</cell>
+            <cell bottom="minor" right="minor" halign="center">-1</cell>
+            <cell bottom="minor" right="minor" halign="center">0</cell>
           </row>
           <row>
             <cell right="minor"></cell>
-            <cell bottom="minor" right="minor">1</cell>
-            <cell bottom="minor" right="minor">2</cell>
+            <cell bottom="minor" right="minor" halign="center">1</cell>
+            <cell bottom="minor" right="minor" halign="center">2</cell>
           </row>
         </tabular>
         </table>
@@ -105,13 +105,13 @@
           </row>
           <row>
             <cell right="minor">Player 1</cell>
-            <cell bottom="minor" right="minor">1</cell>
-            <cell bottom="minor" right="minor">0</cell>
+            <cell bottom="minor" right="minor" halign="center">1</cell>
+            <cell bottom="minor" right="minor" halign="center">0</cell>
           </row>
           <row>
             <cell right="minor"></cell>
-            <cell bottom="minor" right="minor">-1</cell>
-            <cell bottom="minor" right="minor">-2</cell>
+            <cell bottom="minor" right="minor" halign="center">-1</cell>
+            <cell bottom="minor" right="minor" halign="center">-2</cell>
           </row>
         </tabular>
         </table>
@@ -121,7 +121,7 @@
   </p>
 
   <p>
-    In this last example, it should be clear that Player 1 is looking for rows which give her the largest payoff<ndash /> this is nothing new. However, Player 2 is now looking for columns which give Player 1 the SMALLEST payoff. (Why?)
+    In this last example, it should be clear that Player 1 is looking for rows which give her the largest payoff. This is nothing new. However, Player 2 is now looking for columns which give Player 1 the SMALLEST payoff. (Why?)
   </p>
 
   <p>
@@ -135,7 +135,7 @@
       </p>
 
       <table xml:id="T_biggerexampleP1" >
-        <caption>Payoff matrix for <xref ref="E_domstrat2">Example</xref></caption>
+        <caption>Payoff matrix for <xref ref="E_domstrat2">Example</xref>.</caption>
         <tabular>
           <row>
             <cell></cell>
@@ -143,15 +143,15 @@
           </row>
           <row>
             <cell right="minor">Player 1</cell>
-            <cell bottom="minor" right="minor">1</cell>
-            <cell bottom="minor" right="minor">0</cell>
-            <cell bottom="minor" right="minor">2</cell>
+            <cell bottom="minor" right="minor" halign="center">1</cell>
+            <cell bottom="minor" right="minor" halign="center">0</cell>
+            <cell bottom="minor" right="minor" halign="center">2</cell>
           </row>
           <row>
             <cell right="minor"></cell>
-            <cell bottom="minor" right="minor">-1</cell>
-            <cell bottom="minor" right="minor">-2</cell>
-            <cell bottom="minor" right="minor">2</cell>
+            <cell bottom="minor" right="minor" halign="center">-1</cell>
+            <cell bottom="minor" right="minor" halign="center">-2</cell>
+            <cell bottom="minor" right="minor" halign="center">2</cell>
           </row>
         </tabular>
       </table>
@@ -169,7 +169,7 @@
       </p>
 
       <table xml:id="T_biggerexample2" >
-        <caption>Payoff matrix for <xref ref="E_domstrat3">Example</xref></caption>
+        <caption>Payoff matrix for <xref ref="E_domstrat3">Example</xref>.</caption>
         <tabular>
           <row>
             <cell></cell>
@@ -205,15 +205,20 @@
       <p>
         A strategy <m>X</m> <term>dominates</term><index><main>dominates</main></index> a strategy <m>Y</m> if every entry for <m>X</m> is greater than or equal to the corresponding entry for <m>Y</m>. In this case, we say <m>Y</m> is <term>dominated by</term><index><main>dominated by</main></index> <m>X</m>.
       </p>
+      <p>
+        If strategy <m>X</m> dominates stratgy <m>Y</m>, we can write <m>X\succ Y</m>.
+      </p>
     </statement>
   </definition>
 
   <p>
-    In mathematical notation: The <m>i^{ th}</m> row dominates the <m>j^{ th}</m> row if <m>a_{ik}\ge a_{jk}</m> for all <m>k</m>, and <m>a_{ik}> a_{jk}</m> for at least one <m>k</m>. If <m>X</m> dominates <m>Y</m>, we can write <m>X\succ Y</m>.
+    In mathematical notation, let <m>a_{ik}</m> be the value in the <m>i^{ th}</m> row and <m>k^{ th}</m> column. Similarly,  <m>a_{jk}</m> is the value in the <m>j^{ th}</m> row and <m>k^{ th}</m> column. The <m>i^{ th}</m> row dominates the <m>j^{ th}</m> row if <m>a_{ik}\ge a_{jk}</m> for all <m>k</m>, and <m>a_{ik}> a_{jk}</m> for at least one <m>k</m>. 
   </p>
 
+   
+
   <p>
-    This definition can also be used for Player 2: we consider columns instead of rows. If we are looking at Player 1's payoffs, then Player 2 prefers smaller payoffs. Thus one column <m>X</m> dominates another column <m>Y</m> if all the entries in <m>X</m> are smaller than or equal to the corresponding entries in <m>Y</m>.
+    This definition can also be used for Player 2: we consider columns instead of rows. If we are looking at Player 1's payoffs, then Player 2 prefers smaller payoffs. Thus one column <m>X</m> dominates another column <m>Y</m> if all the entries in <m>X</m> are <em>smaller than or equal</em> to the corresponding entries in <m>Y</m>.
   </p>
 
   <p>
@@ -339,7 +344,7 @@
   </table>
 -->
 <figure xml:id="F_strikerow2Ex3">
-    <caption>fter eliminating Column 3, Row 2 is dominated by Row 1.</caption>
+    <caption>After eliminating Column 3, Row 2 is dominated by Row 1.</caption>
     <image width="30%" source="images/image-3.svg">
       <latex-image-code>
         <![CDATA[ \begin{tikzpicture}
@@ -371,7 +376,7 @@
   <exercise>
     <statement>
       <p>
-        Use the idea of eliminating dominated strategies to determine what each player should do in the Arnold/ Bainbridge examples from <xref ref="Ex_election"></xref> in <xref ref="E_election1">Exercises</xref>, <xref ref="E_election2"></xref>, and <xref ref="E_election3"></xref>. Do you get the same strategy pairs as you determined in those exercises?
+        Use the idea of eliminating dominated strategies to determine what each player should do in the Arnold/ Bainbridge examples from <xref ref="Ex_election"></xref> in <xref ref="T_election1">Table</xref>, <xref ref="T_election2">Table</xref>, and <xref ref="T_election3">Table</xref>. Do you get the same strategy pairs as you determined in the related exercises (<xref ref="E_election1">Exercise</xref>, <xref ref="E_election2">Exercise</xref>, <xref ref="E_election3">Exercise</xref>)?
       </p>
     </statement>
   </exercise>
@@ -382,7 +387,7 @@
       </p>
 
       <table xml:id="T_domstratpractice1" >
-        <caption>Payoff matrix for <xref ref="E_domstratpractice1">Exercise</xref></caption>
+        <caption>Payoff matrix for <xref ref="E_domstratpractice1">Exercise</xref>.</caption>
         <tabular halign="center">
           <row>
             <cell></cell>
@@ -440,7 +445,7 @@
       </p>
 
       <table xml:id="T_domstratpractice2" >
-        <caption>Payoff matrix for <xref ref="E_domstratpractice2">Exercise</xref></caption>
+        <caption>Payoff matrix for <xref ref="E_domstratpractice2">Exercise</xref>.</caption>
         <tabular halign="center">
           <row>
             <cell></cell>
@@ -498,7 +503,7 @@
       </p>
 
       <table xml:id="T_domstratpractice3" >
-        <caption>Payoff matrix for <xref ref="E_domstratpractice3">Exercise</xref></caption>
+        <caption>Payoff matrix for <xref ref="E_domstratpractice3">Exercise</xref>.</caption>
         <tabular halign="center">
           <row>
             <cell></cell>
@@ -556,7 +561,7 @@
       </p>
 
       <table xml:id="T_domstratpractice4" >
-        <caption>Payoff matrix for <xref ref="E_domstratpractice4">Exercise</xref></caption>
+        <caption>Payoff matrix for <xref ref="E_domstratpractice4">Exercise</xref>.</caption>
         <tabular halign="center">
           <row>
             <cell></cell>
@@ -608,17 +613,17 @@
     </statement>
   </exercise>
   <p>
-    Chances are you had trouble determining an equilibrium pair for the last game. Does this mean there isn't an equilibrium pair? Not necessarily, but we are stuck if we try to use only the idea of eliminating dominated strategies. So we need a new method.
+    Chances are you had trouble determining an equilibrium pair for the game in <xref ref="E_domstratpractice4">Exercise</xref>. Does this mean there isn't an equilibrium pair? Not necessarily, but we are stuck if we try to use only the idea of eliminating dominated strategies. So we need a new method.
   </p>
 
   <p>
-    We might think of this as the <q>worst case scenario,</q> or <q>extremely defensive play.</q> The idea is that we want to assume our opponent is the best player to ever live. In fact, we might assume our opponent is telepathic. So no matter what we do, our opponent will always guess what we are going to choose.
+    We might think of our next method as the <q>worst case scenario,</q> or <q>extremely defensive play.</q> The idea is that we want to assume our opponent is the best player to ever live. In fact, we might assume our opponent is telepathic. So no matter what we do, our opponent will always guess what we are going to choose.
   </p>
 
   <example xml:id="E_intromaxmin">
     <statement>
       <p>
-        Assume you are Player 1, and you are playing against this <q>infinitely smart</q> Player 2. Consider the game in <xref ref="E_domstratpractice1">Exercise</xref>. If you pick row A, what will Player 2 do? Player 2 would pick column X or Y. Try this for each of the rows. Which row is your best choice? If you pick A, you will get 0; if you pick B, you will get <m>-2</m>; if you pick C, you will get 1; and if you pick D you will get <m>-2</m>. Thus, your best choice is to choose C and get 1. Now assume you are Player 2, and Player 1 is <q>infinitely smart.</q> Which column is your best choice? If you pick W, Player 1 will get 1 (you will get <m>-1</m>); if you pick X, Player 1 will get <m>1</m>; if you pick Y, Player 1 will get 1; and if you pick Z, you will get <m>10</m>. Thus, you can choose W, X, or Y (since you want Player 1 to win the least) and get <m>-1</m>.
+        Assume you are Player 1, and you are playing against this <q>infinitely smart</q> Player 2. Consider the game in <xref ref="T_domstratpractice1">Table</xref>. If you pick row A, what will Player 2 do? Player 2 will pick column X or Y. Try this for each of the rows. Which row is your best choice? If you pick A, you will get <m>0</m>; if you pick B, you will get <m>-2</m>; if you pick C, you will get <m>1</m>; and if you pick D you will get <m>-2</m>. Thus, your best choice is to choose C and get <m>1</m>. Now assume you are Player 2, and Player 1 is <q>infinitely smart.</q> Which column is your best choice? If you pick W, Player 1 will get <m>1</m> (you will get <m>-1</m>); if you pick X, Player 1 will get <m>1</m>; if you pick Y, Player 1 will get <m>1</m>; and if you pick Z, you will get <m>10</m>. Thus, you can choose W, X, or Y (since you want Player 1 to win the least) and get <m>-1</m>.
       </p>
     </statement>
   </example>
@@ -626,40 +631,40 @@
   <exercise>
     <statement>
       <p>
-        Using the method described in <xref ref="E_intromaxmin">Example</xref>, determine what each player should do in the game in <xref ref="E_domstratpractice2">Exercise</xref>.
+        Using the method described in <xref ref="E_intromaxmin">Example</xref>, determine what each player should do in the game in <xref ref="T_domstratpractice2">Table</xref>.
       </p>
     </statement>
   </exercise>
   <exercise>
     <statement>
       <p>
-        Using the method described in <xref ref="E_intromaxmin">Example</xref>, determine what each player should do in the game in <xref ref="E_domstratpractice3">Exercise</xref>.
+        Using the method described in <xref ref="E_intromaxmin">Example</xref>, determine what each player should do in the game in <xref ref="T_domstratpractice3">Table</xref>.
       </p>
     </statement>
   </exercise>
   <exercise>
     <statement>
       <p>
-        Generalize this method. In other words, give a general rule for how Player 1 should determine his or her best move. Do the same for Player 2.
+        Generalize the method described in <xref ref="E_intromaxmin">Example</xref>. In other words, give a general rule for how Player 1 should determine his or her best move. Do the same for Player 2.
       </p>
     </statement>
   </exercise>
   <exercise>
     <statement>
       <p>
-        What do you notice about using this method on the games in <xref ref="E_domstratpractice1">Exercises</xref>, <xref ref="E_domstratpractice2"></xref>, and <xref ref="E_domstratpractice3"></xref>? Is the solution an equilibrium pair?
+        What do you notice about using this method on the games in <xref ref="T_domstratpractice1">Tables</xref>, <xref ref="T_domstratpractice2"></xref>, and <xref ref="T_domstratpractice3"></xref>? Is the solution an equilibrium pair?
       </p>
     </statement>
   </exercise>
   <exercise>
     <statement>
       <p>
-        Now try this method on the elusive payoff matrix in <xref ref="E_domstratpractice4">Exercise</xref>. What should each player do? Do you think we get an equilibrium pair? Explain.
+        Now try this method on the elusive payoff matrix in <xref ref="T_domstratpractice4">Table</xref>. What should each player do? Do you think we get an equilibrium pair? Explain.
       </p>
     </statement>
   </exercise>
   <p>
-    The strategies we found using the above method have a more official name. Player<nbsp />1's strategy is called the <em>maximin</em><index><main>maximin strategy</main></index> strategy. Player<nbsp />1 is maximizing the minimum values from each row. Player 2's strategy is called the <em>minimax</em><index><main>minimax</main></index> strategy. Player 2 is minimizing the maximum values from each column.
+    The strategies we found using the above method have a more official name. Player 1's strategy is called the <em>maximin</em><index><main>maximin strategy</main></index> strategy. Player 1 is maximizing the minimum values from each row. Player 2's strategy is called the <em>minimax</em><index><main>minimax</main></index> strategy. Player 2 is minimizing the maximum values from each column.
   </p>
   <exercise xml:id="E_domstratpractice5">
     <statement>
@@ -668,7 +673,7 @@
       </p>
 
       <table xml:id="T_domstratpractice5" >
-        <caption>Payoff matrix for <xref ref="E_domstratpractice5">Exercise</xref></caption>
+        <caption>Payoff matrix for <xref ref="E_domstratpractice5">Exercise</xref>.</caption>
         <tabular halign="center">
           <row>
             <cell></cell>
@@ -743,7 +748,7 @@
   <exercise>
     <statement>
       <p>
-        Compare your answers in <xref ref="E_iterate5">Exercise</xref> to what happens in <xref ref="E_domstratpractice1">Exercises</xref>, <xref ref="E_domstratpractice2"></xref>, and <xref ref="E_domstratpractice3"></xref>. Can you identify any key differences between the games in <xref ref="E_domstratpractice5">Exercise</xref> and <xref ref="E_domstratpractice1">Exercises</xref>, <xref ref="E_domstratpractice2"></xref>, and <xref ref="E_domstratpractice3"></xref>?
+        Compare your answers in <xref ref="E_iterate5">Exercise</xref> to what happens in <xref ref="E_domstratpractice1">Exercises</xref>, <xref ref="E_domstratpractice2"></xref>, and <xref ref="E_domstratpractice3"></xref>. Can you identify any key differences between the games in <xref ref="E_iterate5">Exercise</xref> and <xref ref="E_domstratpractice1">Exercises</xref>, <xref ref="E_domstratpractice2"></xref>, and <xref ref="E_domstratpractice3"></xref>?
       </p>
     </statement>
   </exercise>

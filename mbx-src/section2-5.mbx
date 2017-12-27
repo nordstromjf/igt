@@ -2,7 +2,7 @@
 <section xml:id="S_EquilibPoints">
   <title>Equilibrium Points</title>
   <p>
-    In this section, we will try to gain a greater understanding of equilibrium strategies in a game. In general, we call the pair of equilibrium strategies an <em>equilibrium pair</em><index><main>equilibrium pair</main></index>, while we call the specific payoff vector associated with an equilibrium pair an <em>equilibrium point</em><index><main>equilibrium point</main></index>.
+    In this section, we will try to gain a greater understanding of equilibrium strategies in a game. In general, we call the pair of equilibrium strategies an <em>equilibrium pair</em><idx><h>equilibrium pair</h></idx>, while we call the specific payoff vector associated with an equilibrium pair an <em>equilibrium point</em><idx><h>equilibrium point</h></idx>.
   </p>
   <exercise xml:id="E_matrixexamples">
     <statement>
@@ -29,7 +29,7 @@
   <exercise>
     <statement>
       <p>
-        What do you notice about the values of the equilibrium points of the games in <xref ref="E_matrixexamples">Exercise</xref>?
+        What do you notice about the values of the equilibrium points of the games in <xref ref="E_matrixexamples"></xref>?
       </p>
     </statement>
   </exercise>
@@ -44,11 +44,11 @@
   <paragraphs>
     <title>Solution Theorem for Zero-Sum Games</title>
     <p>
-      <index><main>Solution Theorem for Zero-Sum Games</main></index> Every equilibrium point of a two-person zero-sum game has the same value.
+      <idx><h>Solution Theorem for Zero-Sum Games</h></idx> Every equilibrium point of a two-person zero-sum game has the same value.
     </p>
   </paragraphs>
   <p>
-    Let's start with the <m>2 \times 2</m> case. We will use a <em>proof by contradiction</em><index><main>proof by contradiction</main></index>. We will assume the theorem is false and show that we get a logical contradiction. Once we reach a logical contradiction (a statement that is both true and false), we can conclude we were wrong to assume the theorem was false; hence, the theorem must be true. Make sure you are comfortable with the logic of this before moving on.
+    Let's start with the <m>2 \times 2</m> case. We will use a <em>proof by contradiction</em><idx><h>proof by contradiction</h></idx>. We will assume the theorem is false and show that we get a logical contradiction. Once we reach a logical contradiction (a statement that is both true and false), we can conclude we were wrong to assume the theorem was false; hence, the theorem must be true. Make sure you are comfortable with the logic of this before moving on.
   </p>
 
   <p>
@@ -75,7 +75,7 @@
     <title> Equilibria in the same column/row </title>
     <statement>
       <p>
-        Generalize you answer to <xref ref="E_col1neq">Exercise</xref> to explain what goes wrong if the two equilibria are in the same column. Similarly, explain what happens if the two equilibria are in the same row.
+        Generalize you answer to <xref ref="E_col1neq"></xref> to explain what goes wrong if the two equilibria are in the same column. Similarly, explain what happens if the two equilibria are in the same row.
       </p>
     </statement>
   </exercise>
@@ -119,7 +119,7 @@
     <title> Diagonal case for <m>c</m> and <m>d</m></title>
     <statement>
       <p>
-        Repeat the above argument (<xref ref="E_4ineq1">Exercises</xref>, <xref ref="E_string1"></xref>, and <xref ref="E_contra1"></xref>) for the case that the two equilibria are <m>(d, -d)</m> and <m>(c, -c)</m> with <m>d\neq c</m>.
+        Repeat the above argument (<xref ref="E_4ineq1"></xref>, <xref ref="E_string1"></xref>, and <xref ref="E_contra1"></xref>) for the case that the two equilibria are <m>(d, -d)</m> and <m>(c, -c)</m> with <m>d\neq c</m>.
       </p>
     </statement>
   </exercise>
@@ -155,4 +155,7 @@
       </p>
     </statement>
   </exercise>
+  <p>Working through the steps of a mathematical proof can be challenging. As you think about what we did in this section, first make sure you understand the argument for each step. Then work on understanding how the steps fit together to create the larger argument. </p>
+
+  <p>The next section summarizes all our work with finding equilibrium points for zero-sum games.</p>
 </section>

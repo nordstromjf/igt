@@ -8,11 +8,11 @@
   <example xml:id="E_domstrat1">
     <statement>
       <p>
-        Consider the zero-sum game with payoff matrix in <xref ref="T_smallexample">Table</xref>. Note that for simplicity our payoff matrix contains only the payoffs and not the strategy names; but Player 1 still chooses a row and Player 2 still chooses a column.
+        Consider the zero-sum game with payoff matrix in <xref ref="T_smallexample"></xref>. Note that for simplicity our payoff matrix contains only the payoffs and not the strategy names; but Player 1 still chooses a row and Player 2 still chooses a column.
       </p>
 
       <table xml:id="T_smallexample" >
-        <caption>The payoff matrix for <xref ref="E_domstrat1">Example</xref>.</caption>
+        <caption>The payoff matrix for <xref ref="E_domstrat1"></xref>.</caption>
         <tabular>
           <row>
             <cell></cell>
@@ -32,11 +32,11 @@
       </table>
 
       <p>
-        If we know we are playing a zero-sum game, then the use of ordered pairs seems somewhat redundant: If Player 1 wins 1, then we know that Player 2 must lose 1 (win <m>-1</m>). Thus, if we KNOW we are playing a zero-sum game, we can simplify our notation by just using Player 1's payoffs. The above matrix in <xref ref="T_smallexample">Table</xref> can be simplified as in <xref ref="T_smallexampleP1">Table</xref>.
+        If we know we are playing a zero-sum game, then the use of ordered pairs seems somewhat redundant: If Player 1 wins 1, then we know that Player 2 must lose 1 (win <m>-1</m>). Thus, if we KNOW we are playing a zero-sum game, we can simplify our notation by just using Player 1's payoffs. The above matrix in <xref ref="T_smallexample"></xref> can be simplified as in <xref ref="T_smallexampleP1"></xref>.
       </p>
 
       <table xml:id="T_smallexampleP1" >
-        <caption>The payoff matrix for <xref ref="E_domstrat1">Example</xref> using only Player 1's payoffs.</caption>
+        <caption>The payoff matrix for <xref ref="E_domstrat1"></xref> using only Player 1's payoffs.</caption>
         <tabular>
           <row>
             <cell></cell>
@@ -70,10 +70,10 @@
       </p></li>
 
     <li><p>
-        You can always give a similar matrix representing Player 2's payoffs. However, due to (2), you should indicate that the matrix is for Player 2. For example, Player 2's payoff matrix would be given by <xref ref="T_smallexampleP2">Table</xref>.
+        You can always give a similar matrix representing Player 2's payoffs. However, due to (2), you should indicate that the matrix is for Player 2. For example, Player 2's payoff matrix would be given by <xref ref="T_smallexampleP2"></xref>.
 
         <table xml:id="T_smallexampleP2" >
-          <caption>The payoff matrix for <xref ref="E_domstrat1">Example</xref> using only Player 2's payoffs.</caption>
+          <caption>The payoff matrix for <xref ref="E_domstrat1"></xref> using only Player 2's payoffs.</caption>
           <tabular>
           <row>
             <cell></cell>
@@ -95,9 +95,10 @@
       </p></li>
 
     <li><p>
-        Both players can make strategy decisions by considering only Player 1's payoff matrix. (Why?) Just to test this out, by looking only at the matrix in <xref ref="T_smallexampleP1">Table</xref> determine which strategy each player should choose.
+        Both players can make strategy decisions by considering only Player 1's payoff matrix. (Why?) Just to test this out, by looking only at the matrix in <xref ref="T_smallexampleP1"></xref> determine which strategy each player should choose.
 
         <table>
+          <caption>Player 1's payoffs in <xref ref="E_domstrat1"></xref>.</caption>
           <tabular>
           <row>
             <cell></cell>
@@ -131,11 +132,11 @@
   <example xml:id="E_domstrat2">
     <statement>
       <p>
-        Consider the zero-sum game given in <xref ref="T_biggerexampleP1">Table</xref>.
+        Consider the zero-sum game given in <xref ref="T_biggerexampleP1"></xref>.
       </p>
 
       <table xml:id="T_biggerexampleP1" >
-        <caption>Payoff matrix for <xref ref="E_domstrat2">Example</xref>.</caption>
+        <caption>Payoff matrix for <xref ref="E_domstrat2"></xref>.</caption>
         <tabular>
           <row>
             <cell></cell>
@@ -165,11 +166,11 @@
   <example xml:id="E_domstrat3">
     <statement>
       <p>
-        Consider the zero-sum game given in <xref ref="T_biggerexample2">Table</xref>.
+        Consider the zero-sum game given in <xref ref="T_biggerexample2"></xref>.
       </p>
 
       <table xml:id="T_biggerexample2" >
-        <caption>Payoff matrix for <xref ref="E_domstrat3">Example</xref>.</caption>
+        <caption>Payoff matrix for <xref ref="E_domstrat3"></xref>.</caption>
         <tabular>
           <row>
             <cell></cell>
@@ -197,13 +198,13 @@
   </example>
 
   <p>
-    In <xref ref="E_domstrat2">Example</xref>, no matter what Player 2 does, Player 1 would always choose Row 1, since every payoff in Row 1 is greater than or equal to the corresponding payoff in Row 2 (<m>1\ge -1</m>, <m>0\ge -2</m>, <m>2\ge 2</m>). In <xref ref="E_domstrat3">Example</xref>, this is not the case: if Player 2 were to choose Column 3, then Player 1 would prefer Row 2. In <xref ref="E_domstrat2">Example</xref> we would say that Row 1 <em>dominates</em><index><main>dominates</main></index> Row 2.
+    In <xref ref="E_domstrat2"></xref>, no matter what Player 2 does, Player 1 would always choose Row 1, since every payoff in Row 1 is greater than or equal to the corresponding payoff in Row 2 (<m>1\ge -1</m>, <m>0\ge -2</m>, <m>2\ge 2</m>). In <xref ref="E_domstrat3"></xref>, this is not the case: if Player 2 were to choose Column 3, then Player 1 would prefer Row 2. In <xref ref="E_domstrat2"></xref> we would say that Row 1 <em>dominates</em><idx><h>dominates</h></idx> Row 2.
   </p>
 
   <definition>
     <statement>
       <p>
-        A strategy <m>X</m> <term>dominates</term><index><main>dominates</main></index> a strategy <m>Y</m> if every entry for <m>X</m> is greater than or equal to the corresponding entry for <m>Y</m>. In this case, we say <m>Y</m> is <term>dominated by</term><index><main>dominated by</main></index> <m>X</m>.
+        A strategy <m>X</m> <term>dominates</term><idx><h>dominates</h></idx> a strategy <m>Y</m> if every entry for <m>X</m> is greater than or equal to the corresponding entry for <m>Y</m>. In this case, we say <m>Y</m> is <term>dominated by</term><idx><h>dominated by</h></idx> <m>X</m>.
       </p>
       <p>
         If strategy <m>X</m> dominates stratgy <m>Y</m>, we can write <m>X\succ Y</m>.
@@ -223,7 +224,7 @@
 
   <p>
     Here is the great thing: we can always eliminate dominated strategies! (Why?)
-    Thus, in <xref ref="E_domstrat2">Example</xref>, we can eliminate Row 2, as in <xref ref="F_strikerow2Ex2">Figure</xref>.
+    Thus, in <xref ref="E_domstrat2"></xref>, we can eliminate Row 2, as in <xref ref="F_strikerow2Ex2"></xref>.
   </p>
 
   <!--<table xml:id="T_strikerow2Ex2" >
@@ -250,8 +251,8 @@
 -->
 <figure xml:id="F_strikerow2Ex2">
     <caption>Row 2 is dominated by Row 1.</caption>
-    <image width="30%" source="images/image-1.svg">
-      <latex-image-code>
+    <image width="30%" source="images/image-3.svg">
+      <latex-image>
         <![CDATA[\begin{tikzpicture}
         \draw[step=1cm] (0,0) grid (3,2);
         \node at (1.5,2.3) {Player 2};
@@ -264,7 +265,7 @@
         \node at (2.5, 1.5) {2};
         \draw[blue, very thick, opacity=0.9] (-0.1, .5)--(3.1, .5);
         \end{tikzpicture}]]>
-      </latex-image-code>
+      </latex-image>
     </image>
 </figure>
 
@@ -273,7 +274,7 @@
   </p>
 
   <p>
-    In <xref ref="E_domstrat3">Example</xref>, we cannot eliminate Row 2 since it is not dominated by Row 1. However, it should be clear that Column 2 dominates Column 3 (remember, Player 2 prefers SMALLER values). Thus we can eliminate Column 3 as in <xref ref="F_strikecol3Ex3">Figure</xref>.
+    In <xref ref="E_domstrat3"></xref>, we cannot eliminate Row 2 since it is not dominated by Row 1. However, it should be clear that Column 2 dominates Column 3 (remember, Player 2 prefers SMALLER values). Thus we can eliminate Column 3 as in <xref ref="F_strikecol3Ex3"></xref>.
   </p>
 
   <!--<table xml:id="T_strikecol3Ex3" >
@@ -300,8 +301,8 @@
   -->
 <figure xml:id="F_strikecol3Ex3">
     <caption>Column 3 is dominated by Column 2.</caption>
-    <image width="30%" source="images/image-2.svg">
-      <latex-image-code>
+    <image width="30%" source="images/image-4.svg">
+      <latex-image>
         <![CDATA[\begin{tikzpicture}
         \draw[step=1cm] (0,0) grid (3,2);
         \node at (1.5,2.3) {Player 2};
@@ -314,11 +315,11 @@
         \node at (2.5, 1.5) {2};
         \draw[blue, very thick, opacity=0.9] (2.5, -.1)--(2.5, 2.1);
         \end{tikzpicture}]]>
-      </latex-image-code>
+      </latex-image>
     </image>
 </figure>
   <p>
-    AFTER eliminating Column 3, Row 1 dominates Row 2. Now, in <xref ref="F_strikerow2Ex3">Table</xref> we can eliminate Row 2.
+    AFTER eliminating Column 3, Row 1 dominates Row 2. Now, in <xref ref="F_strikerow2Ex3"></xref> we can eliminate Row 2.
   </p>
 
  <!-- <table xml:id="T_strikerow2Ex3" >
@@ -345,8 +346,8 @@
 -->
 <figure xml:id="F_strikerow2Ex3">
     <caption>After eliminating Column 3, Row 2 is dominated by Row 1.</caption>
-    <image width="30%" source="images/image-3.svg">
-      <latex-image-code>
+    <image width="30%" source="images/image-5.svg">
+      <latex-image>
         <![CDATA[ \begin{tikzpicture}
         \draw[step=1cm] (0,0) grid (3,2);
         \node at (1.5,2.3) {Player 2};
@@ -360,7 +361,7 @@
         \draw[very thick, opacity=0.9] (2.5, -.1)--(2.5, 2.1);
         \draw[blue, very thick, opacity=0.9] (-0.1, .5)--(3.1, .5);
     \end{tikzpicture}]]>
-      </latex-image-code>
+      </latex-image>
     </image>
 </figure>
   <p>
@@ -369,25 +370,31 @@
   <exercise>
     <statement>
       <p>
-        Check that the strategy pairs we determined in <xref ref="E_domstrat2">Examples</xref> and <xref ref="E_domstrat3"></xref> are, in fact, equilibrium pairs.
+        Check that the strategy pairs we determined in <xref ref="E_domstrat2"></xref> and <xref ref="E_domstrat3"></xref> are, in fact, equilibrium pairs.
       </p>
     </statement>
   </exercise>
+
+  <p>Now, look back at the election examples from <xref ref="Ex_election"></xref> and apply the process of eliminating dominated strategies.</p>
+
   <exercise>
     <statement>
       <p>
-        Use the idea of eliminating dominated strategies to determine what each player should do in the Arnold/ Bainbridge examples from <xref ref="Ex_election"></xref> in <xref ref="T_election1">Table</xref>, <xref ref="T_election2">Table</xref>, and <xref ref="T_election3">Table</xref>. Do you get the same strategy pairs as you determined in the related exercises (<xref ref="E_election1">Exercise</xref>, <xref ref="E_election2">Exercise</xref>, <xref ref="E_election3">Exercise</xref>)?
+        Use the idea of eliminating dominated strategies to determine what each player should do in the Arnold/ Bainbridge examples in <xref ref="T_election1"></xref>, <xref ref="T_election2"></xref>, and <xref ref="T_election3"></xref>. Do you get the same strategy pairs as you determined in the related exercises (<xref ref="E_election1"></xref>, <xref ref="E_election2"></xref>, <xref ref="E_election3"></xref>)?
       </p>
     </statement>
   </exercise>
+
+  <p>The next three exercises provide more practice in using dominated strategies to find equilibrium pairs.</p>
+
   <exercise xml:id="E_domstratpractice1">
     <statement>
       <p>
-        Use the idea of eliminating dominated strategies to determine any equilibrium pairs in the zero-sum game given in <xref ref="T_domstratpractice1">Table</xref>. Note, since it is a zero-sum game we need only show Player 1's payoffs. Explain all the steps in your solution. If you are unable to find an equilibrium pair, explain what goes wrong.
+        Use the idea of eliminating dominated strategies to determine any equilibrium pairs in the zero-sum game given in <xref ref="T_domstratpractice1"></xref>. Note, since it is a zero-sum game we need only show Player 1's payoffs. Explain all the steps in your solution. If you are unable to find an equilibrium pair, explain what goes wrong.
       </p>
 
       <table xml:id="T_domstratpractice1" >
-        <caption>Payoff matrix for <xref ref="E_domstratpractice1">Exercise</xref>.</caption>
+        <caption>Payoff matrix for <xref ref="E_domstratpractice1"></xref>.</caption>
         <tabular halign="center">
           <row>
             <cell></cell>
@@ -441,11 +448,11 @@
   <exercise xml:id="E_domstratpractice2">
     <statement>
       <p>
-        Determine any equilibrium pairs in the zero-sum game given in <xref ref="T_domstratpractice2">Table</xref>. Explain all the steps in your solution. If you are unable to find an equilibrium pair, explain what goes wrong.
+        Determine any equilibrium pairs in the zero-sum game given in <xref ref="T_domstratpractice2"></xref>. Explain all the steps in your solution. If you are unable to find an equilibrium pair, explain what goes wrong.
       </p>
 
       <table xml:id="T_domstratpractice2" >
-        <caption>Payoff matrix for <xref ref="E_domstratpractice2">Exercise</xref>.</caption>
+        <caption>Payoff matrix for <xref ref="E_domstratpractice2"></xref>.</caption>
         <tabular halign="center">
           <row>
             <cell></cell>
@@ -499,11 +506,11 @@
   <exercise xml:id="E_domstratpractice3">
     <statement>
       <p>
-        Determine any equilibrium pairs in the zero-sum game given in <xref ref="T_domstratpractice3">Table</xref>. Explain all the steps in your solution. If you are unable to find an equilibrium pair, explain what goes wrong.
+        Determine any equilibrium pairs in the zero-sum game given in <xref ref="T_domstratpractice3"></xref>. Explain all the steps in your solution. If you are unable to find an equilibrium pair, explain what goes wrong.
       </p>
 
       <table xml:id="T_domstratpractice3" >
-        <caption>Payoff matrix for <xref ref="E_domstratpractice3">Exercise</xref>.</caption>
+        <caption>Payoff matrix for <xref ref="E_domstratpractice3"></xref>.</caption>
         <tabular halign="center">
           <row>
             <cell></cell>
@@ -557,11 +564,11 @@
   <exercise xml:id="E_domstratpractice4">
     <statement>
       <p>
-        Determine any equilibrium pairs in the zero-sum game given in <xref ref="T_domstratpractice4">Table</xref>. Explain all the steps in your solution. If you are unable to find an equilibrium pair, explain what goes wrong.
+        Determine any equilibrium pairs in the zero-sum game given in <xref ref="T_domstratpractice4"></xref>. Explain all the steps in your solution. If you are unable to find an equilibrium pair, explain what goes wrong.
       </p>
 
       <table xml:id="T_domstratpractice4" >
-        <caption>Payoff matrix for <xref ref="E_domstratpractice4">Exercise</xref>.</caption>
+        <caption>Payoff matrix for <xref ref="E_domstratpractice4"></xref>.</caption>
         <tabular halign="center">
           <row>
             <cell></cell>
@@ -613,7 +620,7 @@
     </statement>
   </exercise>
   <p>
-    Chances are you had trouble determining an equilibrium pair for the game in <xref ref="E_domstratpractice4">Exercise</xref>. Does this mean there isn't an equilibrium pair? Not necessarily, but we are stuck if we try to use only the idea of eliminating dominated strategies. So we need a new method.
+    Chances are you had trouble determining an equilibrium pair for the game in <xref ref="E_domstratpractice4"></xref>. Does this mean there isn't an equilibrium pair? Not necessarily, but we are stuck if we try to use only the idea of eliminating dominated strategies. So we need a new method.
   </p>
 
   <p>
@@ -623,7 +630,7 @@
   <example xml:id="E_intromaxmin">
     <statement>
       <p>
-        Assume you are Player 1, and you are playing against this <q>infinitely smart</q> Player 2. Consider the game in <xref ref="T_domstratpractice1">Table</xref>. If you pick row A, what will Player 2 do? Player 2 will pick column X or Y. Try this for each of the rows. Which row is your best choice? If you pick A, you will get <m>0</m>; if you pick B, you will get <m>-2</m>; if you pick C, you will get <m>1</m>; and if you pick D you will get <m>-2</m>. Thus, your best choice is to choose C and get <m>1</m>. Now assume you are Player 2, and Player 1 is <q>infinitely smart.</q> Which column is your best choice? If you pick W, Player 1 will get <m>1</m> (you will get <m>-1</m>); if you pick X, Player 1 will get <m>1</m>; if you pick Y, Player 1 will get <m>1</m>; and if you pick Z, you will get <m>10</m>. Thus, you can choose W, X, or Y (since you want Player 1 to win the least) and get <m>-1</m>.
+        Assume you are Player 1, and you are playing against this <q>infinitely smart</q> Player 2. Consider the game in <xref ref="T_domstratpractice1"></xref>. If you pick row A, what will Player 2 do? Player 2 will pick column X or Y. Try this for each of the rows. Which row is your best choice? If you pick A, you will get <m>0</m>; if you pick B, you will get <m>-2</m>; if you pick C, you will get <m>1</m>; and if you pick D you will get <m>-2</m>. Thus, your best choice is to choose C and get <m>1</m>. Now assume you are Player 2, and Player 1 is <q>infinitely smart.</q> Which column is your best choice? If you pick W, Player 1 will get <m>1</m> (you will get <m>-1</m>); if you pick X, Player 1 will get <m>1</m>; if you pick Y, Player 1 will get <m>1</m>; and if you pick Z, you will get <m>10</m>. Thus, you can choose W, X, or Y (since you want Player 1 to win the least) and get <m>-1</m>.
       </p>
     </statement>
   </example>
@@ -631,21 +638,24 @@
   <exercise>
     <statement>
       <p>
-        Using the method described in <xref ref="E_intromaxmin">Example</xref>, determine what each player should do in the game in <xref ref="T_domstratpractice2">Table</xref>.
+        Using the method described in <xref ref="E_intromaxmin"></xref>, determine what each player should do in the game in <xref ref="T_domstratpractice2"></xref>.
       </p>
     </statement>
   </exercise>
   <exercise>
     <statement>
       <p>
-        Using the method described in <xref ref="E_intromaxmin">Example</xref>, determine what each player should do in the game in <xref ref="T_domstratpractice3">Table</xref>.
+        Using the method described in <xref ref="E_intromaxmin"></xref>, determine what each player should do in the game in <xref ref="T_domstratpractice3"></xref>.
       </p>
     </statement>
   </exercise>
+
+  <p>After working through a few examples can you describe more generally the process used in <xref ref="E_intromaxmin"></xref>? What is Player 1 looking for in each row? Then how does she choose which row to play? What is Player 2 looking for in each column? How does he choose which column to play?</p>
+
   <exercise>
     <statement>
       <p>
-        Generalize the method described in <xref ref="E_intromaxmin">Example</xref>. In other words, give a general rule for how Player 1 should determine his or her best move. Do the same for Player 2.
+        Generalize the method described in <xref ref="E_intromaxmin"></xref>. In other words, give a general rule for how Player 1 should determine his or her best move. Do the same for Player 2.
       </p>
     </statement>
   </exercise>
@@ -664,16 +674,16 @@
     </statement>
   </exercise>
   <p>
-    The strategies we found using the above method have a more official name. Player 1's strategy is called the <em>maximin</em><index><main>maximin strategy</main></index> strategy. Player 1 is maximizing the minimum values from each row. Player 2's strategy is called the <em>minimax</em><index><main>minimax</main></index> strategy. Player 2 is minimizing the maximum values from each column.
+    The strategies we found using the above method have a more official name. Player 1's strategy is called the <em>maximin</em><idx><h>maximin strategy</h></idx> strategy. Player 1 is maximizing the minimum values from each row. Player 2's strategy is called the <em>minimax</em><idx><h>minimax</h></idx> strategy. Player 2 is minimizing the maximum values from each column. Notice, we can find the maximin and minimax strategies for any zero-sum game. But do our players always want to use these stratefies? Will they always result in an equilibrium pair? The next five exercises explore these questions.
   </p>
   <exercise xml:id="E_domstratpractice5">
     <statement>
       <p>
-        Let's consider another game matrix, given in <xref ref="T_domstratpractice5">Table</xref>. Explain why you cannot use dominated strategies to find an equilibrium pair. Do you think there is an equilibrium pair for this game (why or why not)?
+        Let's consider another game matrix, given in <xref ref="T_domstratpractice5"></xref>. Explain why you cannot use dominated strategies to find an equilibrium pair. Do you think there is an equilibrium pair for this game (why or why not)?
       </p>
 
       <table xml:id="T_domstratpractice5" >
-        <caption>Payoff matrix for <xref ref="E_domstratpractice5">Exercise</xref>.</caption>
+        <caption>Payoff matrix for <xref ref="E_domstratpractice5"></xref>.</caption>
         <tabular halign="center">
           <row>
             <cell></cell>
@@ -727,29 +737,30 @@
   <exercise>
     <statement>
       <p>
-        If both players use the maximin/ minimax strategy, what is the outcome of the game in <xref ref="T_domstratpractice5">Table</xref>?
+        If both players use the maximin/ minimax strategy, what is the outcome of the game in <xref ref="T_domstratpractice5"></xref>?
       </p>
     </statement>
   </exercise>
   <exercise>
     <statement>
       <p>
-        In the game in <xref ref="T_domstratpractice5">Table</xref>, if Player 1's opponent can guess that Player 1 will choose to use a maximin strategy, is Player 1 better off <em>not</em> using the maximin strategy?
+        In the game in <xref ref="T_domstratpractice5"></xref>, if Player 1's opponent can guess that Player 1 will choose to use a maximin strategy, is Player 1 better off <em>not</em> using the maximin strategy?
       </p>
     </statement>
   </exercise>
   <exercise xml:id="E_iterate5">
     <statement>
       <p>
-        Suppose both players initially decide to use the minimax/ maximin strategy in the game in <xref ref="T_domstratpractice5">Table</xref>. Is Player 1 better off choosing a different strategy? If Player 2 guesses a change, is Player 2 better off changing strategies? Continue this line of reasoning for several iterations. What strategies do each of the players choose? Is at least one player always better off switching strategies? Can we conclude that the maximin/ minimax strategy does not lead to an equilibrium pair?
+        Suppose both players initially decide to use the minimax/ maximin strategy in the game in <xref ref="T_domstratpractice5"></xref>. Is Player 1 better off choosing a different strategy? If Player 2 guesses a change, is Player 2 better off changing strategies? Continue this line of reasoning for several iterations. What strategies do each of the players choose? Is at least one player always better off switching strategies? Can we conclude that the maximin/ minimax strategy does not lead to an equilibrium pair?
       </p>
     </statement>
   </exercise>
   <exercise>
     <statement>
       <p>
-        Compare your answers in <xref ref="E_iterate5">Exercise</xref> to what happens in <xref ref="E_domstratpractice1">Exercises</xref>, <xref ref="E_domstratpractice2"></xref>, and <xref ref="E_domstratpractice3"></xref>. Can you identify any key differences between the games in <xref ref="E_iterate5">Exercise</xref> and <xref ref="E_domstratpractice1">Exercises</xref>, <xref ref="E_domstratpractice2"></xref>, and <xref ref="E_domstratpractice3"></xref>?
+        Compare your answers in <xref ref="E_iterate5"></xref> to what happens in <xref ref="E_domstratpractice1"></xref>, <xref ref="E_domstratpractice2"></xref>, and <xref ref="E_domstratpractice3"></xref>. Can you identify any key differences between the games in <xref ref="E_iterate5"></xref> and <xref ref="E_domstratpractice1"></xref>, <xref ref="E_domstratpractice2"></xref>, and <xref ref="E_domstratpractice3"></xref>?
       </p>
     </statement>
   </exercise>
+  <p>Given a zero-sum matrix game, we can find equilibruim pairs (if they exist) by the <q>guess and check</q> method, by eliminating dominated strategies, and by looking for the minimax/maximin strategies. You should be able to apply all three methods and think about which method might be the most appropriate for a given matrix game. For example, although <q>guess and check</q> should always find an equilibrium point if it exists, it may be very tedious to apply to a really large matrix. The maximin/minimax method might be much faster. </p>
 </section>

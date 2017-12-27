@@ -73,14 +73,14 @@
   <exercise>
     <statement>
       <p>
-        If a matrix doesn't have an equilibrium point, should player always play the maximin/minimax strategy? Explain.
+        If a matrix does NOT have an equilibrium point, should a player always play the maximin/minimax strategy? Explain.
       </p>
     </statement>
   </exercise>
   <exercise>
     <statement>
       <p>
-        If a matrix doesn't have an equilibrium point is there an ideal strategy for each player? Explain.
+        If a matrix does NOT have an equilibrium point is there an ideal strategy for each player? Explain.
       </p>
     </statement>
   </exercise>
@@ -91,4 +91,5 @@
       </p>
     </statement>
   </exercise>
+  <p>Now you should have an understanding of how to find equilibrium strategies in two-player zero-sum games. The main advantage of equilibrium strategies is that if both players play them, neither player would have gained by playing a different strategy. Thus, we can think of the equilibrium strategies as the solution to the game for two rational players. But what should our players do if the game has no equilibrium point? We will look more closely at games with no equilibrium point in the next chapter.</p>
 </section>

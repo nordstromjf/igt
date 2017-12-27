@@ -2,6 +2,23 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
   <title>Two-Person Zero-Sum Games</title>
   <introduction>
+
+    <sidebyside width="30%" margins="auto">
+    <image width="30%" source="images/image-2.svg">
+      <latex-image>
+        <![CDATA[\begin{tikzpicture}
+        \draw[step=1cm] (0,0) grid (2,2);
+        \shade[left color=red,right color=yellow] (0,0) rectangle (1,1);
+        \shade[left color=blue,right color=blue] (1,0) rectangle (2,1);
+
+        \shade[left color=blue,right color=blue] (0,1) rectangle (1,2);
+        \shade[left color=yellow,right color=red] (1,1) rectangle (2,2);
+
+        \end{tikzpicture}]]>
+      </latex-image>
+    </image>
+    </sidebyside>
+
     <p>
       In this chapter we will look at a specific type of two-player game. These are often the first games studied in game theory as they can be straightforward to analyze. All of our games in this chapter will have only two players. We will also focus on games in which one player's win is the other player's loss.
     </p>

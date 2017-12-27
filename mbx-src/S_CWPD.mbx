@@ -2,7 +2,7 @@
 <section xml:id="S_CWPD">
   <title>A Class-Wide Experiment</title>
   <p>
-    <index><main>Class-Wide Prisoner's Dilemma</main></index>
+    <idx><h>Class-Wide Prisoner's Dilemma</h></idx>
   </p>
 
   <p>
@@ -10,7 +10,7 @@
   </p>
 
   <p>
-    Each member of the class secretly chooses a single letter: <q>C</q> or <q>D,</q> standing for <q>cooperate</q><index><main>cooperate</main></index> or <q>defect.</q><index><main>defect</main></index> This will be used as your strategy choice in the following game with each of the other players in the class. Here is how it works for each pair of players: if they both cooperate, they get each get 3 points. If they both defect, they each get 1 point. If one cooperates and one defects, the cooperator gets nothing, but the defector gets 5 points. Your one choice of <q>C</q> or <q>D</q> will be used to play the game with all the other players in the class.
+    Each member of the class secretly chooses a single letter: <q>C</q> or <q>D,</q> standing for <q>cooperate</q><idx><h>cooperate</h></idx> or <q>defect.</q><idx><h>defect</h></idx> This will be used as your strategy choice in the following game with each of the other players in the class. Here is how it works for each pair of players: if they both cooperate, they get each get 3 points. If they both defect, they each get 1 point. If one cooperates and one defects, the cooperator gets nothing, but the defector gets 5 points. Your one choice of <q>C</q> or <q>D</q> will be used to play the game with all the other players in the class.
   </p>
 
   <p>
@@ -69,7 +69,7 @@
   <exercise xml:id="E_CWPDmatrix">
     <statement>
       <p>
-        Determine the payoff matrix for class-wide Prisoner's Dilemma. [Hint: although you played this game with each other person in the class, this is still a 2 person game!]
+        Determine the payoff matrix for class-wide Prisoner's Dilemma. (Hint: although you played this game with each other person in the class, this is still a 2 person game!)
       </p>
     </statement>
   </exercise>
@@ -93,7 +93,7 @@
   <exercise xml:id="E_CWPDsame">
     <statement>
       <p>
-        Now suppose everyone is equally (and perfectly) rational. AND everyone knows that everyone else is equally (and perfectly) rational. What should everyone choose? [Hint: if everyone knows that everyone will choose the same answer, what should everyone choose to do?]
+        Now suppose everyone is equally (and perfectly) rational. AND everyone knows that everyone else is equally (and perfectly) rational. What should everyone choose? (Hint: if everyone knows that everyone will choose the same answer, what should everyone choose to do?)
       </p>
     </statement>
   </exercise>
@@ -103,11 +103,11 @@
   <exercise xml:id="E_PDvariant1">
     <statement>
       <p>
-        Consider the game in <xref ref="T_PDvariant1">Table</xref>
+        Consider the game in <xref ref="T_PDvariant1"></xref>
       </p>
 
       <table xml:id="T_PDvariant1" >
-        <caption>Matrix for <xref ref="E_PDvariant1">Exercise</xref></caption>
+        <caption>Matrix for <xref ref="E_PDvariant1"></xref></caption>
         <tabular halign="center">
           <row>
             <cell></cell>
@@ -135,11 +135,11 @@
   <exercise xml:id="E_PDvariant2">
     <statement>
       <p>
-        Consider the game in <xref ref="T_PDvariant2">Table</xref>
+        Consider the game in <xref ref="T_PDvariant2"></xref>
       </p>
 
       <table xml:id="T_PDvariant2" >
-        <caption>Matrix for <xref ref="E_PDvariant2">Exercise</xref></caption>
+        <caption>Matrix for <xref ref="E_PDvariant2"></xref></caption>
         <tabular halign="center">
           <row>
             <cell></cell>
@@ -171,5 +171,5 @@
       </p>
     </statement>
   </exercise>
-  <p>Not every game where player's cooperate or defect is a Prisoner's Dilemma, or even a dilemma. You can certainly change the payoffs in the above matrices so that is is very clear what each player should do. But as you've seen with this section's experiment, there is something special about the Prisoner's Dilemma. Everyone does better if they all cooperate, but any one player does better to defect. The next section will look more specifically at what makes a game a Prisoner's Dilemma. </p>
+  <p>Not every game where player's cooperate or defect is a Prisoner's Dilemma, or even a dilemma. You can certainly change the payoffs in the above matrices so that it is very clear what each player should do. But as you've seen with this section's experiment, there is something special about the Prisoner's Dilemma. Everyone does better if they all cooperate, but any one player does better to defect. The next section will look more specifically at what makes a game a Prisoner's Dilemma. </p>
 </section>

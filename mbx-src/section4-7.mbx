@@ -2,12 +2,12 @@
 <section xml:id="S_RepeatPD">
   <title>Repeated Prisoner's Dilemma</title>
   <p>
-    In this section we look at two players playing Prisoner's Dilemma repeatedly. We call this game an <em>iterated</em> Prisoner's Dilemma<index><main>iterated Prisoner's Dilemma</main></index>.
-    Recall the general Prisoner's Dilemma matrix from previous sections, given again in <xref ref="T_CWPD3">Table</xref>.
+    In this section we look at two players playing Prisoner's Dilemma repeatedly. We call this game an <em>iterated</em> Prisoner's Dilemma<idx><h>iterated Prisoner's Dilemma</h></idx>.
+    Recall the general Prisoner's Dilemma matrix from previous sections, given again in <xref ref="T_CWPD3"></xref>.
   </p>
 
   <table xml:id="T_CWPD3" >
-    <caption>A Prisoner's Dilemma matrix</caption>
+    <caption>A Prisoner's Dilemma matrix.</caption>
         <tabular>
           <row>
             <cell></cell>
@@ -40,14 +40,14 @@
   <exercise xml:id="E_internetpurchaseonce">
     <statement>
       <p>
-        Suppose the above matrix represents the situation of purchasing an item (say, a used textbook) on the internet where both parties are untraceable. You agree to send the money at the same time that the seller agrees to send the book. Then we can think of Cooperating as each of you sending money/ book, and Defecting as not sending money/ book. What should you do and why?
+        Suppose the above matrix represents the situation of purchasing an item (say, a used textbook) on the internet where both parties are untraceable. You agree to send the money at the same time that the seller agrees to send the book. Then we can think of Cooperating as each of you sending money/ book, and Defecting as not sending money/ book. Why might a player Cooperate? Why might a player Defect?
       </p>
     </statement>
   </exercise>
   <exercise xml:id="E_internetpurchaserepeat">
     <statement>
       <p>
-        Now suppose you wish to continue to do business with the other party. For example, instead of buying a used textbook, maybe you are buying music downloads. What should you do and why?
+        Now suppose you wish to continue to do business with the other party. For example, instead of buying a used textbook, maybe you are buying music downloads. Why might a player cooperate? Why might a player defect? Do these resons differ from your reasons in <xref ref="E_internetpurchaseonce"></xref>?
       </p>
     </statement>
   </exercise>
@@ -57,7 +57,7 @@
   <exercise xml:id="E_RPDstrategy">
     <statement>
       <p>
-        Suggest a strategy for playing the Prisoner's Dilemma in <xref ref="T_CWPD3">Table</xref> repeatedly. DON'T SHARE YOUR STRATEGY WITH ANYONE YET!
+        Suggest a strategy for playing the Prisoner's Dilemma in <xref ref="T_CWPD3"></xref> repeatedly. DON'T SHARE YOUR STRATEGY WITH ANYONE YET!
       </p>
     </statement>
   </exercise>
@@ -88,7 +88,7 @@
       </p></li>
 
     <li><p>
-        Strategy: <term>Tit for Tat.</term> Your strategy is to play whatever your opponent just played. Your first move is to COOPERATE (C), but then you need to repeat your opponent's last move.
+        Strategy: <term>Tit for Tat.</term><idx><h>Tit for Tat strategy</h></idx> Your strategy is to play whatever your opponent just played. Your first move is to COOPERATE (C), but then you need to repeat your opponent's last move.
       </p></li>
 
     <li><p>
@@ -132,7 +132,7 @@
   <exercise xml:id="E_RPDbeststrategies">
     <statement>
       <p>
-        Describe the strategy or strategies that had the highest scores in the tournament. Does this seem surprising? Why or why not? How do the winning strategies compare to the strategy you suggested in <xref ref="E_RPDstrategy">Exercise</xref>?
+        Describe the strategy or strategies that had the highest scores in the tournament. Does this seem surprising? Why or why not? How do the winning strategies compare to the strategy you suggested in <xref ref="E_RPDstrategy"></xref>?
       </p>
     </statement>
   </exercise>
@@ -185,7 +185,7 @@
       </p>
     </statement>
   </exercise>
-  <p>The TIT-FOR-TAT strategy is particularly interesting in an iterated Prisoner's Dilemma. It has a few special characteristics that lead to success. First it is <em>responsive</em> in that it responds to the strategy of the other player. If the other player is cooperating, the TIT-FOR-TAT strategy will be able to gain the 3 points on each round. If the other player is defecting, it will defect so as to not keep getting the sucker's payoff of 0. The random strategies and pure strategies, for example, are not responsive. They do respond to how the other player is playing. Chances are when you played in the tournament, you wanted to be able to change your strategy to respond to how your opponent was playing. </p>
+  <p>The TIT-FOR-TAT strategy is particularly interesting in an iterated Prisoner's Dilemma. It has a few special characteristics that lead to success. First it is <em>responsive</em> in that it responds to the strategy of the other player. If the other player is cooperating, the TIT-FOR-TAT strategy will be able to gain the 3 points on each round. If the other player is defecting, it will defect so as to not keep getting the sucker's payoff of 0. The random strategies and pure strategies, for example, are not responsive. They do not respond to how the other player is playing. Chances are when you played in the tournament, you wanted to be able to adapt your strategy to respond to how your opponent was playing. </p>
 
   <p>The TIT-FOR-TAT strategy is also <em>nice</em> in that it starts by cooperating. If it meets another cooperator it will continue to cooperate. If the opponent at some point begins cooperating, it will, too. However, it is also <em>unexploitable</em>. This means that a defector cannot take advantage of the <q>niceness.</q> It <q>punishes</q> any defection with an in-kind defection.</p>
 

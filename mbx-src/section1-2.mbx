@@ -11,15 +11,15 @@
   <subsection xml:id="Ex_MatchPennies">
     <title>Example: Matching Pennies</title>
     <p>
-      <index><main>Matching Pennies</main></index>
+      <idx><h>Matching Pennies</h></idx>
     </p>
 
     <p>
-      Suppose each player has two choices: Heads (H) or Tails (T). If they choose the same letter, then Player 1 wins <dollar />1 from Player 2. If they don't match, then Player 1 loses <dollar />1 to Player 2. We can represent all the possible outcomes of the game with a <em>matrix</em><index><main>game matrix</main></index>.
+      Suppose each player has two choices: Heads (H) or Tails (T). If they choose the same letter, then Player 1 wins <dollar />1 from Player 2. If they don't match, then Player 1 loses <dollar />1 to Player 2. We can represent all the possible outcomes of the game with a <em>matrix</em><idx><h>game matrix</h></idx>.
     </p>
 
     <p>
-      Player 1's options will always correspond to the rows of the matrix, and Player 2's options will correspond to the columns. See <xref ref="T_template">Table</xref>.
+      Player 1's options will always correspond to the rows of the matrix, and Player 2's options will correspond to the columns. See <xref ref="T_template"></xref>.
     </p>
 
     <table xml:id="T_template" >
@@ -54,17 +54,17 @@
     <definition>
       <statement>
         <p>
-          A <term>payoff</term><index><main>payoff</main></index> is the amount a player receives for given outcome of the game.
+          A <term>payoff</term><idx><h>payoff</h></idx> is the amount a player receives for given outcome of the game.
         </p>
       </statement>
     </definition>
 
     <p>
-      Now we can fill in the matrix with each player's payoff. Since the payoffs to each player are different, we will use ordered pairs where the first number is Player 1's payoff and the second number is Player 2's payoff. The ordered pair is called the <em>payoff vector</em><index><main>payoff vector</main></index>. For example, if both players choose H, then Player 1's payoff is <dollar />1 and Player 2's payoff is -<dollar />1 (since he loses to Player 1). Thus the payoff vector associated with the outcome H, H is <m>(1, -1)</m>.
+      Now we can fill in the matrix with each player's payoff. Since the payoffs to each player are different, we will use ordered pairs where the first number is Player 1's payoff and the second number is Player 2's payoff. The ordered pair is called the <em>payoff vector</em><idx><h>payoff vector</h></idx>. For example, if both players choose H, then Player 1's payoff is <dollar />1 and Player 2's payoff is -<dollar />1 (since he loses to Player 1). Thus the payoff vector associated with the outcome H, H is <m>(1, -1)</m>.
     </p>
 
     <p>
-      We fill in the matrix with the appropriate payoff vectors in <xref ref="T_matchpennies">Table</xref>
+      We fill in the matrix with the appropriate payoff vectors in <xref ref="T_matchpennies"></xref>
     </p>
 
     <table xml:id="T_matchpennies" >
@@ -112,11 +112,11 @@
 
     <ul>
       <li><p>
-          Our players are <em>self-interested</em><index><main>self-interested</main></index>. This means they will always prefer the largest  possible payoff. They will choose a strategy which maximizes their payoff.
+          Our players are <em>self-interested</em><idx><h>self-interested</h></idx>. This means they will always prefer the largest  possible payoff. They will choose a strategy which maximizes their payoff.
         </p></li>
 
       <li><p>
-          Our players are <em>perfectly logical</em><index><main>perfectly logical</main></index>. This means they will use all the information available and make the wisest choice for themselves.
+          Our players are <em>perfectly logical</em><idx><h>perfectly logical</h></idx>. This means they will use all the information available and make the wisest choice for themselves.
         </p></li>
     </ul>
     </p>
@@ -147,11 +147,11 @@
     <example xml:id="E_Sec2_2small">
       <statement>
         <p>
-          Suppose two players are playing a game in which they can choose A or B with the payoffs given in the game matrix in <xref ref="T_matrixEx1Sec2_2">Table</xref>.
+          Suppose two players are playing a game in which they can choose A or B with the payoffs given in the game matrix in <xref ref="T_matrixEx1Sec2_2"></xref>.
         </p>
 
         <table xml:id="T_matrixEx1Sec2_2" >
-          <caption>Payoff matrix for <xref ref="E_SolveSec2_2small">Exercise</xref></caption>
+          <caption>Payoff matrix for <xref ref="E_SolveSec2_2small"></xref></caption>
           <tabular>
             <row>
               <cell></cell>
@@ -216,11 +216,11 @@
     <example xml:id="E_Sec2_2large">
       <statement>
         <p>
-          Suppose there are two players with the game matrix given in <xref ref="T_matrixEx2Sec2_2">Table</xref>.
+          Suppose there are two players with the game matrix given in <xref ref="T_matrixEx2Sec2_2"></xref>.
         </p>
 
         <table xml:id="T_matrixEx2Sec2_2" >
-          <caption>Payoff matrix for <xref ref="E_SolveSec2_2large">Exercise</xref></caption>
+          <caption>Payoff matrix for <xref ref="E_SolveSec2_2large"></xref></caption>
           <tabular>
             <row>
               <cell></cell>

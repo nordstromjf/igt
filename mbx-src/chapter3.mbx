@@ -2,6 +2,29 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
   <title>Repeated Two-Person Zero-sum Games</title>
   <introduction>
+
+     <sidebyside width="30%" margins="auto">
+    <image width="30%" source="images/image-6.svg">
+      <latex-image>
+        <![CDATA[\begin{tikzpicture}
+        \draw[step=1cm] (0,0) grid (3,3);
+        \shade[left color=green,right color=blue] (0,0) rectangle (1,1);
+        \shade[left color=blue,right color=green] (1,0) rectangle (2,1);
+        \shade[left color=yellow,right color=yellow] (2,0) rectangle (3,1);
+
+        \shade[left color=blue,right color=green] (0,1) rectangle (1,2);
+        \shade[left color=yellow,right color=yellow] (1,1) rectangle (2,2);
+        \shade[left color=green,right color=blue] (2,1) rectangle (3,2);
+
+        \shade[left color=yellow,right color=yellow] (0,2) rectangle (1,3);
+        \shade[left color=green,right color=blue] (1,2) rectangle (2,3);
+        \shade[left color=blue,right color=green] (2,2) rectangle (3,3);
+
+
+        \end{tikzpicture}]]>
+      </latex-image>
+    </image>
+    </sidebyside>
     <p>
       If we are presented with a two-person zero-sum game we know that our first step is to look for an equilibrium point. If a game has an equilibrium point, then we know that our players should play the corresponding strategy pair. In this case the equilibrium pair and its payoff vector is the <q>solution</q> to the game. In this chapter we will explore games that do not necessarily have an equilibrium point. We will also try to determine what a player should do if they play the game repeatedly.
     </p>

@@ -2,15 +2,15 @@
 <section xml:id="S_PDconditions">
   <title>What Makes a Prisoner's Dilemma?</title>
   <p>
-    In this section we give mathematical description of Prisoner's Dilemma and compare it to some similar games.
+    In this section we give a mathematical description of Prisoner's Dilemma and compare it to some similar games.
   </p>
 
   <p>
-    The Class-wide Prisoner's Dilemma game we played has the payoff matrix given in <xref ref="T_CWPD">Table</xref> for each pair of players.
+    The Class-wide Prisoner's Dilemma game we played in <xref ref="S_CWPD"></xref> has the payoff matrix given in <xref ref="T_CWPD"></xref> for each pair of players.
   </p>
 
   <table xml:id="T_CWPD" >
-    <caption>Class-wide Prisoner's Dilemma</caption>
+    <caption>A Class-wide Prisoner's Dilemma.</caption>
     <tabular>
       <row>
         <cell></cell>
@@ -94,11 +94,11 @@
   <exercise xml:id="E_PDshow">
     <statement>
       <p>
-        Recall the matrix for Prisoner's Dilemma from <xref ref="E_PrisonersDilemma">Example</xref>.
+        Recall the matrix for Prisoner's Dilemma from <xref ref="E_PrisonersDilemma"></xref>.
       </p>
 
       <table>
-        <caption>Prisoner's Dilemma (again)</caption>
+        <caption>Prisoner's Dilemma (again).</caption>
         <tabular>
           <row>
             <cell></cell>
@@ -134,11 +134,11 @@
   <exercise xml:id="E_chickenshow">
     <statement>
       <p>
-        Recall the matrix for Chicken from <xref ref="E_Chicken">Example</xref>.
+        Recall the matrix for Chicken from <xref ref="E_Chicken"></xref>.
       </p>
 
       <table>
-        <caption>Chicken (again)</caption>
+        <caption>Chicken (again).</caption>
         <tabular>
           <row>
             <cell></cell>
@@ -208,12 +208,12 @@
   <exercise xml:id="E_conditionscompare">
     <statement>
       <p>
-        The games in <xref ref="E_chickenshow">Exercises</xref>, <xref ref="E_conditionspractice1"></xref>, and <xref ref="E_conditionspractice2"></xref> are not true Prisoner's Dilemmas. For each game, how do the changes in payoffs affect how you play? In particular, in Prisoner's Dilemma, a player will generally choose to defect. This results in a non-optimal payoff for each player. Is this still true in <xref ref="E_chickenshow">Exercises</xref>, <xref ref="E_conditionspractice1"></xref>, and <xref ref="E_conditionspractice2"></xref>? If possible, use the changes in the conditions (A) and (B) to help explain any differences in how one should play.
+        The games in <xref ref="E_chickenshow"></xref>, <xref ref="E_conditionspractice1"></xref>, and <xref ref="E_conditionspractice2"></xref> are not true Prisoner's Dilemmas. For each game, how do the changes in payoffs affect how you play? In particular, in Prisoner's Dilemma, a player will generally choose to defect. This results in a non-optimal payoff for each player. Is this still true in <xref ref="E_chickenshow"></xref>, <xref ref="E_conditionspractice1"></xref>, and <xref ref="E_conditionspractice2"></xref>? If possible, use the changes in the conditions (A) and (B) to help explain any differences in how one should play.
       </p>
     </statement>
   </exercise>
   <p>
-    We can now define <em>defection</em><index><main>defection</main></index> as the idea that if everyone did it, things would be worse for everyone. Yet, if only one (or a small) number did it, life would be sweeter for that individual. We can define <em>cooperation</em><index><main>cooperation</main></index> as the act of resisting temptation for the betterment of all players.
+    We can now define <em>defection</em><idx><h>defection</h></idx> as the idea that if everyone did it, things would be worse for everyone. Yet, if only one (or a small) number did it, life would be sweeter for that individual. We can define <em>cooperation</em><idx><h>cooperation</h></idx> as the act of resisting temptation for the betterment of all players.
   </p>
   <exercise xml:id="E_reallifeex">
     <statement>

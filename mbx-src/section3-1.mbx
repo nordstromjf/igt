@@ -27,13 +27,13 @@
   </p>
 
   <p>
-    Although we use the term <q>strategy</q> to mean which row (or column) a player chooses to play, we will also refer to how a player plays a repeated game as the player's strategy<index><main>strategy, repeated game</main></index>. In order to avoid confusion, in repeated games we will define some specific strategies.
+    Although we use the term <q>strategy</q> to mean which row (or column) a player chooses to play, we will also refer to how a player plays a repeated game as the player's strategy<idx><h>strategy, repeated game</h></idx>. In order to avoid confusion, in repeated games we will define some specific strategies.
   </p>
 
   <definition>
     <statement>
       <p>
-        In a repeated game, if a player always plays the same row (or column), we say that she is playing a <term>pure strategy</term>.<index><main>pure strategy</main></index><index><main>strategy, pure</main></index>
+        In a repeated game, if a player always plays the same row (or column), we say that she is playing a <term>pure strategy</term>.<idx><h>pure strategy</h></idx><idx><h>strategy, pure</h></idx>
       </p>
     </statement>
   </definition>
@@ -45,17 +45,17 @@
   <definition>
     <statement>
       <p>
-        If a player varies which row (or column) he plays, then we say he is playing a <term>mixed strategy</term>.<index><main>mixed strategy</main></index><index><main>strategy, mixed</main></index>
+        If a player varies which row (or column) he plays, then we say he is playing a <term>mixed strategy</term>.<idx><h>mixed strategy</h></idx><idx><h>strategy, mixed</h></idx>
       </p>
     </statement>
   </definition>
 
   <p>
-    For example, if a player plays Row A 40<percent /> of the time and Row B 60<percent /> of the time, we will say he is playing a (.4, .6) strategy, as we generally use the probability rather that the percent. The probabilities of each strategy will be listed in the same order as the strategies in the matrix.
+    For example, if a player plays Row A 40<percent /> of the time and Row B 60<percent /> of the time, we will say he is playing a (.4, .6) strategy, as we generally use the probability rather than the percent. The probabilities of each strategy will be listed in the same order as the strategies in the matrix.
   </p>
 
   <p>
-    It is not enough just to determine how often to play a strategy. Suppose Player 1 just alternates rows in <xref ref="E_smallrepeat">Example</xref>. Can Player 2 <q>out-guess</q> Player 1? What might be a better way for Player 1 to play?
+    It is not enough just to determine how often to play a strategy. Suppose Player 1 just alternates rows in <xref ref="E_smallrepeat"></xref>. Can Player 2 <q>out-guess</q> Player 1? What might be a better way for Player 1 to play?
   </p>
 
   <p>
@@ -80,37 +80,37 @@
   </example>
 
   <p>
-    Thus, if the game has an equilibrium we know that players will play the pure strategies determined by the equilibrium pairs. So let's get back to thinking about games without equilibrium pairs. If we play such a game once, can we predict the outcome? What about if we repeat the game several times<ndash /> can we predict the outcome? Think about tossing a coin. If you toss it once, can you predict the outcome? What if you toss it 100 times<ndash /> can you predict the outcome? Not exactly, but we can say what we <em>expect</em>: if we toss a coin 100 times we expect to have half of the coins turn up heads and half turn up tails. This may not be the <em>actual</em> outcome, but it is a reasonable prediction. Now is a good time to remind yourself about finding the <em>expected value</em><index><main>expected value</main></index>!!
+    Thus, if the game has an equilibrium we know that players will play the pure strategies determined by the equilibrium pairs. So let's get back to thinking about games without equilibrium pairs. If we play such a game once, can we predict the outcome? What about if we repeat the game several times<ndash /> can we predict the outcome? Think about tossing a coin. If you toss it once, can you predict the outcome? What if you toss it 100 times<ndash /> can you predict the outcome? Not exactly, but we can say what we <em>expect</em>: if we toss a coin 100 times we expect to have half of the coins turn up heads and half turn up tails. This may not be the <em>actual</em> outcome, but it is a reasonable prediction. Now is a good time to remind yourself about finding the <em>expected value</em><idx><h>expected value</h></idx>!!
   </p>
 
   <p>
-    Recall the familiar game <em>Rock-Paper-Scissors</em>: ROCK beats SCISSORS, SCISSORS beat PAPER, and PAPER beats ROCK. Using the payoff matrix and experimentation, we will try to determine the best strategy for this game.
+    Recall the familiar game <em>Rock-Paper-Scissors</em><idx><h>Rock-Paper-Scissors</h></idx>: ROCK beats SCISSORS, SCISSORS beat PAPER, and PAPER beats ROCK. Using the payoff matrix and experimentation, we will try to determine the best strategy for this game.
   </p>
   <exercise xml:id="E_RPSmatrix">
     <statement>
       <p>
-        Construct a game matrix for Rock-Paper-Scissors (RPS).
+        Construct a game matrix for Rock-Paper-Scissors.
       </p>
     </statement>
   </exercise>
   <exercise xml:id="E_RPSzs">
     <statement>
       <p>
-        Is RPS a zero-sum game? Does it have an equilibrium point? Explain.
+        Is Rock-Paper-Scissors a zero-sum game? Does it have an equilibrium point? Explain.
       </p>
     </statement>
   </exercise>
   <exercise xml:id="E_RPSplay">
     <statement>
       <p>
-        We want to look at what happens if we repeat this game. Play the game ten times with an opponent. Record the results (list strategy pairs and payoffs for each player).
+        We want to look at what happens if we repeat Rock-Paper-Scissors. Play the game ten times with an opponent. Record the results (list strategy pairs and payoffs for each player).
       </p>
     </statement>
   </exercise>
   <exercise xml:id="E_RPSconjstrat">
     <statement>
       <p>
-        Describe any strategy you used.
+        Describe any strategy you used in <xref ref="E_RPSplay"></xref>.
       </p>
     </statement>
   </exercise>
@@ -124,17 +124,17 @@
   <exercise xml:id="E_RPSshare">
     <statement>
       <p>
-        Discuss your strategy with someone else in the class (it can be your opponent). After sharing your ideas for strategy, can you improve your previous strategy?
+        Discuss your strategy with someone else in the class (it can be your opponent). After sharing your ideas for a strategy, can you improve your previous strategy?
       </p>
     </statement>
   </exercise>
   <p>
-    Although you may have come up with a good strategy, let's see if we can't decide what the <q>best</q> strategy should be for RPS. Let's assume we are playing RPS against the smartest player to ever live. We will call such an opponent the <q>perfect</q> player.
+    Although you may have come up with a good strategy, let's see if we can't decide what the <q>best</q> strategy should be for Rock-Paper-Scissors. Let's assume we are playing Rock-Paper-Scissors against the smartest player to ever live. We will call such an opponent the <q>perfect</q> player.
   </p>
   <exercise xml:id="E_RPSpure">
     <statement>
       <p>
-        Explain why it is not a good idea to play a pure strategy; i.e. to play only ROCK, only PAPER, or only SCISSORS.
+        Explain why it is not a good idea to play a pure strategy; i.e., to play only ROCK, only PAPER, or only SCISSORS.
       </p>
     </statement>
   </exercise>
@@ -172,7 +172,7 @@
   <exercise xml:id="E_RPSdice">
     <statement>
       <p>
-        Let's check our prediction. Using a die, let 1 and 2 represent ROCK, 3 and 4 represent PAPER, and 5 and 6 represent SCISSORS. Play the game 20 times with someone in class where each player rolls to determine the choice of R, P, or S. Keep track of the strategy pairs and payoffs. What was the total payoff for each player? [At this point, if you still feel that you have a better strategy, try your strategy against the random one<ndash /> see what happens!]
+        Let's check our prediction. Using a die, let 1 and 2 represent ROCK, 3 and 4 represent PAPER, and 5 and 6 represent SCISSORS. Play the game 20 times with someone in class where each player rolls to determine the choice of ROCK, PAPER, or SCISSORS. Keep track of the strategy pairs and payoffs. What was the total payoff for each player? [At this point, if you still feel that you have a better strategy, try your strategy against the random one<ndash /> see what happens!]
       </p>
     </statement>
   </exercise>
@@ -184,7 +184,7 @@
     </statement>
   </exercise>
   <p>
-    Using ideas about probability and expected value we can more precisely answer <xref ref="E_RPSdicecompare">Exercise</xref>.
+    Using ideas about probability and expected value we can more precisely answer <xref ref="E_RPSdicecompare"></xref>.
   </p>
   <exercise xml:id="E_RPSproboutcomes">
     <statement>
@@ -196,14 +196,14 @@
   <exercise xml:id="E_RPSexpval">
     <statement>
       <p>
-        Using the probabilities and payoffs from <xref ref="E_RPSproboutcomes">Exercise</xref> calculate the expected value of the game for each player.
+        Using the probabilities and payoffs from <xref ref="E_RPSproboutcomes"></xref> calculate the expected value of the game for each player.
       </p>
     </statement>
   </exercise>
   <exercise xml:id="E_smallrepeatstrat">
     <statement>
       <p>
-        Now consider the matrix from <xref ref="E_smallrepeat">Example</xref> above:
+        Now consider the matrix from <xref ref="E_smallrepeat"></xref> above:
         <me>
           \left[\begin{matrix}1\amp 0\\
           -1\amp 2
@@ -212,9 +212,9 @@
       </p>
 
       <p>
-        See if you can determine how often Player 1 should play each row, and how often Player 2 should play each column. Try testing your proposed strategy (you may be able to use a variation on the dice as we saw in <xref ref="E_RPSdice">Exercise</xref>). Write up any conjectured strategies and the results from playing the game with your strategy. Do you think you have come up with the best strategy? Explain.
+        See if you can determine how often Player 1 should play each row, and how often Player 2 should play each column. Try testing your proposed strategy (you may be able to use a variation on the dice as we saw in <xref ref="E_RPSdice"></xref>). Write up any conjectured strategies and the results from playing the game with your strategy. Do you think you have come up with the best strategy? Explain.
       </p>
     </statement>
   </exercise>
-  <p>You may have had an idea about the best way to play Rock-Paper-Scissors before working through this section, but how can we find solutions to other games, such as the one in <xref ref="E_smallrepeatstrat">Exercise</xref>? We don't want to just use a <q>guess and check</q> method. Especially since there are infinitely many possible mixed strategies to try! The rest of the chapter will develop mathematical methods for solving repeated games with no equilibrium point.</p>
+  <p>You may have had an idea about the best way to play Rock-Paper-Scissors before working through this section, but how can we find solutions to other games, such as the one in <xref ref="E_smallrepeatstrat"></xref>? We don't want to just use a <q>guess and check</q> method. Especially since there are infinitely many possible mixed strategies to try! The rest of the chapter will develop mathematical methods for solving repeated games with no equilibrium point.</p>
 </section>

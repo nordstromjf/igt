@@ -10,7 +10,7 @@
   <subsection>
     <title>Some Basic Probability</title>
     <p>
-      <index><main>probability</main></index>
+      <idx><h>probability</h></idx>
     </p>
 
     <p>
@@ -22,7 +22,7 @@
     </p>
 
     <p>
-      The <em>probability</em><index><main>probability</main></index> of an event <m>E</m> is the number of different outcomes resulting in <m>E</m> divided by the total number of equally likely outcomes. In mathematical symbols,
+      The <em>probability</em><idx><h>probability</h></idx> of an event <m>E</m> is the number of different outcomes resulting in <m>E</m> divided by the total number of equally likely outcomes. In mathematical symbols,
       <me>
         P(E)=\frac{\mbox{number of different outcomes resulting in \(E\)} }{\mbox{total number of equally likely outcomes} }.
       </me>
@@ -43,7 +43,7 @@
         </p>
 
         <p>
-          <em>Answer:</em> You might say since there are four suits, and one of the suits is hearts, you have a probability of <m>\frac{1}{4}</m>. You'd be correct, but be careful with this reasoning. This works because each suit has the same number of cards, so each suit is <em>equally likely</em><index><main>equally likely events</main></index>. Another way the calculate the probability is to count the number of hearts (13) divided by the number of cards (52). Thus, we get a probability of <m>\frac{13}{52}=\frac{1}{4}=0.25</m>.
+          <em>Answer:</em> You might say since there are four suits, and one of the suits is hearts, you have a probability of <m>\frac{1}{4}</m>. You'd be correct, but be careful with this reasoning. This works because each suit has the same number of cards, so each suit is <em>equally likely</em><idx><h>equally likely events</h></idx>. Another way the calculate the probability is to count the number of hearts (13) divided by the number of cards (52). Thus, we get a probability of <m>\frac{13}{52}=\frac{1}{4}=0.25</m>.
         </p>
       </statement>
     </example>
@@ -117,7 +117,7 @@
 
         <ol label="a">
           <li><p>
-              Does this change the number of equally likely outcomes from <xref ref="E_redgreendice">Exercise</xref>? Why or why not? It may be helpful to list the possible outcomes.
+              Does this change the number of equally likely outcomes from <xref ref="E_redgreendice"></xref>? Why or why not? It may be helpful to list the possible outcomes.
             </p></li>
 
           <li><p>
@@ -165,20 +165,20 @@
       </statement>
     </exercise>
     <p>
-      It is important to note that just because you can list all of the possible outcomes, they may not be equally likely. As we see from <xref ref="E_sumdice">Exercise</xref>, although there are 11 possible sums, the probability of getting any particular sum (such as seven) is <em>not</em> <m>\frac{1}{11}</m>.
+      It is important to note that just because you can list all of the possible outcomes, they may not be equally likely. As we see from <xref ref="E_sumdice"></xref>, although there are 11 possible sums, the probability of getting any particular sum (such as seven) is <em>not</em> <m>\frac{1}{11}</m>.
     </p>
   </subsection>
 
   <subsection>
     <title>Expected Value</title>
     <p>
-      <index><main>expected value</main></index>
+      <idx><h>expected value</h></idx>
     </p>
 
     <definition xml:id="D_expectedvalue">
       <statement>
         <p>
-          The <term>expected value</term><index><main>expected value</main></index> of a game of chance is the average net gain or loss that we would expect per game if we played the game many times. We compute the expected value by multiplying the value of each outcome by its probability of occurring and then add up all of the products.
+          The <term>expected value</term><idx><h>expected value</h></idx> of a game of chance is the average net gain or loss that we would expect per game if we played the game many times. We compute the expected value by multiplying the value of each outcome by its probability of occurring and then add up all of the products.
         </p>
       </statement>
     </definition>
@@ -203,7 +203,7 @@
     <exercise>
       <statement>
         <p>
-        Now play the game in <xref ref="E_Toss2coins">Exercise</xref> the indicated number of times. Give your actual payoff and compare it to the expected value.
+        Now play the game in <xref ref="E_Toss2coins"></xref> the indicated number of times. Give your actual payoff and compare it to the expected value.
 
         <ol label="a">
           <li><p>
@@ -235,17 +235,20 @@
     <exercise>
       <statement>
         <p>
-          Considering again the roulette wheel, if you bet <dollar />100 on a particular number and the ball lands on that number, you win <dollar />3600. What is the expected value of betting <dollar />100 on red 4?
+          Considering again the roulette wheel, if you bet <dollar />100 on a particular number and the ball lands on that number, you win <dollar />3600. What is the expected value of betting <dollar />100 on Red 4?
         </p>
       </statement>
     </exercise>
+
+    <p>After finding the expected value of the games in the above exercises, what do you think the expected value can tell us about a game? Can you use it to decide whether you should play that game of chance or not? When will a game be advantageous for the player? We often care whether a game is <q>fair.</q> Can the expected value help you determine if a game is fair?</p>
     <exercise>
       <statement>
         <p>
-          Use the idea of expected value to explain <q>fairness</q> in a game of chance. Can the expected value help you determine if a game is fair?
+          Use the idea of expected value to explain <q>fairness</q> in a game of chance. 
         </p>
       </statement>
     </exercise>
+    <p>The last exercise is a good challenge for exploring expected value.</p>
     <exercise>
       <statement>
         <p>
@@ -253,5 +256,6 @@
         </p>
       </statement>
     </exercise>
+    <p>In the next section we use the ideas of probability and expected value to understand how set up a payoff matrix for a game of chance.</p>
   </subsection>
 </section>

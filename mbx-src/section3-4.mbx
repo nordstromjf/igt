@@ -8,7 +8,7 @@
   <example xml:id="liarspoker">
     <statement>
       <p>
-        <term>Liar's Poker:</term><index><main>Liar's Poker</main></index>
+        <term>Liar's Poker:</term><idx><h>Liar's Poker</h></idx>
         We begin with a deck of cards which has 50<percent /> aces (A) and 50<percent /> kings (K). Aces rank higher than kings. Player 1 is dealt one card, face down. Player 1 can look at the card, but does not show the card to Player 2. Player 1 then says <q>ace</q> or <q>king</q> depending on what his card is. Player 1 can either tell the truth and say what the card is (T), or he can bluff and say that he has a higher ranking card (B). Note that if Player 1 has an ace, he must tell the truth since there are no higher ranking cards. However, if he is dealt a king, he can bluff, by saying he has an ace. If Player 1 says <q>king</q> the game ends and both players break even. If Player 1 says <q>ace</q> then Player 2 can either call (C) or fold (F). If Player 2 folds, then Player 1 wins <dollar />0.50. If Player 2 calls and Player 1 does not have an ace, then Player 2 wins <dollar />1. If Player 2 calls and Player 1 does have an ace, then Player 1 wins <dollar />1.
       </p>
     </statement>
@@ -17,26 +17,26 @@
   <exercise xml:id="E_PlayLP">
     <statement>
       <p>
-        Choose an opponent and play the game several times. Be sure to play the game as Player 1 and as Player 2. This is important for understanding the game. Keep track of the outcomes.
+        Choose an opponent and play Liar's Poker several times. Be sure to play the game as Player 1 and as Player 2. This is important for understanding the game. Keep track of the outcomes.
       </p>
     </statement>
   </exercise>
   <exercise xml:id="E_LPguessstrat">
     <statement>
       <p>
-        Just from playing the game several times, can you suggest a strategy for Player 1? What about for Player 2? Does this game seem fair, or does one of the players seem to have an advantage? Explain your answers.
+        Just from playing Liar's Poker several times, can you suggest a strategy for Player 1? What about for Player 2? Does this game seem fair, or does one of the players seem to have an advantage? Explain your answers.
       </p>
     </statement>
   </exercise>
   <exercise xml:id="E_LPguessmatrix">
     <statement>
       <p>
-        In order to formally analyze this game, we should find the payoff matrix. Do your best to find the payoff matrix. In a single hand of Liar's Poker, what are the possible strategies for Player 1? What are the possible strategies for Player 2? Determine any payoffs that you can.
+        In order to formally analyze Liar's Poker, we should find the payoff matrix. Do your best to find the payoff matrix. In a single hand of Liar's Poker, what are the possible strategies for Player 1? What are the possible strategies for Player 2? Determine any payoffs that you can.
       </p>
     </statement>
   </exercise>
   <p>
-    Finding the payoff matrix in <xref ref="E_LPguessmatrix">Exercise</xref> is probably more challenging than it appears. Eventually we want to employ the same method for finding the payoff matrix that we used in One-Card Stud Poker from <xref ref="E_onecardstud">Example</xref> in Chapter 2, but first we need to understand each player's strategies, and the resulting payoffs. We begin with the fact that Player 1 can be dealt an ace or a king.
+    Finding the payoff matrix in <xref ref="E_LPguessmatrix"></xref> is probably more challenging than it appears. Eventually we want to employ the same method for finding the payoff matrix that we used in One-Card Stud Poker from <xref ref="E_onecardstud"></xref> in Chapter 2, but first we need to understand each player's strategies, and the resulting payoffs. We begin with the fact that Player 1 can be dealt an ace or a king.
   </p>
   <exercise xml:id="E_LPP1Ace">
     <statement>
@@ -86,7 +86,7 @@
   <exercise xml:id="E_LPmatrix">
     <statement>
       <p>
-        Using the expected values you calculated in <xref ref="E_LPBC">Exercise</xref>, <xref ref="E_LPBF"></xref>, <xref ref="E_LPTC"></xref>, and <xref ref="E_LPTF"></xref>, set up the <m>2 \times 2</m> payoff matrix for Liar's Poker.
+        Using the expected values you calculated in <xref ref="E_LPBC"></xref>, <xref ref="E_LPBF"></xref>, <xref ref="E_LPTC"></xref>, and <xref ref="E_LPTF"></xref>, set up the <m>2 \times 2</m> payoff matrix for Liar's Poker.
       </p>
     </statement>
   </exercise>
@@ -94,7 +94,7 @@
   <exercise xml:id="E_LPpureequil">
     <statement>
       <p>
-        Using the payoff matrix you found in <xref ref="E_LPmatrix">Exercise</xref>, does Liar's Poker have a pure strategy equilibrium? Explain.
+        Using the payoff matrix you found in <xref ref="E_LPmatrix"></xref>, does Liar's Poker have a pure strategy equilibrium? Explain.
       </p>
     </statement>
   </exercise>
@@ -108,21 +108,21 @@
   <exercise xml:id="E_LPcompare">
     <statement>
       <p>
-        Compare your solution from <xref ref="E_LPmixedequil">Exercise</xref> to your conjectured strategy from <xref ref="E_LPguessstrat">Exercise</xref>.
+        Compare your solution from <xref ref="E_LPmixedequil"></xref> to your conjectured strategy from <xref ref="E_LPguessstrat"></xref>.
       </p>
     </statement>
   </exercise>
   <exercise xml:id="E_LPexpectedvalue">
     <statement>
       <p>
-        What is the expected value of the game for each player? How much would Player 1 expect to win if he played 15 games using the equilibrium mixed strategy?
+        What is the expected value of the game for each player? How much would Player 1 expect to win if she played 15 games using the equilibrium mixed strategy?
       </p>
     </statement>
   </exercise>
   <exercise xml:id="E_LPfair">
     <statement>
       <p>
-        Is this game fair? Explain. Again, compare your answer to your conjecture in <xref ref="E_LPguessstrat">Exercise</xref>.
+        Is this game fair? Explain. Again, compare your answer to your conjecture in <xref ref="E_LPguessstrat"></xref>.
       </p>
     </statement>
   </exercise>

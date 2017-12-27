@@ -3,14 +3,14 @@
   <title>Players and Strategies</title>
   <introduction>
     <p>
-      In this book most of the games will be played by two <em>players</em><index><main>player</main></index>. Each player must decide how he or she will play the game. In order to study games mathematically, we need to make some assumptions about how the players should play the game. This allows us to be able to better predict what our players should do. The following example illustrates the characteristics we will assume about our players.
+      In this book most of the games will be played by two <em>players</em><idx><h>player</h></idx>. Each player must decide how he or she will play the game. In order to study games mathematically, we need to make some assumptions about how the players should play the game. This allows us to be able to better predict what our players should do. The following example illustrates the characteristics we will assume about our players.
     </p>
   </introduction>
 
   <subsection xml:id="Ex_Cake">
     <title>Example: Cake Division</title>
     <p>
-      <index><main>Cake Division</main></index>
+      <idx><h>Cake Division</h></idx>
     </p>
 
     <p>
@@ -26,11 +26,11 @@
 
     <ol>
       <li><p>
-          The goal of each player is to get the largest piece. We can think of this as each player acting in his or her <em>self-interest</em><index><main>self-interest</main></index>.
+          The goal of each player is to get the largest piece. We can think of this as each player acting in his or her <em>self-interest</em><idx><h>self-interest</h></idx>.
         </p></li>
 
       <li><p>
-          Both players know that the other player has the same goal, and will act to further this goal. Thus, we know that each player is <em>rational</em><index><main>rational</main></index>. Even more, each player knows the <em>other</em> player is rational.
+          Both players know that the other player has the same goal, and will act to further this goal. Thus, we know that each player is <em>rational</em><idx><h>rational</h></idx>. Even more, each player knows the <em>other</em> player is rational.
         </p></li>
     </ol>
     </p>
@@ -44,11 +44,11 @@
     </p>
 
     <p>
-      <em>Assumption 1:</em><index><main>assumptions</main></index> Players are self-interested. The goal is to win the most or lose the least. But what does it mean to win?
+      <em>Assumption 1:</em><idx><h>assumptions</h></idx> Players are self-interested. The goal is to win the most or lose the least. But what does it mean to win?
     </p>
 
     <p>
-      A player's <em>payoff</em><index><main>payoff</main></index> is the amount (points, money, or anything a player values) a player receives for a particular outcome of a game. We say that the player's goal is to maximize his or her payoff. We should note that the maximum payoff for a player might even be negative, in which case the player wants the least negative (or closest to 0) payoff.
+      A player's <em>payoff</em><idx><h>payoff</h></idx> is the amount (points, money, or anything a player values) a player receives for a particular outcome of a game. We say that the player's goal is to maximize his or her payoff. We should note that the maximum payoff for a player might even be negative, in which case the player wants the least negative (or closest to 0) payoff.
     </p>
 
     <p>
@@ -74,7 +74,7 @@
     </p>
 
     <p>
-      <em>Assumption 2:</em><index><main>assumptions</main></index> Players are perfectly logical. A Player will always take into account all available information and make the decision which maximizes his payoff. This includes knowing that his opponent is also making the best decision for herself.
+      <em>Assumption 2:</em><idx><h>assumptions</h></idx> Players are perfectly logical. A Player will always take into account all available information and make the decision which maximizes his payoff. This includes knowing that his opponent is also making the best decision for herself.
       For example, in the cake cutting game a player wouldn't cut one large piece hoping that his opponent will by chance pick the smaller piece. A player must assume that her opponent will always choose the larger piece.
     </p>
 
@@ -90,7 +90,7 @@
   <subsection xml:id="Ex_Tic">
     <title>Developing Strategies: Tic Tac Toe</title>
     <p>
-      <index><main>Tic Tac Toe </main></index>
+      <idx><h>Tic Tac Toe </h></idx>
     </p>
     <exercise>
       <statement>
@@ -126,15 +126,15 @@
         </p></li>
 
       <li><p>
-          Players have <em>perfect information</em><index><main>perfect information</main></index>. This means each player knows what all of his or her own options are, what all of his or her opponent's options are, and both players know what the outcome of each option is. Additionally, players know that both players have all of this information.
+          Players have <em>perfect information</em><idx><h>perfect information</h></idx>. This means each player knows what all of his or her own options are, what all of his or her opponent's options are, and both players know what the outcome of each option is. Additionally, players know that both players have all of this information.
         </p></li>
 
       <li><p>
-          This game has a <em>solution</em><index><main>solution</main></index>.  A solution for a game consists of a strategy for each player and the outcome of the game when each player plays his or her strategy. In Tic Tac Toe, if both players play their best, the game will always end in a tie.
+          This game has a <em>solution</em><idx><h>solution</h></idx>.  A solution for a game consists of a strategy for each player and the outcome of the game when each player plays his or her strategy. In Tic Tac Toe, if both players play their best, the game will always end in a tie.
         </p></li>
 
       <li><p>
-          The game is <em>finite</em><index><main>finite game</main></index>. This means the game must end after a finite number of moves of turns. In other words, the game cannot go on forever. A game that is not finite is called <em>infinite</em><index><main>infinite game</main></index>. Note, an infinite game may end after a finite number of turns, but there is no maximum number of turns or process to ensure the game ends. In Tic Tac Toe, the game must end after 9 or fewer turns.
+          The game is <em>finite</em><idx><h>finite game</h></idx>. This means the game must end after a finite number of moves of turns. In other words, the game cannot go on forever. A game that is not finite is called <em>infinite</em><idx><h>infinite game</h></idx>. Note, an infinite game may end after a finite number of turns, but there is no maximum number of turns or process to ensure the game ends. In Tic Tac Toe, the game must end after 9 or fewer turns.
         </p></li>
     </ul>
     </p>
@@ -193,5 +193,6 @@
         </p>
       </statement>
     </exercise>
+    <p>We have established a few assumptions and looked at how to describe strategies in some familiar games.  Not all games easily fit into the context we will be using throughout this text. But you might keep in mind some of your favorite games and see how well the strategies and solutions can be applied to them. In the next section we develop some useful notation for describing most of the games we will study.</p>
   </subsection>
 </section>

@@ -1,8 +1,8 @@
 
 <section xml:id="Intrononzero">
-  <title>Introduction to Two Player Non-Zero-Sum Games</title>
+  <title>Introduction to Two-Player Non-Zero-Sum Games</title>
   <p>
-    In this section we introduce non-zero-sum games. In a <em>non-zero-sum game</em><index><main>non-zero-sum game</main></index> the players' payoffs no longer need to sum to a constant value. Now it is possible for both players to gain or both players to lose.
+    In this section we introduce non-zero-sum games. In a <em>non-zero-sum game</em><idx><h>non-zero-sum game</h></idx> the players' payoffs no longer need to sum to a constant value. Now it is possible for both players to gain or both players to lose.
   </p>
   <exercise xml:id="E_propertiesnonzero">
     <statement>
@@ -18,7 +18,7 @@
   <example xml:id="E_battle_of_sexes">
     <statement>
       <p>
-        <em>Battle of the Sexes:</em><index><main>Battle of the Sexes</main></index> Alice and Bob want to go out to a movie. Bob wants to see an action movie, Alice wants to see a comedy. Both prefer to go to a movie together rather than to go alone. We can represent the situation with the payoff matrix in <xref ref="T_battleofsexes">Table</xref>:
+        <em>Battle of the Sexes:</em><idx><h>Battle of the Sexes</h></idx> Alice and Bob want to go out to a movie. Bob wants to see an action movie, Alice wants to see a comedy. Both prefer to go to a movie together rather than to go alone. We can represent the situation with the payoff matrix in <xref ref="T_battleofsexes"></xref>:
       </p>
 
       <table xml:id="T_battleofsexes" >
@@ -70,12 +70,12 @@
     </statement>
   </exercise>
 
-  <p>We might first try to analyze this game using the same techniques as we used for zero-sum games. For example, we might start as we would in zero-sum games by looking for any equilibrium points.</p>
+  <p>We might first try to analyze Battle of the Sexes using the same techniques as we used for zero-sum games. For example, we might start as we would in zero-sum games by looking for any equilibrium points.</p>
 
   <exercise xml:id="E_BoSequilpoints">
     <statement>
       <p>
-        Since our main goal in analyzing games has been to find equilibrium points, let's think about equilibrium points for this game. Are there any strategy pairs where players would not want to switch? [Hint: there are two!]
+        Since our main goal in analyzing games has been to find equilibrium points, let's find any equilibrium points for Battle of teh Sexes. Are there any strategy pairs where players would not want to switch? (Hint: there are two!)
       </p>
     </statement>
   </exercise>
@@ -87,7 +87,7 @@
     </statement>
   </exercise>
 
-  <p>Now that we know this game has two equilibrium points, we should try to find actual strategies for Alice and Bob. Is there a good strategy for each if they play the game only once? What if they repeat the game? Recall that with zero-sum games, if there was an equilibrium, players always want to play it, even if the game is repeated. Does that still seem to work here? Also, how might the ability to communicate change what the players do? </p>
+  <p>Now that we know Battle of the Sexes has two equilibrium points, we should try to find actual strategies for Alice and Bob. Is there a good strategy for each if they play the game only once? What if they repeat the game? Recall that with zero-sum games, if there was an equilibrium, rational players always want to play it, even if the game is repeated. Does that still seem to work here? Also, how might the ability to communicate change what the players do? </p>
 
   <exercise xml:id="E_BoSrepeat">
     <statement>
@@ -118,12 +118,12 @@
     </statement>
   </exercise>
   <p>
-    Hopefully, you are beginning to see some of the challenges for analyzing non-zero-sum games. We know there are equilibrium points, but even rational play may not result in an equilibrium. For the remainder of this section, let's assume that players are <em>not</em> allowed to communicate about strategy prior to play. Such games are called <em>non-cooperative</em><index><main>non-cooperative games</main></index> games. Before moving on, let's try to find the maximin strategies for our players using the graphical method, as we did with zero-sum games.
+    Hopefully, you are beginning to see some of the challenges for analyzing non-zero-sum games. We know there are equilibrium points in Battle of the Sexes, but even rational play may not result in an equilibrium. For the remainder of this section, let's assume that players are <em>not</em> allowed to communicate about strategy prior to play. Such games are called <em>non-cooperative</em><idx><h>non-cooperative games</h></idx> games. Before moving on, let's try to find the maximin strategies for our players using the graphical method, as we did with zero-sum games.
   </p>
   <exercise xml:id="E_BoSBobsmatrix">
     <statement>
       <p>
-        Consider the game from Bob's point of view. We know that Bob wants to maximize his payoff (that has not changed). So Bob doesn't care what Alice's payoff's are. Write down Bob's payoff matrix.
+        Consider Battle of the Sexes from Bob's point of view. We know that Bob wants to maximize his payoff (that has not changed). So Bob doesn't care what Alice's payoff's are. Write down Bob's payoff matrix.
       </p>
     </statement>
   </exercise>
@@ -137,41 +137,41 @@
   <exercise xml:id="E_BoSBobintersection">
     <statement>
       <p>
-        The area between the two lines still represents the possible expected values for Bob, depending on how often Alice plays each of her strategies. So as before, the bottom lines represent the <em>least</em> Bob can expect as he varies his strategy. Thus the point of intersection will represent the biggest of these smallest values (the maximin strategy). Find this point of intersection. How often should Bob play each option? What is his expected payoff?
+        The area between the two lines still represents the possible expected values for Bob, depending on how often Alice plays each of her strategies. So as before, the bottom lines represent the <em>least</em> Bob can expect as he varies his strategy. Thus, the point of intersection will represent the biggest of these smallest values (the maximin strategy). Find this point of intersection. How often should Bob play each option? What is his expected payoff?
       </p>
     </statement>
   </exercise>
   <p>
-    So no matter what Alice does, Bob can expect that over the long run he wins at least the value you found in <xref ref="E_BoSBobintersection">Exercise</xref>. Make sure you understand this before moving on.
+    So no matter what Alice does, Bob can expect that over the long run he wins at least the value you found in <xref ref="E_BoSBobintersection"></xref>. Make sure you understand this before moving on.
   </p>
   <exercise xml:id="E_BoSAlicematrix">
     <statement>
       <p>
-        Now consider the game from Alice's point of view. Write down her payoff matrix and use the graphical method to find the probability with which she should play each option and her expected payoff.
+        Now consider Battle of the Sexes from Alice's point of view. Write down her payoff matrix and use the graphical method to find the probability with which she should play each option and her expected payoff.
       </p>
     </statement>
   </exercise>
   <p>
-    Now, from <xref ref="E_BoSBobintersection">Exercise</xref> and <xref ref="E_BoSAlicematrix"></xref> you have the minimum payoff each player should expect. Note that since this is not a zero-sum game, both players can expect a positive payoff. But now we want to see how this pair of mixed strategies really works for the players.
+    Now, from <xref ref="E_BoSBobintersection"></xref> and <xref ref="E_BoSAlicematrix"></xref> you have the minimum payoff each player should expect. Note that since this is not a zero-sum game, both players can expect a positive payoff. But now we want to see how this pair of mixed strategies really works for the players.
   </p>
   <exercise xml:id="E_BoSBobsmaximin">
     <statement>
       <p>
-        Assume Bob plays the mixed strategy from <xref ref="E_BoSBobintersection">Exercise</xref>. Calculate Alice's expected value for each of her <em>pure</em> strategies (<m>E_2</m>(Comedy) and <m>E_2</m>(Action)).
+        Assume Bob plays the mixed strategy from <xref ref="E_BoSBobintersection"></xref>. Calculate Alice's expected value for each of her <em>pure</em> strategies (<m>E_2</m>(Comedy) and <m>E_2</m>(Action)).
       </p>
     </statement>
   </exercise>
   <exercise xml:id="E_BoSAlicepref">
     <statement>
       <p>
-        Are Alice's expected values equal? If not, which strategy does she prefer when Bob plays the mixed strategy from <xref ref="E_BoSBobintersection">Exercise</xref>? Does Alice want to deviate from her mixed strategy?
+        Are Alice's expected values equal? If not, which strategy does she prefer when Bob plays the mixed strategy from <xref ref="E_BoSBobintersection"></xref>? Does Alice want to deviate from her mixed strategy?
       </p>
     </statement>
   </exercise>
   <exercise xml:id="E_BoSBobchange">
     <statement>
       <p>
-        Now if Alice plays a pure strategy, does Bob want to change his strategy? So is the mixed strategy pair for Bob and Alice an equilibrium? In fact, if Bob changes his strategy, how does his expected value compare to the expected value for the mixed strategy?
+        Now if Alice plays a pure strategy, does Bob want to change his strategy? So is the mixed strategy pair for Bob and Alice from <xref ref="E_BoSBobintersection"></xref> and <xref ref="E_BoSAlicematrix"></xref> an equilibrium? In fact, if Bob changes his strategy, how does his expected value compare to the expected value for his mixed strategy?
       </p>
     </statement>
   </exercise>
@@ -188,14 +188,14 @@
   <exercise xml:id="E_BoSstartBmixed">
     <statement>
       <p>
-        So we know the mixed strategy won't give us an equilibrium. But suppose we start there. In other words, suppose Bob plans to play the mixed strategy from <xref ref="E_BoSBobintersection">Exercise</xref>. Which pure strategy should Alice play? In response, which pure strategy should Bob play? What is the outcome? Do you end up at an equilibrium?
+        So we know the mixed strategy won't give us an equilibrium. But suppose we start there. In other words, suppose Bob plans to play the mixed strategy from <xref ref="E_BoSBobintersection"></xref>. Which pure strategy should Alice play? In response, which pure strategy should Bob play? What is the outcome? Do you end up at an equilibrium?
       </p>
     </statement>
   </exercise>
   <exercise xml:id="E_BoSstartAmixed">
     <statement>
       <p>
-        Now suppose Alice plans to play the mixed strategy from <xref ref="E_BoSAlicematrix">Exercise</xref>. Calculate the expected value for Bob for each of his pure strategies. Which pure strategy does Bob prefer to play? How will Alice respond to Bob's pure strategy? What is the outcome? Do you end up at an equilibrium?
+        Now suppose Alice plans to play the mixed strategy from <xref ref="E_BoSAlicematrix"></xref>. Calculate the expected value for Bob for each of his pure strategies. Which pure strategy does Bob prefer to play? How will Alice respond to Bob's pure strategy? What is the outcome? Do you end up at an equilibrium?
       </p>
     </statement>
   </exercise>
@@ -209,17 +209,17 @@
   <exercise xml:id="E_BoSeverplaymixed">
     <statement>
       <p>
-        Considering <xref ref="E_BoSstartBmixed">Exercise</xref>, <xref ref="E_BoSstartAmixed"></xref>, and <xref ref="E_BoSoutguess"></xref>, is it in a player's best interest to even consider playing the mixed strategy from <xref ref="E_BoSBobintersection">Exercise</xref> or <xref ref="E_BoSAlicematrix"></xref>?
+        Considering <xref ref="E_BoSstartBmixed"></xref>, <xref ref="E_BoSstartAmixed"></xref>, and <xref ref="E_BoSoutguess"></xref>, is it in a player's best interest to even consider playing the mixed strategy from <xref ref="E_BoSBobintersection"></xref> or <xref ref="E_BoSAlicematrix"></xref>?
       </p>
     </statement>
   </exercise>
 
-  <p>We've seen the limitations of the graphical method, what about the expected value method?</p>
+  <p>We've seen the limitations of the graphical method, but what about the expected value method?</p>
 
   <exercise xml:id="E_BoSevsol">
     <statement>
       <p>
-        We have only considered the graphical method. Try applying the expected value method. What mixed strategies do you get? Explain why this method will also not result in an equilibrium. You might want to consider whether it is important for one player to minimize the expected value for the other player.
+        Try applying the expected value method to Battle of the Sexes. What mixed strategies do you get? Explain why this method will also not result in an equilibrium. You might want to consider whether it is important for one player to minimize the expected value for the other player.
       </p>
     </statement>
   </exercise>

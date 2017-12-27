@@ -2,6 +2,22 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
   <title>Non-Zero-Sum Games</title>
   <introduction>
+
+         <sidebyside width="30%" margins="auto">
+    <image width="30%" source="images/image-13.svg">
+      <latex-image>
+        <![CDATA[\begin{tikzpicture}
+        \shade[left color=blue,right color=red] (0,0) rectangle (1,1);
+        \shade[left color=orange,right color=orange] (1,0) rectangle (2,1);
+
+        \shade[left color=green,right color=green] (0,1) rectangle (1,2);
+        \shade[left color=red,right color=blue] (1,1) rectangle (2,2);
+
+        \end{tikzpicture}]]>
+      </latex-image>
+    </image>
+    </sidebyside>
+
     <p>
       In the previous chapters we concentrated on zero-sum games. We know how to solve any zero-sum game. If it has a pure strategy equilibrium, then we know the players should play the equilibrium strategies. If it doesn't have an equilibrium point, then we have seen methods for finding a mixed strategy equilibrium. Assuming both players are our model rational players, then we know they should always play an equilibrium strategy.
     </p>

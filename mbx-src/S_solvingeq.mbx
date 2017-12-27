@@ -1,15 +1,15 @@
 <section xml:id="S_solvingeq">
-  <title>Using Sage to Graph Lines and Solve Equations</title><index><main><booktitle>Sage</booktitle></main></index>
+  <title>Using Sage to Graph Lines and Solve Equations</title><idx><h><booktitle>Sage</booktitle></h></idx>
 
   <p>
-    In this section we will use technology to graph lines and solve for the intersection point. In particular, we will use an open online resource called <booktitle>Sage</booktitle><index><booktitle>Sage</booktitle></index>. 
+    In this section we will use technology to graph lines and solve for the intersection point. In particular, we will use an open online resource called <booktitle>Sage</booktitle><idx><booktitle>Sage</booktitle></idx>. 
   </p>
 
   <p>
-    Let's continue to consider the game given in <xref ref="T_smallrepeat">Table</xref> by
+    Let's continue to consider the game given in <xref ref="T_smallrepeat"></xref> by
     
   <table>
-    <caption>Game from <xref ref="E_smallrepeat">Example</xref>.</caption>
+    <caption>Game from <xref ref="E_smallrepeat"></xref>.</caption>
     <tabular>
       <row>
         <cell></cell>
@@ -34,7 +34,7 @@
   </p>
 
   <p>
-    We will follow the same steps as in <xref ref="S_MixStratGraph">Section</xref>. Let <m>p</m> be the probability that Player 1 plays B. Let <m>m</m> be the payoff to Player 1. Since we are try to find a mixed strategy for Player 1, we will pick a strategy for Player 2 and try to determine the possible payoffs for Player 1.
+    We will follow the same steps as in <xref ref="S_MixStratGraph"></xref>. Let <m>p</m> be the probability that Player 1 plays B. Let <m>m</m> be the payoff to Player 1. Since we are trying to find a mixed strategy for Player 1, we will pick a strategy for Player 2 and try to determine the possible payoffs for Player 1.
   </p>
 
   <p>
@@ -77,13 +77,13 @@
       <title>Step 1c.</title>
       <p>
         Now we want to know what Player 1's payoff will be as she varies the probability, <m>p</m>, with which she plays <m>B</m>. We can draw a graph where the <m>x</m>-axis represents to probability with which she plays B (<m>p</m>) and the <m>y</m>-axis represents the expected payoff (<m>m</m>). 
-        Thus, when Player 1 plays only <m>A</m>, she is playing <m>B</m> with probability 0; when Player 1 plays only B, she is playing B with probability 1. It might be easier to remember if you label your graph as in <xref ref="F_MixedStrategyAxes">Figure</xref>.
+        Thus, when Player 1 plays only <m>A</m>, she is playing <m>B</m> with probability 0; when Player 1 plays only B, she is playing B with probability 1. It might be easier to remember if you label your graph as in <xref ref="F_MixedStrategyAxes"></xref>.
       </p></li>
 
     <li>
       <title>Step 1d.</title>
       <p>
-        Now we can use <booktitle>Sage</booktitle> to plot the points we determined in Step 1a and Step 1b  and the line between them. This line represents Player 2's pure strategy <m>C</m>. See <xref ref="F_MixedStrategyOneLine">Figure</xref>. Click on the <q>Evaluate (Sage)</q> button to plot the line between the points <m>(0, 1)</m> and <m>(1, -1)</m>.
+        Now we can use <booktitle>Sage</booktitle> to plot the points we determined in Step 1a and Step 1b  and the line between them. This line represents Player 2's pure strategy <m>C</m>. See <xref ref="F_MixedStrategyOneLine"></xref>. Click on the <q>Evaluate (Sage)</q> button to plot the line between the points <m>(0, 1)</m> and <m>(1, -1)</m>.
 
         <sage>
           <input>
@@ -135,7 +135,7 @@
     <li>
       <title>Step 2c.</title>
       <p>
-        Now, on our same graph from Step 1, we can plot the points we determined in Step 2a and Step 2b. We will connect them with a line representing Player 2's pure strategy <m>D</m>. See <xref ref="F_Player_2_s_pure_strategy_D">Figure</xref>. 
+        Now, on our same graph from Step 1, we can plot the points we determined in Step 2a and Step 2b. We will connect them with a line representing Player 2's pure strategy <m>D</m>. See <xref ref="F_Player_2_s_pure_strategy_D"></xref>. 
       </p>
 
         <sage>
@@ -158,7 +158,7 @@
   </dl>
   
   <p>
-    As we saw in <xref ref="S_MixStratGraph">Section</xref>, for each choice of <m>p</m>, the top line represents the highest expected value for Player 1; the bottom line represents the lowest expected value for Player 1; the area between the lines represents the possible expected values for Player 1. Thus,  Player 1 wants to maximize the minimum expected value, which means she wants to find the maximin strategy<index>maximin strategy, repeated games</index>. And, as we saw in <xref ref="S_MixStratGraph">Section</xref>, the maximin strategy occurs at the intersection of the two lines.
+    As we saw in <xref ref="S_MixStratGraph"></xref>, for each choice of <m>p</m>, the top line represents the highest expected value for Player 1; the bottom line represents the lowest expected value for Player 1; the area between the lines represents the possible expected values for Player 1. Thus,  Player 1 wants to maximize the minimum expected value, which means she wants to find the maximin strategy<idx>maximin strategy, repeated games</idx>. And, as we saw in <xref ref="S_MixStratGraph"></xref>, the maximin strategy occurs at the intersection of the two lines.
   </p>
 
   <dl>
@@ -202,7 +202,7 @@
   <li>
     <title>Step 4.</title>
     <p>
-      Determine Player 1's maximin mixed strategy<index>maximin mixed strategy</index>. 
+      Determine Player 1's maximin mixed strategy<idx>maximin mixed strategy</idx>. 
 
       Recalling that <m>p</m> is the probability that Player 1 plays <m>B</m>, we know that Player 1 will play <m>B</m> with probability 1/4, and thus, play A with probability 3/4. The expected payoff for Player 1, <m>m</m>, is 1/2. It is important to check the algebraic solution with where the intersection point appears on the graph. Although we are using technology to help us graph and solve for the intersection point, we need to be able to catch any errors we make entering the information into Sage.
     </p></li>

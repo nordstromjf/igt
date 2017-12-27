@@ -2,7 +2,7 @@
 <section xml:id="S_VolunteerDil">
   <title>Volunteer's Dilemma</title>
   <p>
-    In <xref ref="VDexperiment">Section</xref> we played a game called Volunteer's Dilemma<index><main>Volunteer's Dilemma</main></index>.
+    In <xref ref="VDexperiment"></xref> we played a game called Volunteer's Dilemma<idx><h>Volunteer's Dilemma</h></idx>.
   </p>
 
   <example xml:id="E_VDpoints">
@@ -18,11 +18,11 @@
   </example>
 
   <p>
-    In this section we will compare Class-wide Prisoner's Dilemma with Volunteer's Dilemma. In particular, we want to think about the effect cooperating and defecting have on the group of players. How does one player's choice affect everyone else? What happens to the group if there is a single cooperator or a single defector? What happens if everyone cooperates or everyone defects? We will use the payoffs for Prisoner's Dilemma from <xref ref="S_CWPD">Section</xref>, given again in <xref ref="T_CWPD2">Table</xref>.
+    In this section we will compare Class-wide Prisoner's Dilemma with Volunteer's Dilemma. In particular, we want to think about the effect cooperating and defecting have on the group of players. How does one player's choice affect everyone else? What happens to the group if there is a single cooperator or a single defector? What happens if everyone cooperates or everyone defects? We will use the payoffs for Prisoner's Dilemma from <xref ref="S_CWPD"></xref>, given again in <xref ref="T_CWPD2"></xref>.
   </p>
 
   <table xml:id="T_CWPD2" >
-    <caption>Class-wide Prisoner's Dilemma (again)</caption>
+    <caption>Class-wide Prisoner's Dilemma (again).</caption>
         <tabular>
           <row>
             <cell></cell>
@@ -74,21 +74,21 @@
   <exercise xml:id="E_VDdefecteffect">
     <statement>
       <p>
-        In <em>Volunteer's Dilemma</em>, with the payoffs given in <xref ref="E_VDpoints">Example</xref>, what effect does one defector have on the group? In other words, if there is a single defector, how many points do each of the other players lose?
+        In <em>Volunteer's Dilemma</em>, with the payoffs given in <xref ref="E_VDpoints"></xref>, what effect does one defector have on the group? In other words, if there is a single defector, how many points do each of the other players lose?
       </p>
     </statement>
   </exercise>
   <exercise xml:id="E_VDalldefecteffect">
     <statement>
       <p>
-        In <em>Volunteer's Dilemma</em>, with the payoffs given in <xref ref="E_VDpoints">Example</xref>, what effect does everyone's defection have on the group? In other words, if everyone defects, how many points does the group lose?
+        In <em>Volunteer's Dilemma</em>, with the payoffs given in <xref ref="E_VDpoints"></xref>, what effect does everyone's defection have on the group? In other words, if everyone defects, how many points does the group lose?
       </p>
     </statement>
   </exercise>
   <exercise xml:id="E_VDowndefect">
     <statement>
       <p>
-        In <em>Volunteer's Dilemma</em>, with the payoffs given in <xref ref="E_VDpoints">Example</xref>, what effect could your own defection have on the group? In other words, how many points does the group lose if you defect instead of cooperate? You may need to consider different cases depending on how many cooperators there are. For example what if there are no cooperators? What if there are no defectors? What if there are some of each?
+        In <em>Volunteer's Dilemma</em>, with the payoffs given in <xref ref="E_VDpoints"></xref>, what effect could your own defection have on the group? In other words, how many points does the group lose if you defect instead of cooperate? You may need to consider different cases depending on how many cooperators there are. For example what if there are no cooperators? What if there are no defectors? What if there are some of each?
       </p>
     </statement>
   </exercise>
@@ -105,7 +105,7 @@
   <exercise xml:id="E_CWPDallrational">
     <statement>
       <p>
-        Whichever you chose in <xref ref="E_CWPDcoopordefect">Exercise</xref>, explain what would happen if everyone was the most rational. Is it now more rational to do the opposite?
+        Whichever strategy you chose in <xref ref="E_CWPDcoopordefect"></xref>, explain what would happen if everyone was the most rational. Is it now more rational to do the opposite?
       </p>
     </statement>
   </exercise>
@@ -119,7 +119,7 @@
   <exercise xml:id="E_VDallrational">
     <statement>
       <p>
-        Whichever you chose in <xref ref="E_VDcoopordefect">Exercise</xref>, explain what would happen if everyone was the most rational. Is it now more rational to do the opposite?
+        Whichever strategy you chose in <xref ref="E_VDcoopordefect"></xref>, explain what would happen if everyone was the most rational. Is it now more rational to do the opposite?
       </p>
     </statement>
   </exercise>

@@ -8,7 +8,7 @@
   <example xml:id="E_onecardstud">
     <statement>
       <p>
-        <em>One-Card Stud Poker.</em><index><main>One-Card Stud Poker</main></index>
+        <em>One-Card Stud Poker.</em><idx><h>One-Card Stud Poker</h></idx>
       </p>
 
       <p>
@@ -53,7 +53,7 @@
     </statement>
   </exercise>
   <p>
-    Before moving on, you should attempt to determine the payoff matrix. The remainder of this section will be more meaningful if you have given some thought to what you think the payoff matrix should be. It is OK to be wrong at this point, it is not OK to not try.
+    Before moving on, you should attempt to determine the payoff matrix. The remainder of this section will be more meaningful if you have given some thought to what the payoff matrix should be. It is OK to be wrong at this point, it is not OK to not try.
   </p>
   <exercise xml:id="E_possiblematrix">
     <statement>
@@ -68,7 +68,7 @@
   <exercise xml:id="E_payoffBF">
     <statement>
       <p>
-        If Player 1 Bets and Player 2 Folds, does it matter which cards were dealt? How much does Player 1 win? How much does Player 2 lose? What is the payoff vector for {Bet, Fold}? (Keep in mind your answer to <xref ref="E_onecardzerosum">Exercise</xref>.)
+        If Player 1 Bets and Player 2 Folds, does it matter which cards were dealt? How much does Player 1 win? How much does Player 2 lose? What is the payoff vector for {Bet, Fold}? (Keep in mind your answer to <xref ref="E_onecardzerosum"></xref>.)
       </p>
     </statement>
   </exercise>
@@ -99,12 +99,12 @@
   <exercise xml:id="E_BBpayoffperdeal">
     <statement>
       <p>
-        Consider the pair of strategies {Bet, Bet}. For each possible deal, determine the payoff vector. For example, if the players are each dealt an Ace (Red), how much does each player win? (Again, keep in mind your answer to <xref ref="E_onecardzerosum">Exercise</xref>.)
+        Consider the pair of strategies {Bet, Bet}. For each possible deal, determine the payoff vector. For example, if the players are each dealt an Ace (Red), how much does each player win? (Again, keep in mind your answer to <xref ref="E_onecardzerosum"></xref>.)
       </p>
     </statement>
   </exercise>
   <p>
-    In order to calculate the payoff for {Bet, Bet}, we need to take a weighted average of the possible payoff vectors in <xref ref="E_BBpayoffperdeal">Exercise</xref>. In particular, we will <q>weight</q> a payoff by the probability that it occurs. Recall that this is the <em>expected value</em><index><main>expected value</main></index>. We will calculate the expected value separately for each player.
+    In order to calculate the payoff for {Bet, Bet}, we need to take a weighted average of the possible payoff vectors in <xref ref="E_BBpayoffperdeal"></xref>. In particular, we will <q>weight</q> a payoff by the probability that it occurs. Recall that this is the <em>expected value</em><idx><h>expected value</h></idx>. We will calculate the expected value separately for each player.
   </p>
   <exercise xml:id="E_BBev1">
     <statement>
@@ -121,7 +121,7 @@
     </statement>
   </exercise>
   <p>
-    The pair of expected values from <xref ref="E_BBev1">Exercises</xref> and <xref ref="E_BBev2"></xref> is the payoff vector for {Bet, Bet}.
+    The pair of expected values from <xref ref="E_BBev1"></xref> and <xref ref="E_BBev2"></xref> is the payoff vector for {Bet, Bet}.
   </p>
   <exercise xml:id="E_BBexplain">
     <statement>
@@ -130,10 +130,13 @@
       </p>
     </statement>
   </exercise>
+
+  <p>We can use a similar process to find the payoff vector for {Fold, Fold}.</p>
+
   <exercise xml:id="E_FF">
     <statement>
       <p>
-        Now repeat <xref ref="E_BBpayoffperdeal">Exercises</xref>, <xref ref="E_BBev1"></xref>, and <xref ref="E_BBev2"></xref> for the pair of strategies {Fold, Fold}.
+        Repeat <xref ref="E_BBpayoffperdeal"></xref>, <xref ref="E_BBev1"></xref>, and <xref ref="E_BBev2"></xref> for the pair of strategies {Fold, Fold}.
       </p>
     </statement>
   </exercise>
@@ -144,20 +147,25 @@
       </p>
     </statement>
   </exercise>
+
+  <p>Now that you have done all the hard work of finding the payoff matrix for One-Card Stud Poker, we can analyze our two-player zero-sum game using the techniques we learned in the previous sections. It is also important to see how the mathematical solution compares to our conjectured solution from <xref ref="E_onecardconjecturestrat"></xref>.</p>
+
   <exercise xml:id="E_onecardstrategy">
     <statement>
       <p>
-        Now that you have done all the hard work of finding the payoff matrix for One-Card Stud Poker, use it to determine the best strategy for each player. If each player uses their best strategy, what will be the outcome of the game?
+         Use the payoff matrix to determine the best strategy for each player. If each player uses their best strategy, what will be the outcome of the game?
       </p>
     </statement>
   </exercise>
   <exercise xml:id="E_onecardcompare">
     <statement>
       <p>
-        Compare the strategy you found in <xref ref="E_onecardstrategy">Exercise</xref> to your suggested strategy in <xref ref="E_onecardconjecturestrat">Exercise</xref>. In particular, discuss how knowing the payoff matrix might have changed your strategy. Also compare the payoff that results from the strategy in <xref ref="E_onecardstrategy">Exercise</xref> to the payoff that results from your original strategy in <xref ref="E_onecardconjecturestrat">Exercise</xref> .
+        Compare the strategy you found in <xref ref="E_onecardstrategy"></xref> to your suggested strategy in <xref ref="E_onecardconjecturestrat"></xref>. In particular, discuss how knowing the payoff matrix might have changed your strategy. Also compare the payoff that results from the strategy in <xref ref="E_onecardstrategy"></xref> to the payoff that results from your original strategy in <xref ref="E_onecardconjecturestrat"></xref> .
       </p>
     </statement>
   </exercise>
+
+  <p>Since One-Card Stud Poker has an element of chance, we should see what happens if we play the game several times using the strategy from <xref ref="E_onecardstrategy"></xref>.</p>
   <exercise xml:id="E_onecardlongrun">
     <statement>
       <p>
@@ -168,7 +176,7 @@
   <exercise xml:id="E_onecardtrials">
     <statement>
       <p>
-        Play the game ten times using the best strategy. How much has each player won or lost after ten hands of One-Card Stud Poker? Compare your answer to your prediction in <xref ref="E_onecardlongrun">Exercise</xref>. Does the actual payoff differ from the theoretical payoff? If so, why do you think this might be?
+        Play the game ten times using the best strategy. How much has each player won or lost after ten hands of One-Card Stud Poker? Compare your answer to your prediction in <xref ref="E_onecardlongrun"></xref>. Does the actual payoff differ from the theoretical payoff? If so, why do you think this might be?
       </p>
     </statement>
   </exercise>
@@ -183,7 +191,7 @@
   <example xml:id="E_genonecardstud">
     <statement>
       <p>
-        <em>Generalized One-Card Stud Poker.</em><index><main>Generalized One-Card Stud Poker</main></index>
+        <em>Generalized One-Card Stud Poker.</em><idx><h>Generalized One-Card Stud Poker</h></idx>
       </p>
 
       <p>
@@ -206,4 +214,5 @@
       </p>
     </statement>
   </exercise>
+  <p>Now that we have analyzed several zero-sum games, we can see how important is is to find any equilibrium pairs. In the next section we explore equilibrium strategies in more detail.</p>
 </section>

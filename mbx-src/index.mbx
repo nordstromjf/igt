@@ -17,6 +17,8 @@
 }
 </macros>
 
+<rename element="Checkpoint" lang="en-US">Exercise</rename>
+
 <latex-image-preamble>
 
 \usepackage{tikz}

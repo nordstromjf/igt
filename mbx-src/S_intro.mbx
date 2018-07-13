@@ -93,6 +93,7 @@
       <idx><h>Tic Tac Toe </h></idx>
     </p>
     <exercise>
+      <title>Play the game</title>
       <statement>
         <p>
         Play several games of Tic TacToe with an opponent. Make sure you take turns being the first player and the second player. Develop a strategy for winning Tic Tac Toe. You may have a different strategy for the first player and for the second player. Be as specific as possible. You may need to consider several possibilities which depend on what your opponent does.
@@ -139,6 +140,7 @@
     </ul>
     </p>
     <exercise>
+      <title>Perfect information, more examples</title>
       <statement>
         <p>
           Can you think of another example of a game with perfect information? What is an example of a game that does not have perfect information?
@@ -146,6 +148,7 @@
       </statement>
     </exercise>
     <exercise>
+      <title>Finite and infinite, more examples</title>
       <statement>
         <p>
           Give some examples of finite games and infinite games.
@@ -165,6 +168,7 @@
       The choice of what a player does may depend on the opponent, but that choice is predetermined before game play. For example, in the cake cutting game, it doesn't matter which piece the <q>chooser</q> will pick, the <q>cutter</q> will always cut evenly. Similarly, it doesn't matter how the cutter cuts, the chooser will always pick the largest piece. In Tic Tac Toe, Player 2's strategy should determine his first move no matter what Player 1 plays first. For example, if Player 1 plays the center square, where should Player 2 play? If Player 1 plays a corner, where should Player 2 play?
     </p>
     <exercise>
+      <title>Describe your favorite game</title>
       <statement>
         <p>
         What is your favorite game?

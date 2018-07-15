@@ -125,6 +125,7 @@
       It is important to note that each player also knows that his or her opponent is also self-interested and perfectly logical!
     </p>
     <exercise>
+      <title>Preferred payoffs</title>
       <statement>
         <ol label="a">
           <li><p>
@@ -145,6 +146,7 @@
       It may be strightforward to decide the best payoff for a player out of a list of values, and it would be great if a player could just determine the biggest value in the table and choose that strategy. However, when there are two players a player may have to choose a strategy more carefully, since Player 1 can only choose the row, and Player 2 can only choose the column. Thus, the outcome of the game depends on BOTH players.
     </p>
     <example xml:id="E_Sec2_2small">
+      <title>A <m>2\times 2</m> Game</title>
       <statement>
         <p>
           Suppose two players are playing a game in which they can choose A or B with the payoffs given in the game matrix in <xref ref="T_matrixEx1Sec2_2"></xref>.
@@ -167,14 +169,14 @@
             <row>
               <cell>Player 1</cell>
               <cell right="minor">A</cell>
-              <cell bottom="minor" right="minor"><m>(100, -100)</m></cell>
-              <cell bottom="minor" right="minor"><m>(-10, 10)</m></cell>
+              <cell bottom="minor" right="minor" halign="center"><m>(100, -100)</m></cell>
+              <cell bottom="minor" right="minor" halign="center"><m>(-10, 10)</m></cell>
             </row>
             <row>
               <cell></cell>
               <cell right="minor">B</cell>
-              <cell right="minor" bottom="minor"><m>(0, 0)</m></cell>
-              <cell right="minor" bottom="minor"><m>(-1, 11)</m></cell>
+              <cell right="minor" bottom="minor" halign="center"><m>(0, 0)</m></cell>
+              <cell right="minor" bottom="minor" halign="center"><m>(-1, 11)</m></cell>
             </row>
           </tabular>
         </table>
@@ -185,6 +187,7 @@
     </example>
 
     <exercise xml:id="E_SolveSec2_2small">
+      <title>Finding strategies</title>
       <statement>
         <ol label="a">
           <li><p>
@@ -214,6 +217,7 @@
       </statement>
     </exercise>
     <example xml:id="E_Sec2_2large">
+      <title>A <m>3\times 3</m> Game</title>
       <statement>
         <p>
           Suppose there are two players with the game matrix given in <xref ref="T_matrixEx2Sec2_2"></xref>.
@@ -237,23 +241,23 @@
             <row>
               <cell></cell>
               <cell right="minor">A</cell>
-              <cell right="minor" bottom="minor"><m>(1000, -1000)</m></cell>
-              <cell right="minor" bottom="minor"><m>(-5, 5)</m></cell>
-              <cell right="minor" bottom="minor"><m>(-15,15)</m></cell>
+              <cell right="minor" bottom="minor" halign="center"><m>(1000, -1000)</m></cell>
+              <cell right="minor" bottom="minor" halign="center"><m>(-5, 5)</m></cell>
+              <cell right="minor" bottom="minor" halign="center"><m>(-15,15)</m></cell>
             </row>
             <row>
               <cell>Player 1</cell>
               <cell right="minor">B</cell>
-              <cell right="minor" bottom="minor"><m>(200, -200)</m></cell>
-              <cell right="minor" bottom="minor"><m>(0, 0)</m></cell>
-              <cell right="minor" bottom="minor"><m>(-5,5)</m></cell>
+              <cell right="minor" bottom="minor" halign="center"><m>(200, -200)</m></cell>
+              <cell right="minor" bottom="minor" halign="center"><m>(0, 0)</m></cell>
+              <cell right="minor" bottom="minor" halign="center"><m>(-5,5)</m></cell>
             </row>
             <row>
               <cell></cell>
               <cell right="minor">C</cell>
-              <cell right="minor" bottom="minor"><m>(500, -500)</m></cell>
-              <cell right="minor" bottom="minor"><m>(20, -20)</m></cell>
-              <cell right="minor" bottom="minor"><m>(-25,25)</m></cell>
+              <cell right="minor" bottom="minor" halign="center"><m>(500, -500)</m></cell>
+              <cell right="minor" bottom="minor" halign="center"><m>(20, -20)</m></cell>
+              <cell right="minor" bottom="minor" halign="center"><m>(-25,25)</m></cell>
             </row>
           </tabular>
         </table>
@@ -263,6 +267,7 @@
       </statement>
     </example>
     <exercise xml:id="E_SolveSec2_2large">
+      <title>More practice finding strategies</title>
       <statement>
         <ol label="a">
           <li><p>

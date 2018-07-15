@@ -37,6 +37,7 @@
     </p>
 
     <example xml:id="E_drawheart">
+      <title>Drawing a Particular Suit</title>
       <statement>
         <p>
           Given a standard deck of playing cards, what is the probability of drawing a heart?
@@ -49,6 +50,7 @@
     </example>
 
     <example xml:id="E_takeawayspade">
+      <title>A Card is Missing</title>
       <statement>
         <p>
           Now suppose the ace of spades is missing from the deck. What is the probability of drawing a heart?
@@ -71,6 +73,7 @@
       Now try to compute some probabilities on your own.
     </p>
     <exercise>
+      <title>Probability with a single die</title>
       <statement>
         <p>
           Consider rolling a single die. List the possible outcomes. Assuming that it is a fair die, are all the outcomes equally likely? What is the probability of rolling a 2? What is the probability of rolling an even number?
@@ -78,6 +81,7 @@
       </statement>
     </exercise>
     <exercise xml:id="E_redgreendice">
+      <title>Probability with red and green dice</title>
       <statement>
         <p>
         Now consider rolling two fair dice, say a red die and a green die.
@@ -111,6 +115,7 @@
       </statement>
     </exercise>
     <exercise xml:id="E_twodice">
+      <title>Probability with two of the same dice</title>
       <statement>
         <p>
         Again consider rolling two fair dice, but now we don't care what color they are.
@@ -140,6 +145,7 @@
       </statement>
     </exercise>
     <exercise xml:id="E_sumdice">
+      <title>Sums of dice</title>
       <statement>
         <p>
         Suppose we roll two dice and add them.
@@ -194,6 +200,7 @@
       Thus, you would expect an average payoff of <dollar />0, if you were to play the game several times. Note, the expected value is not necessarily the actual value of playing the game.
     </p>
     <exercise xml:id="E_Toss2coins">
+      <title>Expected value and a two-coin game</title>
       <statement>
         <p>
           Consider a game where you toss two coins. If you get two Heads, you win <dollar />2. If you get a Head and a Tail, you win <dollar />1, if you get two Tails, you lose <dollar />4. Find the expected value of the game. (Caution: first you need to find the probability of each event<ndash /> think about <q>equally likely</q> events.)
@@ -201,6 +208,7 @@
       </statement>
     </exercise>
     <exercise>
+      <title>Play the two-coin game</title>
       <statement>
         <p>
         Now play the game in <xref ref="E_Toss2coins"></xref> the indicated number of times. Give your actual payoff and compare it to the expected value.
@@ -226,6 +234,7 @@
       </statement>
     </exercise>
     <exercise>
+      <title>Expected value of roulette</title>
       <statement>
         <p>
           A standard roulette wheel has 38 numbered slots for a small ball to land in: 36 are marked from 1 to 36, with half of those black and half red; two green slots are numbered 0 and 00. An allowable bet is to bet on either red of black. This bet is an even money bet, which means if you win you receive twice what you bet. Many people think that betting black or red is a fair game. What is the expected value of betting <dollar />1000 on red? Is this a fair game? Explain.
@@ -233,6 +242,7 @@
       </statement>
     </exercise>
     <exercise>
+      <title>Another roulette example</title>
       <statement>
         <p>
           Considering again the roulette wheel, if you bet <dollar />100 on a particular number and the ball lands on that number, you win <dollar />3600. What is the expected value of betting <dollar />100 on Red 4?
@@ -242,6 +252,7 @@
 
     <p>After finding the expected value of the games in the above exercises, what do you think the expected value can tell us about a game? Can you use it to decide whether you should play that game of chance or not? When will a game be advantageous for the player? We often care whether a game is <q>fair.</q> Can the expected value help you determine if a game is fair?</p>
     <exercise>
+      <title>Expected value and fairness</title>
       <statement>
         <p>
           Use the idea of expected value to explain <q>fairness</q> in a game of chance. 
@@ -250,6 +261,7 @@
     </exercise>
     <p>The last exercise is a good challenge for exploring expected value.</p>
     <exercise>
+      <title>A betting game with two dice</title>
       <statement>
         <p>
           You place a bet and roll two fair dice. If you roll a 7 or an 11, you receive your bet back (you break even). If you roll a 2, a 3, or a 12, then you lose your bet. If you roll anything else, you receive half of the sum you rolled in dollars. How much should you bet to make this a fair game? Hint: it might be helpful to begin with a table showing the possible sums, their probability, and the payoff for each.

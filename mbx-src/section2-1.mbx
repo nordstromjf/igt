@@ -23,6 +23,7 @@
     </p>
 
     <example xml:id="poker">
+      <title>Zero-sum in Poker</title>
       <statement>
         <p>
           Consider a poker game in which each player comes to the game with <dollar />100. If there are five players, then the sum of money for all five players is always <dollar />500. At any give time during the game, a particular player may have more than <dollar />100, but then another player must have less than <dollar />100. One player's win is another player's loss.
@@ -31,6 +32,7 @@
     </example>
 
     <example xml:id="E_cakecutting2">
+      <title>Zero-sum in Cake Division</title>
       <statement>
         <p>
           Consider the cake division game. Determine the payoff matrix for this game. It is important to determine what each player's options are first: how can the <q>cutter</q> cut the cake? How can the <q>chooser</q> pick her piece? The payoff matrix is given in <xref ref="T_cakecutting"></xref>.
@@ -105,7 +107,7 @@
     </example>
 
     <p>
-      It is probably simple to see from the matrix in <xref ref="T_cakecuttingpercent"></xref> that Player 2 will always choose the large piece, thus Player 1 does best to cut the cake evenly. The outcome of the game is the <em>strategy pair</em><idx><h>strategy pair</h></idx> denoted {Cut Evenly, Larger Piece}, with resulting payoff vector <m>(50, 50)</m>.
+      It is probably simple to see from the matrix in <xref ref="T_cakecuttingpercent"></xref> that Player 2 will always choose the large piece, thus Player 1 does best to cut the cake evenly. The outcome of the game is the <em>strategy pair</em><idx><h>strategy pair</h></idx> denoted [Cut Evenly, Larger Piece], with resulting payoff vector <m>(50, 50)</m>.
     </p>
 
     <p>
@@ -113,6 +115,7 @@
     </p>
 
     <example xml:id="E_pokerzero">
+      <title>Poker Payoffs Revisited</title>
       <statement>
         <p>
           Consider the above poker game where each player begins the game with <dollar />100. Suppose at some point in the game the five players have the following amounts of money: <dollar />50, <dollar />200, <dollar />140, <dollar />100. <dollar />10. Then we could think of their gain as -<dollar />50, <dollar />100, <dollar />40, <dollar />0, -<dollar />90. What do these five numbers add up to?
@@ -121,6 +124,7 @@
     </example>
 
     <example xml:id="E_cakecuttingzero">
+      <tile>Converting to Payoffs that Sum to Zero</tile>
       <statement>
         <p>
           Convert the cake division payoffs so that the payoff vectors sum to zero (rather than 100).
@@ -176,6 +180,7 @@
       Two candidates, Arnold and Bainbridge, are facing each other in a state election. They have three choices regarding the issue of the speed limit on I-5: They can support raising the speed limit to 70 MPH, they can support keeping the current speed limit, or they can dodge the issue entirely. The next three examples present three different payoff matrices for Arnold and Bainbridge.
     </p>
     <example xml:id="Ex_election1">
+      <title>The Speed Limit Issue</title>
       <statement>
         <p>
           The candidates have the information given in <xref ref="T_election1"></xref> about how they would likely fare in the election based on how they stand on the speed limit.
@@ -222,6 +227,7 @@
       </statement>
     </example>
     <exercise xml:id="E_election1">
+      <title>Anaylsis of the election game</title>
       <statement>
       <p> For the following questions, assume Arnold and Bainbridge have the payoff matrix given in <xref ref="Ex_election1"></xref>.
       </p>
@@ -245,6 +251,7 @@
       </statement>
     </exercise>
     <example xml:id="Ex_election2">
+      <title>A New Scenario</title>
       <statement>
         <p>
           Bainbridge's mother is injured in a highway accident caused by speeding. The new payoff matrix is given in <xref ref="T_election2"></xref>.
@@ -291,6 +298,7 @@
       </statement>
     </example>
    <exercise xml:id="E_election2">
+    <title>Anaysis of the second scenario</title>
     <statement>
       <p> For the following questions, assume Arnold and Bainbridge have the payoff matrix given in <xref ref="Ex_election2"></xref>.
       </p>.
@@ -314,6 +322,7 @@
       </statement>
     </exercise>
     <example xml:id="Ex_election3">
+      <title>A Third Scenario</title>
       <statement>
         <p>
           Bainbridge begins giving election speeches at college campuses and monster truck rallies.
@@ -361,6 +370,7 @@
       </statement>
     </example>
    <exercise xml:id="E_election3">
+    <title>Analyis of the third scenario</title>
     <statement>
       <p> For the following questions, assume Arnold and Bainbridge have the payoff matrix given in <xref ref="Ex_election3"></xref>.
       </p>
@@ -384,6 +394,7 @@
       </statement>
     </exercise>
     <exercise>
+      <title>Changing the strategy</title>
       <statement>
         <p>
           In each of the above scenarios, is there any reason for Arnold or Bainbridge to change his strategy? If there is, explain under what circumstances it makes sense to change strategy. If not, explain why it never makes sense to change strategy.
@@ -440,13 +451,14 @@
     </table>
 
     <p>
-      You determined that Player 2 should choose to play Y, and thus, Player 1 should play B (i.e., we have the strategy pair {B, Y}). Why is this an equilibrium pair? If Player 2 plays Y, does Player 1 have any reason to change to strategy A? No, she would lose 10 instead of 1! If Player 1 plays B, does Player 2 have any reason to change to strategy X? No, she would gain 0 instead of 1! Thus neither player benefits from changing strategy, and so we say {B, Y} is an equilibrium pair.
+      You determined that Player 2 should choose to play Y, and thus, Player 1 should play B (i.e., we have the strategy pair [B, Y]). Why is this an equilibrium pair? If Player 2 plays Y, does Player 1 have any reason to change to strategy A? No, she would lose 10 instead of 1! If Player 1 plays B, does Player 2 have any reason to change to strategy X? No, she would gain 0 instead of 1! Thus neither player benefits from changing strategy, and so we say [B, Y] is an equilibrium pair.
     </p>
 
     <p>
-      For now, we can use a <q>guess and check</q> method for finding equilibrium pairs. Take each outcome and decide whether either player would prefer to switch. Remember, Player 1 can only choose a different row, and Player 2 can only choose a different column. In our above example there are four outcomes to check: {A, X}, {A, Y}, {B, X}, and {B, Y}. We already know {B, Y} is an equilibrium pair, but let's check the rest. Suppose the players play {A, X}. Does Player 1 want to switch to B? No, she'd rather get 100 than 0. Does player 2 want to switch to Y? Yes! She'd rather get 10 than -100. So {A, X} is NOT an equilibrium pair since a player wants to switch. Now check that for {A, Y} Player 1 would want to switch, and for {B, X} both players would want to switch. Thus {A, Y} and {B, X} are NOT equilibrium pairs. Now you can try to find equilibrium pairs in any matrix game by just checking each payoff vector to see if one of the players would have wanted to switch to a different strategy.
+      For now, we can use a <q>guess and check</q> method for finding equilibrium pairs. Take each outcome and decide whether either player would prefer to switch. Remember, Player 1 can only choose a different row, and Player 2 can only choose a different column. In our above example there are four outcomes to check: [A, X], [A, Y], [B, X], and [B, Y]. We already know [B, Y] is an equilibrium pair, but let's check the rest. Suppose the players play [A, X]. Does Player 1 want to switch to B? No, she'd rather get 100 than 0. Does player 2 want to switch to Y? Yes! She'd rather get 10 than -100. So [A, X] is NOT an equilibrium pair since a player wants to switch. Now check that for [A, Y] Player 1 would want to switch, and for [B, X] both players would want to switch. Thus [A, Y] and [B, X] are NOT equilibrium pairs. Now you can try to find equilibrium pairs in any matrix game by just checking each payoff vector to see if one of the players would have wanted to switch to a different strategy.
     </p>
     <exercise>
+      <title>Checking equilibrium pairs</title>
       <statement>
         <p>
           Are the strategy pairs you determined in the three election scenarios equilibrium pairs? In other words, would either player prefer to change strategies? (You don't need to check whether any other strategies are equilibrium pairs.)
@@ -454,6 +466,7 @@
       </statement>
     </exercise>
     <exercise>
+      <title>Using <q>guess and check</q></title>
       <statement>
         <p>
         Use the <q>guess and check</q> method to determine any equilibrium pairs for the following payoff matrices.
@@ -493,6 +506,7 @@
     <p>After trying the above examples, do you think every game has an equilibrium pair? Can games have multiple equilibrium pairs?</p>
 
     <exercise>
+      <title>Existence of equilibrium pairs</title>
       <statement>
         <p>
           Do all games have equilibrium pairs?
@@ -500,6 +514,7 @@
       </statement>
     </exercise>
     <exercise>
+      <title>Multiple equilibrium pairs</title>
       <statement>
         <p>
           Can a game have more than one equilibrium pair?
@@ -510,6 +525,7 @@
     <p>The last three exercises give you a few more games to practice with.</p>
 
     <exercise>
+      <title>Rock, paper, scissors</title>
       <statement>
         <p>
           Consider the game ROCK, PAPER, SCISSORS<idx><h>Rock-Paper-Scissors</h></idx> (Rock beats Scissors, Scissors beat Paper, Paper beats Rock). Construct the payoff matrix for this game. Does it have an equilibrium pair? Explain your answer.
@@ -517,6 +533,7 @@
       </statement>
     </exercise>
     <exercise xml:id="E_network">
+      <title>Battle of the networks</title>
       <statement>
         <p>
           Two television networks are battling for viewers for 7 pm Monday night. They each need to decide if they are going to show a sitcom or a sporting event. <xref ref="T_network"></xref> gives the payoffs as percent of viewers.
@@ -567,6 +584,7 @@
       </statement>
     </exercise>
     <exercise xml:id="E_compadvantage">
+      <title>Competitive advantage</title>
       <statement>
         <p>
           This game is an example of what economists call <em>Competitive Advantage</em><idx><h>Competitive Advantage</h></idx>. Two competing firms need to decide whether or not to adopt a new type of technology. The payoff matrix is in <xref ref="T_compadvantage"></xref>. The variable <m>a</m> is a positive number representing the economic advantage a firm will gain if it is the first to adopt the new technology.
@@ -606,7 +624,7 @@
 
         <ol label="a">
           <li><p>
-              Explain the payoff vector for each strategy pair. For example, why should the pair {Adopt New Tech, Stay Put} have the payoff <m>(a, -a)</m>?
+              Explain the payoff vector for each strategy pair. For example, why should the pair [Adopt New Tech, Stay Put] have the payoff <m>(a, -a)</m>?
             </p></li>
 
           <li><p>

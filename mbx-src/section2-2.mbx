@@ -6,6 +6,7 @@
   </p>
 
   <example xml:id="E_domstrat1">
+    <title>A Simpler Payoff Matrix</title>
     <statement>
       <p>
         Consider the zero-sum game with payoff matrix in <xref ref="T_smallexample"></xref>. Note that for simplicity our payoff matrix contains only the payoffs and not the strategy names; but Player 1 still chooses a row and Player 2 still chooses a column.
@@ -130,6 +131,7 @@
   </p>
 
   <example xml:id="E_domstrat2">
+    <title>A <m>2\times 3</m> Game</title>
     <statement>
       <p>
         Consider the zero-sum game given in <xref ref="T_biggerexampleP1"></xref>.
@@ -164,6 +166,7 @@
   </example>
 
   <example xml:id="E_domstrat3">
+    <title>Another <m>2 \times 3</m> Game</title>
     <statement>
       <p>
         Consider the zero-sum game given in <xref ref="T_biggerexample2"></xref>.
@@ -368,6 +371,7 @@
     Again, now it is easy to determine what each player should do.
   </p>
   <exercise>
+    <title>Check equilibrium pairs</title>
     <statement>
       <p>
         Check that the strategy pairs we determined in <xref ref="E_domstrat2"></xref> and <xref ref="E_domstrat3"></xref> are, in fact, equilibrium pairs.
@@ -378,6 +382,8 @@
   <p>Now, look back at the election examples from <xref ref="Ex_election"></xref> and apply the process of eliminating dominated strategies.</p>
 
   <exercise>
+    <title>Eliminating dominated strategies</title>
+
     <statement>
       <p>
         Use the idea of eliminating dominated strategies to determine what each player should do in the Arnold/ Bainbridge examples in <xref ref="T_election1"></xref>, <xref ref="T_election2"></xref>, and <xref ref="T_election3"></xref>. Do you get the same strategy pairs as you determined in the related exercises (<xref ref="E_election1"></xref>, <xref ref="E_election2"></xref>, <xref ref="E_election3"></xref>)?
@@ -388,6 +394,7 @@
   <p>The next three exercises provide more practice in using dominated strategies to find equilibrium pairs.</p>
 
   <exercise xml:id="E_domstratpractice1">
+    <title>More practice with dominated strategies</title>
     <statement>
       <p>
         Use the idea of eliminating dominated strategies to determine any equilibrium pairs in the zero-sum game given in <xref ref="T_domstratpractice1"></xref>. Note, since it is a zero-sum game we need only show Player 1's payoffs. Explain all the steps in your solution. If you are unable to find an equilibrium pair, explain what goes wrong.
@@ -446,6 +453,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_domstratpractice2">
+    <title>Determine equilibrium pairs</title>
     <statement>
       <p>
         Determine any equilibrium pairs in the zero-sum game given in <xref ref="T_domstratpractice2"></xref>. Explain all the steps in your solution. If you are unable to find an equilibrium pair, explain what goes wrong.
@@ -504,6 +512,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_domstratpractice3">
+    <title>Practice finding equilibrium pairs</title>
     <statement>
       <p>
         Determine any equilibrium pairs in the zero-sum game given in <xref ref="T_domstratpractice3"></xref>. Explain all the steps in your solution. If you are unable to find an equilibrium pair, explain what goes wrong.
@@ -562,6 +571,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_domstratpractice4">
+    <title>A more challenging example</title>
     <statement>
       <p>
         Determine any equilibrium pairs in the zero-sum game given in <xref ref="T_domstratpractice4"></xref>. Explain all the steps in your solution. If you are unable to find an equilibrium pair, explain what goes wrong.
@@ -628,6 +638,7 @@
   </p>
 
   <example xml:id="E_intromaxmin">
+    <title>Playing Against the Best</title>
     <statement>
       <p>
         Assume you are Player 1, and you are playing against this <q>infinitely smart</q> Player 2. Consider the game in <xref ref="T_domstratpractice1"></xref>. If you pick row A, what will Player 2 do? Player 2 will pick column X or Y. Try this for each of the rows. Which row is your best choice? If you pick A, you will get <m>0</m>; if you pick B, you will get <m>-2</m>; if you pick C, you will get <m>1</m>; and if you pick D you will get <m>-2</m>. Thus, your best choice is to choose C and get <m>1</m>. Now assume you are Player 2, and Player 1 is <q>infinitely smart.</q> Which column is your best choice? If you pick W, Player 1 will get <m>1</m> (you will get <m>-1</m>); if you pick X, Player 1 will get <m>1</m>; if you pick Y, Player 1 will get <m>1</m>; and if you pick Z, you will get <m>10</m>. Thus, you can choose W, X, or Y (since you want Player 1 to win the least) and get <m>-1</m>.
@@ -636,6 +647,7 @@
   </example>
 
   <exercise>
+    <title>A new method</title>
     <statement>
       <p>
         Using the method described in <xref ref="E_intromaxmin"></xref>, determine what each player should do in the game in <xref ref="T_domstratpractice2"></xref>.
@@ -643,6 +655,7 @@
     </statement>
   </exercise>
   <exercise>
+    <title>More practice with the new method</title>
     <statement>
       <p>
         Using the method described in <xref ref="E_intromaxmin"></xref>, determine what each player should do in the game in <xref ref="T_domstratpractice3"></xref>.
@@ -653,6 +666,7 @@
   <p>After working through a few examples can you describe more generally the process used in <xref ref="E_intromaxmin"></xref>? What is Player 1 looking for in each row? Then how does she choose which row to play? What is Player 2 looking for in each column? How does he choose which column to play?</p>
 
   <exercise>
+    <title>Generalizing the new method</title>
     <statement>
       <p>
         Generalize the method described in <xref ref="E_intromaxmin"></xref>. In other words, give a general rule for how Player 1 should determine his or her best move. Do the same for Player 2.
@@ -660,6 +674,7 @@
     </statement>
   </exercise>
   <exercise>
+    <title>The new method and equlibrium points</title>
     <statement>
       <p>
         What do you notice about using this method on the games in <xref ref="T_domstratpractice1">Tables</xref>, <xref ref="T_domstratpractice2"></xref>, and <xref ref="T_domstratpractice3"></xref>? Is the solution an equilibrium pair?
@@ -667,6 +682,7 @@
     </statement>
   </exercise>
   <exercise>
+    <title>The new method on the challenging example</title>
     <statement>
       <p>
         Now try this method on the elusive payoff matrix in <xref ref="T_domstratpractice4">Table</xref>. What should each player do? Do you think we get an equilibrium pair? Explain.
@@ -674,9 +690,10 @@
     </statement>
   </exercise>
   <p>
-    The strategies we found using the above method have a more official name. Player 1's strategy is called the <em>maximin</em><idx><h>maximin strategy</h></idx> strategy. Player 1 is maximizing the minimum values from each row. Player 2's strategy is called the <em>minimax</em><idx><h>minimax</h></idx> strategy. Player 2 is minimizing the maximum values from each column. Notice, we can find the maximin and minimax strategies for any zero-sum game. But do our players always want to use these stratefies? Will they always result in an equilibrium pair? The next five exercises explore these questions.
+    The strategies we found using the above method have a more official name. Player 1's strategy is called the <em>maximin</em><idx><h>maximin strategy</h></idx> strategy. Player 1 is maximizing the minimum values from each row. Player 2's strategy is called the <em>minimax</em><idx><h>minimax</h></idx> strategy. Player 2 is minimizing the maximum values from each column. Notice, we can find the maximin and minimax strategies for any zero-sum game. But do our players always want to use these strategies? Will they always result in an equilibrium pair? The next five exercises explore these questions.
   </p>
   <exercise xml:id="E_domstratpractice5">
+    <title>Look for dominated strategies</title>
     <statement>
       <p>
         Let's consider another game matrix, given in <xref ref="T_domstratpractice5"></xref>. Explain why you cannot use dominated strategies to find an equilibrium pair. Do you think there is an equilibrium pair for this game (why or why not)?
@@ -735,6 +752,7 @@
     </statement>
   </exercise>
   <exercise>
+    <title>Find the maximin/minimax strategy</title>
     <statement>
       <p>
         If both players use the maximin/ minimax strategy, what is the outcome of the game in <xref ref="T_domstratpractice5"></xref>?
@@ -742,6 +760,7 @@
     </statement>
   </exercise>
   <exercise>
+    <title>Predicting a maximin strategy</title>
     <statement>
       <p>
         In the game in <xref ref="T_domstratpractice5"></xref>, if Player 1's opponent can guess that Player 1 will choose to use a maximin strategy, is Player 1 better off <em>not</em> using the maximin strategy?
@@ -749,6 +768,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_iterate5">
+    <title>Deviating from the maxinmin/minimax strategy</title>
     <statement>
       <p>
         Suppose both players initially decide to use the minimax/ maximin strategy in the game in <xref ref="T_domstratpractice5"></xref>. Is Player 1 better off choosing a different strategy? If Player 2 guesses a change, is Player 2 better off changing strategies? Continue this line of reasoning for several iterations. What strategies do each of the players choose? Is at least one player always better off switching strategies? Can we conclude that the maximin/ minimax strategy does not lead to an equilibrium pair?
@@ -756,6 +776,7 @@
     </statement>
   </exercise>
   <exercise>
+    <title>Comparing examples</title>
     <statement>
       <p>
         Compare your answers in <xref ref="E_iterate5"></xref> to what happens in <xref ref="E_domstratpractice1"></xref>, <xref ref="E_domstratpractice2"></xref>, and <xref ref="E_domstratpractice3"></xref>. Can you identify any key differences between the games in <xref ref="E_iterate5"></xref> and <xref ref="E_domstratpractice1"></xref>, <xref ref="E_domstratpractice2"></xref>, and <xref ref="E_domstratpractice3"></xref>?

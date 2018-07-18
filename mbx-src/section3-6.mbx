@@ -10,14 +10,13 @@
   </p>
 
   <example xml:id="Undercut">
+    <title>Undercut<idx><h>Undercut</h></idx></title>
     <statement>
-      <p>
-        <term>Undercut:</term><idx><h>Undercut</h></idx>
-      </p>
+     
 
       <p>
-        (From Douglas Hofstadter's <em>Metamagical Themas</em>.)
-        Each player chooses a number 1-5. If the two numbers don't differ by 1, then each player adds their own number to their score. If the two numbers differ by 1, then the player with the <em>lower</em> number adds <em>both</em> numbers to his or her score; the player with the higher number gets nothing.
+        
+        Each player chooses a number 1-5. If the two numbers don't differ by 1, then each player adds their own number to their score. If the two numbers differ by 1, then the player with the <em>lower</em> number adds <em>both</em> numbers to his or her score; the player with the higher number gets nothing. (From Douglas Hofstadter's <pubtitle>Metamagical Themas</pubtitle>.)
       </p>
 
       <p>
@@ -27,6 +26,7 @@
   </example>
 
   <exercise xml:id="E_Uplay">
+    <title>Play Undercut</title>
     <statement>
       <p>
         Choose an opponent and play Undercut several times. Keep track of the outcomes.
@@ -37,6 +37,7 @@
   <p>After playing Undercut with an opponent, try to devise a good strategy.</p>
 
   <exercise xml:id="E_Uguessstrat">
+    <title>Conjecture a strategy</title>
     <statement>
       <p>
         Just from playing Undercut several times, can you suggest a strategy for Player 1? What about for Player 2? For example, what number(s) should you play most often/ least often, or does it matter? Are there numbers you should never play? Does this game seem fair, or does one of the players seem to have an advantage? Explain your answers.
@@ -47,6 +48,7 @@
   <p>As we've seen before, a payoff matrix can help with analyzing a game.</p>
 
   <exercise xml:id="E_Upayoff">
+    <title>Payoff matrix</title>
     <statement>
       <p>
         Create a payoff matrix for Undercut. Note that your payoffs should have a score for each player.
@@ -54,6 +56,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_Unotzerosum">
+    <title>Zero-sum</title>
     <statement>
       <p>
         Is this a zero-sum game? Explain.
@@ -61,6 +64,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_Upureeq">
+    <title>Pure strategy equilibrium</title>
     <statement>
       <p>
         Does there appear to be a pure strategy equilibrium for this game? Explain.
@@ -71,6 +75,7 @@
   <p>Let's assume we are going to play Undercut repeatedly. By the time you and your opponent are done playing, what should it mean to win the game?</p>
 
   <exercise xml:id="E_Uwinner">
+    <title>Long-run winner</title>
     <statement>
       <p>
         How might we determine a <q>winner</q> for Undercut after playing several times?
@@ -81,6 +86,7 @@
     Most likely, you said that someone will win the game if they have the most points. In fact, we probably don't care if the final score is 10-12 or 110-112. In either case, Player 2 wins. Since we will play this game several times, we do care about the point difference. For example, a score of 5-1 would be better for Player 1 than 5-3. So let's think about the game in terms of the point difference between the players in a given game. This is called the <em>net gain</em><idx><h>net gain</h></idx>. For example, with score of 5-1, Player 1 would have a net gain of 4.
   </p>
   <exercise xml:id="E_Unetgainex">
+    <title>Net gain</title>
     <statement>
       <p>
         Calculate the net gain for Player 1 for each of the three rounds in <xref ref="Undercut"></xref> in the beginning of this section.
@@ -88,6 +94,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_Unetmatrix">
+    <title>Net gain payoff matrix</title>
     <statement>
       <p>
         Create a new payoff matrix for Undercut which uses the players' net gain for the payoff vectors.
@@ -95,6 +102,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_Uzerosum">
+    <title>Zero-sum</title>
     <statement>
       <p>
         Is this now a zero-sum game? Explain.
@@ -104,16 +112,19 @@
   <p>The method of using net gain to describe the payoffs to each player should be familiar from some of the really early examples where we turned constant-sum payoff vectors into zero-sum vectors. But note that the original form of this game wasn't even a constant-sum game! What we are really doing here is thinking about our payoffs not as points, but a win or loss relative to our opponent. Now that we have reframed Undercut as a zero-sum game, we can apply our methods for solving the game that we have seen in this chapter.</p>
 
   <exercise xml:id="E_Unetpureeq">
+    <title>Pure strategy equilibrium</title>
     <statement>
       <p>
-        Is there a pure strategy equilibrium for this game? Explain. (Hint: rather than looking at each option, you could compare the values for the pure maximin/ minimax strategies.)
+        Is there a pure strategy equilibrium for this game? Explain. 
       </p>
     </statement>
+    <hint><p>Rather than looking at each option, you could compare the values for the pure maximin/ minimax strategies.</p></hint>
   </exercise>
 
   <p>This game has one additional property that will help simplify our analysis. This game is <em>symmetric</em><idx><h>symmetric game</h></idx>, meaning the game looks the same to Players 1 and 2.</p>
 
   <exercise xml:id="E_Usymmetric">
+    <title>Symmetric games</title>
     <statement>
       <p>
          Give an example of another game which is symmetric. Give an example of a game which is <em>not</em> symmetric.
@@ -121,16 +132,19 @@
     </statement>
   </exercise>
   <exercise xml:id="E_symmetricpayoff">
+    <title>Expected payoff for a symmetric game</title>
     <statement>
       <p>
-        What is the expected payoff for a symmetric game? Explain your answer. (Hint: you might think about whether it is possible for a player to have an advantage in a symmetric game.)
+        What is the expected payoff for a symmetric game? Explain your answer.
       </p>
     </statement>
+    <hint><p>You might think about whether it is possible for a player to have an advantage in a symmetric game.</p></hint>
   </exercise>
   <p>
     Hopefully, you determined that there is not a pure strategy equilibrium for Undercut. Thus, we would like to find a mixed strategy equilibrium. Since this is a <m>5 \times 5</m> game, we cannot use our graphical solution. We will need to rely on our expected value solution. We want to decide with what probability we should play each number. Let <m>a, b, c, d, e</m> be the probabilities with which Player 2 plays 1-5, respectively. For example, if Player 1 plays a pure strategy of 2, then the expected value for Player 1, <m>E_1(2)</m>, is <m>-3a+0b+5c-2d-3e</m>.
   </p>
   <exercise xml:id="E_Uequations">
+    <title>Equations for Player 1's expected value</title>
     <statement>
       <p>
         Write down the five equations that give Player 1's expected value for each of Player 1's pure strategies.
@@ -138,6 +152,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_Uevzero">
+    <title>Expected value of a symmetric game</title>
     <statement>
       <p>
         In <xref ref="E_symmetricpayoff"></xref>, you should have determined that since this is a symmetric game, the expected value for each Player should be 0. Modify your equations to include this piece of information. It is important to recognize that this step greatly simplifies our work for the expected value method since we don't need to set the expected values equal to each other. HOWEVER, we can ONLY do this since we know the game is symmetric!
@@ -150,13 +165,16 @@
   <p>We now have five equations and five unknowns. There is a sixth equation: we know that the probabilities must add up to 1. We can now solve for the equilibrium strategy!</p>
 
   <exercise xml:id="E_Usolve">
+    <title>Solve the system of equations</title>
     <statement>
       <p>
-         Use matrices to solve the resulting system of six equations. Give the mixed strategy equilibrium for Player 2. What is the mixed strategy for Player 1? (Hint: should it be different than the strategy for Player 2?)
+         Use matrices to solve the resulting system of six equations. Give the mixed strategy equilibrium for Player 2. What is the mixed strategy for Player 1?
       </p>
     </statement>
+    <hint><p>Should it be different than the strategy for Player 2?</p></hint>
   </exercise>
   <exercise xml:id="E_Usummary">
+    <title>Summary</title>
     <statement>
       <p>
         Based on your answer to <xref ref="E_Usolve"></xref>, which number(s) should you play the most often? Which should you play the least? Are there any numbers that you should never play? Compare the mathematical solution to your conjectured solution for <xref ref="E_Uguessstrat"></xref>. Is there an advantage to knowing the mathematical solution?

@@ -78,13 +78,16 @@
     Let's apply this description of Prisoner's Dilemma to a few games we've seen. We can use the conditions to check if a game is really a Prisoner's Dilemma.
   </p>
   <exercise xml:id="E_describeconditions">
+    <title>Description of conditions</title>
     <statement>
       <p>
-        Describe each of the conditions (A) and (B) in words. Hint: <m>(T+S)/2</m> is the average of <m>T</m> and <m>S</m>.
+        Describe each of the conditions (A) and (B) in words.
       </p>
     </statement>
+    <hint><p> <m>(T+S)/2</m> is the average of <m>T</m> and <m>S</m>.</p></hint>
   </exercise>
   <exercise xml:id="E_CWPDshow">
+    <title>The conditions for Classwide Prisoner's Dilemma</title>
     <statement>
       <p>
         Show that the two conditions hold for the Class-wide Prisoner's Dilemma.
@@ -92,6 +95,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_PDshow">
+    <title>The conditions for Prisoner's Dilemma</title>
     <statement>
       <p>
         Recall the matrix for Prisoner's Dilemma from <xref ref="E_PrisonersDilemma"></xref>.
@@ -127,11 +131,13 @@
       </table>
 
       <p>
-        Determine <m>R, P, T,</m> and <m>S</m> for this game. Be careful: think about what cooperating versus defecting should mean. Show the conditions for Prisoner's Dilemma are satisfied. (Hint: time in jail is bad, so the bigger the number, the worse you do; thus, it might be helpful to think of the payoffs as negatives.)
+        Determine <m>R, P, T,</m> and <m>S</m> for this game. Be careful: think about what cooperating versus defecting should mean. Show the conditions for Prisoner's Dilemma are satisfied. 
       </p>
     </statement>
+    <hint><p>Time in jail is bad, so the bigger the number, the worse you do; thus, it might be helpful to think of the payoffs as negatives.</p></hint>
   </exercise>
   <exercise xml:id="E_chickenshow">
+    <title>The conditions for Chicken</title>
     <statement>
       <p>
         Recall the matrix for Chicken from <xref ref="E_Chicken"></xref>.
@@ -172,6 +178,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_conditionspractice1">
+    <title>The conditions on another game</title>
     <statement>
       <p>
         Consider the game:
@@ -189,6 +196,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_conditionspractice2">
+    <title>A little more practice</title>
     <statement>
       <p>
         Consider the game:
@@ -206,6 +214,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_conditionscompare">
+    <title>Compare the games</title>
     <statement>
       <p>
         The games in <xref ref="E_chickenshow"></xref>, <xref ref="E_conditionspractice1"></xref>, and <xref ref="E_conditionspractice2"></xref> are not true Prisoner's Dilemmas. For each game, how do the changes in payoffs affect how you play? In particular, in Prisoner's Dilemma, a player will generally choose to defect. This results in a non-optimal payoff for each player. Is this still true in <xref ref="E_chickenshow"></xref>, <xref ref="E_conditionspractice1"></xref>, and <xref ref="E_conditionspractice2"></xref>? If possible, use the changes in the conditions (A) and (B) to help explain any differences in how one should play.
@@ -216,6 +225,7 @@
     We can now define <em>defection</em><idx><h>defection</h></idx> as the idea that if everyone did it, things would be worse for everyone. Yet, if only one (or a small) number did it, life would be sweeter for that individual. We can define <em>cooperation</em><idx><h>cooperation</h></idx> as the act of resisting temptation for the betterment of all players.
   </p>
   <exercise xml:id="E_reallifeex">
+    <title>Example from real life</title>
     <statement>
       <p>
         Give an example of defection and cooperation from real life.

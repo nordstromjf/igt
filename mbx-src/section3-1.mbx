@@ -6,6 +6,7 @@
   </p>
 
   <example xml:id="E_smallrepeat">
+    <title>A <m>2\times 2</m> Repeated Game</title>
     <statement>
       <p>
         Consider the following zero-sum game
@@ -63,6 +64,7 @@
   </p>
 
   <example xml:id="E_repeatequil">
+    <title>Repeating a Game with an Equilibrium</title>
     <statement>
       <p>
         Consider the following zero-sum game
@@ -87,6 +89,7 @@
     Recall the familiar game <em>Rock-Paper-Scissors</em><idx><h>Rock-Paper-Scissors</h></idx>: ROCK beats SCISSORS, SCISSORS beat PAPER, and PAPER beats ROCK. Using the payoff matrix and experimentation, we will try to determine the best strategy for this game.
   </p>
   <exercise xml:id="E_RPSmatrix">
+    <title>RPS payoff matrix</title>
     <statement>
       <p>
         Construct a game matrix for Rock-Paper-Scissors.
@@ -94,6 +97,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_RPSzs">
+    <title>RPS and equilibrium points</title>
     <statement>
       <p>
         Is Rock-Paper-Scissors a zero-sum game? Does it have an equilibrium point? Explain.
@@ -101,6 +105,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_RPSplay">
+    <title>Play RPS</title>
     <statement>
       <p>
         We want to look at what happens if we repeat Rock-Paper-Scissors. Play the game ten times with an opponent. Record the results (list strategy pairs and payoffs for each player).
@@ -108,6 +113,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_RPSconjstrat">
+    <title>Conjecture a strategy</title>
     <statement>
       <p>
         Describe any strategy you used in <xref ref="E_RPSplay"></xref>.
@@ -115,6 +121,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_RPSreflect">
+    <title>Strengths and weaknesses of your strategy</title>
     <statement>
       <p>
         Reflect on your chosen strategy. Does it guarantee you a <q>win</q>? What should it mean to <q>win</q> in a repeated game? What are the strengths and weaknesses of you strategy?
@@ -122,6 +129,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_RPSshare">
+    <title>Share your strategy</title>
     <statement>
       <p>
         Discuss your strategy with someone else in the class (it can be your opponent). After sharing your ideas for a strategy, can you improve your previous strategy?
@@ -132,6 +140,7 @@
     Although you may have come up with a good strategy, let's see if we can't decide what the <q>best</q> strategy should be for Rock-Paper-Scissors. Let's assume we are playing Rock-Paper-Scissors against the smartest player to ever live. We will call such an opponent the <q>perfect</q> player.
   </p>
   <exercise xml:id="E_RPSpure">
+    <title>The weakness of a pure strategy</title>
     <statement>
       <p>
         Explain why it is not a good idea to play a pure strategy; i.e., to play only ROCK, only PAPER, or only SCISSORS.
@@ -139,6 +148,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_RPSuneven">
+    <title>An uneven strategy</title>
     <statement>
       <p>
         Does it make sense to play one option more often than another (for example, ROCK more often than PAPER)? Explain.
@@ -146,6 +156,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_RPSstratbest">
+    <title>Frequency of R, P, S</title>
     <statement>
       <p>
         How often should you play each option?
@@ -153,6 +164,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_RPSpattern">
+    <title>Playing a pattern</title>
     <statement>
       <p>
         Do you want to play in a predictable pattern or randomly? What are some advantages and disadvantages of a pattern? What are some advantages and disadvantages of a random strategy?
@@ -163,6 +175,7 @@
     Hopefully, you concluded that the best strategy against our perfect player would be to play ROCK, PAPER, SCISSORS 1/3 of the time each, and to play randomly. We can say that our strategy is to play each option randomly with a probability of 1/3, and call this the Random(1/3, 1/3, 1/3) strategy.
   </p>
   <exercise xml:id="E_RPSltpayoff">
+    <title>Long-term payoff</title>
     <statement>
       <p>
         Using this <q>best</q> strategy, what do you predict the long term payoff will be for Player 1? For Player 2?
@@ -170,13 +183,15 @@
     </statement>
   </exercise>
   <exercise xml:id="E_RPSdice">
+    <title>Testing the Random(1/3, 1/3, 1/3) strategy</title>
     <statement>
       <p>
-        Let's check our prediction. Using a die, let 1 and 2 represent ROCK, 3 and 4 represent PAPER, and 5 and 6 represent SCISSORS. Play the game 20 times with someone in class where each player rolls to determine the choice of ROCK, PAPER, or SCISSORS. Keep track of the strategy pairs and payoffs. What was the total payoff for each player? [At this point, if you still feel that you have a better strategy, try your strategy against the random one<ndash /> see what happens!]
+        Let's check our prediction. Using a die, let 1 and 2 represent ROCK, 3 and 4 represent PAPER, and 5 and 6 represent SCISSORS. Play the game 20 times with someone in class where each player rolls to determine the choice of ROCK, PAPER, or SCISSORS. Keep track of the strategy pairs and payoffs. What was the total payoff for each player? (At this point, if you still feel that you have a better strategy, try your strategy against the random one<ndash /> see what happens!)
       </p>
     </statement>
   </exercise>
   <exercise xml:id="E_RPSdicecompare">
+    <title>Compare to your prediction</title>
     <statement>
       <p>
         How did the actual outcome compare to your predicted outcome? What do you expect would happen if you play the game 100 times? (Or more?)
@@ -187,13 +202,15 @@
     Using ideas about probability and expected value we can more precisely answer <xref ref="E_RPSdicecompare"></xref>.
   </p>
   <exercise xml:id="E_RPSproboutcomes">
+    <title>Probabiliies when both players play the random strategy</title>
     <statement>
       <p>
-        Assume both players are using the Random(1/3, 1/3, 1/3) strategy. List all the possible outcomes for a single game (recall the outcome is the strategy pair and the payoff, for example {R, P}, <m>(-1, 1)</m>). What is the probability that any particular pair of strategies will be played? Are the strategy pairs equally likely?
+        Assume both players are using the Random(1/3, 1/3, 1/3) strategy. List all the possible outcomes for a single game (recall the outcome is the strategy pair and the payoff, for example [R, P], <m>(-1, 1)</m>). What is the probability that any particular pair of strategies will be played? Are the strategy pairs equally likely?
       </p>
     </statement>
   </exercise>
   <exercise xml:id="E_RPSexpval">
+    <title>Expected value</title>
     <statement>
       <p>
         Using the probabilities and payoffs from <xref ref="E_RPSproboutcomes"></xref> calculate the expected value of the game for each player.
@@ -201,6 +218,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_smallrepeatstrat">
+    <title>Strategy for the repeated <m>2\times 2</m> game</title>
     <statement>
       <p>
         Now consider the matrix from <xref ref="E_smallrepeat"></xref> above:

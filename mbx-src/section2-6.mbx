@@ -5,6 +5,7 @@
     Throughout this chapter, we have been trying to find solutions for two player zero-sum games by deciding what two rational players should do. In this section, we will try to understand where we are with solving two-player zero-sum games. The exercises in this section are intended to review the concepts of dominated strategies, equlibrium points, and the maximin/minimax strategies. By working through your own examples, we hope to tie these concepts together and ask some bigger questions about equilibrium points. For example, should a player always play an equilibrium strategy? Will the maximin/minimax strategy always find an equilibrium point if one exists? What should a player do if no equlibrium exists? Although the formal answers to some of these questions are outside the scope of this book, you should be able to make some good conjectures about equilibrium points and rational solutions to two-player zero-sum games.
   </p>
   <exercise xml:id="E_random2">
+    <title>Random <m>2\times 2</m> matrix</title>
     <statement>
       <p>
         Write down a random payoff (zero-sum) matrix with two strategy choices for each player.
@@ -12,6 +13,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_random3">
+    <title>Random <m>3\times 3</m> matrix</title>
     <statement>
       <p>
         Write down a random payoff (zero-sum) matrix with three strategy choices for each player.
@@ -19,6 +21,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_random4">
+    <title>Random <m>4\times 4</m> matrix</title>
     <statement>
       <p>
         Write down a random payoff (zero-sum) matrix with four strategy choices for each player.
@@ -26,6 +29,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_exchangematrices">
+    <title>Analyze several examples</title>
     <statement>
       <p>
       Exchange your list of matrices with another student in the class. For each matrix you have been given
@@ -47,6 +51,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_makelists">
+    <title>Classify examples</title>
     <statement>
       <p>
         Now combine all the examples of payoff matrices in a group of 3 or 4 students. Make a list of the examples with equilibrium points and a list of examples without equilibrium points. If you have only one list, try creating examples for the other list. Based on your lists, do you think random payoff matrices are likely to have equilibrium points?
@@ -57,6 +62,7 @@
    We want to use lists of matrices as experimental examples to try to answer some of the remaining questions we have about finding rational solutions for games and equilibrium points. If you don't feel you have enough examples, you are welcome to create more or gather more from your classmates.
   </p>
   <exercise>
+    <title>Playing an equilibrium strategy</title>
     <statement>
       <p>
         If a matrix has an equilibrium point, can a player ever do better to <em>not</em> play an equilibrium strategy? Explain.
@@ -64,6 +70,7 @@
     </statement>
   </exercise>
   <exercise>
+    <title>Equilibia and maximin/minimax</title>
     <statement>
       <p>
         If a matrix has an equilibrium point, does the maximin/minimax strategy always find it? Explain.
@@ -71,6 +78,7 @@
     </statement>
   </exercise>
   <exercise>
+    <title>No equilibria and maximin/minimax</title>
     <statement>
       <p>
         If a matrix does NOT have an equilibrium point, should a player always play the maximin/minimax strategy? Explain.
@@ -78,6 +86,7 @@
     </statement>
   </exercise>
   <exercise>
+    <title>Strategy and games with no equilibria</title>
     <statement>
       <p>
         If a matrix does NOT have an equilibrium point is there an ideal strategy for each player? Explain.
@@ -85,6 +94,7 @@
     </statement>
   </exercise>
   <exercise>
+    <title>Summarize the connections</title>
     <statement>
       <p>
         Write a brief summary of the connections you have observed between finding a rational solution for a game and equilibrium points.

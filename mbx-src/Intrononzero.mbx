@@ -5,6 +5,7 @@
     In this section we introduce non-zero-sum games. In a <em>non-zero-sum game</em><idx><h>non-zero-sum game</h></idx> the players' payoffs no longer need to sum to a constant value. Now it is possible for both players to gain or both players to lose.
   </p>
   <exercise xml:id="E_propertiesnonzero">
+    <title>Compare properties</title>
     <statement>
       <p>
         What are some properties of a zero-sum game that may no longer hold for a non-zero-sum game? For example, in a zero-sum game is it ever advantageous to inform your opponent of your strategy? Is it advantageous to communicate prior to game play and determine a joint plan of action? Would you still want to minimize your opponents payoff?
@@ -16,9 +17,10 @@
   </p>
 
   <example xml:id="E_battle_of_sexes">
+    <title>Battle of the Sexes<idx><h>Battle of the Sexes</h></idx></title>
     <statement>
       <p>
-        <em>Battle of the Sexes:</em><idx><h>Battle of the Sexes</h></idx> Alice and Bob want to go out to a movie. Bob wants to see an action movie, Alice wants to see a comedy. Both prefer to go to a movie together rather than to go alone. We can represent the situation with the payoff matrix in <xref ref="T_battleofsexes"></xref>:
+         Alice and Bob want to go out to a movie. Bob wants to see an action movie, Alice wants to see a comedy. Both prefer to go to a movie together rather than to go alone. We can represent the situation with the payoff matrix in <xref ref="T_battleofsexes"></xref>:
       </p>
 
       <table xml:id="T_battleofsexes" >
@@ -53,6 +55,7 @@
   </example>
 
   <exercise xml:id="E_BoSnotzerosum">
+    <title>Not zero-sum</title>
     <statement>
       <p>
         Explain why this is not a zero-sum game.
@@ -63,6 +66,7 @@
   <p> In zero-sum games it is never advantageous to let your opponent know you strategy. Does that property still apply for games like Battle of the Sexes?</p>
 
   <exercise xml:id="E_BoSannounce">
+    <title>Announcing a strategy</title>
     <statement>
       <p>
         Could it be advantageous for a player to announce his or her strategy? Could it be harmful to announce his or her strategy? If possible, describe a scenario in which it would be advantageous to announce a strategy. If possible, describe a scenario in which it would be harmful to announce a strategy.
@@ -73,13 +77,16 @@
   <p>We might first try to analyze Battle of the Sexes using the same techniques as we used for zero-sum games. For example, we might start as we would in zero-sum games by looking for any equilibrium points.</p>
 
   <exercise xml:id="E_BoSequilpoints">
+    <title>Equilibrium points</title>
     <statement>
       <p>
-        Since our main goal in analyzing games has been to find equilibrium points, let's find any equilibrium points for Battle of teh Sexes. Are there any strategy pairs where players would not want to switch? (Hint: there are two!)
+        Since our main goal in analyzing games has been to find equilibrium points, let's find any equilibrium points for Battle of teh Sexes. Are there any strategy pairs where players would not want to switch? 
       </p>
     </statement>
+    <hint><p>There are two!</p></hint>
   </exercise>
   <exercise xml:id="E_BoSunequal">
+    <title>Values of equilibrium points</title>
     <statement>
       <p>
         Are the equilibrium points the same (in other words, does each player get the same payoff at each equilibrium point)? Compare this to what must happen for zero-sum games.
@@ -90,6 +97,7 @@
   <p>Now that we know Battle of the Sexes has two equilibrium points, we should try to find actual strategies for Alice and Bob. Is there a good strategy for each if they play the game only once? What if they repeat the game? Recall that with zero-sum games, if there was an equilibrium, rational players always want to play it, even if the game is repeated. Does that still seem to work here? Also, how might the ability to communicate change what the players do? </p>
 
   <exercise xml:id="E_BoSrepeat">
+    <title>Repeating the game</title>
     <statement>
       <p>
         Suppose the game is played repeatedly. For example, Alice and Bob have movie night once a month. Suggest a strategy for Alice and for Bob. Feel free to play the game with someone from class. Try a playing several times <em>without communicating</em> about your strategy before each game.
@@ -97,6 +105,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_BoScommunication">
+    <title>Communication</title>
     <statement>
       <p>
         How could communication affect the choice of strategy? Now play several times where you are allowed to communicate about your strategy. Does this change your strategy?
@@ -104,6 +113,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_BoSmixedequil">
+    <title>Mixed strategy equilibrium</title>
     <statement>
       <p>
         In either case, communicating and not communicating, do you think your strategies for Alice and Bob represent a mixed strategy equilibrium?
@@ -111,6 +121,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_BoScomparezerosum">
+    <title>Compare to zero-sum</title>
     <statement>
       <p>
         In a zero-sum game, if there is a pure strategy equilibrium, then what happens when you repeat a game? If you repeat Battle of the Sexes, does the game always result in an equilibrium pair?
@@ -121,6 +132,7 @@
     Hopefully, you are beginning to see some of the challenges for analyzing non-zero-sum games. We know there are equilibrium points in Battle of the Sexes, but even rational play may not result in an equilibrium. For the remainder of this section, let's assume that players are <em>not</em> allowed to communicate about strategy prior to play. Such games are called <em>non-cooperative</em><idx><h>non-cooperative games</h></idx> games. Before moving on, let's try to find the maximin strategies for our players using the graphical method, as we did with zero-sum games.
   </p>
   <exercise xml:id="E_BoSBobsmatrix">
+    <title>Bob's payoff matrix</title>
     <statement>
       <p>
         Consider Battle of the Sexes from Bob's point of view. We know that Bob wants to maximize his payoff (that has not changed). So Bob doesn't care what Alice's payoff's are. Write down Bob's payoff matrix.
@@ -128,6 +140,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_BoSBobgraph">
+    <title>Graphical method on Bob's matrix</title>
     <statement>
       <p>
         Recall that the graphical method represents Bob's expected payoff depending on how often he plays each of his options. Sketch the graph associated with Bob's payoff matrix.
@@ -135,6 +148,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_BoSBobintersection">
+    <title>Bob's maximin mixed strategy</title>
     <statement>
       <p>
         The area between the two lines still represents the possible expected values for Bob, depending on how often Alice plays each of her strategies. So as before, the bottom lines represent the <em>least</em> Bob can expect as he varies his strategy. Thus, the point of intersection will represent the biggest of these smallest values (the maximin strategy). Find this point of intersection. How often should Bob play each option? What is his expected payoff?
@@ -145,6 +159,7 @@
     So no matter what Alice does, Bob can expect that over the long run he wins at least the value you found in <xref ref="E_BoSBobintersection"></xref>. Make sure you understand this before moving on.
   </p>
   <exercise xml:id="E_BoSAlicematrix">
+    <title>Alice's maximin mixed strategy</title>
     <statement>
       <p>
         Now consider Battle of the Sexes from Alice's point of view. Write down her payoff matrix and use the graphical method to find the probability with which she should play each option and her expected payoff.
@@ -155,6 +170,7 @@
     Now, from <xref ref="E_BoSBobintersection"></xref> and <xref ref="E_BoSAlicematrix"></xref> you have the minimum payoff each player should expect. Note that since this is not a zero-sum game, both players can expect a positive payoff. But now we want to see how this pair of mixed strategies really works for the players.
   </p>
   <exercise xml:id="E_BoSBobsmaximin">
+    <title>Alice's expected value when Bob plays his maximin strategy</title>
     <statement>
       <p>
         Assume Bob plays the mixed strategy from <xref ref="E_BoSBobintersection"></xref>. Calculate Alice's expected value for each of her <em>pure</em> strategies (<m>E_2</m>(Comedy) and <m>E_2</m>(Action)).
@@ -162,6 +178,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_BoSAlicepref">
+    <title>Alice's preference</title>
     <statement>
       <p>
         Are Alice's expected values equal? If not, which strategy does she prefer when Bob plays the mixed strategy from <xref ref="E_BoSBobintersection"></xref>? Does Alice want to deviate from her mixed strategy?
@@ -169,6 +186,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_BoSBobchange">
+    <title>Mixed strategy equilibrium</title>
     <statement>
       <p>
         Now if Alice plays a pure strategy, does Bob want to change his strategy? So is the mixed strategy pair for Bob and Alice from <xref ref="E_BoSBobintersection"></xref> and <xref ref="E_BoSAlicematrix"></xref> an equilibrium? In fact, if Bob changes his strategy, how does his expected value compare to the expected value for his mixed strategy?
@@ -176,16 +194,19 @@
     </statement>
   </exercise>
   <exercise xml:id="E_BoSgraphwrong">
+    <title>Downside of the graphical method</title>
     <statement>
       <p>
-        What goes wrong with the graphical method in the case of a non-zero-sum game? Hint: is it important for Alice to consider the minimax strategy? Does Alice have any reason to minimize Bob's payoff?
+        What goes wrong with the graphical method in the case of a non-zero-sum game? 
       </p>
     </statement>
+    <hint><p>Is it important for Alice to consider the minimax strategy? Does Alice have any reason to minimize Bob's payoff?</p></hint>
   </exercise>
   <p>
     As we can see by the above example, the methods used to analyze zero-sum games may not be too helpful for non-zero-sum games. Part of the problem is that in solving zero-sum games we take into consideration that one player wants to <em>minimize</em> the payoff to the other player. This is no longer the case. Changing strategies may allow BOTH players to do better. A player no longer has any reason to prevent the other player from doing better.
   </p>
   <exercise xml:id="E_BoSstartBmixed">
+    <title>Response to the mixed strategy</title>
     <statement>
       <p>
         So we know the mixed strategy won't give us an equilibrium. But suppose we start there. In other words, suppose Bob plans to play the mixed strategy from <xref ref="E_BoSBobintersection"></xref>. Which pure strategy should Alice play? In response, which pure strategy should Bob play? What is the outcome? Do you end up at an equilibrium?
@@ -193,6 +214,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_BoSstartAmixed">
+    <title>Bos's expected value when Alice plays her maximin strategy</title>
     <statement>
       <p>
         Now suppose Alice plans to play the mixed strategy from <xref ref="E_BoSAlicematrix"></xref>. Calculate the expected value for Bob for each of his pure strategies. Which pure strategy does Bob prefer to play? How will Alice respond to Bob's pure strategy? What is the outcome? Do you end up at an equilibrium?
@@ -200,6 +222,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_BoSoutguess">
+    <title>Outguessing the mixed strategy</title>
     <statement>
       <p>
         Suppose Bob thinks Alice will try the mixed strategy and Alice thinks Bob will try the mixed strategy. Which pure strategy will each play? What is the outcome? Do you end up at an equilibrium?
@@ -207,6 +230,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_BoSeverplaymixed">
+    <title>Playing the maximin mixed strategy</title>
     <statement>
       <p>
         Considering <xref ref="E_BoSstartBmixed"></xref>, <xref ref="E_BoSstartAmixed"></xref>, and <xref ref="E_BoSoutguess"></xref>, is it in a player's best interest to even consider playing the mixed strategy from <xref ref="E_BoSBobintersection"></xref> or <xref ref="E_BoSAlicematrix"></xref>?
@@ -217,6 +241,7 @@
   <p>We've seen the limitations of the graphical method, but what about the expected value method?</p>
 
   <exercise xml:id="E_BoSevsol">
+    <title>Expected value solution</title>
     <statement>
       <p>
         Try applying the expected value method to Battle of the Sexes. What mixed strategies do you get? Explain why this method will also not result in an equilibrium. You might want to consider whether it is important for one player to minimize the expected value for the other player.

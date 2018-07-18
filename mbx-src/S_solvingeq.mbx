@@ -1,8 +1,8 @@
 <section xml:id="S_solvingeq">
-  <title>Using Sage to Graph Lines and Solve Equations</title><idx><h><booktitle>Sage</booktitle></h></idx>
+  <title>Using Sage to Graph Lines and Solve Equations</title><idx><h><pubtitle>Sage</pubtitle></h></idx>
 
   <p>
-    In this section we will use technology to graph lines and solve for the intersection point. In particular, we will use an open online resource called <booktitle>Sage</booktitle><idx><booktitle>Sage</booktitle></idx>. 
+    In this section we will use technology to graph lines and solve for the intersection point. In particular, we will use an open online resource called <pubtitle>Sage</pubtitle><idx><pubtitle>Sage</pubtitle></idx>. 
   </p>
 
   <p>
@@ -51,26 +51,26 @@
     <li>
       <title>Step 1a.</title>
       <p>
-        If Player 1 always plays <m>A</m>, then we are considering the strategy pair <m>\{A, C\}</m>.
+        If Player 1 always plays <m>A</m>, then we are considering the strategy pair <m>[A, C]</m>.
 
         Since Player 1 never plays <m>B</m>,  <m>p=0</m>. 
 
-        The payoff to Player 1 for  <m>\{A, C\}</m> is <m>m=1</m>. 
+        The payoff to Player 1 for  <m>[A, C]</m> is <m>m=1</m>. 
 
-        Thus, for the strategy pair <m>\{A, C\}</m> we get <m>(p, m)=(0, 1)</m>. 
+        Thus, for the strategy pair <m>[A, C]</m> we get <m>(p, m)=(0, 1)</m>. 
 
       </p></li>
 
     <li>
       <title>Step 1b.</title>
       <p>
-        If Player 1 always plays <m>B</m>, then we are considering the strategy pair <m>\{B, C\}</m>.
+        If Player 1 always plays <m>B</m>, then we are considering the strategy pair <m>[B, C]</m>.
 
         Since Player 1 always plays <m>B</m>, <m>p=1</m>. 
 
-        The payoff to Player 1 for <m>\{A, C\}</m> is <m>m=-1</m>. 
+        The payoff to Player 1 for <m>[A, C]</m> is <m>m=-1</m>. 
 
-        Thus, for the strategy pair <m>\{B, C\}</m> we get <m>(p, m)=(1, -1)</m>.
+        Thus, for the strategy pair <m>[B, C]</m> we get <m>(p, m)=(1, -1)</m>.
       </p></li>
 
     <li>
@@ -83,7 +83,7 @@
     <li>
       <title>Step 1d.</title>
       <p>
-        Now we can use <booktitle>Sage</booktitle> to plot the points we determined in Step 1a and Step 1b  and the line between them. This line represents Player 2's pure strategy <m>C</m>. See <xref ref="F_MixedStrategyOneLine"></xref>. Click on the <q>Evaluate (Sage)</q> button to plot the line between the points <m>(0, 1)</m> and <m>(1, -1)</m>.
+        Now we can use <pubtitle>Sage</pubtitle> to plot the points we determined in Step 1a and Step 1b  and the line between them. This line represents Player 2's pure strategy <m>C</m>. See <xref ref="F_MixedStrategyOneLine"></xref>. Click on the <q>Evaluate (Sage)</q> button to plot the line between the points <m>(0, 1)</m> and <m>(1, -1)</m>.
 
         <sage>
           <input>
@@ -111,25 +111,25 @@
     <li>
       <title>Step 2a.</title>
       <p>
-        If Player 1 always plays <m>A</m>, then we are considering the strategy pair <m>\{A, D\}</m>.
+        If Player 1 always plays <m>A</m>, then we are considering the strategy pair <m>[A, D]</m>.
 
         Since Player 1 never plays <m>B</m>,  <m>p=0</m>. 
 
-        The payoff to Player 1 for  <m>\{A, D\}</m> is <m>m=0</m>. 
+        The payoff to Player 1 for  <m>[A, D]</m> is <m>m=0</m>. 
 
-        Thus, for the strategy pair <m>\{A, D\}</m> we get <m>(p, m)=(0, 0)</m>. 
+        Thus, for the strategy pair <m>[A, D]</m> we get <m>(p, m)=(0, 0)</m>. 
       </p></li>
 
     <li>
       <title>Step 2b.</title>
       <p>
-        If Player 1 always plays <m>B</m>, then we are considering the strategy pair <m>\{B, D\}</m>.
+        If Player 1 always plays <m>B</m>, then we are considering the strategy pair <m>[B, D]</m>.
 
         Since Player 1 always plays <m>B</m>,  <m>p=1</m>. 
 
-        The payoff to Player 1 for  <m>\{B, D\}</m> is <m>m=2</m>. 
+        The payoff to Player 1 for  <m>[B, D]</m> is <m>m=2</m>. 
 
-        Thus, for the strategy pair <m>\{B, D\}</m> we get <m>(p, m)=(1, 2)</m>.
+        Thus, for the strategy pair <m>[B, D]</m> we get <m>(p, m)=(1, 2)</m>.
       </p></li>
 
     <li>
@@ -173,7 +173,7 @@
       <p>
         Find the equation for Line C. 
 
-        This is the line passing through the points <m>(0, 1)</m> and <m>(1, -1)</m>. It has slope <m>-2</m> and <m>y</m>-intercept 1. Thus, it has equation <m>m=-2p+1</m>. [Recall the <m>x</m>-axis represents probability <m>p</m> and the <m>y</m>-axis represents expected payoff <m>m</m>.]
+        This is the line passing through the points <m>(0, 1)</m> and <m>(1, -1)</m>. It has slope <m>-2</m> and <m>y</m>-intercept 1. Thus, it has equation <m>m=-2p+1</m>. (Recall the <m>x</m>-axis represents probability <m>p</m> and the <m>y</m>-axis represents expected payoff <m>m</m>.)
       </p></li>
 
     <li>
@@ -188,6 +188,8 @@
       <title>Step 3c.</title>
       <p>
         Now we can use technology to help us solve the equations.
+      </p>
+
         <sage>
           <input>
             p, m = var('p, m')
@@ -197,15 +199,19 @@
           <output><m>p=1/4</m>, <m>m=1/2</m>
           </output>
         </sage>
+        
+      <p>
         We can use this Sage cell to solve for <m>p</m> and <m>m</m> by editing the equations <m>m==-2*p+1, m==2*p</m>.
-      </p></li>
-  <li>
-    <title>Step 4.</title>
-    <p>
+      </p>
+    </li>
+    <li>
+      <title>Step 4.</title>
+      <p>
       Determine Player 1's maximin mixed strategy<idx>maximin mixed strategy</idx>. 
 
       Recalling that <m>p</m> is the probability that Player 1 plays <m>B</m>, we know that Player 1 will play <m>B</m> with probability 1/4, and thus, play A with probability 3/4. The expected payoff for Player 1, <m>m</m>, is 1/2. It is important to check the algebraic solution with where the intersection point appears on the graph. Although we are using technology to help us graph and solve for the intersection point, we need to be able to catch any errors we make entering the information into Sage.
-    </p></li>
+      </p>
+    </li>
   </dl>
 
 
@@ -281,6 +287,7 @@
     Now use the Sage cells to help you analyze some more games!
   </p>
   <exercise xml:id="E_graph2practiceSage">
+    <title>Use Sage to find a mixed strategy equilibrium </title>
     <statement>
       <p>
       Consider the zero-sum game <m>\left[\begin{matrix}-4\amp 4\\
@@ -312,6 +319,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_graph3practiceSage">
+    <title>More practice with Sage</title>
     <statement>
       <p>
       Consider the zero-sum game <m>\left[\begin{matrix}0\amp 1\\

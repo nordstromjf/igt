@@ -5,6 +5,7 @@
     In this section, we will try to gain a greater understanding of equilibrium strategies in a game. In general, we call the pair of equilibrium strategies an <em>equilibrium pair</em><idx><h>equilibrium pair</h></idx>, while we call the specific payoff vector associated with an equilibrium pair an <em>equilibrium point</em><idx><h>equilibrium point</h></idx>.
   </p>
   <exercise xml:id="E_matrixexamples">
+    <title>Find equilibrium points</title>
     <statement>
       <p>
       Determine the equilibrium point(s) for the following games.
@@ -27,6 +28,7 @@
     </statement>
   </exercise>
   <exercise>
+    <title>An observation about equilibrium points</title>
     <statement>
       <p>
         What do you notice about the values of the equilibrium points of the games in <xref ref="E_matrixexamples"></xref>?
@@ -67,9 +69,10 @@
     <title> Equilibria in Column 1 </title>
     <statement>
       <p>
-        Explain what goes wrong if <m>(a, -a)</m> and <m>(d, -d)</m> are equilibria with <m>a \neq d</m>? Hint: think about the different cases, such as <m>a\lt d</m>, <m>a>d</m>.
+        Explain what goes wrong if <m>(a, -a)</m> and <m>(d, -d)</m> are equilibria with <m>a \neq d</m>?
       </p>
     </statement>
+    <hint><p>Think about the different cases, such as <m>a\lt d</m>, <m>a>d</m>.</p></hint>
   </exercise>
   <exercise xml:id="E_gencolneq">
     <title> Equilibria in the same column/row </title>
@@ -91,10 +94,10 @@
     From your last answer, you should see that we need to do more work to figure out what happens if the equilibria are diagonal. So let's assume that the two equilibria are <m>(a, -a)</m> and <m>(b, -b)</m> with <m>a \neq b</m>. It might be helpful to draw the payoff matrix and circle the equilibria.
   </p>
   <exercise xml:id="E_4ineq1">
-    <title> A player prefers the value of an equilibrium to another choice </title>
+    <title> A player prefers the value of an equilibrium</title>
     <statement>
       <p>
-        Construct a system of inequalities using the fact that a player prefers an equilibrium point to another choice. For example, Player 1 prefers <m>a</m> to <m>d</m>. Thus, <m>a > d</m>. List all four inequalities you can get using this fact. You should get two for each player<ndash /> remember that Player 1 can only compare values in the same column since he has no ability to switch columns. If necessary, convert all inequalities to ones without negatives. [Algebra review: <m>-5 \lt  -2</m> means <m>5 > 2</m>!]
+        Construct a system of inequalities using the fact that a player prefers an equilibrium point to another choice. For example, Player 1 prefers <m>a</m> to <m>d</m>. Thus, <m>a > d</m>. List all four inequalities you can get using this fact. You should get two for each player<ndash /> remember that Player 1 can only compare values in the same column since he has no ability to switch columns. If necessary, convert all inequalities to ones without negatives. (Algebra review: <m>-5 \lt  -2</m> means <m>5 > 2</m>!)
       </p>
     </statement>
   </exercise>
@@ -102,7 +105,7 @@
     <title> Create strings of inequalities </title>
     <statement>
       <p>
-        Now string your inequalities together. For example, if <m>a \lt  b</m> and <m>b \lt  c</m> then we can write <m>a \lt  b \lt  c</m>. [Be careful, the inequalities must face the same way; we cannot write <m>a> b \lt  c</m>!]
+        Now string your inequalities together. For example, if <m>a \lt  b</m> and <m>b \lt  c</m> then we can write <m>a \lt  b \lt  c</m>. (Be careful, the inequalities must face the same way; we cannot write <m>a> b \lt  c</m>!)
       </p>
     </statement>
   </exercise>
@@ -135,6 +138,7 @@
     We just worked through the proof, step-by-step, but now you need to put all the ideas together for yourself.
   </p>
   <exercise xml:id="E_2x2proof">
+    <title>The complete proof</title>
     <statement>
       <p>
         Write up the complete proof for the <m>2 \times 2</m> case in your own words.
@@ -142,16 +146,22 @@
     </statement>
   </exercise>
   <exercise xml:id="E_nxn">
+    <title>Generalizing to a larger game</title>
     <statement>
       <p>
-        Can you see how you might generalize to a larger game matrix? You do not need to write up a proof of the general case, just explain how the key ideas from the <m>2 \times 2</m> case would apply to a bigger game matrix. Hint: think about equilibria in (a) the same row, (b) in the same column, or (c) in a different row and column.
+        Can you see how you might generalize to a larger game matrix? You do not need to write up a proof of the general case, just explain how the key ideas from the <m>2 \times 2</m> case would apply to a bigger game matrix. 
       </p>
     </statement>
+    <hint><p>Think about equilibria in (a) the same row, (b) in the same column, or (c) in a different row and column.</p></hint>
   </exercise>
+  
+  <p>We've seen that any two equlibrium points must have the same value. However, it is important to note that just because an outcome has the same value as an equilibrium point, that does not mean it is also an equilibrium point. </p>
+
   <exercise xml:id="E_nonequil">
+    <title>Equal values may not be equilibria</title>
     <statement>
       <p>
-        It is important to note that just because two outcomes have the same value, it does not mean they are both equilibria. Give a specific example of a game matrix with two outcomes that are (0,0), where one is an equilibrium point and the other is not.
+         Give a specific example of a game matrix with two outcomes that are <m>(0, 0)</m>, where one is an equilibrium point and the other is not.
       </p>
     </statement>
   </exercise>

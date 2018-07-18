@@ -264,9 +264,10 @@
       <title>A betting game with two dice</title>
       <statement>
         <p>
-          You place a bet and roll two fair dice. If you roll a 7 or an 11, you receive your bet back (you break even). If you roll a 2, a 3, or a 12, then you lose your bet. If you roll anything else, you receive half of the sum you rolled in dollars. How much should you bet to make this a fair game? Hint: it might be helpful to begin with a table showing the possible sums, their probability, and the payoff for each.
+          You place a bet and roll two fair dice. If you roll a 7 or an 11, you receive your bet back (you break even). If you roll a 2, a 3, or a 12, then you lose your bet. If you roll anything else, you receive half of the sum you rolled in dollars. How much should you bet to make this a fair game? 
         </p>
       </statement>
+      <hint><p>It might be helpful to begin with a table showing the possible sums, their probability, and the payoff for each.</p></hint>
     </exercise>
     <p>In the next section we use the ideas of probability and expected value to understand how set up a payoff matrix for a game of chance.</p>
   </subsection>

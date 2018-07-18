@@ -14,14 +14,16 @@
   </p>
 
   <example xml:id="G_matching_pennies">
+    <title>Matching Pennies Game<idx><h>Matching Pennies</h></idx> </title>
     <statement>
       <p>
-        Consider the game called <em>Matching Pennies:</em><idx><h>Matching Pennies</h></idx> each player can choose HEADS (H) or TAILS (T); if the two players match, Player 1 wins; if the two players differ, Player 2 wins. What strategy should each player play?
+        Consider the game in which each player can choose HEADS (H) or TAILS (T); if the two players match, Player 1 wins; if the two players differ, Player 2 wins. What strategy should each player play?
       </p>
     </statement>
   </example>
 
   <exercise xml:id="E_mpmatrix">
+    <title>Payoff matrix</title>
     <statement>
       <p>
         Determine the payoff matrix for the Matching Pennies game.
@@ -29,6 +31,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_mpnoequil">
+    <title>Pure strategy equilibria</title>
     <statement>
       <p>
         Explain why the Matching Pennies game has no pure strategy equilibrium point.
@@ -36,6 +39,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_mpguess">
+    <title>Conjecture a mixed strategy</title>
     <statement>
       <p>
         Since we know that there is no pure strategy equilibrium point, we need to look for a mixed strategy equilibrium point. Just by looking at the payoff matrix for Matching Pennies, what do you think an ideal strategy for each player would be? Explain your choice.
@@ -43,6 +47,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_mpguessev">
+    <title>Expected value of conjecture</title>
     <statement>
       <p>
         Suppose both players play your ideal strategy in the Matching Pennies game, what should the expected value of the game be?
@@ -64,6 +69,7 @@
     Also, we will let <m>E_1(H)</m> be the expected value for Player 1 playing pure strategy H against a given strategy for Player 2. Similarly, <m>E_2(H)</m> will be Player 2's expected value for playing pure strategy H.
   </p>
   <exercise xml:id="E_mpP2_60_40">
+    <title>The <m>(60, 40)</m> strategy for Player 2</title>
     <statement>
       <p>
       Suppose Player 2 plays H 60<percent /> of the time and T 40<percent /> of the time.
@@ -93,6 +99,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_mp60_40badP2">
+    <title>The <m>(60, 40)</m> strategy is not ideal for Player 2</title>
     <statement>
       <p>
         Hopefully, you concluded that in <xref ref="E_mpP2_60_40"></xref> a pure strategy is good for Player 1. Explain why this means the 60/40 strategy is bad for Player 2.
@@ -100,6 +107,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_mpPlayH">
+    <title>When to play H</title>
     <statement>
       <p>
         For any particular mixed (or pure) strategy of Player 2, we could find <m>E_1(T)</m> and <m>E_1(H)</m>. Explain why if <m>E_1(H) > E_1(T)</m>, Player 1 should always play H.
@@ -107,6 +115,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_mpPlayT">
+    <title>When to play T</title>
     <statement>
       <p>
         Similarly, explain why if <m>E_1(H) \lt  E_1(T)</m>, Player 1 should always play T.
@@ -114,6 +123,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_mpuneqbad">
+    <title>Player 2 is unhappy when Player 1's expected values are unequal</title>
     <statement>
       <p>
         Explain why the situations in <xref ref="E_mpPlayH"></xref> and <xref ref="E_mpPlayT"></xref> are bad for Player 2.
@@ -121,6 +131,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_eqgood">
+    <title>Equal expected values are better</title>
     <statement>
       <p>
         Use your answers from <xref ref="E_mpPlayH"></xref>, <xref ref="E_mpPlayT"></xref>, and <xref ref="E_mpuneqbad"></xref> to explain why the situation in which <m>E_1(H)=E_1(T)</m> is the best for Player 2.
@@ -133,6 +144,7 @@
   </p>
   
   <exercise xml:id="E_mpequations">
+    <title>Equations for Player 1's expected values</title>
     <statement>
       <p>
         Let <m>P_2(H)</m> and <m>P_2(T)</m> be the probabilities that Player 2 plays H and T respectively. Find equations for <m>E_1(H)</m> and <m>E_1(T)</m> in terms of <m>P_2(H)</m> and <m>P_2(T)</m> for the game of Matching Pennies. Since we want <m>E_1(H)=E_1(T)</m>, set your two equations equal to each other. This gives you one equation in terms of <m>P_2(H)</m> and <m>P_2(T)</m>.
@@ -140,6 +152,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_explainprobeq">
+    <title>The sum equation</title>
     <statement>
       <p>
         Explain why we must also have <m>P_2(H)+P_2(T)=1</m>.
@@ -155,6 +168,7 @@
   </p>
 
   <exercise xml:id="E_mpsolve">
+    <title>Solve for Player 2's probabilities</title>
     <statement>
       <p>
         Using the equations from <xref ref="E_mpequations"></xref> and <xref ref="E_explainprobeq"></xref>, solve for <m>P_2(H)</m> and <m>P_2(T)</m>. You now have the equilibrium mixed strategy for Player 2. Does this match the mixed strategy you determined in <xref ref="E_mpguess"></xref>?
@@ -164,16 +178,19 @@
   <p>Now can you use a similar process to find Player 1's strategy? Whose expected values should you use? Whose probabliities?
   </p>
   <exercise xml:id="E_mpP1sol">
+    <title>Find Player 1's probabilities</title>
     <statement>
       <p>
-        Set up and solve the analogous equations from <xref ref="E_mpequations"></xref> and <xref ref="E_explainprobeq"></xref> for Player 1. Hint: we should have an equation for <m>E_2(H)</m> and one for <m>E_2(T)</m>. Since we are looking for the probabilities of each of Player 1's options, the equations should involve <m>P_1(H)</m> and <m>P_1(T)</m>. Again, does this match the mixed strategy from <xref ref="E_mpguess"></xref>?
+        Set up and solve the analogous equations from <xref ref="E_mpequations"></xref> and <xref ref="E_explainprobeq"></xref> for Player 1. Does this match the mixed strategy from <xref ref="E_mpguess"></xref>?
       </p>
     </statement>
+    <hint><p>We should have an equation for <m>E_2(H)</m> and one for <m>E_2(T)</m>. Since we are looking for the probabilities of each of Player 1's options, the equations should involve <m>P_1(H)</m> and <m>P_1(T)</m>. </p></hint>
   </exercise>
   <p>
     We now have a new method for finding the best mixed strategies for Players 1 and 2, assuming that each player is playing defensively against an ideal player. But how can we find the value of the game? For Player 2, we assumed <m>E_1(H)=E_1(T)</m>. In other words, we found the situation in which Player 1's expected value is the same no matter which pure strategy she plays. Thus, Player 1 is <em>indifferent</em> to which pure strategy she plays. If she were not indifferent, then she would play the strategy with a higher expected value. But, as we saw, this would be bad for Player 2. So Player 1 can assume that Player 2 will play the equilibrium mixed strategy. Thus, as long as Player 1 plays a mixed strategy, it doesn't matter whether at any given time, she plays H or T (this is the idea that she is indifferent to them). Hence, the expected value of the game for Player 1 is the same as <m>E_1(H)</m>, which is the same as <m>E_1(T)</m>. Similarly, we find that the expected value of the game for Player 2 is <m>E_2(H)</m> (or <m>E_2(T)</m>). This is a pretty complicated idea. You may need to think about it for a while. In the meantime, use the probabilities you found for each player and the equations for <m>E_1(H)</m> and  <m>E_2(H)</m> to find the value of the game for each player.
   </p>
   <exercise xml:id="E_mpEVP1">
+    <title>Find Player 1's expected value of the game</title>
     <statement>
       <p>
         Use the probabilities you calculated in <xref ref="E_mpsolve"></xref> to find <m>E_1(H)</m>, and hence the expected value of the game for Player 1. How does this compare to your prediction for the value of the game that you gave in <xref ref="E_mpguessev"></xref>?
@@ -181,6 +198,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_mpEVP2">
+    <title>Find Player 2's expected value of the game</title>
     <statement>
       <p>
         Use the probabilities you calculated in <xref ref="E_mpP1sol"></xref> to find <m>E_2(H)</m>, and hence the expected value of the game for Player 2. How does this compare to your prediction for the value of the game that you gave in <xref ref="E_mpguessev"></xref>?
@@ -190,6 +208,7 @@
   <p>Keep practicing with the expected value method on some other games!
   </p>
   <exercise xml:id="E_smallrepeatEV">
+    <title>Solve a <m>2\times 2</m> repeated game using expected values</title>
     <statement>
       <p>
         Apply this method of using expected value to <xref ref="E_smallrepeat"></xref> (which we solved using the graphical method in the previous section) to find the equilibrium mixed strategies for each player and the value of the game for each player:
@@ -202,11 +221,13 @@
     </statement>
   </exercise>
   <exercise xml:id="E_RPSEVsol">
+    <title>Expected value solution for Rock-Paper-Scissors</title>
     <statement>
       <p>
-        As we noted in this section, this method can be used to solve bigger games. We just have more equations. Use the expected value method to find the equilibrium mixed strategy for Rock-Paper-Scissors<idx><h>Rock-Paper-Scissors</h></idx> for Player 2. (Hint: You will need to set <m>E_1(R)=E_1(P)</m> and <m>E_1(P)=E_1(S)</m>; solve for <m>P_2(R), P_2(P), P_2(S)</m>; etc. It should be very similar to what you did for Matching Pennies, but there will be three equations and three unknowns.)
+        As we noted in this section, this method can be used to solve bigger games. We just have more equations. Use the expected value method to find the equilibrium mixed strategy for Rock-Paper-Scissors<idx><h>Rock-Paper-Scissors</h></idx> for Player 2.  
       </p>
     </statement>
+    <hint><p>You will need to set <m>E_1(R)=E_1(P)</m> and <m>E_1(P)=E_1(S)</m>; solve for <m>P_2(R), P_2(P), P_2(S)</m>; etc. It should be very similar to what you did for Matching Pennies, but there will be three equations and three unknowns.</p></hint>
   </exercise>
   <p>If you found this last exercise to be algebraically arduous, don't worry, we will eventually use technology to help us solve problems with several variables.</p>
 </section>

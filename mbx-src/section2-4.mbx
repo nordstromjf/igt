@@ -142,7 +142,7 @@
         Explain why it should make sense to use the expected values for the payoffs in the matrix for the strategy pair [Bet, Bet].
       </p>
     </statement>
-    <hint>Think about what a player needs to know to choose a strategy in a game of chance.</hint>
+    <hint><p>Think about what a player needs to know to choose a strategy in a game of chance.</p></hint>
   </exercise>
 
   <p>We can use a similar process to find the payoff vector for [Fold, Fold].</p>

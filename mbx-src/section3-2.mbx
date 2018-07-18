@@ -47,6 +47,7 @@
     We want to determine how often Player 1 should play A and how often she should play B.
   </p>
   <exercise xml:id="E_linearconjecture">
+    <title>Conjecture a strategy</title>
     <statement>
       <p>
         First it is good to test your instinct. Do you think she should play one of the strategies more often than the other? If so, which strategy should she play the most?
@@ -81,7 +82,7 @@
 
         In the case where Player 1 plays A and Player 2 plays C, what is the payoff to Player 1? This is <m>m</m>, so <m>m=1</m>. 
 
-        Thus, for the strategy pair <m>\{A, C\}</m> we get <m>(0, 1)</m> for <m>(p, m)</m>. 
+        Thus, for the strategy pair <m>[A, C]</m> we get <m>(0, 1)</m> for <m>(p, m)</m>. 
 
         It is important to note that <m>(0, 1)</m> is <em>not</em> a payoff vector. This is common notation for any ordered pair. With payoff vectors, the ordered pair represents the payoff to each player. Here the ordered pair represents a probability of playing B and the payoff to Player 1.
       </p></li>
@@ -95,7 +96,7 @@
 
         In the case where Player 1 plays B and Player 2 plays C, what is the payoff to Player 1? <m>m=-1</m>. 
 
-        Thus, for the strategy pair <m>\{B, C\}</m> we get <m>(1, -1)</m> for <m>(p, m)</m>.
+        Thus, for the strategy pair <m>[B, C]</m> we get <m>(1, -1)</m> for <m>(p, m)</m>.
       </p></li>
 
     <li>
@@ -172,7 +173,7 @@
 
         If Player 1 plays pure strategy <em>A</em>, then what is the probability that she plays B? <m>p=0</m>. What is the payoff to Player 1? <m>m=0</m>. 
 
-        Thus, for the strategy pair <m>\{A, D\}</m> we get <m>(0, 0)</m> for <m>(p, m)</m>.
+        Thus, for the strategy pair <m>[A, D]</m> we get <m>(0, 0)</m> for <m>(p, m)</m>.
       </p></li>
 
     <li>
@@ -182,7 +183,7 @@
 
         If Player 1 plays pure strategy B, then what is the probability that she plays B? <m>p=1</m>. What is the payoff to Player 1? <m>m=2</m>. 
 
-        Thus, for the strategy pair <m>\{B, D\}</m> we get <m>(1, 2)</m> for <m>(p, m)</m>.
+        Thus, for the strategy pair <m>[B, D]</m> we get <m>(1, 2)</m> for <m>(p, m)</m>.
       </p></li>
 
     <li>
@@ -385,6 +386,7 @@
     we will continue to label Player 1's strategies by <m>A</m> and <m>B</m>, and Player 2's strategies by <m>C</m> and <m>D</m>. We now want to determine the minimax strategy for Player 2. Keep in mind the payoffs are still the payoffs to Player 1, so Player 2 wants the payoff to be as small as possible.
   </p>
   <exercise xml:id="E_sketchgraphagain">
+    <title>Sketch the graph</title>
     <statement>
       <p>
         Sketch the graph for Player 1 that we drew above. Be sure to label the endpoints of each line. Also label each line according to which strategy they represent.
@@ -392,6 +394,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_showminimax">
+    <title>Indicate the minimax strategy</title>
     <statement>
       <p>
         Describe the minimax strategy<idx><h>minimax strategy, repeated games</h></idx> and show it on the graph. (You do not need to find the actual mixed strategy for Player 2.)
@@ -399,6 +402,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_payoffssame">
+    <title>Payoff vectors</title>
     <statement>
       <p>
         Are the payoff vectors for the maximin and minimax strategies the same?
@@ -413,6 +417,7 @@
     We now know that Player 2 wants to play the minimax strategy in response to Player 1's maximin strategy, so we need to find the actual mixed strategy for Player 2 to employ. Since we are minimizing Player 1's maximum expected payoff, we will continue to use the matrix representing Player 1's payoff. We will repeat the process we used for Player 1, except the <m>x</m>-axis now represents the probability that Player 2 will play <m>D</m>, and the lines will represent Player 1's strategies <m>A</m> and <m>B</m>. The <m>y</m>-axis continues to represent Player 1's payoff.
   </p>
   <exercise xml:id="E_graphStep0">
+    <title>Draw the axes for Player 2's strategy</title>
     <statement>
       <p>
         First sketch the axes. (Recall, the <m>x</m>-axis only goes from 0 to 1.)
@@ -420,6 +425,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_graphP1A">
+    <title>Player 1 plays <m>A</m></title>
     <statement>
       <p>
       Assume Player 1 only plays <m>A</m>.
@@ -441,6 +447,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_graphP1B">
+    <title>Player 1 plays <m>B</m></title>
     <statement>
       <p>
         Now assume Player 1 plays only <m>B</m>. Repeat the steps in <xref ref="E_graphP1A"></xref>, using <m>B</m> instead of <m>A</m>, to find the line representing Player 1's pure strategy <m>B</m>. (Label it!)
@@ -448,6 +455,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_graphminimax">
+    <title>The graph for Player 2</title>
     <statement>
       <p>
       It is important to keep in mind that although the <m>x</m>-axis refers to how often Player 2 will play <m>C</m> and <m>D</m>, the <m>y</m>-axis represents the payoff to <em>Player 1</em>.
@@ -469,6 +477,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_graphFindEquations">
+    <title>Equations for the lines</title>
     <statement>
       <p>
         Find the equations of the lines you drew in <xref ref="E_graphP1A"></xref> and <xref ref="E_graphP1B"></xref>.
@@ -476,6 +485,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_graphFindIntersection">
+    <title>The point of intersection</title>
     <statement>
       <p>
         Using the equations from <xref ref="E_graphFindEquations"></xref>, find the point of intersection of the two lines.
@@ -483,6 +493,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_graphSolution">
+    <title>Player 2's mixed strategy</title>
     <statement>
       <p>
         How often should Player 2 play <m>C</m>? How often should he play <m>D</m>? What is Player 1's expected payoff? And hence, what is Player 2's expected payoff?
@@ -490,16 +501,22 @@
     </statement>
   </exercise>
   <exercise xml:id="E_whyequil">
+    <title>Equilibrium strategies</title>
     <statement>
       <p>
-        Explain why each player should play the maximin/ minimax mixed strategy. In other words, explain why neither player benefits by changing his or her strategy. (Hint: think about playing defensively and assuming the other player is the <q>perfect</q> player.)
+        Explain why each player should play the maximin/ minimax mixed strategy. In other words, explain why neither player benefits by changing his or her strategy. 
       </p>
     </statement>
+    <hint>
+      <p>Think about playing defensively and assuming the other player is the <q>perfect</q> player.
+    </p>
+  </hint>
   </exercise>
   <p>
     Now it may have occurred to you that since this is a zero-sum game, we could have just converted our matrix to the payoff matrix for Player 2, and found Player 2's maximin strategy. But it is important to understand the relationship between the maximin and the minimax strategies. So for the sake of practice and a little more insight, find Player 2's maximin strategy by writing the payoff matrix for Player 2 and repeating the process that we did for Player 1. Keep in mind that Player 2 is finding the probability of playing <m>C</m> and <m>D</m> rather than <m>A</m> and <m>B</m>.
   </p>
   <exercise xml:id="E_graphconvert">
+    <title>Finding the maximin using Player 2's payoffs</title>
     <statement>
       <p>
         Convert the payoff matrix above into the payoff matrix for Player 2. Find the maximin strategy for Player 2 using the graphical method. Be sure to include a sketch of the graph (labeled!!), the equations for the lines, the probability that Player 2 will play <m>C</m> and <m>D</m>, and the expected payoff for Player 2.
@@ -507,6 +524,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_graphcompareapproaches">
+    <title>Compare the solutions</title>
     <statement>
       <p>
         Compare your answer in <xref ref="E_graphconvert"></xref> to your answer in <xref ref="E_graphSolution"></xref>.
@@ -514,6 +532,7 @@
     </statement>
   </exercise>
   <exercise xml:id="graphfair">
+    <title>Fairness</title>
     <statement>
       <p>
         Is this game fair? Explain.
@@ -521,16 +540,20 @@
     </statement>
   </exercise>
   <exercise xml:id="E_graphexplainEV">
+    <title>Expected payoff</title>
     <statement>
       <p>
-        We saw above that the expected payoff for Player 1 was 1/2. Explain what this means for a repeated game. (Hint: is it actually possible for a player to win 1/2 in a given game?)
+        We saw above that the expected payoff for Player 1 was 1/2. Explain what this means for a repeated game. 
       </p>
     </statement>
+    <hint>
+      <p>Is it actually possible for a player to win 1/2 in a given game?</p></hint>
   </exercise>
   <p>
     Now you are ready to try to analyze some more games!
   </p>
   <exercise xml:id="E_graph2practice">
+    <title>Practice finding mixed strategies</title>
     <statement>
       <p>
       Consider the zero-sum game <m>\left[\begin{matrix}-4\amp 4\\
@@ -562,6 +585,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_graph3practice">
+    <title>More practice finding mixed strategies</title>
     <statement>
       <p>
       Consider the zero-sum game <m>\left[\begin{matrix}0\amp 1\\

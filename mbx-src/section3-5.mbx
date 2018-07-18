@@ -10,6 +10,7 @@
   </p>
 
   <example xml:id="E_twoeq">
+    <title>Two Equations</title>
     <statement>
       <p> An example of a system of two lines:</p>
       <md>
@@ -24,6 +25,7 @@
   </p>
 
   <example xml:id="E_threeeq">
+    <title>Three Equations</title>
     <statement>
       <p> An example of a system of three equations where the variables are <m>E_1(A), E_1(B), P_2(C), P_2(D)</m>:</p>
       <md>
@@ -195,6 +197,7 @@
     Here are some more systems of equations to practice solving using augmented matrices. If you want to use the above Sage cells just edit the values for each row in the cell.
   </p>
   <exercise>
+    <title>Solve a system of 2 equations</title>
     <statement>
       <p>
         Solve the system of equations.
@@ -207,6 +210,7 @@
     </statement>
   </exercise>
   <exercise>
+    <title>Solve another system of 2 equations</title>
     <statement>
       <p>
         Solve the system of equations.
@@ -222,6 +226,7 @@
   <p>For larger matrices, you can edit the Sage cell by adding additional terms in each row, and adding more rows. For example, you can replace <m>[3,-5,1],[1,1,3]</m> with <m>[4,8,-4,4],[3,8,5,-11],[-2,1,12,-17]</m>.</p>
 
   <exercise>
+    <title>Solve a system of 3 equations</title>
     <statement>
       <p>
         Consider the system of equations
@@ -244,6 +249,7 @@
     </statement>
   </exercise>
   <exercise>
+    <title>Solve another system of 3 equations</title>
     <statement>
       <p>
         Consider the system of equations
@@ -266,6 +272,7 @@
     </statement>
   </exercise>
   <exercise>
+    <title>Even more practice with 3 equations</title>
     <statement>
       <p>
         Consider the system of equations
@@ -288,6 +295,7 @@
     </statement>
   </exercise>
   <exercise>
+    <title>Now, a sytem with 5 equations</title>
     <statement>
       <p>
         Consider the system of equations

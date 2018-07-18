@@ -38,6 +38,7 @@
 <p>Before playing the iterated version, think about how you would play the above game if you only play it once with an opponent. But let's also give the game some context as in the following exercise.</p>
 
   <exercise xml:id="E_internetpurchaseonce">
+    <title>A single internet purcase</title>
     <statement>
       <p>
         Suppose the above matrix represents the situation of purchasing an item (say, a used textbook) on the internet where both parties are untraceable. You agree to send the money at the same time that the seller agrees to send the book. Then we can think of Cooperating as each of you sending money/ book, and Defecting as not sending money/ book. Why might a player Cooperate? Why might a player Defect?
@@ -45,6 +46,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_internetpurchaserepeat">
+    <title>Repeated internet purchases</title>
     <statement>
       <p>
         Now suppose you wish to continue to do business with the other party. For example, instead of buying a used textbook, maybe you are buying music downloads. Why might a player cooperate? Why might a player defect? Do these resons differ from your reasons in <xref ref="E_internetpurchaseonce"></xref>?
@@ -55,6 +57,7 @@
   <p>It is possible that your answers to the above questions depended on the context, so let's go back to just thinking about the game as a simple matrix game. Think about how you played the Class-wide Prisoner's Dilemma, but now think about repeating the game several times with the same player. Do you think your strategy would change? Remember, if we repeat the game we are not restricted to playing a pure strategy.</p>
 
   <exercise xml:id="E_RPDstrategy">
+    <title>Strategy for repeated Prisoner's Dilemma</title>
     <statement>
       <p>
         Suggest a strategy for playing the Prisoner's Dilemma in <xref ref="T_CWPD3"></xref> repeatedly. DON'T SHARE YOUR STRATEGY WITH ANYONE YET!
@@ -65,6 +68,7 @@
   <p>Now let's see how your strategy works by actually playing the game several times.</p>
 
   <exercise xml:id="E_RPDplay">
+    <title>Play Prisoner's Dilemma repeatedly</title>
     <statement>
       <p>
         Play 10 rounds of Prisoner's Dilemma with someone in class. Use your suggested strategy. Keep track of the payoffs. Did your strategy seem effective? What should it mean to have an <q>effective</q> strategy?
@@ -113,6 +117,7 @@
   </ul>
   </p>
   <exercise xml:id="E_RPDplaytournament">
+    <title>A Prisoner's Dilemma tournament</title>
     <statement>
       <p>
         WITHOUT SHARING YOUR STRATEGY, play Prisoner's Dilemma 10 times with each of the other members of the class. Keep track of the payoffs for each game and your total score.
@@ -123,6 +128,7 @@
   <p>After playing Repeated Prisoner's Dilemma as a class, can you determine who used which strategy? At this point you may share your strategy with others. Was your strategy more effective with some strategies than with others? If some of the above strategies were not used, can you guess how your strategy would have done against them?</p>
 
   <exercise xml:id="E_RPDeffectivestrategies">
+    <title>Effectiveness of your strategy</title>
     <statement>
       <p>
          Describe which opponents' strategies seemed to give you more points, which seemed to give you fewer?
@@ -130,6 +136,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_RPDbeststrategies">
+    <title>Winning strategies</title>
     <statement>
       <p>
         Describe the strategy or strategies that had the highest scores in the tournament. Does this seem surprising? Why or why not? How do the winning strategies compare to the strategy you suggested in <xref ref="E_RPDstrategy"></xref>?
@@ -140,6 +147,7 @@
   <p>What strategies seem the most rational? Are pure strategies the most rational? Does it depend on what sort of strategy your opponent is playing?</p>
 
   <exercise xml:id="E_RPDcompare">
+    <title>Rationality in repeated Prisoner's Dilemma</title>
     <statement>
       <p>
         How does Repeated Prisoner's Dilemma differ from the <q>one-time</q> Prisoner's Dilemma? Try to think in terms of rational strategies.
@@ -150,6 +158,7 @@
   <p>As <xref ref="E_internetpurchaserepeat"></xref> suggests we can think of real-life interactions that can be modeled as a Prisoner's Dilemma.</p>
 
   <exercise xml:id="E_RPDreallife">
+    <title>Example of Repeated Prisoner's Dilemma in real life</title>
     <statement>
       <p>
         Describe a situation from real life that resembles a Repeated Prisoner's Dilemma.
@@ -162,6 +171,7 @@
   </p>
 
   <exercise xml:id="E_RPDfewdefect">
+    <title>Only a few defectors</title>
     <statement>
       <p>
         How do a few defectors fare in a society of mostly cooperators? How do the cooperators fare? (In other words, who will be more successful?) Keep in mind that everyone is playing with lots of cooperators and only a few defectors. Who will have the most points, cooperators or defectors?
@@ -169,6 +179,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_RPDfewcoop">
+    <title>Only a few cooperators</title>
     <statement>
       <p>
         How do a few cooperators fare in a society of mostly defectors? How do the defectors fare? (In other words, who will be more successful?) Keep in mind that everyone is playing with lots of defectors and only a few cooperators. Who will have the most points, cooperators or defectors?
@@ -179,6 +190,7 @@
   <p>After thinking about individuals in a society playing pure strategies, what happens to individiuals who are playing some of the mixed strategies listed above?</p>
 
   <exercise xml:id="E_RPDtft">
+    <title>A society of TIT-FOR-TATers</title>
     <statement>
       <p>
         Now consider a society of mostly TIT-FOR-TATers. How do a few defectors fare in a society of mostly TIT-FOR-TATers? How do the TIT-FOR-TATers fare? How would a few cooperators fare with the TIT-FOR-TATers? Would the evolution of such a society favor cooperation or defection?

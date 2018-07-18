@@ -22,7 +22,7 @@
 <latex-image-preamble>
 
 \usepackage{tikz}
-\usetikzlibrary{positioning,matrix,arrows}
+\usetikzliary{positioning,matrix,arrows}
 \usetikzlibrary{shapes,decorations,shadows,fadings}
 
 \usepackage{pgfplots}

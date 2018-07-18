@@ -34,7 +34,7 @@
   </p>
 
   <p>
-    [Adapted from Douglas Hofstadter, <em>Metamagical Themas</em>,  p. 740.]
+    Adapted from Douglas Hofstadter, <pubtitle>Metamagical Themas</pubtitle>,  p. 740.
   </p>
 
   <p>
@@ -44,6 +44,7 @@
   <p>Once everyone in class has made his or her choice, share your answers with the class. Then answer the following questions about the class's responses.</p>
 
   <exercise xml:id="E_CWPDsummary">
+    <title>Summary of responses</title>
     <statement>
       <p>
       <ol label="a">
@@ -67,13 +68,16 @@
     </statement>
   </exercise>
   <exercise xml:id="E_CWPDmatrix">
+    <title>Payoff matrix</title>
     <statement>
       <p>
-        Determine the payoff matrix for class-wide Prisoner's Dilemma. (Hint: although you played this game with each other person in the class, this is still a 2 person game!)
+        Determine the payoff matrix for class-wide Prisoner's Dilemma.
       </p>
     </statement>
+    <hint><p>Although you played this game with each other person in the class, this is still a 2 person game!</p></hint>
   </exercise>
   <exercise xml:id="E_CWPDreasons">
+    <title>Reasons for choice</title>
     <statement>
       <p>
         What are some reasons people chose C? What are some reasons people chose D?
@@ -84,6 +88,7 @@
   <p>Although we can now see what everyone chose, we might not agree that everyone made the most rational choice. How might perfectly rational players play the game?</p>
 
   <exercise xml:id="E_CWPDrational">
+    <title>The rational choice</title>
     <statement>
       <p>
         Thinking about the idea of <em>rationality</em>, what appears to be the most rational choice, C or D? If everyone is <em>equally</em> rational, then what would everyone do? If everyone is equally rational, should everyone choose the same thing?
@@ -91,16 +96,19 @@
     </statement>
   </exercise>
   <exercise xml:id="E_CWPDsame">
+    <title>Everyone is rational</title>
     <statement>
       <p>
-        Now suppose everyone is equally (and perfectly) rational. AND everyone knows that everyone else is equally (and perfectly) rational. What should everyone choose? (Hint: if everyone knows that everyone will choose the same answer, what should everyone choose to do?)
+        Now suppose everyone is equally (and perfectly) rational. AND everyone knows that everyone else is equally (and perfectly) rational. What should everyone choose? 
       </p>
     </statement>
+    <hint><p>If everyone knows that everyone will choose the same answer, what should everyone choose to do?</p></hint>
   </exercise>
 
   <p>The next two exercises look at two more examples of games where players can <q>Cooperate</q> or <q>Defect</q>. How does changing the payoffs change the players' incentive to cooperate or defect?</p>
 
   <exercise xml:id="E_PDvariant1">
+    <title>A game of cooperation and defection</title>
     <statement>
       <p>
         Consider the game in <xref ref="T_PDvariant1"></xref>
@@ -133,6 +141,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_PDvariant2">
+    <title>Another game of cooperation and defection</title>
     <statement>
       <p>
         Consider the game in <xref ref="T_PDvariant2"></xref>
@@ -165,6 +174,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_CWPDpayoffs">
+    <title>Motivation to cooperate or defect</title>
     <statement>
       <p>
         Looking at all three of the above games, can you think of what sort of payoffs you would need in order to cooperate (C)? What about to defect (D)?

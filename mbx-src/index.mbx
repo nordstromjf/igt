@@ -17,12 +17,12 @@
 }
 </macros>
 
-<rename element="Checkpoint" lang="en-US">Exercise</rename>
+<rename element="inlineexercise" lang="en-US">Exercise</rename>
 
 <latex-image-preamble>
 
 \usepackage{tikz}
-\usetikzliary{positioning,matrix,arrows}
+\usetikzlibrary{positioning,matrix,arrows}
 \usetikzlibrary{shapes,decorations,shadows,fadings}
 
 \usepackage{pgfplots}

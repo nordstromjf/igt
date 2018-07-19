@@ -356,9 +356,9 @@
         <md>
           <mrow>2x \amp =  \amp -2x+1</mrow>
           <mrow>4x \amp = \amp 1</mrow>
-          <mrow>x \amp = \amp {1\over 4}</mrow>
+          <mrow>x \amp = \amp \frac{1}{4}</mrow>
         </md>
-        Substituting <m>x={1\over 4}</m> back in to either original equation, say <m>y=2x</m>, gives us <m>y={1\over 2}</m>. Thus, the point of intersection is <m>(1/4, 1/2)</m>.
+        Substituting <m>x=\frac{1}{4}</m> back in to either original equation, say <m>y=2x</m>, gives us <m>y=\frac{1}{2}</m>. Thus, the point of intersection is <m>(1/4, 1/2)</m>.
       </p></li>
   <li>
     <title>Step 4.</title>

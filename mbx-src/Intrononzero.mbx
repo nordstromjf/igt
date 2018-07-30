@@ -222,7 +222,7 @@
     </statement>
   </exercise>
   <exercise xml:id="E_BoSoutguess">
-    <title>Outguessing the mixed strategy</title>
+    <title>Out-guessing the mixed strategy</title>
     <statement>
       <p>
         Suppose Bob thinks Alice will try the mixed strategy and Alice thinks Bob will try the mixed strategy. Which pure strategy will each play? What is the outcome? Do you end up at an equilibrium?

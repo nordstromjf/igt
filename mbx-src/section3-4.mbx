@@ -1,6 +1,6 @@
 
 <section xml:id="S_LiarsPoker">
-  <title>Repeated Two-person Zero-Sum Games: Liar's Poker</title>
+  <title>Liar's Poker</title>
   <p>
     In this section, we will continue to explore the ideas of a mixed strategy equilibrium. We have seen several examples of finding an equilibrium. We began with games which had a pure strategy equilibrium and then moved to games with mixed strategy equilibrium. We saw two different methods for finding an equilibrium. The first employed graphs in order to understand and find the maximin and minimax strategies, and hence the equilibrium mixed strategy. The second method employed the ideas of expected value to find the equilibrium strategy. We will continue to solidify these ideas with another game, a simplified variation of poker.
   </p>

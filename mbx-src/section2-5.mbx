@@ -69,7 +69,7 @@
     <title> Equilibria in Column 1 </title>
     <statement>
       <p>
-        Explain what goes wrong if <m>(a, -a)</m> and <m>(d, -d)</m> are equilibria with <m>a \neq d</m>?
+        Explain what goes wrong if <m>(a, -a)</m> and <m>(d, -d)</m> are equilibria with <m>a \neq d</m>.
       </p>
     </statement>
     <hint><p>Think about the different cases, such as <m>a\lt d</m>, <m>a>d</m>.</p></hint>

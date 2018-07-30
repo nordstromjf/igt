@@ -1,6 +1,6 @@
 
 <section xml:id="S_DominatedStrategies">
-  <title>More Two-Person Zero-Sum Games: Dominated Strategies</title>
+  <title>Dominated Strategies</title>
   <p>
     Recall that in a zero-sum game, we know that one player's win is the other player's loss. Furthermore, we know we can rewrite any zero-sum game so that the player's payoffs are in the form <m>(a, -a)</m>. Note, this works even if <m>a</m> is negative; in which case, <m>-a</m> is positive.
   </p>

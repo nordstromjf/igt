@@ -1,6 +1,6 @@
 
 <section xml:id="S_OneCardStud">
-  <title>Determining the Payoff Matrix in a Game of Chance</title>
+  <title>A Game of Chance</title>
   <p>
     Now that we have worked with expected value, we can begin to analyze some simple games that involve an element of chance.
   </p>
@@ -71,7 +71,7 @@
     Now let's work through creating the payoff matrix for One-Card Stud Poker.
   </p>
   <exercise xml:id="E_payoffBF">
-    <title>Payoff for [Bet, Fold]</title>
+    <title>Payoff for <brackets>Bet, Fold</brackets></title>
     <statement>
       <p>
         If Player 1 Bets and Player 2 Folds, does it matter which cards were dealt? How much does Player 1 win? How much does Player 2 lose? What is the payoff vector for [Bet, Fold]? (Keep in mind your answer to <xref ref="E_onecardzerosum"></xref>.)

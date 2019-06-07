@@ -15,7 +15,7 @@
     </p>
 
     <p>
-      Suppose each player has two choices: Heads (H) or Tails (T). If they choose the same letter, then Player 1 wins <dollar />1 from Player 2. If they don't match, then Player 1 loses <dollar />1 to Player 2. We can represent all the possible outcomes of the game with a <em>matrix</em><idx><h>game matrix</h></idx>.
+      Suppose each player has two choices: Heads (H) or Tails (T). If they choose the same letter, then Player 1 wins $1 from Player 2. If they don't match, then Player 1 loses $1 to Player 2. We can represent all the possible outcomes of the game with a <em>matrix</em><idx><h>game matrix</h></idx>.
     </p>
 
     <p>
@@ -60,7 +60,7 @@
     </definition>
 
     <p>
-      Now we can fill in the matrix with each player's payoff. Since the payoffs to each player are different, we will use ordered pairs where the first number is Player 1's payoff and the second number is Player 2's payoff. The ordered pair is called the <em>payoff vector</em><idx><h>payoff vector</h></idx>. For example, if both players choose H, then Player 1's payoff is <dollar />1 and Player 2's payoff is -<dollar />1 (since he loses to Player 1). Thus the payoff vector associated with the outcome H, H is <m>(1, -1)</m>.
+      Now we can fill in the matrix with each player's payoff. Since the payoffs to each player are different, we will use ordered pairs where the first number is Player 1's payoff and the second number is Player 2's payoff. The ordered pair is called the <em>payoff vector</em><idx><h>payoff vector</h></idx>. For example, if both players choose H, then Player 1's payoff is $1 and Player 2's payoff is -$1 (since he loses to Player 1). Thus the payoff vector associated with the outcome H, H is <m>(1, -1)</m>.
     </p>
 
     <p>

@@ -197,13 +197,13 @@
     </p>
 
     <p>
-      Thus, you would expect an average payoff of <dollar />0, if you were to play the game several times. Note, the expected value is not necessarily the actual value of playing the game.
+      Thus, you would expect an average payoff of $0, if you were to play the game several times. Note, the expected value is not necessarily the actual value of playing the game.
     </p>
     <exercise xml:id="E_Toss2coins">
       <title>Expected value and a two-coin game</title>
       <statement>
         <p>
-          Consider a game where you toss two coins. If you get two Heads, you win <dollar />2. If you get a Head and a Tail, you win <dollar />1, if you get two Tails, you lose <dollar />4. Find the expected value of the game. (Caution: first you need to find the probability of each event<ndash /> think about <q>equally likely</q> events.)
+          Consider a game where you toss two coins. If you get two Heads, you win $2. If you get a Head and a Tail, you win $1, if you get two Tails, you lose $4. Find the expected value of the game. (Caution: first you need to find the probability of each event<ndash /> think about <q>equally likely</q> events.)
         </p>
       </statement>
     </exercise>
@@ -237,7 +237,7 @@
       <title>Expected value of roulette</title>
       <statement>
         <p>
-          A standard roulette wheel has 38 numbered slots for a small ball to land in: 36 are marked from 1 to 36, with half of those black and half red; two green slots are numbered 0 and 00. An allowable bet is to bet on either red of black. This bet is an even money bet, which means if you win you receive twice what you bet. Many people think that betting black or red is a fair game. What is the expected value of betting <dollar />1000 on red? Is this a fair game? Explain.
+          A standard roulette wheel has 38 numbered slots for a small ball to land in: 36 are marked from 1 to 36, with half of those black and half red; two green slots are numbered 0 and 00. An allowable bet is to bet on either red of black. This bet is an even money bet, which means if you win you receive twice what you bet. Many people think that betting black or red is a fair game. What is the expected value of betting $1000 on red? Is this a fair game? Explain.
         </p>
       </statement>
     </exercise>
@@ -245,7 +245,7 @@
       <title>Another roulette example</title>
       <statement>
         <p>
-          Considering again the roulette wheel, if you bet <dollar />100 on a particular number and the ball lands on that number, you win <dollar />3600. What is the expected value of betting <dollar />100 on Red 4?
+          Considering again the roulette wheel, if you bet $100 on a particular number and the ball lands on that number, you win $3600. What is the expected value of betting $100 on Red 4?
         </p>
       </statement>
     </exercise>

@@ -26,7 +26,7 @@
       <title>Zero-sum in Poker</title>
       <statement>
         <p>
-          Consider a poker game in which each player comes to the game with <dollar />100. If there are five players, then the sum of money for all five players is always <dollar />500. At any give time during the game, a particular player may have more than <dollar />100, but then another player must have less than <dollar />100. One player's win is another player's loss.
+          Consider a poker game in which each player comes to the game with $100. If there are five players, then the sum of money for all five players is always $500. At any give time during the game, a particular player may have more than $100, but then another player must have less than $100. One player's win is another player's loss.
         </p>
       </statement>
     </example>
@@ -118,7 +118,7 @@
       <title>Poker Payoffs Revisited</title>
       <statement>
         <p>
-          Consider the above poker game where each player begins the game with <dollar />100. Suppose at some point in the game the five players have the following amounts of money: <dollar />50, <dollar />200, <dollar />140, <dollar />100. <dollar />10. Then we could think of their gain as -<dollar />50, <dollar />100, <dollar />40, <dollar />0, -<dollar />90. What do these five numbers add up to?
+          Consider the above poker game where each player begins the game with $100. Suppose at some point in the game the five players have the following amounts of money: $50, $200, $140, $100. $10. Then we could think of their gain as -$50, $100, $40, $0, -$90. What do these five numbers add up to?
         </p>
       </statement>
     </example>

@@ -193,15 +193,14 @@
         <sage>
           <input>
             p, m = var('p, m')
-            S=solve([m==-2*p+1, m==2*p], p, m)[0]
-            pretty_print(html("<p>The solution for Player 1 is <ul><li>$%s$, </li><li>$%s$</li></ul>.</p>"%(latex(S[0]),latex(S[1]))))
+            solve([m==-2*p+1, m==2*p], p, m)[0] 
           </input>
-          <output><m>p=1/4</m>, <m>m=1/2</m>
+          <output>[p == (1/4), m == (1/2)]
           </output>
         </sage>
-        
+        <p>The solution for Player 1 is <m>(p, m)</m>. Where <m>p</m> is the probability Player 1 plays B, and <m>m</m> is the expected payoff to Player 1.</p>
       <p>
-        We can use this Sage cell to solve for <m>p</m> and <m>m</m> by editing the equations <m>m==-2*p+1, m==2*p</m>.
+        We can use this Sage cell to solve for <m>p</m> and <m>m</m> for any <m>2\times 2</m> game by editing the equations <m>m==-2*p+1, m==2*p</m>.
       </p>
     </li>
     <li>
@@ -262,7 +261,7 @@
     <input>
     p, m = var('p, m')
     @interact
-    def intersection(Slope1=-1,Intercept1=3,Slope2=1,Intercept2=-1):
+    def intersection(Slope1=-1,Intercept1=1,Slope2=3,Intercept2=-1):
       Eq1 = m==Slope1*p+Intercept1
       Eq2 = m==Slope2*p+Intercept2
       S = solve([Eq1, Eq2], p, m)[0]

@@ -52,7 +52,7 @@
   </definition>
 
   <p>
-    For example, if a player plays Row A 40<percent /> of the time and Row B 60<percent /> of the time, we will say he is playing a (.4, .6) strategy, as we generally use the probability rather than the percent. The probabilities of each strategy will be listed in the same order as the strategies in the matrix.
+    For example, if a player plays Row A 40% of the time and Row B 60% of the time, we will say he is playing a (.4, .6) strategy, as we generally use the probability rather than the percent. The probabilities of each strategy will be listed in the same order as the strategies in the matrix.
   </p>
 
   <p>

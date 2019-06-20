@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<mathbook xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
 <docinfo>
 	<brandlogo source="images/image-1.svg" />
 <macros>
@@ -17,7 +17,7 @@
 }
 </macros>
 
-<rename element="inlineexercise" lang="en-US">Exercise</rename>
+<rename element="inlineexercise" xml:lang="en-US">Exercise</rename>
 
 <latex-image-preamble>
 
@@ -56,7 +56,7 @@
             <year>2017</year>
             <holder>Jennifer Firkins Nordstrom</holder>
             <minilicense>Creative Commons Attribution-ShareAlike 4.0 International License</minilicense>
-            <shortlicense><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</shortlicense>
+            <shortlicense>This work is licensed under a <url  href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</url>.</shortlicense>
      </copyright>
 
      <p>The images in this text were designed and created by the author using TikZ.</p>
@@ -133,4 +133,4 @@ Students with even a rudimentary background in algebra will find the material ac
 
 </backmatter>
 </book>
-</mathbook>
+</pretext>

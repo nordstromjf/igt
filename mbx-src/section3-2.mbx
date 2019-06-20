@@ -1,9 +1,12 @@
 
 <section xml:id="S_MixStratGraph">
   <title>Mixed Strategies: Graphical Solution</title>
-  <p>
+ 
     <idx><h>graphical solution</h></idx>
-  </p>
+    <idx><h>solution to two player game</h><h>graphical</h></idx>
+    <idx><h>mixed strategy</h><h>graphical solution</h></idx>
+    <idx><h>maximin strategy</h><h>graphical solution</h></idx>
+  
 
   <p>
     In this section we will learn a method for finding the maximin solution for a repeated game using a graph.
@@ -285,7 +288,7 @@
   </figure>
 
   <p>
-    Hopefully, you've begun to see that for each choice of <m>p</m>, the top line represents the highest expected value for Player 1; the bottom line represents the lowest expected value for Player 1; the area between the lines represents the possible expected values for Player 1. As we did with non-repeated games, let's look at the <q>worst case scenario</q> for Player 1. In other words, let's assume that Player 2 can figure out Player 1's strategy. Then Player 1 would want to <em>maximize the minimum expected value</em>. Aha! This is just looking for the <em>maximin</em> strategy<idx><h>maximin strategy, repeated games</h></idx>!
+    Hopefully, you've begun to see that for each choice of <m>p</m>, the top line represents the highest expected value for Player 1; the bottom line represents the lowest expected value for Player 1; the area between the lines represents the possible expected values for Player 1. As we did with non-repeated games, let's look at the <q>worst case scenario</q> for Player 1. In other words, let's assume that Player 2 can figure out Player 1's strategy. Then Player 1 would want to <em>maximize the minimum expected value</em>. Aha! This is just looking for the <em>maximin</em> strategy<idx><h>maximin strategy</h><h>repeated games</h></idx>!
   </p>
 
   <p>
@@ -397,7 +400,7 @@
     <title>Indicate the minimax strategy</title>
     <statement>
       <p>
-        Describe the minimax strategy<idx><h>minimax strategy, repeated games</h></idx> and show it on the graph. (You do not need to find the actual mixed strategy for Player 2.)
+        Describe the minimax strategy<idx><h>minimax strategy</h><h>repeated games</h></idx> and show it on the graph. (You do not need to find the actual mixed strategy for Player 2.)
       </p>
     </statement>
   </exercise>
@@ -410,7 +413,7 @@
     </statement>
   </exercise>
   <p>
-    For non-repeated games we have seen that if the maximin value is the same as the minimax value, then the game has a pure strategy equilibrium. The same idea applies to mixed strategy games. If the value of the maximin strategy is the same as the value of the minimax strategy, then the corresponding mixed strategies will be an equilibrium point<idx><h>mixed strategy equilibrium</h></idx><idx><h>equilibrium, mixed strategy</h></idx>. Thus, your answer to <xref ref="E_payoffssame"></xref> should tell you this game has a mixed strategy equilibrium point consisting of the maximin/ minimax strategy.
+    For non-repeated games we have seen that if the maximin value is the same as the minimax value, then the game has a pure strategy equilibrium. The same idea applies to mixed strategy games. If the value of the maximin strategy is the same as the value of the minimax strategy, then the corresponding mixed strategies will be an equilibrium point<idx><h>mixed strategy equilibrium</h></idx><idx><h>equilibrium</h><h>mixed strategy</h></idx>. Thus, your answer to <xref ref="E_payoffssame"></xref> should tell you this game has a mixed strategy equilibrium point consisting of the maximin/ minimax strategy.
   </p>
 
   <p>

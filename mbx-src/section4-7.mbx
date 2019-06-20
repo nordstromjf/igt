@@ -100,15 +100,15 @@
       </p></li>
 
     <li><p>
-        Strategy: <term>Random (1/2, 1/2).</term> Your strategy is to COOPERATE (C) randomly 50<percent /> of the time and DEFECT (D) 50<percent /> of the time. [Note: it will be hard to be truly random, but try to play each option approximately the same amount.]
+        Strategy: <term>Random (1/2, 1/2).</term> Your strategy is to COOPERATE (C) randomly 50% of the time and DEFECT (D) 50% of the time. [Note: it will be hard to be truly random, but try to play each option approximately the same amount.]
       </p></li>
 
     <li><p>
-        Strategy: <term>Random (3/4, 1/4).</term> Your strategy is to COOPERATE (C) randomly 75<percent /> of the time and DEFECT (D) 25<percent /> of the time. [Note: it will be hard to be truly random, but try to play C more often than D.]
+        Strategy: <term>Random (3/4, 1/4).</term> Your strategy is to COOPERATE (C) randomly 75% of the time and DEFECT (D) 25% of the time. [Note: it will be hard to be truly random, but try to play C more often than D.]
       </p></li>
 
     <li><p>
-        Strategy: <term>Random (1/4, 3/4).</term> Your strategy is to COOPERATE (C) randomly 25<percent /> of the time and DEFECT (D) 75<percent /> of the time. [Note: it will be hard to be truly random, but try to play D more often than C.]
+        Strategy: <term>Random (1/4, 3/4).</term> Your strategy is to COOPERATE (C) randomly 25% of the time and DEFECT (D) 75% of the time. [Note: it will be hard to be truly random, but try to play D more often than C.]
       </p></li>
 
     <li><p>

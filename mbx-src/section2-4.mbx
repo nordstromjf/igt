@@ -11,7 +11,7 @@
       
 
       <p>
-        We begin with a deck of cards in which 50<percent /> are Aces (you can use Red cards for Aces) and 50<percent /> are Kings (you can use Black cards for Kings). There are two players and one dealer. The play begins by each player putting in the ante (1 chip). Each player is dealt one card face down. WITHOUT LOOKING AT HIS OR HER CARD, the players decide to Bet (say, 1 chip) or Fold. Players secretly show the dealer their choice. If one player bet and the other folded, then the player who bet wins. If both bet or both fold, then Ace beats King (or Red beats Black); winner takes the pot (all the chips from the ante and any bets). If there is a tie, they split the pot.
+        We begin with a deck of cards in which 50% are Aces (you can use Red cards for Aces) and 50% are Kings (you can use Black cards for Kings). There are two players and one dealer. The play begins by each player putting in the ante (1 chip). Each player is dealt one card face down. WITHOUT LOOKING AT HIS OR HER CARD, the players decide to Bet (say, 1 chip) or Fold. Players secretly show the dealer their choice. If one player bet and the other folded, then the player who bet wins. If both bet or both fold, then Ace beats King (or Red beats Black); winner takes the pot (all the chips from the ante and any bets). If there is a tie, they split the pot.
       </p>
     </statement>
   </example>
@@ -71,7 +71,7 @@
     Now let's work through creating the payoff matrix for One-Card Stud Poker.
   </p>
   <exercise xml:id="E_payoffBF">
-    <title>Payoff for <brackets>Bet, Fold</brackets></title>
+    <title>Payoff for [Bet, Fold]</title>
     <statement>
       <p>
         If Player 1 Bets and Player 2 Folds, does it matter which cards were dealt? How much does Player 1 win? How much does Player 2 lose? What is the payoff vector for [Bet, Fold]? (Keep in mind your answer to <xref ref="E_onecardzerosum"></xref>.)

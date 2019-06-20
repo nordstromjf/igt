@@ -197,7 +197,7 @@
     <title>A crazy prisoner</title>
     <statement>
       <p>
-        Suppose Prisoner 2 is crazy and is likely to confess with 50/50 chance. What should Prisoner 1 do? Does it change if he confesses with a 75<percent /> chance? What if he confesses with a 25<percent /> chance.
+        Suppose Prisoner 2 is crazy and is likely to confess with 50/50 chance. What should Prisoner 1 do? Does it change if he confesses with a 75% chance? What if he confesses with a 25% chance.
       </p>
     </statement>
   </exercise>
@@ -309,7 +309,7 @@
     <title>A remote control driver</title>
     <statement>
       <p>
-        Suppose Driver 2 is a remote control dummy and will swerve or drive straight with a 50/50 chance. What should Driver 1 do? Does it change if the remote contro dummy swerves with 75<percent /> chance?
+        Suppose Driver 2 is a remote control dummy and will swerve or drive straight with a 50/50 chance. What should Driver 1 do? Does it change if the remote contro dummy swerves with 75% chance?
       </p>
     </statement>
   </exercise>

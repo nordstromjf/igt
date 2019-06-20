@@ -68,7 +68,7 @@
         </table>
 
         <p>
-          In order to better see that this game is zero-sum (or constant-sum), we could give values for the amount of cake each player gets. For example, half the cake would be 50<percent />, a small piece might be 40<percent />. Then we can rewrite the matrix with the percentage values in <xref ref="T_cakecuttingpercent"></xref>
+          In order to better see that this game is zero-sum (or constant-sum), we could give values for the amount of cake each player gets. For example, half the cake would be 50%, a small piece might be 40%. Then we can rewrite the matrix with the percentage values in <xref ref="T_cakecuttingpercent"></xref>
         </p>
 
         <table xml:id="T_cakecuttingpercent" >
@@ -101,7 +101,7 @@
         </table>
 
         <p>
-          In each outcome, the payoffs to each player add up to 100 (or 100<percent />). In more mathematical terms, the coordinates of each payoff vector add up to 100. Thus the sum is the same, or constant, for each outcome.
+          In each outcome, the payoffs to each player add up to 100 (or 100%). In more mathematical terms, the coordinates of each payoff vector add up to 100. Thus the sum is the same, or constant, for each outcome.
         </p>
       </statement>
     </example>
@@ -164,7 +164,7 @@
         </table>
 
         <p>
-          But let's make sure we understand what these numbers mean. For example, a payoff of <m>(0,0)</m> does not mean each player gets no cake, it means they don't get any more cake than the other player. In this example, each player gets half the cake (50<percent />) plus the payoff.
+          But let's make sure we understand what these numbers mean. For example, a payoff of <m>(0,0)</m> does not mean each player gets no cake, it means they don't get any more cake than the other player. In this example, each player gets half the cake (50%) plus the payoff.
         </p>
       </statement>
     </example>
@@ -578,7 +578,7 @@
             </p></li>
 
           <li><p>
-              Convert this game to one in which the payoffs actually sum to zero. Hint: if a network wins 60<percent /> of the viewers, how much more than 50<percent /> of the viewers does it have?
+              Convert this game to one in which the payoffs actually sum to zero. Hint: if a network wins 60% of the viewers, how much more than 50% of the viewers does it have?
             </p></li>
         </ol>
       </statement>

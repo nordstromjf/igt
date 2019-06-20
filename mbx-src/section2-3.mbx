@@ -14,7 +14,7 @@
     </p>
 
     <p>
-      You are probably a little bit familiar with the idea of probability. People often talk about the chance of some event happening. For example, a weather forecast might say there is a 20<percent /> chance of rain. Now determining the chance of rain can be difficult, so we will stick with some easier examples.
+      You are probably a little bit familiar with the idea of probability. People often talk about the chance of some event happening. For example, a weather forecast might say there is a 20% chance of rain. Now determining the chance of rain can be difficult, so we will stick with some easier examples.
     </p>
 
     <p>
@@ -33,7 +33,7 @@
     </p>
 
     <p>
-      Thus, the probability of drawing a red card is <m>\frac{1}{2}</m>, not 50<percent />. Although we can convert between probability and percent (since <m>0.5</m> converted to percent is <m>50\%</m>), it is important to answer a question about probability with a probability, not a percent.
+      Thus, the probability of drawing a red card is <m>\frac{1}{2}</m>, not 50%. Although we can convert between probability and percent (since <m>0.5</m> converted to percent is <m>50\%</m>), it is important to answer a question about probability with a probability, not a percent.
     </p>
 
     <example xml:id="E_drawheart">

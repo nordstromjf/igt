@@ -26,12 +26,12 @@
       In this chapter we turn our attention to non-zero-sum games.
     </p>
   </introduction>
-  <xi:include  href="Intrononzero.mbx" />
-  <xi:include  href="pdandchicken.mbx" />
-  <xi:include  href="S_CWPD.mbx" />
-  <xi:include  href="S_PDconditions.mbx" />
-  <xi:include  href="VDexperiment.mbx" />
-  <xi:include  href="section4-6.mbx" />
-  <xi:include  href="section4-7.mbx" />
-  <xi:include  href="section4-8.mbx" />
+  <xi:include  href="Intrononzero.ptx" />
+  <xi:include  href="pdandchicken.ptx" />
+  <xi:include  href="S_CWPD.ptx" />
+  <xi:include  href="S_PDconditions.ptx" />
+  <xi:include  href="VDexperiment.ptx" />
+  <xi:include  href="section4-6.ptx" />
+  <xi:include  href="section4-7.ptx" />
+  <xi:include  href="section4-8.ptx" />
 </chapter>

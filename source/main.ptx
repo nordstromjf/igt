@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
 <docinfo>
-	<brandlogo source="images/image-1.svg" />
+	<brandlogo source="logo.svg" />
 <macros>
 \newcommand{\MyTikzmark}[2]{
      \tikz[overlay,remember picture,baseline] \node [anchor=base] (#1) {$#2$};}
@@ -98,13 +98,13 @@ Students with even a rudimentary background in algebra will find the material ac
 </frontmatter>
 
 
--<xi:include href="./chapter1.mbx" />
+-<xi:include href="./chapter1.ptx" />
 
-<xi:include href="./chapter2.mbx" />
+<xi:include href="./chapter2.ptx" />
 
-<xi:include href="./chapter3.mbx" />
+<xi:include href="./chapter3.ptx" />
 
-<xi:include href="./chapter4.mbx" />
+<xi:include href="./chapter4.ptx" />
 <backmatter>
 	<references>
         <title>References</title>
